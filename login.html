@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Flipkart</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="left-panel">
-            <div class="content">
-                <h1 class="fade-in-left">Login</h1>
-                <p class="fade-in-left delay-1">Get access to your Orders, Wishlist and Recommendations</p>
-            </div>
-            <div class="illustration">
-                <div class="laptop bounce-in">
-                    <div class="screen">
-                        <div class="user-icon pulse"></div>
-                    </div>
-                    <div class="keyboard"></div>
-                </div>
-                <div class="shopping-bag slide-up delay-2"></div>
-                <div class="cloud float"></div>
-                <div class="star twinkle"></div>
-                <div class="yellow-box rotate-in delay-3"></div>
-            </div>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container" id="con">
+      <div class="left-panel">
+        <div class="content">
+          <h1 class="fade-in-left">Login</h1>
+          <p class="fade-in-left delay-1">
+            Get access to your Orders, Wishlist and Recommendations
+          </p>
         </div>
-        
-        <div class="right-panel">
-            <div class="form-container slide-in-right">
-                <form class="login-form">
-                    <div class="floating-input">
-                        <input type="text" id="email-mobile" required autocomplete="off">
-                        <label for="email-mobile">Enter Email/Mobile number</label>
-                        <div class="input-underline"></div>
-                        <div class="input-glow"></div>
-                    </div>
-                    
-                    <p class="terms-text fade-in-up delay-4">
-                        By continuing, you agree to Flipkart's 
-                        <a href="#" class="link">Terms of Use</a> and 
-                        <a href="#" class="link">Privacy Policy</a>.
-                    </p>
-                    
-                    <button type="submit" class="request-otp-btn ripple-effect">
-                        <span class="btn-text">Request OTP</span>
-                        <div class="btn-ripple"></div>
-                    </button>
-                </form>
-                
-                <div class="bottom-link fade-in-up delay-5">
-                    <a href="#" class="new-user-link">New to Flipkart? Create an account</a>
-                </div>
+        <div class="illustration">
+          <div class="laptop bounce-in">
+            <div class="screen">
+              <div class="user-icon pulse"></div>
             </div>
+            <div class="keyboard"></div>
+          </div>
+          <div class="shopping-bag slide-up delay-2"></div>
+          <div class="cloud float"></div>
+          <div class="star twinkle"></div>
+          <div class="yellow-box rotate-in delay-3"></div>
         </div>
+      </div>
+
+      <div class="right-panel">
+        <div class="form-container slide-in-right">
+          <form class="login-form">
+            <div class="floating-input">
+              <input type="text" placeholder=" " required id="input" />
+              <label>Enter Email/Mobile number</label>
+              <span class="underline left"></span>
+              <span class="underline right"></span>
+            </div>
+
+            <p class="terms-text fade-in-up delay-4">
+              By continuing, you agree to Flipkart's
+              <a href="#" class="link">Terms of Use</a> and
+              <a href="#" class="link">Privacy Policy</a>.
+            </p>
+
+            <button type="submit" class="request-otp-btn ripple-effect">
+              <span class="btn-text" onclick="requestotp()">Request OTP</span>
+              <div class="btn-ripple"></div>
+            </button>
+          </form>
+
+          <div class="bottom-link fade-in-up delay-5">
+            <a href="#" class="new-user-link"
+              >New to Flipkart? Create an account</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <!-- Link Script -->
+     <script src="./script.js"></script>
+  </body>
 </html>
