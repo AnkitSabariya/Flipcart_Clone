@@ -45,8 +45,12 @@
               <a href="#" class="link">Privacy Policy</a>.
             </p>
 
-            <button type="submit" class="request-otp-btn ripple-effect">
-              <span class="btn-text" onclick="requestotp()">Request OTP</span>
+            <button
+              type="button"
+              onclick="requestotp()"
+              class="request-otp-btn ripple-effect"
+            >
+              <span class="btn-text">Request OTP</span>
               <div class="btn-ripple"></div>
             </button>
           </form>
@@ -59,7 +63,47 @@
         </div>
       </div>
     </div>
-    <!-- Link Script -->
-     <script src="./script.js"></script>
+    <!-- Toast Message -->
+    <div id="toast" class="toast">
+      <span id="toast-icon">ℹ️</span>
+      <span id="toast-msg">This is a toast message</span>
+    </div>
+
+    <script>
+      function showToast(message, type = "info") {
+        const toast = document.getElementById("toast");
+        const toastMsg = document.getElementById("toast-msg");
+        const toastIcon = document.getElementById("toast-icon");
+
+        toastMsg.textContent = message;
+
+        // Optional: update icon based on type
+        if (type === "success") toastIcon.textContent = "✅";
+        else if (type === "error") toastIcon.textContent = "❌";
+        else toastIcon.textContent = "ℹ️";
+
+        toast.classList.add("show");
+
+        setTimeout(() => {
+          toast.classList.remove("show");
+        }, 3000);
+      }
+
+      function requestotp() {
+        let input = document.getElementById("input").value.trim();
+        if (input) {
+          localStorage.setItem("userNumber", input);
+          showToast("OTP sent successfully!", "success");
+          setTimeout(() => {
+            window.location.href = "otp.html";
+          }, 1500);
+        } else {
+          showToast(
+            "Please enter a valid mobile number or email address",
+            "error"
+          );
+        }
+      }
+    </script>
   </body>
 </html>
