@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion - Flipkart clone</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="">
+    <div id="container" class="h-full bg-[#f7f7f7]">
+        <!-- navbar -->
+        <nav class="bg-[#2874f0] text-white w-full h-[56px] flex items-center px-6 gap-4 justify-center">
+            <!-- Logo -->
+            <div class="flex items-start justify-center leading-[1.1] font-semibold text-[18px] cursor-pointer flex-col italic ">
+                <a href="index.html">
+                    <span class="text-white font-extrabold intern ">Flipkart</span>
+                    <div class="text-[11px] font-normal flex items-center text-white">
+                        Explore <span class="text-yellow-300 font-bold ml-1">Plus</span>
+                        <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png" class="h-3 ml-1 mt-[1px]" alt="plus" />
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="flex items-center flex-grow max-w-[600px] bg-white">
+                <input type="text" placeholder="Search for products, brands and more" id="search" class="w-full text-[14px] px-4 py-1.5 outline-none rounded-l-sm text-black placeholder-gray-500"/>
+                <button class="bg-white px-4 py-1.5 rounded-r-sm cursor-pointer" onclick="ready()">
+                    <i class="ri-search-line text-blue-600 text-lg"></i>
+                </button>
+            </div>
+            
+            <!-- Right side buttons -->
+            <div class="flex items-center gap-6 text-sm font-medium font-serif">
+                <button class="bg-white text-[#2874f0] px-4 py-1 w-[120px] text-center font-serif cursor-pointer ">Login</button>
+                <span class="cursor-pointer hover:underline">Become a Seller</span>
+                <span class="cursor-pointer flex items-center hover:underline">
+                    More <i class="ri-arrow-down-s-line ml-1"></i>
+                </span>
+                <span class="cursor-pointer flex items-center gap-1 hover:underline">
+                    <i class="ri-shopping-cart-2-fill text-lg"></i> Cart
+                </span>
+            </div>
+        </nav>
+
+        <!-- section -->
+        <div class="section relative min-h-[40px] text-black w-full shadow-sm">
+            <div class="bg-white shadow-2xl">
+                <div class="flex items-center max-w-[1248px] justify-between h-[40px] m-auto relative text-[14px] font-semibold">
+                    <!-- Navigation items -->
+                    <div class="group relative h-full flex items-center justify-center grow cursor-pointer">
+                        <span class="flex items-center h-full">Electronics <i class="ri-arrow-down-s-line ml-1"></i></span>
+                    </div>
+                    <div class="group relative h-full flex items-center justify-center grow cursor-pointer">
+                        <span class="flex items-center h-full">TVs & Appliances <i class="ri-arrow-down-s-line ml-1"></i></span>
+                    </div>
+                    <div class="group relative h-full flex items-center justify-center grow cursor-pointer bg-blue-50">
+                        <span class="flex items-center h-full text-[#2874f0]">Fashion <i class="ri-arrow-down-s-line ml-1"></i></span>
+                    </div>
+                    <div class="group relative h-full flex items-center justify-center grow cursor-pointer">
+                        <span class="flex items-center h-full">Home & Furniture <i class="ri-arrow-down-s-line ml-1"></i></span>
+                    </div>
+                    <div class="group relative h-full flex items-center justify-center grow cursor-pointer">
+                        <span class="flex items-center h-full">Sports, Books & More <i class="ri-arrow-down-s-line ml-1"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- body -->
+        <div class="body min-w-[978px] max-w-[1680px] p-[8px] w-full relative m-[0_auto] ">
+            <div class="flex" style="flex-flow: row;">
+                <!-- sidebar -->
+                <div class="side flex-[0_0_280px] max-w-[280px] p-[0px_10px_0px_0px]">
+                    <div class="filters flex w-full" style="flex-flow: column;">
+                        <div class="relative bg-white " style="box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .06);">
+                            <section class="pb-[12px] p-[16px]  " style="border-bottom: 1px solid #f0f0f0 ;">
+                                <div class="flex justify-between items-center" > 
+                                    <span class="text-[18px] capitalize w-[67%] font-medium tracking-[0.3px] inline-block">Filters</span>
+                                    <span class="cursor-pointer uppercase text-[#2874f0] text-[12px] font-medium">clear all</span>
+                                </div>
+                                <div class="dash relative max-h-[104px] overflow-hidden flex mt-[6px]">
+                                    <div class="filterclear">
+                                        <div class="inline-block text-[12px] ">✕</div>
+                                        <div class="inline-block whitespace-nowrap overflow-ellipsis overflow-hidden align-bottom ml-[8px] max-w-[90%]">Fashion</div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        
+                        <div class="category text-[14px] ">
+                            <div class="p-[16px]  bg-white" style="border-bottom: 1px solid #f0f0f0;">
+                                <span class="text-[12px] font-medium uppercase text-[#212121] mb-[5px] block">Categories</span>
+                                <div class="my-2">
+                                    <span class="p-[5px_0] text-[#212121] whitespace-nowrap">
+                                        <i class="ri-arrow-left-s-line inline-block mr-[5px] cursor-pointer"></i>  
+                                    </span>
+                                    <a href="#" class="text-[#878787] w-[150px] overflow-hidden whitespace-nowrap inline-block align-top overflow-ellipsis font-normal">Fashion & Clothing</a>   
+                                </div>
+                                <div class="my-2">
+                                    <a href="#" class=" w-[150px] pl-[24px] overflow-hidden whitespace-nowrap inline-block align-top overflow-ellipsis font-normal">All Fashion </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Size Filter -->
+                        <div class="size relative bg-white " style="border-bottom: 1px solid #f7f7f7; padding-block: 12px;">
+                            <div class="flex justify-between items-center cursor-pointer" style="padding-inline: 12px;">
+                                <span class="uppercase font-semibold tracking-[0.3px]" style="font-size: 13px;"> Size</span> 
+                                <i class="ri-arrow-down-s-line inline-block mr-[5px] text-[#878787] cursor-pointer"></i>
+                            </div>
+                            <div class="options m-[7px_0] p-[0px_12px] flex flex-col gap-2 text-[#212121]">
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-[10px] ">
+                                    <span class="capitalize text-[14px]">XS</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-[10px] ">
+                                    <span class="capitalize text-[14px]">S</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-[10px] ">
+                                    <span class="capitalize text-[14px]">M</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-[10px] ">
+                                    <span class="capitalize text-[14px]">L</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-[10px] ">
+                                    <span class="capitalize text-[14px]">XL</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Brand Filter -->
+                        <div class="brand relative bg-white " style="border-bottom: 1px solid #f7f7f7; padding-block: 12px;">
+                            <div class="flex justify-between items-center cursor-pointer " style="padding-inline: 12px;">
+                                <span class="uppercase font-semibold tracking-[0.3px]" style="font-size: 13px;"> Brand</span> 
+                                <i class="ri-arrow-down-s-line inline-block mr-[5px] text-[#878787] cursor-pointer"></i>
+                            </div>
+                            <div class="options m-[7px_0] p-[0px_12px] flex flex-col gap-2 text-[#212121]">
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-[10px] ">
+                                    <span class="capitalize text-[14px]">Nike</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-[10px] ">
+                                    <span class="capitalize text-[14px]">Adidas</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-[10px] ">
+                                    <span class="capitalize text-[14px]">Puma</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Price Filter -->
+                        <div class="price relative bg-white " style="border-bottom: 1px solid #f7f7f7; padding-block: 12px;">
+                            <div class="flex justify-between items-center cursor-pointer " style="padding-inline: 12px;">
+                                <span class="uppercase font-semibold tracking-[0.3px]" style="font-size: 13px;"> Price</span> 
+                                <i class="ri-arrow-down-s-line inline-block mr-[5px] text-[#878787] cursor-pointer"></i>
+                            </div>
+                        </div>
+
+                        <!-- Customer Ratings -->
+                        <div class="Customer relative bg-white " style="border-bottom: 1px solid #f7f7f7; padding-block: 12px;">
+                            <div class="flex justify-between items-center cursor-pointer " style="padding-inline: 12px;">
+                                <span class="uppercase font-semibold tracking-[0.3px]" style="font-size: 13px;">Customer ratings</span> 
+                                <i class="ri-arrow-down-s-line inline-block mr-[5px] text-[#878787] cursor-pointer"></i>
+                            </div>
+                            <div class="options m-[7px_0] p-[0px_12px] flex flex-col gap-2 text-[#212121]" >
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-[10px] ">
+                                    <span class=" text-[14px]">4★ & above</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-[10px] ">
+                                    <span class=" text-[14px]">3★ & above</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- productbar -->
+                <div class="maincard w-full">
+                    <div class="despinfo bg-white flex flex-col p-[1%]">
+                        <div class="top">
+                            <div class="home text-[12px] text-[#878787] inline-block">
+                                <span>Home</span> <i class="ri-arrow-right-s-line h-[7px] w-[20px] align-middle"></i>
+                            </div>
+                            <div class="home text-[12px] text-[#878787] inline-block">
+                                <span>Fashion</span> <i class="ri-arrow-right-s-line h-[7px] w-[20px] align-middle"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="text flex items-center mt-[8px] ">
+                            <h1 class=" text-[16px] font-semibold ">Fashion & Clothing</h1> 
+                            <span class="inline-block ml-[10px] text-[#878787] text-[12px] ">(Showing 1 – 40 products of 10,000+ products)</span>
+                        </div>
+                        
+                        <div class="sortby flex text-[14px] ">
+                            <span class="p-[8px_10px_4px_0px] font-medium ">Sort by</span>
+                            <div class="cursor-default text-[#2874f0] p-[8px_0px_4px] m-[0_10px] font-medium " style="border-bottom:2px solid #2874f0 ;">Popularity </div>
+                            <div class="p-[8px_0px_4px] m-[0_10px] cursor-pointer ">Price -- Low to High </div>
+                            <div class="p-[8px_0px_4px] m-[0_10px] cursor-pointer ">Price -- High to low </div>
+                            <div class="p-[8px_0px_4px] m-[0_10px] cursor-pointer ">Newest First </div>
+                        </div>
+                    </div> 
+                    <div class="cardbox w-full flex flex-wrap "></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#172337] text-white text-sm mt-12">
+        <div class="max-w-[1200px] mx-auto px-6 py-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 border-b border-gray-700">
+            <!-- About -->
+            <div>
+                <h4 class="text-gray-400 font-medium uppercase mb-3">About</h4> 
+                <ul class="space-y-2 text-[13px] text-white/80">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Flipkart Stories</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            
+            <!-- Group Companies -->
+            <div>
+                <h4 class="text-gray-400 font-medium uppercase mb-3">Group Companies</h4>
+                <ul class="space-y-2 text-[13px] text-white/80">
+                    <li><a href="#">Myntra</a></li>
+                    <li><a href="#">Cleartrip</a></li>
+                    <li><a href="#">Shopsy</a></li>
+                </ul>
+            </div>
+            
+            <!-- Help -->
+            <div>
+                <h4 class="text-gray-400 font-medium uppercase mb-3">Help</h4>
+                <ul class="space-y-2 text-[13px] text-white/80">
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <!-- Policy -->
+            <div>
+                <h4 class="text-gray-400 font-medium uppercase mb-3">Consumer Policy</h4>
+                <ul class="space-y-2 text-[13px] text-white/80">
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Grievance Redressal</a></li>
+                    <li><a href="#">EPR Compliance</a></li>
+                </ul>
+            </div>
+            
+            <!-- Mail Us -->
+            <div class="col-span-2">
+                <h4 class="text-gray-400 font-medium uppercase mb-3">Mail Us:</h4>
+                <p class="text-[13px] text-white/80 leading-5">
+                    Flipkart Internet Private Limited,<br />
+                    Buildings Alyssa, Begonia &<br />
+                    Clove Embassy Tech Village,<br />
+                    Outer Ring Road, Devarabeesanahalli Village,<br />
+                    Bengaluru, 560103,<br />
+                    Karnataka, India
+                </p>
+                <h4 class="text-gray-400 font-medium uppercase mt-4 mb-2">Social</h4>
+                <div class="flex items-center gap-4 text-lg text-white/80">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-x-line"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-youtube-fill"></i>
+                </div>
+            </div>
+            
+            <!-- Registered Address -->
+            <div class="col-span-2 hidden lg:block">
+                <h4 class="text-gray-400 font-medium uppercase mb-3">Registered Office Address:</h4>
+                <p class="text-[13px] text-white/80 leading-5">
+                    Flipkart Internet Private Limited,<br />
+                    Buildings Alyssa, Begonia & Clove Embassy Tech Village,<br />
+                    Outer Ring Road, Devarabeesanahalli Village,<br />
+                    Bengaluru, 560103,<br />
+                    Karnataka, India<br />
+                    CIN : U51109KA2012PTC066107<br />
+                    Telephone: <span class="text-blue-400">044-45614700 / 044-67415800</span>
+                </p>
+            </div>
+        </div>
+        
+        <!-- Bottom Bar -->
+        <div class="bg-[#172337] text-white text-xs py-3 px-6 border-t border-gray-700 flex flex-wrap items-center justify-center gap-4">
+            <div class="flex flex-wrap items-center gap-6">
+                <div class="flex items-center gap-1">
+                    <i class="ri-briefcase-line text-yellow-400"></i> Become a Seller
+                </div>
+                <div class="flex items-center gap-1">
+                    <i class="ri-star-smile-line text-yellow-400"></i> Advertise
+                </div>
+                <div class="flex items-center gap-1">
+                    <i class="ri-gift-line text-yellow-400"></i> Gift Cards
+                </div>
+                <div class="flex items-center gap-1">
+                    <i class="ri-question-line text-yellow-400"></i> Help Center
+                </div>
+                <span>© 2007-2025 Flipkart.com</span>
+            </div>
+            <div class="flex gap-2 items-center flex-wrap ">
+                <img src="https://img.icons8.com/color/48/000000/visa.png" class="h-5" />
+                <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" class="h-5" />
+                <img src="https://img.icons8.com/color/48/000000/amex.png" class="h-5" />
+                <img src="https://img.icons8.com/color/48/000000/rupay.png" class="h-5" />
+                <img src="https://img.icons8.com/color/48/000000/cash-on-delivery.png" class="h-5" />
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/shirt.js"></script>
+</body>
+</html>

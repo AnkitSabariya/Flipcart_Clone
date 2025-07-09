@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Flipkart Clone</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-<link rel="shortcut icon" href="https://www.citypng.com/public/uploads/preview/flipkart-logo-icon-hd-png-701751694706828v1habfry9b.png" type="image/x-icon">   
- <link
+    <link
+      rel="shortcut icon"
+      href="https://www.citypng.com/public/uploads/preview/flipkart-logo-icon-hd-png-701751694706828v1habfry9b.png"
+      type="image/x-icon"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
     />
@@ -20,10 +23,9 @@
   <style>
     html,
     body {
-          position: relative;
+      position: relative;
       height: 100%;
     }
-
     body {
       background: #eee;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -32,12 +34,10 @@
       margin: 0;
       padding: 0;
     }
-
     swiper-container {
       width: 100%;
       height: 300px;
     }
-
     swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -47,15 +47,67 @@
       align-items: center;
       border-radius: 10px;
     }
-  </style>
 
+    /* Updated Progress Bar Styles */
+    .progress-container {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+      height: 6px;
+      background-color: transparent;
+      border-radius: 3px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .progress-bar {
+      display: none; /* Hide the main progress bar */
+    }
+
+    .progress-segments {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .progress-segment {
+      width: 20px;
+      height: 4px;
+      background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 2px;
+
+      transition: all 0.3s ease;
+      border: none;
+    }
+
+    .progress-segment.completed {
+      background-color: #e2e2e2;
+      border-radius: 2px;
+    }
+
+    .progress-segment.current {
+      width: 50px;
+      height: 4px;
+      background-color: black;
+
+      transform: scale(1);
+    }
+  </style>
   <style>
     html,
     body {
       position: relative;
       height: 100%;
     }
-
     body {
       background: #eee;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -64,12 +116,10 @@
       margin: 0;
       padding: 0;
     }
-
     swiper-container {
       width: 100%;
       height: 70%;
     }
-
     swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -78,7 +128,6 @@
       justify-content: center;
       align-items: center;
     }
-
     swiper-slide img {
       display: block;
       width: 100%;
@@ -95,7 +144,6 @@
             class="h-20"
             alt="Flipkart Logo"
           />
-
           <div
             class="input hidden md:flex w-[53%] h-[45px] bg-[#F0F5FF] rounded-lg ml-10 items-center px-4"
           >
@@ -107,190 +155,258 @@
               placeholder="Search for Products, Brands and More"
             />
           </div>
-
           <div
             class="buttons w-auto gap-3 h-full flex items-center ml-auto space-x-6"
           >
-            <div class="relative group hidden sm:block">
-              <button
-                class="flex items-center space-x-2 bg-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition"
-                id="dropdownButton"
-              >
-                <i class="ri-user-line text-xl"></i>
-                <span class="font-semibold">Login</span>
-                <i class="ri-arrow-down-s-line"></i>
-              </button>
-
-              <div
-                id="dropdownMenu"
-                class="absolute left-0 right-16 mt-2 w-52 md:w-64 bg-white shadow-lg rounded-lg hidden group-hover:block z-50"
-              >
-                <div
-                  class="flex justify-between items-center space-x-3 mr-5 p-4 border-b"
+            <a href="./login.html          ">
+              <div class="relative group hidden sm:block">
+                <button
+                  class="flex items-center space-x-2 bg-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition"
+                  id="dropdownButton"
                 >
-                  <p>New Customer ?</p>
-                  <button class="text-[#2874f0] font-semibold">Sign Up</button>
+                  <i class="ri-user-line text-xl"></i>
+                  <span class="font-semibold">Login</span>
+                  <i class="ri-arrow-down-s-line"></i>
+                </button>
+                <div
+                  id="dropdownMenu"
+                  class="absolute left-0 right-16 mt-2 w-52 md:w-64 bg-white shadow-lg rounded-lg hidden group-hover:block z-50"
+                >
+                  <div
+                    class="flex justify-between items-center space-x-3 mr-5 p-4 border-b"
+                  >
+                    <p>New Customer ?</p>
+                    <button class="text-[#2874f0] font-semibold">
+                      Sign Up
+                    </button>
+                  </div>
+                  <div class="p-4">
+                    <a
+                      href="#"
+                      class="flex items-center space-x-3 hover:bg-gray-100 p-3 rounded-lg"
+                    >
+                      <i class="ri-user-line text-lg"></i>
+                      <span>My Profile</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center space-x-3 hover:bg-gray-100 p-3 rounded-lg"
+                    >
+                      <i class="ri-add-circle-line text-lg"></i>
+                      <span>Flipkart Plus Zone</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center space-x-3 hover:bg-gray-100 p-3 rounded-lg"
+                    >
+                      <i class="ri-folder-line text-lg"></i>
+                      <span>Orders</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center space-x-3 hover:bg-gray-100 p-3 rounded-lg"
+                    >
+                      <i class="ri-heart-line text-lg"></i>
+                      <span>Wishlist</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center space-x-3 hover:bg-gray-100 p-3 rounded-lg"
+                    >
+                      <i class="ri-coupon-line text-lg"></i>
+                      <span>Rewards</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center space-x-3 hover:bg-gray-100 p-3 rounded-lg"
+                    >
+                      <i class="ri-gift-line text-lg"></i>
+                      <span>Gift Cards</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="p-4">
-                  <a
-                    href="#"
-                    class="flex items-center space-x-3 hover:bg-gray-100 p-3 rounded-lg"
-                  >
-                    <i class="ri-user-line text-lg"></i>
-                    <span>My Profile</span>
-                  </a>
-                  <a
-                    href="#"
-                    class="flex items-center space-x-3 hover:bg-gray-100 p-3 rounded-lg"
-                  >
-                    <i class="ri-add-circle-line text-lg"></i>
-                    <span>Flipkart Plus Zone</span>
-                  </a>
-                  <a
-                    href="#"
-                    class="flex items-center space-x-3 hover:bg-gray-100 p-3 rounded-lg"
-                  >
-                    <i class="ri-folder-line text-lg"></i>
-                    <span>Orders</span>
-                  </a>
-                  <a
-                    href="#"
-                    class="flex items-center space-x-3 hover:bg-gray-100 p-3 rounded-lg"
-                  >
-                    <i class="ri-heart-line text-lg"></i>
-                    <span>Wishlist</span>
-                  </a>
-                  <a
-                    href="#"
-                    class="flex items-center space-x-3 hover:bg-gray-100 p-3 rounded-lg"
-                  >
-                    <i class="ri-coupon-line text-lg"></i>
-                    <span>Rewards</span>
-                  </a>
-                  <a
-                    href="#"
-                    class="flex items-center space-x-3 hover:bg-gray-100 p-3 rounded-lg"
-                  >
-                    <i class="ri-gift-line text-lg"></i>
-                    <span>Gift Cards</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
+              </div></a
+            >
             <div class="cart flex items-center gap-3 cursor-pointer">
               <i class="ri-shopping-cart-2-line hidden sm:block text-2xl"></i>
               <p class="hidden xl:block text-xl font-[350]">Cart</p>
             </div>
             <div class="home flex items-center gap-3 cursor-pointer">
               <i class="ri-store-line text-2xl hidden sm:block"></i>
-              <p class="hidden xl:block text-xl font-[350]">Become a Seller</p>
+              <p class="hidden xl:block text-[17px] font-[350]">
+                Become a Seller
+              </p>
             </div>
             <i class="ri-more-2-line text-2xl hidden sm:block"></i>
-            <i class="ri-menu-line md:hidden text-2xl pr-4 cursor-pointer" id="hamburger-icon"></i>
+            <i
+              class="ri-menu-line md:hidden text-2xl pr-4 cursor-pointer"
+              id="hamburger-icon"
+            ></i>
           </div>
         </div>
       </div>
-
-    
       <div id="mobile-menu" class="fixed inset-0 bg-black/50 z-50 hidden">
-        <div class="bg-white w-[80%] max-w-sm h-full transform transition-transform duration-300 translate-x-[-100%]" id="menu-content">
+        <div
+          class="bg-white w-[80%] max-w-sm h-full transform transition-transform duration-300 translate-x-[-100%]"
+          id="menu-content"
+        >
           <div class="p-4 border-b flex justify-between items-center">
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_ag_JaKwMeU0qRSKEYYnWgGPsHcc610M-dI9TCtNqRNTGumS-" class="h-12" alt="Flipkart Logo" />
-            <button id="close-menu" class="text-2xl"><i class="ri-close-line"></i></button>
+            <img
+              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_ag_JaKwMeU0qRSKEYYnWgGPsHcc610M-dI9TCtNqRNTGumS-"
+              class="h-12"
+              alt="Flipkart Logo"
+            />
+            <button id="close-menu" class="text-2xl">
+              <i class="ri-close-line"></i>
+            </button>
           </div>
           <div class="overflow-y-auto h-[calc(100%-60px)]">
             <nav class="p-4">
-              <a href="#" class=" py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg flex items-center space-x-2">
+              <a
+                href="#"
+                class="py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg flex items-center space-x-2"
+              >
                 <i class="ri-user-line text-lg"></i>
                 <span>Login & Signup</span>
               </a>
-              <a href="#" class=" py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg flex items-center space-x-2">
+              <a
+                href="#"
+                class="py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg flex items-center space-x-2"
+              >
                 <i class="ri-shopping-cart-2-line text-lg"></i>
                 <span>Cart</span>
               </a>
-              <a href="#" class=" py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg flex items-center space-x-2">
+              <a
+                href="#"
+                class="py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg flex items-center space-x-2"
+              >
                 <i class="ri-store-line text-lg"></i>
                 <span>Become a Seller</span>
               </a>
               <div class="border-t my-3"></div>
-              <a href="#" class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg">Electronics</a>
-              <a href="#" class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg">TVs & Appliances</a>
-              <a href="#" class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg">Men</a>
-              <a href="#" class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg">Women</a>
-              <a href="#" class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg">Baby & Kids</a>
-              <a href="#" class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg">Home & Furniture</a>
-              <a href="#" class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg">Sports & Books</a>
-              <a href="#" class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg">Flights</a>
-              <a href="#" class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg">Offer Zone</a>
+              <a
+                href="#"
+                class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg"
+                >Electronics</a
+              >
+              <a
+                href="#"
+                class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg"
+                >TVs & Appliances</a
+              >
+              <a
+                href="#"
+                class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg"
+                >Men</a
+              >
+              <a
+                href="#"
+                class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg"
+                >Women</a
+              >
+              <a
+                href="#"
+                class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg"
+                >Baby & Kids</a
+              >
+              <a
+                href="#"
+                class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg"
+                >Home & Furniture</a
+              >
+              <a
+                href="#"
+                class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg"
+                >Sports & Books</a
+              >
+              <a
+                href="#"
+                class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg"
+                >Flights</a
+              >
+              <a
+                href="#"
+                class="block py-3 px-4 text-gray-800 hover:bg-gray-100 rounded-lg"
+                >Offer Zone</a
+              >
             </nav>
           </div>
         </div>
       </div>
-
       <script>
         // Mobile menu functionality
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuContent = document.getElementById('menu-content');
-        const closeMenu = document.getElementById('close-menu');
-
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuContent = document.getElementById("menu-content");
+        const closeMenu = document.getElementById("close-menu");
         function openMenu() {
-          mobileMenu.classList.remove('hidden');
+          mobileMenu.classList.remove("hidden");
           // Wait a tiny bit before adding the transform to trigger the animation
           setTimeout(() => {
-            menuContent.style.transform = 'translateX(0)';
+            menuContent.style.transform = "translateX(0)";
           }, 10);
-          document.body.style.overflow = 'hidden'; // Prevent scrolling
+          document.body.style.overflow = "hidden"; // Prevent scrolling
         }
-
         function closeMenuHandler() {
-          menuContent.style.transform = 'translateX(-100%)';
+          menuContent.style.transform = "translateX(-100%)";
           setTimeout(() => {
-            mobileMenu.classList.add('hidden');
-            document.body.style.overflow = ''; // Restore scrolling
+            mobileMenu.classList.add("hidden");
+            document.body.style.overflow = ""; // Restore scrolling
           }, 300); // Match the duration of the transition
         }
-
-        hamburgerIcon.addEventListener('click', openMenu);
-        closeMenu.addEventListener('click', closeMenuHandler);
-       
-        // Close menu when clicking outside
-        mobileMenu.addEventListener('click', (e) => {
+        hamburgerIcon.addEventListener("click", openMenu);
+        closeMenu.addEventListener("click", closeMenuHandler); // Close menu when clicking outside
+        mobileMenu.addEventListener("click", (e) => {
           if (e.target === mobileMenu) {
             closeMenuHandler();
           }
         });
       </script>
-
-    
       <div class="container bg-white shadow-sm mt-5 mx-auto px-0 xl:px-16">
         <div class="mx-auto lg:px-16">
           <div
             class="flex items-center justify-between overflow-x-auto py-2 space-x-8"
-          >
-            <div
+          ><a href="./tablet.html">
+ <div
               class="flex flex-col items-center min-w-[80px] cursor-pointer group"
             >
               <img
-                src="https://rukminim1.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png"
+                src="https://m.media-amazon.com/images/I/61uA2UVnYWL._UF1000,1000_QL80_.jpg"
                 alt="Grocery"
                 class="w-16"
               />
-              <span class="text-sm mt-1 font-semibold text-center">Kilos</span>
+              <span class="text-sm mt-1 font-semibold text-center">Tablets</span>
             </div>
-            <div
-              class="flex flex-col items-center min-w-[80px] cursor-pointer group"
-            >
-              <img
-                src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png"
-                alt="Mobiles"
-                class="w-16"
-              />
-              <span class="text-sm mt-1 font-semibold text-center"
-                >Mobiles</span
+          </a>
+           
+            <a href="./mobile.html">
+              <div
+                class="flex flex-col items-center min-w-[80px] cursor-pointer group"
               >
-            </div>
+                <img
+                  src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png"
+                  alt="Mobiles"
+                  class="w-16"
+                />
+                <span class="text-sm mt-1 font-semibold text-center"
+                  >Mobiles</span
+                >
+              </div>
+            </a>
+ <a href="./laptop.html">
+              <div
+                class="flex flex-col items-center min-w-[80px] cursor-pointer group"
+              >
+                <img
+                  src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png"
+                  alt="Electronics"
+                  class="w-16"
+                />
+                <span class="text-sm mt-1 font-semibold text-center"
+                  >Laptops</span
+                >
+              </div>
+            </a>
             <div
               class="flex flex-col items-center min-w-[80px] cursor-pointer group"
             >
@@ -303,19 +419,9 @@
                 >Fashion</span
               >
             </div>
-            <div
-              class="flex flex-col items-center min-w-[80px] cursor-pointer group"
-            >
-              <img
-                src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png"
-                alt="Electronics"
-                class="w-16"
-              />
-              <span class="text-sm mt-1 font-semibold text-center"
-                >Electronics</span
-              >
-            </div>
-            <div
+           
+<a href="./furniture.html">
+ <div
               class="flex flex-col items-center min-w-[80px] cursor-pointer group"
             >
               <img
@@ -327,6 +433,8 @@
                 >Home & Furniture</span
               >
             </div>
+</a>
+           
             <div
               class="flex flex-col items-center min-w-[80px] cursor-pointer group"
             >
@@ -378,7 +486,6 @@
           </div>
         </div>
       </div>
-
       <!-- Main Slider Section -->
       <div class="container-fluid w-full mx-auto mt-4">
         <div class="relative">
@@ -397,7 +504,6 @@
                   class="w-full h-[300px] object-cover"
                 />
               </div>
-
               <!-- Slide 2 -->
               <div class="min-w-full">
                 <img
@@ -406,7 +512,6 @@
                   class="w-full h-[300px] object-cover"
                 />
               </div>
-
               <!-- Slide 3 -->
               <div class="min-w-full">
                 <img
@@ -415,7 +520,6 @@
                   class="w-full h-[300px] object-cover"
                 />
               </div>
-
               <!-- Slide 4 -->
               <div class="min-w-full">
                 <img
@@ -424,7 +528,6 @@
                   class="w-full h-[300px] object-cover"
                 />
               </div>
-
               <!-- Slide 5 -->
               <div class="min-w-full">
                 <img
@@ -433,7 +536,6 @@
                   class="w-full h-[300px] object-cover"
                 />
               </div>
-
               <!-- Slide 6 -->
               <div class="min-w-full">
                 <img
@@ -443,7 +545,6 @@
                 />
               </div>
             </div>
-
             <!-- Navigation Buttons -->
             <button
               class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 p-3 rounded-full shadow-lg z-10 hover:bg-white transition-colors"
@@ -457,48 +558,71 @@
             >
               <i class="ri-arrow-right-s-line text-2xl"></i>
             </button>
-
-            <!-- Dots Navigation -->
+            <!-- Progress Bar Navigation -->
             <div
-              class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3"
-              id="dotsContainer"
-            ></div>
+              class="progress-container bg-white w-full h-8 relative top-[1px]"
+              id="progressContainer"
+            >
+              <div class="progress-segments" id="progressSegments"></div>
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
           </div>
         </div>
       </div>
-
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           const slider = document.getElementById("slider-container");
           const slides = slider.children;
-          const dotsContainer = document.getElementById("dotsContainer");
+          const progressContainer =
+            document.getElementById("progressContainer");
+          const progressSegments = document.getElementById("progressSegments");
+          const progressBar = document.getElementById("progressBar");
           const prevBtn = document.getElementById("prevBtn");
           const nextBtn = document.getElementById("nextBtn");
+
           let currentSlide = 0;
           const totalSlides = slides.length;
           let isDragging = false;
           let startPos = 0;
           let currentTranslate = 0;
           let prevTranslate = 0;
+          let progressInterval;
+          let progressStartTime;
+          const slideDuration = 3000; // 3 seconds
 
-          // Create dots
+          // Create progress segments
           for (let i = 0; i < totalSlides; i++) {
-            const dot = document.createElement("button");
-            dot.className =
-              "w-3 h-3 rounded-full bg-white/50 transition-all duration-300 hover:bg-white";
-            dot.addEventListener("click", () => goToSlide(i));
-            dotsContainer.appendChild(dot);
+            const segment = document.createElement("div");
+            segment.className = "progress-segment";
+            progressSegments.appendChild(segment);
           }
 
-          const dots = dotsContainer.children;
-
-          // Update dots
-          function updateDots() {
-            for (let i = 0; i < dots.length; i++) {
-              dots[i].className = `w-3 h-3 rounded-full transition-all duration-300 hover:bg-white ${
-                i === currentSlide ? "bg-white" : "bg-white/50"
-              }`;
+          // Update progress bar
+          function updateProgressBar() {
+            // Update segment states
+            const segments = progressSegments.children;
+            for (let i = 0; i < segments.length; i++) {
+              segments[i].classList.remove("completed", "current");
+              if (i < currentSlide) {
+                segments[i].classList.add("completed");
+              } else if (i === currentSlide) {
+                segments[i].classList.add("current");
+              }
             }
+
+            // Start progress animation for current slide (optional - for internal timing)
+            progressStartTime = Date.now();
+
+            function animateProgress() {
+              const elapsed = Date.now() - progressStartTime;
+              const progress = Math.min(elapsed / slideDuration, 1);
+
+              if (progress < 1 && !isDragging) {
+                requestAnimationFrame(animateProgress);
+              }
+            }
+
+            requestAnimationFrame(animateProgress);
           }
 
           // Go to specific slide with smooth transition
@@ -506,8 +630,8 @@
             currentSlide = index;
             const translate = -currentSlide * 100;
             slider.style.transform = `translateX(${translate}%)`;
-            slider.style.transition = 'transform 0.5s ease-out';
-            updateDots();
+            slider.style.transition = "transform 0.5s ease-out";
+            updateProgressBar();
           }
 
           // Next slide with boundary check
@@ -531,14 +655,15 @@
           }
 
           // Touch events
-          slider.addEventListener('touchstart', touchStart);
-          slider.addEventListener('touchmove', touchMove);
-          slider.addEventListener('touchend', touchEnd);
+          slider.addEventListener("touchstart", touchStart);
+          slider.addEventListener("touchmove", touchMove);
+          slider.addEventListener("touchend", touchEnd);
 
           function touchStart(event) {
             isDragging = true;
+            pauseAutoSlide();
             startPos = event.touches[0].clientX;
-            slider.style.transition = 'none';
+            slider.style.transition = "none";
           }
 
           function touchMove(event) {
@@ -553,7 +678,7 @@
           function touchEnd() {
             isDragging = false;
             const movedBy = currentTranslate - prevTranslate;
-           
+
             if (Math.abs(movedBy) > 20) {
               if (movedBy > 0) {
                 prevSlide();
@@ -563,51 +688,91 @@
             } else {
               goToSlide(currentSlide);
             }
-           
-            slider.style.transition = 'transform 0.5s ease-out';
+
+            slider.style.transition = "transform 0.5s ease-out";
             prevTranslate = currentTranslate;
+
+            // Resume auto slide after touch interaction
+            setTimeout(() => {
+              resumeAutoSlide();
+            }, 1000);
           }
 
           // Event listeners for buttons
-          nextBtn.addEventListener("click", nextSlide);
-          prevBtn.addEventListener("click", prevSlide);
+          nextBtn.addEventListener("click", () => {
+            nextSlide();
+            pauseAutoSlide();
+            setTimeout(resumeAutoSlide, 2000); // Resume after 2 seconds
+          });
+
+          prevBtn.addEventListener("click", () => {
+            prevSlide();
+            pauseAutoSlide();
+            setTimeout(resumeAutoSlide, 2000); // Resume after 2 seconds
+          });
 
           // Keyboard navigation
-          document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') prevSlide();
-            if (e.key === 'ArrowRight') nextSlide();
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowLeft") {
+              prevSlide();
+              pauseAutoSlide();
+              setTimeout(resumeAutoSlide, 2000);
+            }
+            if (e.key === "ArrowRight") {
+              nextSlide();
+              pauseAutoSlide();
+              setTimeout(resumeAutoSlide, 2000);
+            }
           });
 
           // Auto slide with proper cleanup
           let slideInterval;
+          let isAutoSliding = true;
 
           function startAutoSlide() {
-            slideInterval = setInterval(nextSlide, 3000);
+            if (slideInterval) {
+              clearInterval(slideInterval);
+            }
+            slideInterval = setInterval(() => {
+              if (isAutoSliding && !isDragging) {
+                nextSlide();
+              }
+            }, slideDuration);
           }
 
           function stopAutoSlide() {
-            clearInterval(slideInterval);
+            if (slideInterval) {
+              clearInterval(slideInterval);
+            }
           }
 
-          // Pause on hover
-          slider.parentElement.addEventListener("mouseenter", stopAutoSlide);
-          slider.parentElement.addEventListener("mouseleave", startAutoSlide);
+          function pauseAutoSlide() {
+            isAutoSliding = false;
+          }
 
-          // Initialize
-          updateDots();
-          startAutoSlide();
+          function resumeAutoSlide() {
+            isAutoSliding = true;
+          }
+
+          // Pause on hover - updated
+          const sliderElement = slider.parentElement;
+          sliderElement.addEventListener("mouseenter", pauseAutoSlide);
+          sliderElement.addEventListener("mouseleave", resumeAutoSlide);
 
           // Cleanup on page visibility change
-          document.addEventListener('visibilitychange', () => {
+          document.addEventListener("visibilitychange", () => {
             if (document.hidden) {
               stopAutoSlide();
             } else {
               startAutoSlide();
             }
           });
+
+          // Initialize - updated
+          updateProgressBar();
+          startAutoSlide();
         });
       </script>
-
       <div
         class="slid w-full lg:h-[350px] shadow-lg bg-white pt-2 px-[2vw] mt-12 pb-3.5"
       >
@@ -704,7 +869,6 @@
           </div>
         </div>
       </div>
-
       <div
         class="slid w-full lg:h-[350px] shadow-lg bg-white pt-2 px-[3vw] mt-12"
       >
@@ -793,14 +957,11 @@
         </div>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
       <script>
         const swiper = document.querySelector(".mySwiperr");
         swiper.setAttribute("slides-per-view", "4");
-
         function updateSwiperConfig() {
           const screenWidth = window.innerWidth;
-
           if (screenWidth <= 640) {
             swiper.setAttribute("slides-per-view", "1.5");
           } else if (screenWidth <= 1024) {
@@ -809,18 +970,14 @@
             swiper.setAttribute("slides-per-view", "5");
           }
         }
-
         updateSwiperConfig();
         window.addEventListener("resize", updateSwiperConfig);
       </script>
-
       <script>
         const swiperr = document.querySelector(".mySwiperrr");
         swiperr.setAttribute("slides-per-view", "6");
-
         function updateSwiperConfig() {
           const screenWidth = window.innerWidth;
-
           if (screenWidth <= 640) {
             swiperr.setAttribute("slides-per-view", "1.5");
           } else if (screenWidth <= 1024) {
@@ -829,11 +986,9 @@
             swiperr.setAttribute("slides-per-view", "6");
           }
         }
-
         updateSwiperConfig();
         window.addEventListener("resize", updateSwiperConfig);
       </script>
-
       <div class="boxes w-full mt-12 px-0">
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
           <div class="">
@@ -892,7 +1047,6 @@
           </div>
         </div>
       </div>
-
       <div class="boxes w-full h-auto mt-12 px-0">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div
@@ -1058,13 +1212,12 @@
           <div class="hidden lg:block cursor-pointer">
             <img
               class="w-full h-full"
-              src="./assets/Screenshot 2025-02-03 212653.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-07-09%20at%209.04.28%E2%80%AFAM-beECSHjyZWl3JQCBLCCuNJZkcbf00X.png"
               alt=""
             />
           </div>
         </div>
       </div>
-
       <div class="boxes w-full mt-8 px-0">
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
           <div class="">
@@ -1105,7 +1258,6 @@
           </div>
         </div>
       </div>
-
       <div class="boxes w-full h-auto mt-12 px-0">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div
@@ -1273,13 +1425,438 @@
           <div class="hidden lg:block cursor-pointer">
             <img
               class="w-full h-full"
-              src="./assets/Screenshot 2025-02-02 221321.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-07-09%20at%209.04.28%E2%80%AFAM-beECSHjyZWl3JQCBLCCuNJZkcbf00X.png"
               alt=""
             />
           </div>
         </div>
       </div>
-
+      <div class="boxes w-full mt-8 px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/5b4d4e9118e0c6a1.jpg?q=90"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/5a3f5e023d82d10c.jpg?q=90"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/0383e3efa8e391e7.jpg?q=90"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/baf782576023470a.jpg?q=90"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/0f864abf6acb4597.jpg?q=90"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/a6d03a1ac18e5b45.jpg?q=90"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="boxes w-full h-auto mt-12 px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div
+            class="box1 h-auto shadow-lg bg-white cursor-pointer pl-3.5 py-2.5"
+          >
+            <div class="top w-full lg:h-20 flex items-center gap-32 px-3">
+              <div
+                class="text-[#1F1F1F] font-semibold text-[20px] lg:text-[25px]"
+              >
+                <h1>Wedding & Gifting Specials</h1>
+              </div>
+              <div
+                class="w-7 h-7 rounded-full cursor-pointer bg-[#2A55E5] flex items-center justify-center"
+              >
+                <i class="ri-arrow-right-s-line text-2xl text-white"></i>
+              </div>
+            </div>
+            <div class="w-full flex gap-3 lg:h-[300px]">
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto justify-center items-center">
+                  <img
+                    class="w-[80%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/kj8wccw0-0/carpet-rug/j/b/e/ru-m-chennile-multi-26x72-049-sasta-sunder-tikau-original-imafyuydgfxk4hfn.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-3.5">Topwear</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Special offer
+                </p>
+              </div>
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto justify-center items-center">
+                  <img
+                    class="h-[90%] w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-cup-saucer/c/i/p/cups-006-apeiron-original-imah4fv5aktg2hhf.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-4">Jewellery</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 70% Off
+                </p>
+              </div>
+            </div>
+            <div class="w-full flex gap-3 lg:h-[300px] mt-4">
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-[60%] justify-center items-center">
+                  <img
+                    class="h-[90%] w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-solar-light-set/f/t/t/solar-lights-for-home-outdoor-led-decoration-waterproof-fence-original-imah5z5kfdfmjmv4.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-3">Smart Watches</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 40% Off
+                </p>
+              </div>
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto justify-center items-center">
+                  <img
+                    class="h-[90%] w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/home-temple/t/a/q/29-23-0-637-ektmwd-05tem1-db-ekhasa-30-original-imah4v34gk4va36x.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-4">Women's Ethnic Sets</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 50% Off
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box1 h-auto shadow-lg bg-white cursor-pointer pl-3.5 py-2.5"
+          >
+            <div class="top w-full lg:h-20 flex items-center gap-32 px-3">
+              <div
+                class="text-[#1F1F1F] font-semibold text-[20px] lg:text-[25px]"
+              >
+                <h1>Wedding & Gifting Specials</h1>
+              </div>
+              <div
+                class="w-7 h-7 rounded-full cursor-pointer bg-[#2A55E5] flex items-center justify-center"
+              >
+                <i class="ri-arrow-right-s-line text-2xl text-white"></i>
+              </div>
+            </div>
+            <div class="w-full flex gap-3 lg:h-[300px]">
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto justify-center items-center">
+                  <img
+                    class="h-[90%] w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/h/m/a/7-mrj1586-aadi-black-original-imah8cp5sahbwrvn.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-3">Men's Slippers & Flip</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 70% Offr
+                </p>
+              </div>
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto lg:h-[70%] justify-center items-center">
+                  <img
+                    class="h-full w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/2/5/j/9-grey-orange-fms-38-9-footox-grey-orange-original-imah5ggwxtzr8bh2.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-5 lg:mt-0">
+                  Men's Casual Shoes
+                </p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 70% Off
+                </p>
+              </div>
+            </div>
+            <div class="w-full flex gap-3 lg:h-[300px] mt-4">
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto lg:h-[70%] justify-center items-center">
+                  <img
+                    class="h-[90%] w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/trimmer/m/q/1/1-10-mm-hair-removal-machine-l-stainless-steel-cordless-waikil-original-imah8zzn6ghrzu8c.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px]">Trimmers</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 50% Off
+                </p>
+              </div>
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto justify-center items-center">
+                  <img
+                    class="h-[90%] w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/d/u/s/m-w5-dwija-fashion-original-imah3g223myd9fa3.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-3">Men's Track Pants</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 50% Off
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:block cursor-pointer">
+            <img
+              class="w-full h-full"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-07-09%20at%209.04.28%E2%80%AFAM-beECSHjyZWl3JQCBLCCuNJZkcbf00X.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="boxes w-full mt-8 px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/5b4d4e9118e0c6a1.jpg?q=90"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/5a3f5e023d82d10c.jpg?q=90"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/0383e3efa8e391e7.jpg?q=90"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/baf782576023470a.jpg?q=90"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/0f864abf6acb4597.jpg?q=90"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/a6d03a1ac18e5b45.jpg?q=90"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="boxes w-full h-auto mt-12 px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div
+            class="box1 h-auto shadow-lg bg-white cursor-pointer pl-3.5 py-2.5"
+          >
+            <div class="top w-full lg:h-20 flex items-center gap-32 px-3">
+              <div
+                class="text-[#1F1F1F] font-semibold text-[20px] lg:text-[25px]"
+              >
+                <h1>Wedding & Gifting Specials</h1>
+              </div>
+              <div
+                class="w-7 h-7 rounded-full cursor-pointer bg-[#2A55E5] flex items-center justify-center"
+              >
+                <i class="ri-arrow-right-s-line text-2xl text-white"></i>
+              </div>
+            </div>
+            <div class="w-full flex gap-3 lg:h-[300px]">
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto justify-center items-center">
+                  <img
+                    class="w-[80%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/kj8wccw0-0/carpet-rug/j/b/e/ru-m-chennile-multi-26x72-049-sasta-sunder-tikau-original-imafyuydgfxk4hfn.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-3.5">Topwear</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Special offer
+                </p>
+              </div>
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto justify-center items-center">
+                  <img
+                    class="h-[90%] w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-cup-saucer/c/i/p/cups-006-apeiron-original-imah4fv5aktg2hhf.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-4">Jewellery</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 70% Off
+                </p>
+              </div>
+            </div>
+            <div class="w-full flex gap-3 lg:h-[300px] mt-4">
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-[60%] justify-center items-center">
+                  <img
+                    class="h-[90%] w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-solar-light-set/f/t/t/solar-lights-for-home-outdoor-led-decoration-waterproof-fence-original-imah5z5kfdfmjmv4.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-3">Smart Watches</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 40% Off
+                </p>
+              </div>
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto justify-center items-center">
+                  <img
+                    class="h-[90%] w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/home-temple/t/a/q/29-23-0-637-ektmwd-05tem1-db-ekhasa-30-original-imah4v34gk4va36x.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-4">Women's Ethnic Sets</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 50% Off
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box1 h-auto shadow-lg bg-white cursor-pointer pl-3.5 py-2.5"
+          >
+            <div class="top w-full lg:h-20 flex items-center gap-32 px-3">
+              <div
+                class="text-[#1F1F1F] font-semibold text-[20px] lg:text-[25px]"
+              >
+                <h1>Wedding & Gifting Specials</h1>
+              </div>
+              <div
+                class="w-7 h-7 rounded-full cursor-pointer bg-[#2A55E5] flex items-center justify-center"
+              >
+                <i class="ri-arrow-right-s-line text-2xl text-white"></i>
+              </div>
+            </div>
+            <div class="w-full flex gap-3 lg:h-[300px]">
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto justify-center items-center">
+                  <img
+                    class="h-[90%] w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/h/m/a/7-mrj1586-aadi-black-original-imah8cp5sahbwrvn.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-3">Men's Slippers & Flip</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 70% Offr
+                </p>
+              </div>
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto lg:h-[70%] justify-center items-center">
+                  <img
+                    class="h-full w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/2/5/j/9-grey-orange-fms-38-9-footox-grey-orange-original-imah5ggwxtzr8bh2.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-5 lg:mt-0">
+                  Men's Casual Shoes
+                </p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 70% Off
+                </p>
+              </div>
+            </div>
+            <div class="w-full flex gap-3 lg:h-[300px] mt-4">
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto lg:h-[70%] justify-center items-center">
+                  <img
+                    class="h-[90%] w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/trimmer/m/q/1/1-10-mm-hair-removal-machine-l-stainless-steel-cordless-waikil-original-imah8zzn6ghrzu8c.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px]">Trimmers</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 50% Off
+                </p>
+              </div>
+              <div
+                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
+              >
+                <div class="flex h-auto justify-center items-center">
+                  <img
+                    class="h-[90%] w-[70%] hover:scale-[1.03]"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/d/u/s/m-w5-dwija-fashion-original-imah3g223myd9fa3.jpeg?q=70"
+                    alt=""
+                  />
+                </div>
+                <p class="text-start text-[20px] mt-3">Men's Track Pants</p>
+                <p class="text-[#108934] text-[20px] font-semibold">
+                  Min. 50% Off
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:block cursor-pointer">
+            <img
+              class="w-full h-full"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-07-09%20at%209.04.28%E2%80%AFAM-beECSHjyZWl3JQCBLCCuNJZkcbf00X.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
       <div class="boxes w-full mt-8 px-0 container">
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
           <div class="">
@@ -1356,7 +1933,6 @@
           </div>
         </div>
       </div>
-
       <div
         class="slid w-full lg:h-[350px] shadow-lg bg-white pt-2 px-[3vw] mt-12"
       >
@@ -1444,14 +2020,11 @@
           </swiper-container>
         </div>
       </div>
-
       <script>
         const swiperrre = document.querySelector(".mySwiperrre");
         swiperrre.setAttribute("slides-per-view", "6");
-
         function updateSwiperConfig() {
           const screenWidth = window.innerWidth;
-
           if (screenWidth <= 640) {
             swiperrre.setAttribute("slides-per-view", "1.5");
           } else if (screenWidth <= 1024) {
@@ -1460,7 +2033,6 @@
             swiperrre.setAttribute("slides-per-view", "6");
           }
         }
-
         updateSwiperConfig();
         window.addEventListener("resize", updateSwiperConfig);
       </script>
@@ -1651,8 +2223,9 @@
       </div>
     </div>
     <div class="bg-[#172337] text-white py-6 border-b border-[#454d5e]">
-      <div class="max-w-8xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 px-[6%]">
-       
+      <div
+        class="max-w-8xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 px-[6%]"
+      >
         <div>
           <h4 class="text-[#878787] text-xs uppercase mb-2.5">ABOUT</h4>
           <ul class="space-y-2">
@@ -1684,7 +2257,6 @@
             </li>
           </ul>
         </div>
-  
         <div>
           <h4 class="text-[#878787] text-xs uppercase mb-2.5">
             GROUP COMPANIES
@@ -1703,8 +2275,6 @@
             </li>
           </ul>
         </div>
-
-     
         <div>
           <h4 class="text-[#878787] text-xs uppercase mb-2.5">HELP</h4>
           <ul class="space-y-2">
@@ -1728,7 +2298,6 @@
             </li>
           </ul>
         </div>
-
         <div>
           <h4 class="text-[#878787] text-xs uppercase mb-2.5">
             CONSUMER POLICY
@@ -1764,7 +2333,6 @@
             </li>
           </ul>
         </div>
-
         <div>
           <h4 class="text-[#878787] text-xs uppercase mb-2.5">Mail Us:</h4>
           <p class="text-xs leading-relaxed">
@@ -1778,13 +2346,13 @@
         </div>
       </div>
     </div>
-
     <div class="bg-[#172337] text-white py-4">
       <div
         class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 px-4 md:flex flex-wrap justify-between items-center"
       >
-
-        <div class="flex items-center justify-center lg:justify-start space-x-8">
+        <div
+          class="flex items-center justify-center lg:justify-start space-x-8"
+        >
           <a href="#" class="flex items-center space-x-1">
             <img
               src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"
@@ -1818,10 +2386,8 @@
             <span class="text-xs text-white">Help Center</span>
           </a>
         </div>
-
-
-        <div class="flex justify-center mt-5 lg:mt-0 items-center  space-x-4">
-          <span class="text-xs text-white "> 2007-2025 Flipkart.com</span>
+        <div class="flex justify-center mt-5 lg:mt-0 items-center space-x-4">
+          <span class="text-xs text-white"> 2007-2025 Flipkart.com</span>
           <img
             src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
             alt="Payment Methods"
@@ -1831,5 +2397,4 @@
       </div>
     </div>
   </body>
-  <script src="mobile.js"></script>
 </html>

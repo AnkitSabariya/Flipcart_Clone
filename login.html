@@ -4,7 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Flipkart</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/login and otp.css" />
+    <style>
+      .toast {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(33, 33, 33, 0.95);
+        color: #fff;
+        padding: 12px 20px;
+        font-size: 15px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 9999;
+      }
+      .toast.show {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    </style>
   </head>
   <body>
     <div class="container" id="con">
@@ -34,7 +58,7 @@
           <form class="login-form">
             <div class="floating-input">
               <input type="text" placeholder=" " required id="input" />
-              <label>Enter Email/Mobile number</label>
+              <label>Enter Mobile Number</label>
               <span class="underline left"></span>
               <span class="underline right"></span>
             </div>
@@ -63,25 +87,22 @@
         </div>
       </div>
     </div>
-    <!-- Toast Message -->
+
+    <!-- ✅ Toast Message -->
     <div id="toast" class="toast">
       <span id="toast-icon">ℹ️</span>
       <span id="toast-msg">This is a toast message</span>
     </div>
 
     <script>
+      // ✅ Toast Notification
       function showToast(message, type = "info") {
         const toast = document.getElementById("toast");
         const toastMsg = document.getElementById("toast-msg");
         const toastIcon = document.getElementById("toast-icon");
 
         toastMsg.textContent = message;
-
-        // Optional: update icon based on type
-        if (type === "success") toastIcon.textContent = "✅";
-        else if (type === "error") toastIcon.textContent = "❌";
-        else toastIcon.textContent = "ℹ️";
-
+        toastIcon.textContent = type === "success" ? "✅" : type === "error" ? "❌" : "ℹ️";
         toast.classList.add("show");
 
         setTimeout(() => {
@@ -89,20 +110,35 @@
         }, 3000);
       }
 
-      function requestotp() {
-        let input = document.getElementById("input").value.trim();
-        if (input) {
-          localStorage.setItem("userNumber", input);
-          showToast("OTP sent successfully!", "success");
-          setTimeout(() => {
-            window.location.href = "otp.html";
-          }, 1500);
-        } else {
-          showToast(
-            "Please enter a valid mobile number or email address",
-            "error"
-          );
+      // ✅ Phone Number Validation (Simple)
+      function isValidPhone(phone) {
+        if (phone.length !== 10) return false;
+        if (phone[0] < '6' || phone[0] > '9') return false;
+        for (let i = 0; i < 10; i++) {
+          if (phone[i] < '0' || phone[i] > '9') return false;
         }
+        return true;
+      }
+
+      function requestotp() {
+        const input = document.getElementById("input").value.trim();
+
+        if (!input) {
+          showToast("Mobile number nakho bhai", "error");
+          return;
+        }
+
+        if (!isValidPhone(input)) {
+          showToast("Sacho 10-digit mobile number nakho bhai", "error");
+          return;
+        }
+
+        localStorage.setItem("userNumber", input);
+        showToast("OTP sent successfully!", "success");
+
+        setTimeout(() => {
+          window.location.href = "otp.html";
+        }, 1500);
       }
     </script>
   </body>
