@@ -24,7 +24,7 @@ function database() {
         let currentImg = 0;
         
         const card = document.createElement("div");
-        card.className = "bg-white w-full max-w-[350px] h-[300px] flex flex-row p-4 border border-gray-200 cursor-pointer m-2";
+        card.className = "bg-white w-full max-w-[350px] h-auto flex flex-col p-4 border border-gray-200 cursor-pointer m-2";
         card.innerHTML = `
             <!-- Left: Image -->
             <div class="flex items-center justify-center relative w-[150px]">

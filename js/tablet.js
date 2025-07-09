@@ -19,7 +19,7 @@
   
       const card = document.createElement("div");
       card.className =
-        "bg-white w-full h-[300px] flex flex-row p-4 border border-gray-200 cursor-pointer ";
+        "bg-white w-full sm:h-[300px] h-auto flex flex-col sm:flex-row p-4 border border-gray-200 cursor-pointer ";
   
       card.innerHTML = `
         <!-- Left: Image -->

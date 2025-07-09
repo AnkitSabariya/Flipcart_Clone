@@ -1,0 +1,164 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Canon EOS R5 Mirrorless Camera",
+      "brand": "Canon",
+      "category": ["Mirrorless", "Professional", "Photography", "4K Video"],
+      "description": "45MP full-frame sensor, 8K video, Dual Pixel AF II, 5-axis IBIS--ideal for pro photographers and filmmakers.",
+      "price": 3899,
+      "discountPercentage": 5,
+      "stock": 12,
+      "rating": 4.9,
+      "thumbnail": "https://m.media-amazon.com/images/I/8115pNkutkL._UF1000,1000_QL80_.jpg",
+      "images": [
+        "https://m.media-amazon.com/images/I/8115pNkutkL._UF1000,1000_QL80_.jpg",
+        "https://poojaelectronics.in/storage/2023/02/Canon-EOS-R5-Mirrorless-Camera-with-24-105mm-f4-Lens-Online-Buy-Mumbai-India_02.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Sony Alpha A7 IV Mirrorless",
+      "brand": "Sony",
+      "category": ["Mirrorless", "Hybrid", "Full Frame"],
+      "description": "33MP full-frame camera, 4K 60p video, real-time Eye AF, articulating touchscreen—great for photo/video creators.",
+      "price": 2498,
+      "discountPercentage": 6,
+      "stock": 18,
+      "rating": 4.8,
+      "thumbnail": "https://gppro.in/wp-content/uploads/2024/11/SONY-ILCE-A7M4-BODY-GP002291-1.jpg",
+      "images": [
+        "https://gppro.in/wp-content/uploads/2024/11/SONY-ILCE-A7M4-BODY-GP002291-1.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_4kNmQgYgQx_ViVcpP2BqWWL82Z7mT88iZw&s"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Nikon Z6 II Mirrorless Camera",
+      "brand": "Nikon",
+      "category": ["Mirrorless", "Full Frame", "4K Video"],
+      "description": "24.5MP FX sensor, dual processors, 14fps burst, 273-point AF—versatile for low light and cinematic video.",
+      "price": 1996,
+      "discountPercentage": 8,
+      "stock": 22,
+      "rating": 4.7,
+      "thumbnail": "https://m.media-amazon.com/images/I/815ws-SMuaL._UF1000,1000_QL80_.jpg",
+      "images": [
+        "https://m.media-amazon.com/images/I/815ws-SMuaL._UF1000,1000_QL80_.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHly02G6vSIgzi4t2NBs-_j8b1-R4H7StXug&s"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Fujifilm X-T5 Mirrorless Camera",
+      "brand": "Fujifilm",
+      "category": ["APS-C", "Mirrorless", "Street"],
+      "description": "40MP APS-C sensor, 6.2K video, vintage retro design, 425-point AF—ideal for street/travel photo/video.",
+      "price": 1699,
+      "discountPercentage": 7,
+      "stock": 15,
+      "rating": 4.7,
+      "thumbnail": "https://fotocentreindia.com/wp-content/uploads/Fujifilm-X-T5-Mirrorless-Camera-Body-Only-Black-Online-Buy-Mumbai-India_1.jpg",
+      "images": [
+        "https://fotocentreindia.com/wp-content/uploads/Fujifilm-X-T5-Mirrorless-Camera-Body-Only-Black-Online-Buy-Mumbai-India_1.jpg",
+        "https://gppro.in/wp-content/uploads/2024/11/X-T5-2-1.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Canon EOS 90D DSLR",
+      "brand": "Canon",
+      "category": ["DSLR", "High Resolution"],
+      "description": "32.5MP APS-C DSLR, uncropped 4K video, 10fps burst—great for sports and wildlife.",
+      "price": 1199,
+      "discountPercentage": 10,
+      "stock": 30,
+      "rating": 4.6,
+      "thumbnail": "https://x.imastudent.com/content/0016823_canon-eos-90d-dslr-camera-with-18-135mm-lens_500.jpeg",
+      "images": [
+        "https://x.imastudent.com/content/0016823_canon-eos-90d-dslr-camera-with-18-135mm-lens_500.jpeg",
+        "https://in.canon/media/image/2019/08/27/9c986cf5e41a4f27b70d86d57ff7ccdf_14_EOS+90D_BK_Top_EF-S18-135mm_3.5-5.6ISUSM.png"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Sony ZV-E10 Vlogging Camera",
+      "brand": "Sony",
+      "category": ["Vlogging", "Compact"],
+      "description": "24MP APS-C vlogging cam with flip screen, built-in mic, fast AF—perfect for content creators.",
+      "price": 698,
+      "discountPercentage": 12,
+      "stock": 40,
+      "rating": 4.5,
+      "thumbnail": "https://m.media-amazon.com/images/I/71Bb8vffPtL._UF1000,1000_QL80_.jpg",
+      "images": [
+        "https://m.media-amazon.com/images/I/71Bb8vffPtL._UF1000,1000_QL80_.jpg",
+        "https://www.srishtidigilife.co.in/cdn/shop/products/ZV-E10.jpg?v=1688332023"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "GoPro HERO12 Black",
+      "brand": "GoPro",
+      "category": ["Action", "Waterproof"],
+      "description": "5.3K 60fps, Hypersmooth 6.0, waterproof to 10m—steady and rugged for adventure sports.",
+      "price": 399,
+      "discountPercentage": 5,
+      "stock": 50,
+      "rating": 4.8,
+      "thumbnail": "https://m.media-amazon.com/images/I/61wsvCGXqnL.jpg",
+      "images": [
+        "https://m.media-amazon.com/images/I/61wsvCGXqnL.jpg",
+        "https://gaffarbhaiandsons.com/wp-content/uploads/2024/05/G12_6.png"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Nikon D7500 DSLR",
+      "brand": "Nikon",
+      "category": ["DSLR", "Mid-range"],
+      "description": "20.9MP APS-C DSLR, 8fps, 4K video, rugged body—built for enthusiast photography.",
+      "price": 899,
+      "discountPercentage": 9,
+      "stock": 28,
+      "rating": 4.5,
+      "thumbnail": "https://www.jiomart.com/images/product/original/491431245/nikon-d7500-dslr-camera-with-af-s-dx-nikkor-18-140mm-f-3-5-5-6g-ed-vr-lens-digital-o491431245-p590036400-5-202009260321.jpeg?im=Resize=(420,420)",
+      "images": [
+        "https://www.jiomart.com/images/product/original/491431245/nikon-d7500-dslr-camera-with-af-s-dx-nikkor-18-140mm-f-3-5-5-6g-ed-vr-lens-digital-o491431245-p590036400-5-202009260321.jpeg?im=Resize=(420,420)",
+        "https://rukminim2.flixcart.com/image/704/844/xif0q/dslr-camera/k/e/p/d7500-20-9-d7500-nikon-original-imah3ubrb2a2br73.jpeg?q=90&crop=false"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Panasonic Lumix GH6 Mirrorless",
+      "brand": "Panasonic",
+      "category": ["Micro Four Thirds", "Video"],
+      "description": "25MP MFT sensor, 5.7K ProRes, unlimited recording—built for professional filmmaking.",
+      "price": 2199,
+      "discountPercentage": 6,
+      "stock": 10,
+      "rating": 4.4,
+      "thumbnail": "https://x.imastudent.com/content/0044928_panasonic-lumix-gh6-mirrorless-camera-with-12-60mm-f28-4-lens_500.jpeg",
+      "images": [
+        "https://x.imastudent.com/content/0044928_panasonic-lumix-gh6-mirrorless-camera-with-12-60mm-f28-4-lens_500.jpeg",
+        "https://dakauf.eu/wp-content/uploads/2022/05/gh6_back.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Insta360 X3 360° Camera",
+      "brand": "Insta360",
+      "category": ["360°", "Action"],
+      "description": "5.7K 360° video, FlowState stabilization, waterproof—ideal for immersive action and travel.",
+      "price": 449.99,
+      "discountPercentage": 5,
+      "stock": 35,
+      "rating": 4.6,
+      "thumbnail": "https://m.media-amazon.com/images/I/610NQUzk2xL.jpg",
+      "images": [
+        "https://m.media-amazon.com/images/I/610NQUzk2xL.jpg",
+        "https://retinapix.com/cdn/shop/files/Insta360X3_6_1024x1024.webp?v=1720765821"
+      ]
+    }
+  ]
+}

@@ -19,7 +19,7 @@
   
       const card = document.createElement("div");
       card.className =
-        "bg-white w-full h-[300px] flex flex-row p-4 border border-gray-200 cursor-pointer ";
+        "bg-white w-full sm:h-[300px] h-auto flex flex-col sm:flex-row p-4 border border-gray-200 cursor-pointer ";
   
       card.innerHTML = `
         <!-- Left: Image -->
@@ -109,6 +109,10 @@ document.getElementById("search").addEventListener("keydown", function (event) {
       window.location.href = "laptop.html";
     } else if (search == "tab" || search == "Tab" || search == "Tablets" || search == "tablet" || search == "Tablets" || search == "Tablet") {
       window.location.href = "tablet.html";
+    } else if (search == "bedsheet" || search == "bed"  || search == "Bed" || search == "Bedsheet") {
+      window.location.href = "bedsheet.html";
+    } else if (search == "bedsheet" || search == "bed" || search == "furniture" || search == "Furniture" || search == "FURNITURE") {
+      window.location.href = "furniture.html";
     } else {
       alert("No category matched!");
     }
