@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1,
+    "brand": "Apple",
+    "model": "iPad Pro 12.9 (2024)",
+    "price": 129900,
+    "description": "Apple iPad Pro with M2 chip, Liquid Retina XDR display, 5G support, and Apple Pencil 2 compatibility.",
+    "images": [
+    "https://www.apple.com/newsroom/images/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro/article/Apple-iPad-Pro-Ultra-Retina-XDR-display-2-up-240507_inline.jpg.large.jpg",
+    "https://imageio.forbes.com/specials-images/imageserve/661949c1fde3e863086781f3/Apple-iPad-Pro-silver-2up-221018/960x0.jpg?height=711&width=711&fit=bounds"
+    ],
+    "specifications": {
+      "processor": "Apple M2",
+      "ram": "8 GB",
+      "storage": "256 GB",
+      "display": "12.9-inch Liquid Retina XDR",
+      "battery": "10 hours",
+      "os": "iPadOS 18",
+      "connectivity": "5G, Wi‑Fi 6E, Bluetooth 5.4",
+      "weight": "685 g"
+    }
+  },
+  {
+    "id": 2,
+    "brand": "Samsung",
+    "model": "Galaxy Tab S9 Ultra",
+    "price": 109999,
+    "description": "Samsung flagship tablet with 14.6″ Super AMOLED, Snapdragon 8 Gen 2, S Pen included.",
+    "images": [
+    "https://m.media-amazon.com/images/I/618Acjb5AhL.jpg",
+    "https://dakauf.eu/wp-content/uploads/2024/05/Tablet-Samsung-Galaxy-Tab-S9-Ultra-X916B-5G-14.6-12GB-RAM-512GB-Beige.png"
+    ],
+    "specifications": {
+      "processor": "Snapdragon 8 Gen 2",
+      "ram": "12 GB",
+      "storage": "256 GB",
+      "display": "14.6-inch Super AMOLED 120 Hz",
+      "battery": "11200 mAh",
+      "os": "Android 14 with One UI 6",
+      "connectivity": "5G, Wi‑Fi 6E, Bluetooth 5.3",
+      "weight": "737 g"
+    }
+  },
+  {
+    "id": 3,
+    "brand": "Lenovo",
+    "model": "Tab P12 Pro (2024)",
+    "price": 45999,
+    "description": "Lenovo Tab P12 Pro with Snapdragon 870, OLED display, Dolby Atmos quad speakers, and Stylus support.",
+    "images": [
+    "https://m.media-amazon.com/images/I/616SXS5m0eL.jpg",
+    "https://m.media-amazon.com/images/I/51b9LjzmPCL.jpg"
+    ],
+    "specifications": {
+      "processor": "Snapdragon 870",
+      "ram": "8 GB",
+      "storage": "128 GB",
+      "display": "12.6-inch AMOLED",
+      "battery": "10200 mAh",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 6, Bluetooth 5.2",
+      "weight": "565 g"
+    }
+  },
+  {
+    "id": 4,
+    "brand": "Microsoft",
+    "model": "Surface Pro 10",
+    "price": 114999,
+    "description": "Microsoft Surface Pro 10 with Snapdragon X Plus, 5G, and signature kickstand + keyboard support.",
+    "images": [
+    "https://m.media-amazon.com/images/I/61JgQqAl00L.jpg",
+    "https://static1.xdaimages.com/wordpress/wp-content/uploads/2024/03/surface-pro-10-for-business_no-copilot-in-windows-with-background.jpg"
+    ],
+    "specifications": {
+      "processor": "Snapdragon X Plus",
+      "ram": "8 GB",
+      "storage": "256 GB",
+      "display": "13-inch PixelSense",
+      "battery": "15 hours",
+      "os": "Windows 11 ARM",
+      "connectivity": "5G, Wi‑Fi 6E, Bluetooth 5.3",
+      "weight": "873 g"
+    }
+  },
+  {
+    "id": 5,
+    "brand": "Xiaomi",
+    "model": "Pad 6 Pro",
+    "price": 29999,
+    "description": "Xiaomi Pad 6 Pro with Snapdragon 8+ Gen 1, 120 Hz LCD, and Dolby Vision for premium media.",
+    "images": [
+    "https://www.geekwills.com/media/catalog/product/cache/d368225e56c0af8fed569f12698f474d/p/m/pms_1681708013.13216697.png",
+    "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Xiaomi_Pad_6_1_5.jpg"
+    ],
+    "specifications": {
+      "processor": "Snapdragon 8+ Gen 1",
+      "ram": "8 GB",
+      "storage": "256 GB",
+      "display": "12.1-inch 120 Hz LCD",
+      "battery": "10000 mAh",
+      "os": "Android 14 with MIUI Pad",
+      "connectivity": "5G, Wi‑Fi 6, Bluetooth 5.3",
+      "weight": "609 g"
+    }
+  },
+  {
+    "id": 6,
+    "brand": "realme",
+    "model": "Pad X2",
+    "price": 18999,
+    "description": "realme Pad X2 with 120 Hz display, MediaTek G99, quad speakers, and stylus support.",
+    "images": [
+    "https://m.media-amazon.com/images/I/711vcVGbIDL.jpg",
+    "https://suryastores.com/wp-content/uploads/2024/07/realme-Pad-2-128-GB-ROM-6-GB-RAM-11.5-inch-Wi-Fi4G-Tablet-Imagination-Grey-2.jpg"
+    ],
+    "specifications": {
+      "processor": "MediaTek Dimensity 1300",
+      "ram": "6 GB",
+      "storage": "128 GB",
+      "display": "11-inch LCD 120 Hz",
+      "battery": "8340 mAh",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 6, Bluetooth 5.2",
+      "weight": "588 g"
+    }
+  },
+  {
+    "id": 7,
+    "brand": "Huawei",
+    "model": "MatePad Pro 13.2",
+    "price": 54999,
+    "description": "Huawei MatePad Pro with Snapdragon 8 Gen 2, HarmonyOS, and M-Pencil support.",
+    "images": [
+    "https://img01.huaweifile.com/eu/uk/huawei/uomcdn/GBHW/pms/202502/gbom/6942103150517/428_428_0AF7354F680018C34C302062E47EA15Fmp.png",
+    "https://images-cdn.ubuy.co.in/6554bfcd98663d0017094fed-huawei-matepad-pro-13-2-wifi.jpg"
+    ],
+    "specifications": {
+      "processor": "Snapdragon 8 Gen 2",
+      "ram": "8 GB",
+      "storage": "256 GB",
+      "display": "13.2-inch OLED 120 Hz",
+      "battery": "9600 mAh",
+      "os": "HarmonyOS 4",
+      "connectivity": "Wi‑Fi 6E, Bluetooth 5.3",
+      "weight": "590 g"
+    }
+  },
+  {
+    "id": 8,
+    "brand": "Amazon",
+    "model": "Fire Max 11 (2024)",
+    "price": 15999,
+    "description": "Amazon Fire Max 11 with MediaTek Helio G80, 11-inch 2K display and Alexa Hands-Free support.",
+    "images": [
+    "https://m.media-amazon.com/images/G/01/kindle/journeys/4gCupHtQJsWrVUKPAi7wxYCJfJV9FvBepbpY37PEvSA3D/ZjU3YWU4ZmEt._CB562506559_.png",
+    "https://m.media-amazon.com/images/I/71troH2aUJL._UF894,1000_QL80_.jpg"
+    ],
+    "specifications": {
+      "processor": "MediaTek Helio G80",
+      "ram": "4 GB",
+      "storage": "64 GB",
+      "display": "11-inch 2000×1200 LCD",
+      "battery": "9500 mAh",
+      "os": "Fire OS 8",
+      "connectivity": "Wi‑Fi 5, Bluetooth 5.2",
+      "weight": "480 g"
+    }
+  },
+  {
+    "id": 9,
+    "brand": "Samsung",
+    "model": "Galaxy Tab A9+",
+    "price": 17999,
+    "description": "Samsung Galaxy Tab A9+ with Exynos 1380, 11-inch TFT display, and 4 speakers.",
+    "images": [
+    "https://images.samsung.com/is/image/samsung/p6pim/in/feature/165229353/in-feature-galaxy-tab-a-541215950?$FB_TYPE_A_MO_JPG$",
+    "https://media.croma.com/image/upload/v1718803412/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/301895_10_iugyfg.png"
+    ],
+    "specifications": {
+      "processor": "Exynos 1380",
+      "ram": "4 GB",
+      "storage": "128 GB",
+      "display": "11-inch TFT 90 Hz",
+      "battery": "7040 mAh",
+      "os": "Android 14 with One UI 6",
+      "connectivity": "Wi‑Fi 6, Bluetooth 5.3",
+      "weight": "496 g"
+    }
+  },
+  {
+    "id": 10,
+    "brand": "TCL",
+    "model": "Tab 11T 2024",
+    "price": 14999,
+    "description": "TCL Tab 11T with MediaTek Helio G99, 11-inch FHD+, quad speakers and stylus support.",
+    "images": [
+    "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/region/global/products/tablets/tcl-tab-11-gen2/id/1.jpg?t=1722824841537&w=800",
+    "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/region/global/products/tablets/tcl-nxtpaper-14/id/1.png?t=1721272443153&w=800&webp=undefined&dpr=2.625&rendition=1068"
+    ],
+    "specifications": {
+      "processor": "MediaTek Helio G99",
+      "ram": "4 GB",
+      "storage": "128 GB",
+      "display": "11-inch FHD+ LCD",
+      "battery": "8000 mAh",
+      "os": "Android 14",
+      "connectivity": "Wi‑Fi 5, Bluetooth 5.2",
+      "weight": "520 g"
+    }
+  },
+  {
+    "id": 11,
+    "brand": "Oppo",
+    "model": "Pad Air 2",
+    "price": 24999,
+    "description": "Oppo Pad Air 2 with Snapdragon 680, 120 Hz display and slim metal design.",
+    "images": [
+    "https://www.oppo.com/content/dam/oppo/product-asset-library/accessory/oppo-pad-air/global/v2/assets/module-technology/module-technology-color-phone2-purple-1920.png",
+    "https://image.oppo.com/content/dam/oppo/product-asset-library/specs/pad-air/oppo-pad-air-pg-specs.png"
+    ],
+    "specifications": {
+      "processor": "Snapdragon 680",
+      "ram": "6 GB",
+      "storage": "128 GB",
+      "display": "11.35-inch 120 Hz LCD",
+      "battery": "8040 mAh",
+      "os": "Android 14 with ColorOS Pad",
+      "connectivity": "Wi‑Fi 5, Bluetooth 5.2",
+      "weight": "514 g"
+    }
+  }
+]

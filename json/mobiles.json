@@ -1,0 +1,407 @@
+[
+  {
+    "id": 1,
+    "brand": "Apple",
+    "model": "iPhone 14 Pro",
+    "price": 129900,
+    "description": "Apple iPhone 14 Pro with A16 Bionic, ProMotion display, triple camera system and Dynamic Island.",
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-max-silver-select?wid=470&hei=556&fmt=png-alpha&.v=1660753619946",
+    "specifications": {
+      "processor": "A16 Bionic",
+      "ram": "6GB",
+      "storage": "128GB",
+      "rear_camera": "48MP + 12MP + 12MP",
+      "front_camera": "12MP",
+      "battery": "3200 mAh",
+      "display": "6.1-inch Super Retina XDR OLED",
+      "os": "iOS 17",
+      "connectivity": "5G, Wi‑Fi 6, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 2,
+    "brand": "Samsung",
+    "model": "Galaxy S23 Ultra",
+    "price": 134999,
+    "description": "Samsung Galaxy S23 Ultra with Snapdragon 8 Gen 2, 200MP camera, S Pen support and 120Hz AMOLED display.",
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s918bzkhinu/gallery/in-galaxy-s23-ultra-s918-412787-sm-s918bzkhinu-537422548?$684_547_PNG$",
+    "specifications": {
+      "processor": "Snapdragon 8 Gen 2",
+      "ram": "12GB",
+      "storage": "256GB",
+      "rear_camera": "200MP + 10MP + 10MP + 12MP",
+      "front_camera": "12MP",
+      "battery": "5000 mAh",
+      "display": "6.8-inch QHD+ AMOLED 120Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 6E, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 3,
+    "brand": "Google",
+    "model": "Pixel 8",
+    "price": 64999,
+    "description": "Google Pixel 8 with Google Tensor G3, dual camera setup and flagship clean Android experience.",
+    "image": "https://lh3.googleusercontent.com/RhR3xZG073u8JZ0Fo9d0zZa-Y0JF2b8O6cM9vTdp5ADN8M6hTRejr6nnHjf0doJ=s0",
+    "specifications": {
+      "processor": "Google Tensor G3",
+      "ram": "8GB",
+      "storage": "128GB",
+      "rear_camera": "50MP + 12MP",
+      "front_camera": "10.5MP",
+      "battery": "4700 mAh",
+      "display": "6.2-inch FHD+ AMOLED 120Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 6E, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 4,
+    "brand": "OnePlus",
+    "model": "11",
+    "price": 54999,
+    "description": "OnePlus 11 with Snapdragon 8 Gen 2, Hasselblad camera tuning, and 100W fast charging.",
+    "image": "https://image01.oneplus.net/ebp/202302/06/1-m00-0f-af-rb8bw2bgjsyabif4aafczg-kq-uo172_840_840.png",
+    "specifications": {
+      "processor": "Snapdragon 8 Gen 2",
+      "ram": "12GB",
+      "storage": "256GB",
+      "rear_camera": "50MP + 48MP + 32MP",
+      "front_camera": "16MP",
+      "battery": "5000 mAh",
+      "display": "6.7-inch QHD+ AMOLED 120Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 7, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 5,
+    "brand": "Xiaomi",
+    "model": "12T Pro",
+    "price": 44999,
+    "description": "Xiaomi 12T Pro featuring Snapdragon 8+ Gen 1, 200MP main camera and 120W fast charging.",
+    "image": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-12t-pro/gallery/black.png",
+    "specifications": {
+      "processor": "Snapdragon 8+ Gen 1",
+      "ram": "8GB",
+      "storage": "256GB",
+      "rear_camera": "200MP + 8MP + 2MP",
+      "front_camera": "20MP",
+      "battery": "5000 mAh",
+      "display": "6.67-inch AMOLED 120Hz",
+      "os": "Android 13",
+      "connectivity": "5G, Wi‑Fi 6, Bluetooth 5.2"
+    }
+  },
+  {
+    "id": 6,
+    "brand": "Samsung",
+    "model": "Galaxy A34",
+    "price": 28999,
+    "description": "Galaxy A34 with Exynos 1280, 48MP quad camera, 120Hz display and long-lasting battery.",
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a346bzbginu/gallery/in-galaxy-a34-5g-a346-sm-a346bzbginu-555099016?$684_547_PNG$",
+    "specifications": {
+      "processor": "Exynos 1280",
+      "ram": "6GB",
+      "storage": "128GB",
+      "rear_camera": "48MP + 8MP + 5MP + 5MP",
+      "front_camera": "13MP",
+      "battery": "5000 mAh",
+      "display": "6.6-inch FHD+ Super AMOLED 120Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 5, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 7,
+    "brand": "Realme",
+    "model": "GT Neo 5T",
+    "price": 32999,
+    "description": "Realme GT Neo 5T with Snapdragon 8+ Gen 1, 150W fast charge and 144Hz display.",
+    "image": "https://m.media-amazon.com/images/I/61CQkWOz4PL._SL1500_.jpg",
+    "specifications": {
+      "processor": "Snapdragon 8+ Gen 1",
+      "ram": "8GB",
+      "storage": "256GB",
+      "rear_camera": "50MP + 8MP + 2MP",
+      "front_camera": "16MP",
+      "battery": "5000 mAh",
+      "display": "6.74-inch FHD+ AMOLED 144Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 6, Bluetooth 5.2"
+    }
+  },
+  {
+    "id": 8,
+    "brand": "OnePlus",
+    "model": "Nord 3",
+    "price": 27999,
+    "description": "OnePlus Nord 3 brings Dimensity 9000, 80W charging, and flagship-level camera at midrange price.",
+    "image": "https://image01.oneplus.net/ebp/202301/20/1-m00-19-3f-rb8bw2b4dziealmcaahnq0y3txu123_840_840.png",
+    "specifications": {
+      "processor": "MediaTek Dimensity 9000",
+      "ram": "8GB",
+      "storage": "128GB",
+      "rear_camera": "50MP + 8MP + 2MP",
+      "front_camera": "16MP",
+      "battery": "5000 mAh",
+      "display": "6.74-inch AMOLED 120Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 6, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 9,
+    "brand": "Motorola",
+    "model": "Edge 40",
+    "price": 37999,
+    "description": "Motorola Edge 40 with Snapdragon 7 Gen 1, 144Hz pOLED display and IP68 rating.",
+    "image": "https://www.motorola.in/wp-content/uploads/2023/06/Edge-40-Pearl-White-Front.png",
+    "specifications": {
+      "processor": "Snapdragon 7 Gen 1",
+      "ram": "8GB",
+      "storage": "256GB",
+      "rear_camera": "50MP + 50MP",
+      "front_camera": "32MP",
+      "battery": "4400 mAh",
+      "display": "6.55-inch pOLED 144Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 6, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 10,
+    "brand": "Samsung",
+    "model": "Galaxy M34",
+    "price": 18999,
+    "description": "Budget workhorse Galaxy M34 with Exynos 1280, massive 6000 mAh battery and 50MP triple camera.",
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-m346bzgfinu/gallery/in-galaxy-m34-5g-m346-472859-sm-m346bzgfinu-724197822?$684_547_PNG$",
+    "specifications": {
+      "processor": "Exynos 1280",
+      "ram": "6GB",
+      "storage": "128GB",
+      "rear_camera": "50MP + 8MP + 2MP",
+      "front_camera": "13MP",
+      "battery": "6000 mAh",
+      "display": "6.5-inch FHD+ PLS LCD 120Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 5, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 11,
+    "brand": "iQOO",
+    "model": "Neo 7 Pro",
+    "price": 31999,
+    "description": "iQOO Neo 7 Pro with Dimensity 8200, 120W fast charge and 144Hz AMOLED display.",
+    "image": "https://i01.appmifile.com/webfile/globalimg/products/pc/iqoo-neo7-pro/ice-wave.png",
+    "specifications": {
+      "processor": "MediaTek Dimensity 8200",
+      "ram": "8GB",
+      "storage": "256GB",
+      "rear_camera": "64MP + 8MP + 2MP",
+      "front_camera": "16MP",
+      "battery": "5000 mAh",
+      "display": "6.78-inch AMOLED 144Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 6, Bluetooth 5.2"
+    }
+  },
+  {
+    "id": 12,
+    "brand": "Vivo",
+    "model": "V27 Pro",
+    "price": 34999,
+    "description": "Vivo V27 Pro with Helio G99, 50MP portrait night camera and 120Hz AMOLED display.",
+    "image": "https://www.vivo.com/in/consumer/v27-pro/img/overview/key-img-01.png",
+    "specifications": {
+      "processor": "MediaTek Helio G99",
+      "ram": "8GB",
+      "storage": "128GB",
+      "rear_camera": "50MP + 8MP",
+      "front_camera": "50MP",
+      "battery": "4600 mAh",
+      "display": "6.78-inch AMOLED 120Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 5, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 13,
+    "brand": "Poco",
+    "model": "F5",
+    "price": 24999,
+    "description": "Poco F5 powered by Snapdragon 7+ Gen 2, excellent performance and 120W fast charging.",
+    "image": "https://i01.appmifile.com/webfile/globalimg/poco/f5/blue.png",
+    "specifications": {
+      "processor": "Snapdragon 7+ Gen 2",
+      "ram": "8GB",
+      "storage": "256GB",
+      "rear_camera": "64MP + 8MP + 2MP",
+      "front_camera": "16MP",
+      "battery": "5000 mAh",
+      "display": "6.67-inch AMOLED 120Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 6, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 14,
+    "brand": "Oppo",
+    "model": "Reno 10 Pro",
+    "price": 42999,
+    "description": "Oppo Reno 10 Pro with Dimensity 9200, 120Hz AMOLED display and premium camera setup.",
+    "image": "https://image.oppo.com/content/dam/oppo/product-asset-library/v23-pro-5g/blue.png",
+    "specifications": {
+      "processor": "MediaTek Dimensity 9200",
+      "ram": "8GB",
+      "storage": "256GB",
+      "rear_camera": "50MP + 8MP + 2MP",
+      "front_camera": "32MP",
+      "battery": "4600 mAh",
+      "display": "6.7-inch AMOLED 120Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 6E, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 15,
+    "brand": "Sony",
+    "model": "Xperia 10 V",
+    "price": 34999,
+    "description": "Sony Xperia 10 V with lightweight design, IP65/68 and balanced multimedia performance.",
+    "image": "https://www.sonymobile.com/file/745D1F24F73727E0A1F0BE9B5A7F8327.jpg",
+    "specifications": {
+      "processor": "Snapdragon 695",
+      "ram": "6GB",
+      "storage": "128GB",
+      "rear_camera": "12MP + 8MP + 8MP",
+      "front_camera": "8MP",
+      "battery": "5000 mAh",
+      "display": "6.1-inch OLED 60Hz",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 5, Bluetooth 5.1"
+    }
+  },
+  {
+    "id": 16,
+    "brand": "Tecno",
+    "model": "Camon 19 Pro",
+    "price": 19999,
+    "description": "Tecno Camon 19 Pro with Helio G96, 64MP portrait camera and 60Hz AMOLED display.",
+    "image": "https://www.tecno-mobile.com/medi.../camon-19-pro/phantom-black.png",
+    "specifications": {
+      "processor": "MediaTek Helio G96",
+      "ram": "8GB",
+      "storage": "256GB",
+      "rear_camera": "64MP + 2MP + 2MP",
+      "front_camera": "32MP",
+      "battery": "5000 mAh",
+      "display": "6.8-inch AMOLED 60Hz",
+      "os": "Android 13",
+      "connectivity": "5G, Wi‑Fi 5, Bluetooth 5.0"
+    }
+  },
+  {
+    "id": 17,
+    "brand": "Nokia",
+    "model": "C32",
+    "price": 8999,
+    "description": "Nokia C32 budget smartphone with durable build and clean Android experience.",
+    "image": "https://www.nokia.com/phones/sites/default/files/styles/scale_width_620/public/202212/Nokia_C32.png",
+    "specifications": {
+      "processor": "UNISOC SC9863A1",
+      "ram": "3GB",
+      "storage": "32GB",
+      "rear_camera": "13MP",
+      "front_camera": "5MP",
+      "battery": "5050 mAh",
+      "display": "6.5-inch HD+ LCD",
+      "os": "Android 12 (Go)",
+      "connectivity": "4G, Wi‑Fi 5, Bluetooth 5.0"
+    }
+  },
+  {
+    "id": 18,
+    "brand": "Motorola",
+    "model": "Moto G54",
+    "price": 12999,
+    "description": "Moto G54 with detachable back panels, 90Hz display, Snapdragon 695 and clean near-stock UI.",
+    "image": "https://www.motorola.in/wp-content/uploads/2023/01/G54.jpg",
+    "specifications": {
+      "processor": "Snapdragon 695",
+      "ram": "4GB",
+      "storage": "128GB",
+      "rear_camera": "50MP + 8MP",
+      "front_camera": "16MP",
+      "battery": "5000 mAh",
+      "display": "6.5-inch IPS 90Hz",
+      "os": "Android 13",
+      "connectivity": "5G, Wi‑Fi 5, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 19,
+    "brand": "Redmi",
+    "model": "Note 12",
+    "price": 14999,
+    "description": "Redmi Note 12 with Snapdragon 685, 5000 mAh battery, and AMOLED display at budget price.",
+    "images": [
+    "https://www.apple.com/newsroom/images/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro/article/Apple-iPad-Pro-Ultra-Retina-XDR-display-2-up-240507_inline.jpg.large.jpg",
+    "https://imageio.forbes.com/specials-images/imageserve/661949c1fde3e863086781f3/Apple-iPad-Pro-silver-2up-221018/960x0.jpg?height=711&width=711&fit=bounds"
+    ],
+    "specifications": {
+      "processor": "Snapdragon 685",
+      "ram": "4GB",
+      "storage": "128GB",
+      "rear_camera": "48MP + 8MP + 2MP + 2MP",
+      "front_camera": "13MP",
+      "battery": "5000 mAh",
+      "display": "6.67-inch AMOLED 90Hz",
+      "os": "Android 13",
+      "connectivity": "5G, Wi‑Fi 5, Bluetooth 5.3"
+    }
+  },
+  {
+    "id": 20,
+    "brand": "itel",
+    "model": "A80 Pro",
+    "price": 7999,
+    "description": "itel A80 Pro harnesses Unisoc T606, triple camera, and 6.6-inch Infinity display at ultra-budget.",
+    "image": "https://www.itel-mobile.com/cmsres/2021/05/Two-tone-Green-Itel-A80-Pro.png",
+    "specifications": {
+      "processor": "Unisoc T606",
+      "ram": "4GB",
+      "storage": "64GB",
+      "rear_camera": "8MP + 2MP + 0.3MP",
+      "front_camera": "5MP",
+      "battery": "5000 mAh",
+      "display": "6.6-inch HD+ IPS",
+      "os": "Android 12 (Go)",
+      "connectivity": "4G, Wi‑Fi 5, Bluetooth 5.0"
+    }
+  },
+  {
+    "id": 21,
+    "brand": "Samsung",
+    "model": "Galaxy Z Flip5",
+    "price": 98999,
+    "description": "Samsung flagship foldable with Snapdragon 8 Gen 2, Flex Hinge, and cover screen UX improvements.",
+    "images": [
+    "https://www.apple.com/newsroom/images/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro/article/Apple-iPad-Pro-Ultra-Retina-XDR-display-2-up-240507_inline.jpg.large.jpg",
+    "https://imageio.forbes.com/specials-images/imageserve/661949c1fde3e863086781f3/Apple-iPad-Pro-silver-2up-221018/960x0.jpg?height=711&width=711&fit=bounds"
+    ],
+    "specifications": {
+      "processor": "Snapdragon 8 Gen 2",
+      "ram": "8GB",
+      "storage": "256GB",
+      "rear_camera": "12MP + 12MP",
+      "front_camera": "10MP + 12MP cover",
+      "battery": "3700 mAh",
+      "display": "6.7-inch Foldable AMOLED + 3.4-inch Cover Screen",
+      "os": "Android 14",
+      "connectivity": "5G, Wi‑Fi 6E, Bluetooth 5.3"
+    }
+  }
+]

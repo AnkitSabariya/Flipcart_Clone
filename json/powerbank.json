@@ -10,7 +10,10 @@
     "fast_charging": true,
     "weight_g": 580,
     "dimensions_mm": [180, 80, 24],
-    "image_url": "https://images.anker.com/product/26800PD.jpg",
+    "image_url": [
+      "https://images-cdn.ubuy.co.in/634f0ea549e57539e65ff43a-anker-powercore-26800-pd-with-30w-power.jpg",
+      "https://m.media-amazon.com/images/I/719hKSw8DML._UF894,1000_QL80_.jpg"
+    ],
     "short_description": "A premium high-capacity power bank with fast charging and USB-C PD support.",
     "features": "Charges laptops, tablets, and phones. 45W USB-C PD output ideal for MacBooks. Durable build with travel-friendly design."
   },
@@ -25,7 +28,10 @@
     "fast_charging": true,
     "weight_g": 234,
     "dimensions_mm": [149, 70, 15],
-    "image_url": "https://images.samsung.com/powerbank-10000.jpg",
+    "image_url": [
+      "https://m.media-amazon.com/images/I/61bb1FZHQCL._UF1000,1000_QL80_.jpg",
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/power-bank/v/j/9/galaxy-power-bank-10000-eb-u2510x-samsung-original-imahyyfhzqfzeq3s.jpeg?q=20&crop=false"
+    ],
     "short_description": "Slim wireless power bank that supports fast wireless and wired charging.",
     "features": "Supports Qi wireless charging for Samsung and other compatible devices. Simultaneous charging via USB ports."
   },
@@ -41,7 +47,10 @@
     "solar_panel": true,
     "weight_g": 520,
     "dimensions_mm": [170, 85, 30],
-    "image_url": "https://images.ravpower.com/solar-25000.jpg",
+    "image_url": [
+      "https://binhminhdigital.com/storedata/images/product/pin-du-phong-ravpower-rp-pb083-25000mah-qc3-0-usb-c(1).jpg",
+      "https://barcodekwt.com/cdn/shop/products/Ravpower-Solar-25000mah-03_1024x1024@2x.jpg?v=1603020585"
+    ],
     "short_description": "Eco-friendly power bank with solar panel for outdoor and emergency use.",
     "features": "Built-in solar panel for recharging under sunlight. Ideal for camping and travel. Multiple output ports for convenience."
   },
@@ -56,7 +65,10 @@
     "fast_charging": true,
     "weight_g": 250,
     "dimensions_mm": [147, 71, 14],
-    "image_url": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-power-bank-3i-10000.jpg",
+    "image_url": [
+      "https://i03.appmifile.com/974_item_in/04/07/2024/40bcf1915dc8ea4461ac85a8c8c60119!800x800!85.png",
+      "https://m.media-amazon.com/images/I/71qjkw0k6dL.jpg"
+    ],
     "short_description": "Affordable and compact power bank with dual USB output.",
     "features": "Sleek metal design with 18W fast charging. Excellent for daily backup charging. Compact and easy to carry."
   },
@@ -72,7 +84,10 @@
     "laptop_charging": true,
     "weight_g": 566,
     "dimensions_mm": [119, 73, 45],
-    "image_url": "https://cdn.zendure.com/media/catalog/product/super_tank_pro.jpg",
+    "image_url": [
+      "https://m.media-amazon.com/images/I/61sHz7D+yQL.jpg",
+      "https://i.ytimg.com/vi/iUy6V6VmhAE/maxresdefault.jpg"
+    ],
     "short_description": "Professional-grade power bank for laptops, tablets, and phones.",
     "features": "Up to 100W PD charging. OLED display for power status. Ideal for professionals on the move. Durable aluminum casing."
   },
@@ -87,7 +102,10 @@
     "fast_charging": false,
     "weight_g": 134,
     "dimensions_mm": [108, 33, 33],
-    "image_url": "https://images.anker.com/PowerCore5000.jpg",
+    "image_url": [
+      "https://www.jiomart.com/images/product/original/491420247/anker-powercore-5000-mah-power-bank-a1109h11-digital-o491420247-p590036242-0-202009260306.jpeg?im=Resize=(1000,1000)",
+      "https://djd1xqjx2kdnv.cloudfront.net/photos/32/43/445840_972_XL.jpg"
+    ],
     "short_description": "Ultra-compact backup charger for smartphones.",
     "features": "Tube-style design fits in your pocket. Great for emergencies and short trips. Charges one phone once fully."
   },
@@ -102,7 +120,10 @@
     "fast_charging": true,
     "weight_g": 600,
     "dimensions_mm": [153, 68, 41],
-    "image_url": "https://cdn.baseus.com/30000-powerbank.jpg",
+    "image_url": [
+      "https://baseusindiaofficial.com/cdn/shop/files/1679299376.jpg?v=1719656951",
+      "https://www.mytrendyphone.eu/images/Baseus-Amblight-Digital-Display-Quick-Charge-Power-Bank-30000mAh-65W-4xUSB-USB-C-Black-6932172613600-03042024-00-p.webp"
+    ],
     "short_description": "Massive capacity power bank with multiple ports for family or group use.",
     "features": "Simultaneously charges up to 5 devices. LCD display shows charge level. Built-in safety protections."
   },
@@ -119,7 +140,10 @@
     "water_resistant": true,
     "weight_g": 560,
     "dimensions_mm": [170, 85, 25],
-    "image_url": "https://images.aukey.com/rugged-powerbank.jpg",
+    "image_url": [
+      "https://www.aukey.my/cdn/shop/products/PB-BY20S_1.00.jpg?v=1530770456",
+      "https://cdn2.cellphones.com.vn/x/media/catalog/product/p/i/pin-du-phong-aukey-pb-xd26-26800-mah-usb-c-quick-charge-3-0-black.jpg"
+    ],
     "short_description": "Durable power bank designed for outdoor use in tough environments.",
     "features": "Shockproof, dustproof, and water-resistant. 60W PD output for fast laptop charging. Rubberized exterior for grip."
   },
@@ -134,7 +158,10 @@
     "fast_charging": false,
     "weight_g": 222,
     "dimensions_mm": [143, 71, 15],
-    "image_url": "https://images.belkin.com/slim-powerbank-10000.jpg",
+    "image_url": [
+      "https://www.belkin.com/dw/image/v2/BGBH_PRD/on/demandware.static/-/Sites-master-product-catalog-blk/default/dw7c2492cb/images/hi-res/f/31c84c65f98fe2c6_F7U020btBLK_PkF_1.jpg?sw=700&sh=700&sm=fit&sfrm=png",
+      "https://www.laxshopdine.com/wp-content/uploads/2018/12/0042_hudson-belkin-pocket-power-10k-package.jpg"
+    ],
     "short_description": "Slim and sleek power bank for everyday carry.",
     "features": "High efficiency lithium-polymer battery. Dual output for charging two devices. Lightweight and minimal profile."
   },
@@ -149,7 +176,10 @@
     "fast_charging": true,
     "weight_g": 114,
     "dimensions_mm": [96, 64, 11],
-    "image_url": "https://store.storeimages.cdn-apple.com/magsafe-battery-pack.jpg",
+    "image_url": [
+      "https://m.media-amazon.com/images/I/4198fhPZ+3S.jpg",
+      "https://m.media-amazon.com/images/I/71o0Z3PCX+S.jpg"
+    ],
     "short_description": "Magnetic wireless battery pack designed for iPhones with MagSafe.",
     "features": "Snaps perfectly onto iPhone. Integrates with iOS battery widget. Charges automatically without a button press."
   }

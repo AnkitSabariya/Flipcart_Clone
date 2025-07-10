@@ -1,0 +1,333 @@
+[
+  {
+    "id": 1,
+    "brand": "Apple",
+    "model": "MacBook Air M2",
+    "price": 104999,
+    "description": "The Apple MacBook Air M2 offers lightning-fast performance with Apple Silicon, delivering up to 18 hours of battery life and a stunning Liquid Retina display.",
+    "images": [
+    "https://m.media-amazon.com/images/I/719C6bJv8jL.jpg",
+    "https://www.futureworldindia.in/image/cache/catalog/194253083627/MacBook_Air_M2_Chip_Midnight_PDP_Image_Position-3__en-IN-416x416.jpg"
+    ],
+    "specifications": {
+      "processor": "Apple M2 chip",
+      "ram": "8GB Unified Memory",
+      "storage": "256GB SSD",
+      "gpu": "Integrated 10-core GPU",
+      "display": "13.6-inch Liquid Retina",
+      "battery": "Up to 18 hours",
+      "os": "macOS Sonoma",
+      "weight": "1.24 kg",
+      "ports": "2x Thunderbolt / USB 4, MagSafe 3"
+    }
+  },
+  {
+    "id": 2,
+    "brand": "Dell",
+    "model": "Inspiron 15 5518",
+    "price": 63990,
+    "description": "Dell Inspiron 15 is a reliable and budget-friendly laptop ideal for students and professionals, featuring a powerful 11th Gen Intel Core i5 processor.",
+    "images": [
+    "https://m.media-amazon.com/images/I/71FH2HiGKxS._UF1000,1000_QL80_.jpg",
+    "https://www.jiomart.com/images/product/original/492575086/dell-5518-inspiron-15-laptop-11th-gen-intel-core-i5-11300h-8gb-512gb-ssd-2gb-nvidia-geforce-mx450-graphics-windows-10-mso-fhd-39-62-cm-15-6-inch-digital-o492575086-p591043511-8-202202162220.jpeg?im=Resize=(420,420)"
+    ],
+    "specifications": {
+      "processor": "Intel Core i5-11320H",
+      "ram": "8GB DDR4",
+      "storage": "512GB SSD",
+      "gpu": "Intel Iris Xe Graphics",
+      "display": "15.6-inch FHD Anti-glare",
+      "battery": "6 hours",
+      "os": "Windows 11",
+      "weight": "1.75 kg",
+      "ports": "USB 3.2, HDMI, Type-C"
+    }
+  },
+  {
+    "id": 3,
+    "brand": "HP",
+    "model": "Pavilion x360",
+    "price": 59999,
+    "description": "Versatile and stylish, the HP Pavilion x360 is a 2-in-1 convertible laptop with touchscreen support and Intel 12th Gen processors.",
+    "images": [
+    "https://m.media-amazon.com/images/I/81LaRDm7leL.jpg",
+    "https://images-cdn.ubuy.co.in/6548a56c6b09d4007d6e591c-hp-14-fhd-pavilion-x360-laptop-intel.jpg"
+    ],
+    "specifications": {
+      "processor": "Intel Core i5-1235U",
+      "ram": "8GB DDR4",
+      "storage": "512GB SSD",
+      "gpu": "Intel Iris Xe Graphics",
+      "display": "14-inch FHD Touchscreen",
+      "battery": "8 hours",
+      "os": "Windows 11 Home",
+      "weight": "1.52 kg",
+      "ports": "USB-C, USB-A, HDMI, 3.5mm jack"
+    }
+  },
+  {
+    "id": 4,
+    "brand": "Lenovo",
+    "model": "IdeaPad Gaming 3",
+    "price": 66990,
+    "description": "Built for casual gamers, the IdeaPad Gaming 3 delivers excellent performance with AMD Ryzen 5 and NVIDIA GTX graphics.",
+    "images": [
+    "https://m.media-amazon.com/images/I/7173difaarL.jpg",
+    "https://store.lenovo.com/media/catalog/product/cache/90c9f6aca4e4b4913161c59294bbd070/8/1/81Y401ANIN-0_1.webp"
+    ],
+    "specifications": {
+      "processor": "AMD Ryzen 5 5600H",
+      "ram": "8GB DDR4",
+      "storage": "512GB SSD",
+      "gpu": "NVIDIA GTX 1650 4GB",
+      "display": "15.6-inch FHD 120Hz",
+      "battery": "7 hours",
+      "os": "Windows 11",
+      "weight": "2.25 kg",
+      "ports": "HDMI, USB-C, RJ45, USB-A"
+    }
+  },
+  {
+    "id": 5,
+    "brand": "ASUS",
+    "model": "ROG Zephyrus G14",
+    "price": 124990,
+    "description": "The ROG Zephyrus G14 is a premium gaming and creator laptop with top-tier AMD Ryzen 9 and RTX 3060 graphics in a compact form.",
+    "images": [
+    "https://dlcdnwebimgs.asus.com/gain/D366E1B6-C6E2-41B1-BF53-EF909B21FF09",
+    "https://th-i.thgim.com/public/sci-tech/technology/gadgets/adqreq/article68307400.ece/alternates/FREE_1200/Asus%20Zephyrus.png"
+    ],
+    "specifications": {
+      "processor": "AMD Ryzen 9 6900HS",
+      "ram": "16GB DDR5",
+      "storage": "1TB SSD",
+      "gpu": "NVIDIA RTX 3060 6GB",
+      "display": "14-inch QHD 120Hz",
+      "battery": "10 hours",
+      "os": "Windows 11 Home",
+      "weight": "1.7 kg",
+      "ports": "USB-C, HDMI 2.0b, USB-A"
+    }
+  },
+  {
+    "id": 6,
+    "brand": "MSI",
+    "model": "GF63 Thin",
+    "price": 56990,
+    "description": "MSI GF63 Thin is an affordable gaming laptop with dedicated GTX 1650 graphics and solid performance for beginners.",
+    "images": [
+    "https://asset.msi.com/resize/image/global/product/product_3_20180523133256_5b04fd08de29b.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png",
+    "https://www.primeabgb.com/wp-content/uploads/2024/04/MSI-Thin-GF63-12VE-15.6-Inch-i7-12650H-DDR4-16GB-8-2-1TB-NVMe-PCIe-Gen4x4-RTX4050-GDDR6-6GB-Gaming-Laptop-9S7-16R821-664-2.jpg"
+    ],
+    "specifications": {
+      "processor": "Intel Core i5-11400H",
+      "ram": "8GB DDR4",
+      "storage": "512GB SSD",
+      "gpu": "NVIDIA GTX 1650 4GB",
+      "display": "15.6-inch FHD 60Hz",
+      "battery": "6 hours",
+      "os": "Windows 11",
+      "weight": "1.86 kg",
+      "ports": "USB 3.2, HDMI, LAN, Audio Jack"
+    }
+  },
+  {
+    "id": 7,
+    "brand": "Acer",
+    "model": "Aspire 7",
+    "price": 52999,
+    "description": "Acer Aspire 7 offers great value with AMD Ryzen 5 and GTX graphics for multitasking and casual gaming.",
+    "images": [
+    "https://rukminim2.flixcart.com/image/704/844/xif0q/computer/z/1/f/-original-imahcd9zzzffxcht.jpeg?q=90&crop=false",
+    "https://5.imimg.com/data5/SELLER/Default/2022/10/LZ/HR/NW/162122710/acer-aspire-7-3.jpg"
+    ],
+    "specifications": {
+      "processor": "AMD Ryzen 5 5500U",
+      "ram": "8GB DDR4",
+      "storage": "512GB SSD",
+      "gpu": "NVIDIA GTX 1650 4GB",
+      "display": "15.6-inch FHD IPS",
+      "battery": "7.5 hours",
+      "os": "Windows 11 Home",
+      "weight": "2.15 kg",
+      "ports": "USB 3.2, Type-C, HDMI"
+    }
+  },
+  {
+    "id": 8,
+    "brand": "Samsung",
+    "model": "Galaxy Book2",
+    "price": 59990,
+    "description": "Lightweight and sleek, the Galaxy Book2 is a productivity-focused laptop with Intel 12th Gen and AMOLED display.",
+    "images": [
+    "https://m.media-amazon.com/images/I/81XKxZC94FL._UF1000,1000_QL80_.jpg",
+    "https://m.media-amazon.com/images/I/61vfSiIaCpL._UF1000,1000_QL80_.jpg"
+    ],
+    "specifications": {
+      "processor": "Intel Core i5-1235U",
+      "ram": "8GB LPDDR4X",
+      "storage": "512GB SSD",
+      "gpu": "Intel Iris Xe Graphics",
+      "display": "15.6-inch AMOLED",
+      "battery": "12 hours",
+      "os": "Windows 11 Home",
+      "weight": "1.55 kg",
+      "ports": "USB-C, HDMI, MicroSD, Audio Jack"
+    }
+  },
+  {
+    "id": 9,
+    "brand": "Realme",
+    "model": "Book Slim",
+    "price": 45990,
+    "description": "The Realme Book Slim is a stylish ultrabook with a high-resolution 2K display and aluminum chassis for lightweight productivity.",
+    "images": [
+    "https://m.media-amazon.com/images/I/41mlmB2EajL._UF1000,1000_QL80_.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSMLjeL2NzIgV7k-WVoKPu7bCMgKxdJ5zfag&s"
+    ],
+    "specifications": {
+      "processor": "Intel Core i3-1115G4",
+      "ram": "8GB LPDDR4X",
+      "storage": "256GB SSD",
+      "gpu": "Intel UHD Graphics",
+      "display": "14-inch 2K IPS",
+      "battery": "11 hours",
+      "os": "Windows 11",
+      "weight": "1.38 kg",
+      "ports": "2x USB-C, 1x USB-A, 3.5mm Jack"
+    }
+  },
+  {
+    "id": 10,
+    "brand": "LG",
+    "model": "Gram 16",
+    "price": 99990,
+    "description": "The LG Gram 16 is a large-screen ultrabook with ultra-lightweight design and long battery life for premium productivity.",
+    "images": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTumMl417B2FYpxYzoquotDyiB2CUCTLKw4jg&s",
+    "https://m.media-amazon.com/images/I/81pKId7SSYS._UF350,350_QL50_.jpg"
+    ],
+    "specifications": {
+      "processor": "Intel Evo i7-1260P",
+      "ram": "16GB LPDDR5",
+      "storage": "512GB NVMe SSD",
+      "gpu": "Intel Iris Xe",
+      "display": "16-inch WQXGA (2560x1600)",
+      "battery": "19.5 hours",
+      "os": "Windows 11",
+      "weight": "1.2 kg",
+      "ports": "Thunderbolt 4, USB 3.2, HDMI"
+    }
+  },
+  {
+    "id": 11,
+    "brand": "Microsoft",
+    "model": "Surface Laptop 5",
+    "price": 114999,
+    "description": "Microsoft Surface Laptop 5 offers ultra-slim portability, vibrant PixelSense touchscreen, and premium build quality — ideal for professionals.",
+    "images": [
+    "https://rukminim2.flixcart.com/image/704/844/xif0q/computer/q/j/7/-original-imahcd9hcgygyrha.jpeg?q=90&crop=false",
+    "https://media.croma.com/image/upload/v1715930434/Croma%20Assets/Computers%20Peripherals/Laptop/Images/265601_3_uzgx0a.png"
+    ],
+    "specifications": {
+      "processor": "Intel Core i5-1235U",
+      "ram": "8GB LPDDR5",
+      "storage": "512GB SSD",
+      "gpu": "Intel Iris Xe Graphics",
+      "display": "13.5-inch PixelSense Touch",
+      "battery": "Up to 18 hours",
+      "os": "Windows 11",
+      "weight": "1.27 kg",
+      "ports": "USB-C Thunderbolt 4, USB-A, Surface Connect"
+    }
+  },
+  {
+    "id": 12,
+    "brand": "Infinix",
+    "model": "InBook X2 Plus",
+    "price": 37990,
+    "description": "A slim and stylish productivity laptop with FHD display and metal body, ideal for students and light office work.",
+    "images": [
+    "https://rukminim2.flixcart.com/image/704/844/xif0q/computer/5/7/k/-original-imahcd9kzbm3g7gd.jpeg?q=20&crop=false",
+    "https://infinixmobiles.in/cdn/shop/files/20221228-173948_3.png?v=1743397965&width=1000"
+    ],
+    "specifications": {
+      "processor": "Intel Core i5-1155G7",
+      "ram": "8GB LPDDR4X",
+      "storage": "512GB SSD",
+      "gpu": "Intel Iris Xe",
+      "display": "15.6-inch FHD IPS",
+      "battery": "9 hours",
+      "os": "Windows 11 Home",
+      "weight": "1.58 kg",
+      "ports": "USB-C, USB-A, HDMI, 3.5mm Audio"
+    }
+  },
+  {
+    "id": 13,
+    "brand": "Avita",
+    "model": "Liber V14",
+    "price": 29990,
+    "description": "Avita Liber V14 is a budget laptop for casual usage, featuring colorful design and SSD storage.",
+    "images": [
+    "https://m.media-amazon.com/images/I/51eePnxHkJL._UF1000,1000_QL80_.jpg",
+    "https://www.avita.com/images/liber-v/p05.png"
+    ],
+    "specifications": {
+      "processor": "Intel Core i5-10210U",
+      "ram": "8GB DDR4",
+      "storage": "512GB SSD",
+      "gpu": "Intel UHD Graphics",
+      "display": "14-inch FHD IPS",
+      "battery": "6 hours",
+      "os": "Windows 10 Home",
+      "weight": "1.25 kg",
+      "ports": "USB 3.0, Type-C, HDMI, microSD"
+    }
+  },
+  {
+    "id": 14,
+    "brand": "Honor",
+    "model": "MagicBook X15",
+    "price": 34999,
+    "description": "Honor MagicBook X15 is a slim and efficient device with full-metal body, great for productivity and casual users.",
+    "images": [
+    "https://m.media-amazon.com/images/I/71T9JCLK9dL._UF1000,1000_QL80_.jpg",
+    "https://m.media-amazon.com/images/I/71Mno0V+cZL._UF1000,1000_QL80_.jpg"
+    ],
+    "specifications": {
+      "processor": "Intel Core i3-10110U",
+      "ram": "8GB DDR4",
+      "storage": "256GB SSD",
+      "gpu": "Intel UHD Graphics",
+      "display": "15.6-inch FHD IPS",
+      "battery": "7.5 hours",
+      "os": "Windows 11",
+      "weight": "1.56 kg",
+      "ports": "USB-C, USB-A, HDMI, 3.5mm Jack"
+    }
+  },
+  {
+    "id": 15,
+    "brand": "Xiaomi",
+    "model": "Mi Notebook Pro",
+    "price": 58990,
+    "description": "Mi Notebook Pro delivers strong productivity performance with Intel 11th Gen chips and high-resolution display.",
+    "images": [
+    "https://i02.appmifile.com/349_operator_in/30/08/2022/a8e69a8a8feef85bd93ecbaa2d184ec0.jpg",
+    "https://m.media-amazon.com/images/S/aplus-media-library-service-media/b6fe5810-0761-4cfc-a93f-4dfe4a4d1f54.__CR0,0,600,450_PT0_SX600_V1___.jpg"
+    ],
+    "specifications": {
+      "processor": "Intel Core i5-11300H",
+      "ram": "16GB DDR4",
+      "storage": "512GB NVMe SSD",
+      "gpu": "Intel Iris Xe Graphics",
+      "display": "14-inch 2.5K QHD+",
+      "battery": "11 hours",
+      "os": "Windows 11 Home",
+      "weight": "1.46 kg",
+      "ports": "Thunderbolt 4, USB 3.2, HDMI"
+    }
+  }
+]
+
