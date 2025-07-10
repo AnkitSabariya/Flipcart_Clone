@@ -52,7 +52,7 @@
       <div
         class="absolute inset-0 bg-black/40 flex items-center justify-center"
       >
-        <h1 class="text-white text-3xl md:text-5xl font-bold">
+        <h1 class="text-white text-3xl md:text-5xl font-bold" id="container">
           Get. Set. Travel.
         </h1>
       </div>
@@ -72,66 +72,70 @@
           Round Trip
         </label>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-6 gap-4">
+      <!-- From & To Combined Input Section -->
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
         <!-- From -->
-        <div class="relative col-span-1 md:col-span-1">
-          <input
-            type="text"
-            placeholder="From"
-            class="w-full border px-4 py-2 rounded text-sm"
-          />
-          <span class="absolute text-gray-400 text-xs top-full left-2 mt-1"
-            >Any worldwide city or airport</span
-          >
-        </div>
-
-        <!-- Switch Icon -->
-        <!-- Switch Icon (SVG Centered) -->
-        <div class="hidden md:flex items-center justify-center col-span-1">
-          <div class="bg-gray-100 p-2 rounded-full border shadow">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              class="text-gray-400"
+        <div class="col-span-1 md:col-span-2 relative">
+          <div class="flex">
+            <input
+              type="text"
+              placeholder="From"
+              class="w-full border border-gray-300 px-4 py-2 text-sm rounded-l-md focus:outline-none"
+            />
+            <!-- Switch Icon -->
+            <div
+              class="flex items-center justify-center bg-white border-y border-gray-300 border-l-0 border-r-0 px-3 relative z-10"
             >
-              <g fill="none" fill-rule="evenodd">
-                <path d="M-5-5h24v24H-5z"></path>
-                <path
-                  fill="#C2C2C2"
-                  fill-rule="nonzero"
-                  d="M0 8l5.078 6v-3.6H14V8H0zm14-2L8.922 0v3.6H0V6h14z"
-                ></path>
-              </g>
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-gray-400"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M-5-5h24v24H-5z"></path>
+                  <path
+                    fill="#C2C2C2"
+                    fill-rule="nonzero"
+                    d="M0 8l5.078 6v-3.6H14V8H0zm14-2L8.922 0v3.6H0V6h14z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <!-- To -->
+            <input
+              type="text"
+              placeholder="To"
+              class="w-full border border-gray-300 px-4 py-2 text-sm rounded-r-md focus:outline-none"
+            />
           </div>
-        </div>
-
-        <!-- To -->
-        <div class="relative col-span-1 md:col-span-1">
-          <input
-            type="text"
-            placeholder="To"
-            class="w-full border px-4 py-2 rounded text-sm"
-          />
-          <span class="absolute text-gray-400 text-xs top-full left-2 mt-1"
-            >Any worldwide city or airport</span
-          >
+          <div class="flex justify-between text-xs text-gray-400 mt-1 px-1">
+            <span>Any worldwide city or airport</span>
+            <span>Any worldwide city or airport</span>
+          </div>
         </div>
 
         <!-- Depart -->
         <div class="col-span-1">
-          <input type="date" class="w-full border px-4 py-2 rounded text-sm" />
+          <input
+            type="date"
+            class="w-full border border-gray-300 px-4 py-2 rounded text-sm"
+          />
         </div>
 
         <!-- Return -->
         <div class="col-span-1">
-          <input type="date" class="w-full border px-4 py-2 rounded text-sm" />
+          <input
+            type="date"
+            class="w-full border border-gray-300 px-4 py-2 rounded text-sm"
+          />
         </div>
 
         <!-- Traveller/Type -->
         <div class="col-span-1">
-          <select class="w-full border px-4 py-2 rounded text-sm">
+          <select
+            class="w-full border border-gray-300 px-4 py-2 rounded text-sm"
+          >
             <option selected>1 Traveller | Economy</option>
             <option>2 Travellers | Economy</option>
             <option>1 Traveller | Business</option>
@@ -191,6 +195,13 @@
           prevEl: ".swiper-button-prev",
         },
       });
+  
+     fetch("https://api.aviationstack.com/v1/flights?access_key=b5589660b0539d24a74c92062a8c8c9f")
+  .then((res) => res.json())
+  .then((data) => {
+    
+  });
+
     </script>
   </body>
 </html>
