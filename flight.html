@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart Travel Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <style>
+      .floating-label {
+        transition: all 0.2s ease;
+      }
+      .floating-label.active {
+        transform: translateY(-24px);
+        font-size: 12px;
+        color: #2563eb;
+      }
+      .swap-button {
+        transition: transform 0.3s ease;
+      }
+      .swap-button:hover {
+        transform: rotate(180deg);
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #2563eb;
+        background-color: white;
+        border-radius: 9999px;
+        padding: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header
+      class="bg-blue-600 text-white py-4 px-6 flex justify-between items-center"
+    >
+      <div class="text-2xl font-bold flex items-center space-x-1">
+        <span class="text-white">Flip</span>
+        <span class="text-yellow-400">kart</span>
+        <span class="text-sm font-light ml-2">Travel</span>
+      </div>
+      <nav class="space-x-6 text-sm">
+        <span class="cursor-pointer">Login</span>
+        <span class="cursor-pointer"
+          >More <i class="fa-solid fa-chevron-down text-xs"></i
+        ></span>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <div class="relative">
+      <img
+        src="https://canadawiz.ca/wp-content/uploads/2022/02/canada-ultra-low-cost-airline.jpeg"
+        alt="Banner"
+        class="w-full h-[320px] object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-black/40 flex items-center justify-center"
+      >
+        <h1 class="text-white text-3xl md:text-5xl font-bold">
+          Get. Set. Travel.
+        </h1>
+      </div>
+    </div>
+
+    <!-- Booking Form Only -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="bg-white shadow-xl rounded-xl p-6 lg:p-8">
+        <!-- Trip Type Selection -->
+        <div class="flex items-center gap-6 mb-6">
+          <label
+            class="flex items-center gap-2 text-sm font-medium cursor-pointer"
+          >
+            <input
+              type="radio"
+              name="trip"
+              value="oneway"
+              class="w-4 h-4 text-blue-600 accent-blue-600"
+              checked
+            />
+            <span class="text-gray-700">One Way</span>
+          </label>
+          <label
+            class="flex items-center gap-2 text-sm font-medium cursor-pointer"
+          >
+            <input
+              type="radio"
+              name="trip"
+              value="roundtrip"
+              class="w-4 h-4 text-blue-600 accent-blue-600"
+            />
+            <span class="text-gray-700">Round Trip</span>
+          </label>
+        </div>
+
+        <!-- Main Form Grid - Clean & Simple -->
+        <div
+          class="flex flex-col lg:flex-row gap-4 lg:gap-4 items-stretch lg:items-end"
+        >
+          <!-- From Input -->
+          <div class="flex-1 lg:flex-[2] relative">
+            <div class="relative">
+              <select
+                id="fromInput"
+                class="w-full px-4 pt-6 pb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 cursor-pointer bg-white text-sm appearance-none h-14"
+              >
+                <option value="">From</option>
+                <option value="BOM">Mumbai, IN (BOM)</option>
+                <option value="HYD">Hyderabad, IN (HYD)</option>
+                <option value="BKK">Bangkok, TH (BKK)</option>
+                <option value="KUL">Kuala Lumpur, MY (KUL)</option>
+                <option value="CCU">Kolkata, IN (CCU)</option>
+                <option value="BLR">Bengaluru, IN (BLR)</option>
+                <option value="DEL">New Delhi, IN (DEL)</option>
+                <option value="MAA">Chennai, IN (MAA)</option>
+                <option value="GOI">Goa, IN (GOI)</option>
+                <option value="PNQ">Pune, IN (PNQ)</option>
+              </select>
+              <label
+                for="fromInput"
+                class="absolute left-4 top-2 text-xs text-blue-600 font-medium pointer-events-none bg-white px-1"
+              >
+                From
+              </label>
+              <i
+                class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Swap Button -->
+          <div class="flex justify-center lg:flex-none lg:w-[60px]">
+            <button
+              id="swapButton"
+              class="w-12 h-12 bg-white border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 hover:rotate-180"
+            >
+              <svg class="w-4 h-4 text-gray-400" viewBox="0 0 14 14">
+                <path
+                  d="M0 8l5.078 6v-3.6H14V8H0zm14-2L8.922 0v3.6H0V6h14z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- To Input -->
+          <div class="flex-1 lg:flex-[2] relative">
+            <div class="relative">
+              <select
+                id="toInput"
+                class="w-full px-4 pt-6 pb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 cursor-pointer bg-white text-sm appearance-none h-14"
+              >
+                <option value="">To</option>
+                <option value="BOM">Mumbai, IN (BOM)</option>
+                <option value="HYD">Hyderabad, IN (HYD)</option>
+                <option value="BKK">Bangkok, TH (BKK)</option>
+                <option value="KUL">Kuala Lumpur, MY (KUL)</option>
+                <option value="CCU">Kolkata, IN (CCU)</option>
+                <option value="BLR">Bengaluru, IN (BLR)</option>
+                <option value="DEL">New Delhi, IN (DEL)</option>
+                <option value="MAA">Chennai, IN (MAA)</option>
+                <option value="GOI">Goa, IN (GOI)</option>
+                <option value="PNQ">Pune, IN (PNQ)</option>
+              </select>
+              <label
+                for="toInput"
+                class="absolute left-4 top-2 text-xs text-blue-600 font-medium pointer-events-none bg-white px-1"
+              >
+                To
+              </label>
+              <i
+                class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Depart Date -->
+          <div class="flex-1 lg:flex-[1.5] relative">
+            <input
+              type="date"
+              id="departDate"
+              class="w-full px-4 pt-6 pb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm h-14"
+            />
+            <label
+              class="absolute left-4 top-2 text-xs text-blue-600 font-medium pointer-events-none bg-white px-1"
+            >
+              Depart On
+            </label>
+          </div>
+
+          <!-- Return Date -->
+          <div class="flex-1 lg:flex-[1.5] relative">
+            <input
+              type="date"
+              id="returnDate"
+              class="w-full px-4 pt-6 pb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm h-14 opacity-50 cursor-not-allowed"
+              disabled
+            />
+            <label
+              class="absolute left-4 top-2 text-xs text-gray-400 font-medium pointer-events-none bg-white px-1"
+            >
+              Return On
+            </label>
+          </div>
+
+          <!-- Travellers -->
+          <div class="flex-1 lg:flex-[2] relative">
+            <select
+              id="travellers"
+              class="w-full px-4 pt-6 pb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm bg-white appearance-none h-14"
+            >
+              <option value="1-economy">1 Traveller | Economy</option>
+              <option value="2-economy">2 Travellers | Economy</option>
+              <option value="3-economy">3 Travellers | Economy</option>
+              <option value="4-economy">4 Travellers | Economy</option>
+              <option value="1-business">1 Traveller | Business</option>
+              <option value="2-business">2 Travellers | Business</option>
+              <option value="1-first">1 Traveller | First</option>
+            </select>
+            <label
+              class="absolute left-4 top-2 text-xs text-blue-600 font-medium pointer-events-none bg-white px-1"
+            >
+              Travellers | Class
+            </label>
+            <i
+              class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
+            ></i>
+          </div>
+
+          <!-- Search Button -->
+          <div class="flex-1 lg:flex-[1.5]">
+            <button
+              id="searchButton"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-4 rounded-lg font-semibold text-sm transition-all duration-200 hover:shadow-lg flex items-center justify-center gap-2 h-14"
+            >
+              <i class="fas fa-search"></i>
+              <span>SEARCH</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider -->
+  
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      // Initialize Swiper
+      new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // Trip type functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const tripTypeInputs = document.querySelectorAll('input[name="trip"]');
+        const returnDateInput = document.getElementById("returnDate");
+
+        tripTypeInputs.forEach((input) => {
+          input.addEventListener("change", function () {
+            if (this.value === "oneway") {
+              returnDateInput.disabled = true;
+              returnDateInput.classList.add("opacity-50", "cursor-not-allowed");
+              returnDateInput.previousElementSibling.classList.remove(
+                "text-blue-600"
+              );
+              returnDateInput.previousElementSibling.classList.add(
+                "text-gray-400"
+              );
+            } else {
+              returnDateInput.disabled = false;
+              returnDateInput.classList.remove(
+                "opacity-50",
+                "cursor-not-allowed"
+              );
+              returnDateInput.previousElementSibling.classList.remove(
+                "text-gray-400"
+              );
+              returnDateInput.previousElementSibling.classList.add(
+                "text-blue-600"
+              );
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
