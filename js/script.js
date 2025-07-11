@@ -20,6 +20,6 @@ function searchProduct() {
   if (pages[query]) {
     window.location.href = pages[query];
   } else {
-    return
+    return;
   }
 }
