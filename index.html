@@ -14,12 +14,43 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
     />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
+  <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'green-custom': '#16a34a',
+                        'blue-custom': '#2563eb',
+                        'gray-bg': '#f8fafc',
+                        'card-bg': '#ffffff',
+                        'text-primary': '#1f2937',
+                        'text-secondary': '#6b7280'
+                    },
+                    fontSize: {
+                        'section-sm': ['0.9rem', '1.1'],
+                        'section-md': ['1.125rem', '1.2'],
+                        'section-lg': ['1.25rem', '1.2'],
+                        'section-xl': ['1.5rem', '1.2'],
+                        'product-xs': ['0.95rem', '1.2'],
+                        'product-sm': ['0.8rem', '1.3'],
+                        'product-md': ['1rem', '1.3'],
+                        'product-lg': ['1rem', '1.1'],
+                        'offer-xs': ['0.85rem', '1'],
+                        'offer-sm': ['0.7rem', '1'],
+                        'offer-md': ['0.8rem', '1'],
+                        'offer-lg': ['0.875rem', '1']
+                    }
+                }
+            }
+        }
+    </script>
   <style>
     html,
     body {
@@ -1024,177 +1055,173 @@
           </div>
         </div>
       </div>
-      <div class="boxes w-full h-auto mt-12 px-0">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          <div
-            class="box1 h-auto shadow-lg bg-white cursor-pointer pl-3.5 py-2.5"
-          >
-            <div class="top w-full lg:h-20 flex items-center gap-32 px-3">
-              <div
-                class="text-[#1F1F1F] font-semibold text-[20px] lg:text-[25px]"
-              >
-                <h1>Wedding & Gifting Specials</h1>
-              </div>
-              <div
-                class="w-7 h-7 rounded-full cursor-pointer bg-[#2A55E5] flex items-center justify-center"
-              >
-                <i class="ri-arrow-right-s-line text-2xl text-white"></i>
-              </div>
+     <div class="container mx-auto pt-8">
+        <!-- Main Grid Container -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 ">
+           
+            <!-- Trending Gadgets & Appliances Section -->
+            <div class="bg-card-bg rounded-lg border border-gray-200 p-6 shadow-sm">
+                <!-- Section Header -->
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-section-xl lg:text-section-xl md:text-section-lg sm:text-section-md text-section-sm font-semibold text-text-primary">Trending Gadgets & Appliances</h2>
+                    <button class="w-7 h-7 bg-blue-custom rounded-full flex items-center justify-center text-white hover:bg-blue-600 hover:scale-110 hover:shadow-lg transition-all duration-200">
+                        <i class="fas fa-chevron-right text-xs"></i>
+                    </button>
+                </div>
+               
+                <!-- Products Grid -->
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Cameras -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 xs:h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/drone/9/k/j/50-40-2-4k-wifi-dual-cual-camera-drone-for-adults-kids-with-2-original-imahy9nnxzcv2xch.jpeg?q=80"
+                                alt="Cameras" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Cameras</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Special offer</p>
+                    </div>
+                   
+                    <!-- Shavers -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 xs:h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/trimmer/i/q/p/1-10-mm-eng-maxtop-trimmer-pack-of-1-titanium-coated-cordless-original-imaghud3gfepe8ws.jpeg?q=80"
+                                alt="Shavers" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Shavers</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Special offer</p>
+                    </div>
+                   
+                    <!-- Hair Dryers -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 xs:h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/k5r2mq80/hair-dryer/c/t/p/cigati-anova-n-1290-hair-dryer-professional-folding-hair-dryer-original-imaf8rfxzhxqrmut.jpeg?q=80"
+                                alt="Hair Dryers" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Hair Dryers</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">New Range</p>
+                    </div>
+                   
+                    <!-- Trimmers -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 xs:h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/trimmer/p/m/u/0-25-4-mm-professional-golden-t99-trimmer-haircut-grooming-kit-original-imahaaeu53bzwxgc.jpeg?q=80"
+                                alt="Trimmers" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Trimmers</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Don't Miss</p>
+                    </div>
+                </div>
             </div>
-            <div class="w-full flex gap-3 lg:h-[300px]">
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/h/i/f/m-hs-501-green-voroxy-original-imagtkehzunudja8.jpeg?q=70"
-                    alt=""
-                  />
+           
+            <!-- Monsoon Essentials Section -->
+            <div class="bg-card-bg rounded-lg border border-gray-200 p-6 lg:p-6 md:p-6 sm:p-6 p-4 shadow-sm">
+                <!-- Section Header -->
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-section-xl lg:text-section-xl md:text-section-lg sm:text-section-md text-section-sm font-semibold text-text-primary">Monsoon Essentials</h2>
+                    <button class="w-7 h-7 bg-blue-custom rounded-full flex items-center justify-center text-white hover:bg-blue-600 hover:scale-110 hover:shadow-lg transition-all duration-200">
+                        <i class="fas fa-chevron-right text-xs"></i>
+                    </button>
                 </div>
-                <p class="text-start text-[20px]">Topwear</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Special offer
-                </p>
-              </div>
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/jewellery-set/k/p/d/plastic-na-brass-gold-plated-jewel-set-red-laforword-original-imagfy9htenxqmr8.jpeg?q=70"
-                    alt=""
-                  />
+               
+                <!-- Products Grid -->
+                <div class="grid grid-cols-2 gap-4 lg:gap-4 md:gap-4 sm:gap-4 gap-3">
+                    <!-- Laptops -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/computer/p/z/p/-original-imahdhc7tygd5ntz.jpeg?q=80"
+                                alt="Laptops" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Laptops</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Best Picks</p>
+                    </div>
+                   
+                    <!-- Vehicle Pressure Washers -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/car-pressure-washer/r/t/0/cordless-48v-wireless-high-pressure-car-washer-gun-cordless-original-imahczbtfakj5zfq.jpeg?q=80"
+                                alt="Vehicle Pressure Washers" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Vehicle Pressure Washers</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Don't Miss</p>
+                    </div>
+                   
+                    <!-- Musical Instruments -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/acoustic-guitar/g/g/o/rvl-38c-lgp-bk-revel-original-imahcmygfx3vbpck.jpeg?q=80"
+                                alt="Musical Instruments" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Musical Instruments</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Special offer</p>
+                    </div>
+                   
+                    <!-- Car Body Covers -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/shopsy-car-cover/s/6/z/no-ss-kkmcbcjpmr00082-kingsway-original-imagp7p5kzfy4zdh.jpeg?q=80"
+                                alt="Car Body Covers" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Car Body Covers</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Special offer</p>
+                    </div>
                 </div>
-                <p class="text-start text-[20px]">Jewellery</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 70% Off
-                </p>
-              </div>
             </div>
-            <div class="w-full flex gap-3 lg:h-[300px] mt-4">
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-[60%] justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/s/i/u/-original-imah76jt64ffmwg4.jpeg?q=70"
-                    alt=""
-                  />
+           
+            <!-- Hair & Skin Care for Monsoon Section -->
+            <div class="bg-card-bg rounded-lg border border-gray-200 p-6 lg:p-6 md:p-6 sm:p-6 p-4 shadow-sm">
+                <!-- Section Header -->
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-section-xl lg:text-section-xl md:text-section-lg sm:text-section-md text-section-sm font-semibold text-text-primary">Hair & Skin Care for Monsoon</h2>
+                    <button class="w-7 h-7 bg-blue-custom rounded-full flex items-center justify-center text-white hover:bg-blue-600 hover:scale-110 hover:shadow-lg transition-all duration-200">
+                        <i class="fas fa-chevron-right text-xs"></i>
+                    </button>
                 </div>
-                <p class="text-start text-[20px]">Smart Watches</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 40% Off
-                </p>
-              </div>
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/t/c/j/s-kim5182pc3brass-kimayra-original-imahf8ztpjftfpg9.jpeg?q=70"
-                    alt=""
-                  />
+               
+                <!-- Products Grid -->
+                <div class="grid grid-cols-2 gap-4 lg:gap-4 md:gap-4 sm:gap-4 gap-3">
+                    <!-- Face Wash -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/face-wash/v/z/d/200-ocean-for-men-fights-acne-pimple-brighten-skin-all-skin-original-imah5gh63zgy8ph3.jpeg?q=80"
+                                alt="Face Wash" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Face Wash</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Special offer</p>
+                    </div>
+                   
+                    <!-- Hair Oil -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/hair-oil/w/8/s/-original-imahdnhhjj8q8qzp.jpeg?q=80"
+                                alt="Hair Oil" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Hair Oil</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Special offer</p>
+                    </div>
+                   
+                    <!-- Bath Soap -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/soap/0/9/0/1-100-skincare-sinche-kojic-skin-whitening-body-soap-for-women-original-imahbdgygb3smg5p.jpeg?q=80"
+                                alt="Bath Soap" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Bath Soap</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Big Savings</p>
+                    </div>
+                   
+                    <!-- Face Serums -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/skin-treatment/n/g/y/-original-imahahykahugu9tw.jpeg?q=80"
+                                alt="Face Serums" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Face Serums</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Explore Now</p>
+                    </div>
                 </div>
-                <p class="text-start text-[20px]">Women's Ethnic Sets</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 50% Off
-                </p>
-              </div>
             </div>
-          </div>
-          <div
-            class="box1 h-auto shadow-lg bg-white cursor-pointer pl-3.5 py-2.5"
-          >
-            <div class="top w-full lg:h-20 flex items-center gap-32 px-3">
-              <div
-                class="text-[#1F1F1F] font-semibold text-[20px] lg:text-[25px]"
-              >
-                <h1>Wedding & Gifting Specials</h1>
-              </div>
-              <div
-                class="w-7 h-7 rounded-full cursor-pointer bg-[#2A55E5] flex items-center justify-center"
-              >
-                <i class="ri-arrow-right-s-line text-2xl text-white"></i>
-              </div>
-            </div>
-            <div class="w-full flex gap-3 lg:h-[300px]">
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/b/m/o/-original-imah2snp7e6zwzzr.jpeg?q=70"
-                    alt=""
-                  />
-                </div>
-                <p class="text-start text-[20px]">Men's Slippers & Flip</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 70% Offr
-                </p>
-              </div>
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto lg:h-[70%] justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/6/v/s/8-snk-330-wht-bruton-white-original-imagzzh5k7hrgwzu.jpeg?q=70"
-                    alt=""
-                  />
-                </div>
-                <p class="text-start text-[20px]">Men's Casual Shoes</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 70% Off
-                </p>
-              </div>
-            </div>
-            <div class="w-full flex gap-3 lg:h-[300px] mt-4">
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto lg:h-[70%] justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/trimmer/m/q/1/1-10-mm-hair-removal-machine-l-stainless-steel-cordless-waikil-original-imah8zzn6ghrzu8c.jpeg?q=70"
-                    alt=""
-                  />
-                </div>
-                <p class="text-start text-[20px]">Trimmers</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 50% Off
-                </p>
-              </div>
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/d/u/s/m-w5-dwija-fashion-original-imah3g223myd9fa3.jpeg?q=70"
-                    alt=""
-                  />
-                </div>
-                <p class="text-start text-[20px]">Men's Track Pants</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 50% Off
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="hidden lg:block cursor-pointer">
-            <img
-              class="w-full h-full"
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-07-09%20at%209.04.28%E2%80%AFAM-beECSHjyZWl3JQCBLCCuNJZkcbf00X.png"
-              alt=""
-            />
-          </div>
         </div>
-      </div>
+    </div>
       <div class="boxes w-full mt-8 px-0">
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1">
           <div class="">
@@ -1217,179 +1244,171 @@
           </div>
         </div>
       </div>
-      <div class="boxes w-full h-auto mt-12 px-0">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          <div
-            class="box1 h-auto shadow-lg bg-white cursor-pointer pl-3.5 py-2.5"
-          >
-            <div class="top w-full lg:h-20 flex items-center gap-32 px-3">
-              <div
-                class="text-[#1F1F1F] font-semibold text-[20px] lg:text-[25px]"
-              >
-                <h1>Wedding & Gifting Specials</h1>
-              </div>
-              <div
-                class="w-7 h-7 rounded-full cursor-pointer bg-[#2A55E5] flex items-center justify-center"
-              >
-                <i class="ri-arrow-right-s-line text-2xl text-white"></i>
-              </div>
+     
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 pt-8">
+           
+            <!-- Trending Gadgets & Appliances Section -->
+            <div class="bg-card-bg rounded-lg border border-gray-200 p-6 shadow-sm">
+                <!-- Section Header -->
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-section-xl lg:text-section-xl md:text-section-lg sm:text-section-md text-section-sm font-semibold text-text-primary">Wedding & Gifting Specials</h2>
+                    <button class="w-7 h-7 bg-blue-custom rounded-full flex items-center justify-center text-white hover:bg-blue-600 hover:scale-110 hover:shadow-lg transition-all duration-200">
+                        <i class="fas fa-chevron-right text-xs"></i>
+                    </button>
+                </div>
+               
+                <!-- Products Grid -->
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Cameras -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 xs:h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/kj8wccw0-0/carpet-rug/j/b/e/ru-m-chennile-multi-26x72-049-sasta-sunder-tikau-original-imafyuydgfxk4hfn.jpeg?q=70"
+                                alt="Cameras" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Topwear</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Special offer</p>
+                    </div>
+                   
+                    <!-- Shavers -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 xs:h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-cup-saucer/c/i/p/cups-006-apeiron-original-imah4fv5aktg2hhf.jpeg?q=70"
+                                alt="Shavers" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Jewellery</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Min. 70% Off</p>
+                    </div>
+                   
+                    <!-- Hair Dryers -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 xs:h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-solar-light-set/f/t/t/solar-lights-for-home-outdoor-led-decoration-waterproof-fence-original-imah5z5kfdfmjmv4.jpeg?q=70"
+                                alt="Hair Dryers" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Smart Watches</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Min. 40% Off</p>
+                    </div>
+                   
+                    <!-- Trimmers -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 xs:h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/home-temple/t/a/q/29-23-0-637-ektmwd-05tem1-db-ekhasa-30-original-imah4v34gk4va36x.jpeg?q=70"
+                                alt="Trimmers" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Women's Ethnic Setss</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Min. 50% Off</p>
+                    </div>
+                </div>
             </div>
-            <div class="w-full flex gap-3 lg:h-[300px]">
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto justify-center items-center">
-                  <img
-                    class="w-[80%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/kj8wccw0-0/carpet-rug/j/b/e/ru-m-chennile-multi-26x72-049-sasta-sunder-tikau-original-imafyuydgfxk4hfn.jpeg?q=70"
-                    alt=""
-                  />
+           
+            <!-- Monsoon Essentials Section -->
+            <div class="bg-card-bg rounded-lg border border-gray-200 p-6 lg:p-6 md:p-6 sm:p-6 p-4 shadow-sm">
+                <!-- Section Header -->
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-section-xl lg:text-section-xl md:text-section-lg sm:text-section-md text-section-sm font-semibold text-text-primary">Wedding & Gifting Specials</h2>
+                    <button class="w-7 h-7 bg-blue-custom rounded-full flex items-center justify-center text-white hover:bg-blue-600 hover:scale-110 hover:shadow-lg transition-all duration-200">
+                        <i class="fas fa-chevron-right text-xs"></i>
+                    </button>
                 </div>
-                <p class="text-start text-[20px] mt-3.5">Topwear</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Special offer
-                </p>
-              </div>
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-cup-saucer/c/i/p/cups-006-apeiron-original-imah4fv5aktg2hhf.jpeg?q=70"
-                    alt=""
-                  />
+               
+                <!-- Products Grid -->
+                <div class="grid grid-cols-2 gap-4 lg:gap-4 md:gap-4 sm:gap-4 gap-3">
+                    <!-- Laptops -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/h/m/a/7-mrj1586-aadi-black-original-imah8cp5sahbwrvn.jpeg?q=70"
+                                alt="Laptops" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Men's Slippers & Flip</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Min. 70% Offr</p>
+                    </div>
+                   
+                    <!-- Vehicle Pressure Washers -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/2/5/j/9-grey-orange-fms-38-9-footox-grey-orange-original-imah5ggwxtzr8bh2.jpeg?q=70"
+                                alt="Vehicle Pressure Washers" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Men's Casual Shoes</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Min. 70% Off</p>
+                    </div>
+                   
+                    <!-- Musical Instruments -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/trimmer/m/q/1/1-10-mm-hair-removal-machine-l-stainless-steel-cordless-waikil-original-imah8zzn6ghrzu8c.jpeg?q=70"
+                                alt="Musical Instruments" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Trimmers</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Min. 50% Off</p>
+                    </div>
+                   
+                    <!-- Car Body Covers -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/d/u/s/m-w5-dwija-fashion-original-imah3g223myd9fa3.jpeg?q=70"
+                                alt="Car Body Covers" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Men's Track Pants</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Min. 50% Off</p>
+                    </div>
                 </div>
-                <p class="text-start text-[20px] mt-4">Jewellery</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 70% Off
-                </p>
-              </div>
             </div>
-            <div class="w-full flex gap-3 lg:h-[300px] mt-4">
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-[60%] justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-solar-light-set/f/t/t/solar-lights-for-home-outdoor-led-decoration-waterproof-fence-original-imah5z5kfdfmjmv4.jpeg?q=70"
-                    alt=""
-                  />
+           
+            <!-- Hair & Skin Care for Monsoon Section -->
+            <div class="bg-card-bg rounded-lg border border-gray-200 p-6 lg:p-6 md:p-6 sm:p-6 p-4 shadow-sm">
+                <!-- Section Header -->
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-section-xl lg:text-section-xl md:text-section-lg sm:text-section-md text-section-sm font-semibold text-text-primary">Hair & Skin Care for Monsoon</h2>
+                    <button class="w-7 h-7 bg-blue-custom rounded-full flex items-center justify-center text-white hover:bg-blue-600 hover:scale-110 hover:shadow-lg transition-all duration-200">
+                        <i class="fas fa-chevron-right text-xs"></i>
+                    </button>
                 </div>
-                <p class="text-start text-[20px] mt-3">Smart Watches</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 40% Off
-                </p>
-              </div>
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/home-temple/t/a/q/29-23-0-637-ektmwd-05tem1-db-ekhasa-30-original-imah4v34gk4va36x.jpeg?q=70"
-                    alt=""
-                  />
+               
+                <!-- Products Grid -->
+                <div class="grid grid-cols-2 gap-4 lg:gap-4 md:gap-4 sm:gap-4 gap-3">
+                    <!-- Face Wash -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/face-wash/v/z/d/200-ocean-for-men-fights-acne-pimple-brighten-skin-all-skin-original-imah5gh63zgy8ph3.jpeg?q=80"
+                                alt="Face Wash" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Face Wash</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Special offer</p>
+                    </div>
+                   
+                    <!-- Hair Oil -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/hair-oil/w/8/s/-original-imahdnhhjj8q8qzp.jpeg?q=80"
+                                alt="Hair Oil" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Hair Oil</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Special offer</p>
+                    </div>
+                   
+                    <!-- Bath Soap -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/soap/0/9/0/1-100-skincare-sinche-kojic-skin-whitening-body-soap-for-women-original-imahbdgygb3smg5p.jpeg?q=80"
+                                alt="Bath Soap" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Bath Soap</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Big Savings</p>
+                    </div>
+                   
+                    <!-- Face Serums -->
+                    <div class="cursor-pointer hover:-translate-y-0.5  transition-all duration-200 group">
+                        <div class="bg-gray-50 rounded-lg p-4 lg:p-4 md:p-4 sm:p-4 p-3 mb-4 h-40 lg:h-40 md:h-36 sm:h-32 h-28 flex items-center justify-center border border-gray-100 overflow-hidden">
+                            <img src="https://rukminim2.flixcart.com/image/210/210/xif0q/skin-treatment/n/g/y/-original-imahahykahugu9tw.jpeg?q=80"
+                                alt="Face Serums" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <h3 class="text-product-lg lg:text-product-lg md:text-product-md sm:text-product-sm text-product-xs font-medium text-text-primary mb-2">Face Serums</h3>
+                        <p class="text-offer-lg lg:text-offer-lg md:text-offer-md sm:text-offer-sm text-offer-xs font-semibold text-green-custom">Explore Now</p>
+                    </div>
                 </div>
-                <p class="text-start text-[20px] mt-4">Women's Ethnic Sets</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 50% Off
-                </p>
-              </div>
             </div>
-          </div>
-          <div
-            class="box1 h-auto shadow-lg bg-white cursor-pointer pl-3.5 py-2.5"
-          >
-            <div class="top w-full lg:h-20 flex items-center gap-32 px-3">
-              <div
-                class="text-[#1F1F1F] font-semibold text-[20px] lg:text-[25px]"
-              >
-                <h1>Wedding & Gifting Specials</h1>
-              </div>
-              <div
-                class="w-7 h-7 rounded-full cursor-pointer bg-[#2A55E5] flex items-center justify-center"
-              >
-                <i class="ri-arrow-right-s-line text-2xl text-white"></i>
-              </div>
-            </div>
-            <div class="w-full flex gap-3 lg:h-[300px]">
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/h/m/a/7-mrj1586-aadi-black-original-imah8cp5sahbwrvn.jpeg?q=70"
-                    alt=""
-                  />
-                </div>
-                <p class="text-start text-[20px] mt-3">Men's Slippers & Flip</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 70% Offr
-                </p>
-              </div>
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto lg:h-[70%] justify-center items-center">
-                  <img
-                    class="h-full w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/2/5/j/9-grey-orange-fms-38-9-footox-grey-orange-original-imah5ggwxtzr8bh2.jpeg?q=70"
-                    alt=""
-                  />
-                </div>
-                <p class="text-start text-[20px] mt-5 lg:mt-0">
-                  Men's Casual Shoes
-                </p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 70% Off
-                </p>
-              </div>
-            </div>
-            <div class="w-full flex gap-3 lg:h-[300px] mt-4">
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto lg:h-[70%] justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/trimmer/m/q/1/1-10-mm-hair-removal-machine-l-stainless-steel-cordless-waikil-original-imah8zzn6ghrzu8c.jpeg?q=70"
-                    alt=""
-                  />
-                </div>
-                <p class="text-start text-[20px]">Trimmers</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 50% Off
-                </p>
-              </div>
-              <div
-                class="img w-[46%] h-auto border-2 border-gray-300 rounded-xl pb-5 px-2 pt-5"
-              >
-                <div class="flex h-auto justify-center items-center">
-                  <img
-                    class="h-[90%] w-[70%] hover:scale-[1.03]"
-                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/d/u/s/m-w5-dwija-fashion-original-imah3g223myd9fa3.jpeg?q=70"
-                    alt=""
-                  />
-                </div>
-                <p class="text-start text-[20px] mt-3">Men's Track Pants</p>
-                <p class="text-[#108934] text-[20px] font-semibold">
-                  Min. 50% Off
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="hidden lg:block cursor-pointer">
-            <img
-              class="w-full h-full"
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-07-09%20at%209.04.28%E2%80%AFAM-beECSHjyZWl3JQCBLCCuNJZkcbf00X.png"
-              alt=""
-            />
-          </div>
         </div>
-      </div>
 
       <!-- part 4 -->
       <div class="boxes w-full mt-8 px-0 container">
