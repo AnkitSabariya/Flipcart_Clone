@@ -10,43 +10,59 @@
 <body class="">
    <div id="container" class="h-full bg-[#f7f7f7]">
     <!-- navbar -->
-    <nav class="bg-[#2874f0] text-white w-full h-auto lg:h-[56px] flex flex-col lg:flex-row items-center px-3 lg:px-6 gap-2 lg:gap-4 justify-center py-2 lg:py-0">
-        <!-- Logo -->
-        <div class="flex items-start justify-center leading-[1.1] font-semibold text-[16px] lg:text-[18px] cursor-pointer flex-col italic">
-            <a href="index.html">
-            <span class="text-white font-extrabold">Flipkart</span>
-            <div class="text-[10px] lg:text-[11px] font-normal flex items-center text-white">
+      <nav class="bg-[#2874f0] text-white w-full flex flex-wrap items-center justify-between md:justify-center px-3 lg:px-6 py-2 lg:h-[56px]">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <a href="index.html" class="flex flex-col leading-[1.1] font-semibold text-[16px] lg:text-[18px] italic">
+          <span class="text-white font-extrabold">Flipkart</span>
+          <div class="text-[10px] lg:text-[11px] font-normal flex items-center text-white">
             Explore <span class="text-yellow-300 font-bold ml-1">Plus</span>
             <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png" class="h-2 lg:h-3 ml-1 mt-[1px]" alt="plus" />
-            </div>
-            </a>
-        </div>
-          
-        <!-- Search Bar -->
-        <div class="flex items-center flex-grow w-full lg:max-w-[600px] bg-white order-3 lg:order-2">
-            <input
-            type="text"
-            placeholder="Search for products, brands and more"
-            id="search"
-            class="w-full text-[12px] lg:text-[14px] px-3 lg:px-4 py-1.5 outline-none rounded-l-sm text-black placeholder-gray-500"
-            />
-            <button class="bg-white px-3 lg:px-4 py-1.5 rounded-r-sm cursor-pointer" onclick="ready()">
-            <i class="ri-search-line text-blue-600 text-base lg:text-lg"></i>
-            </button>
-        </div>
-    
-        <!-- Right side buttons -->
-        <div class="flex items-center gap-3 lg:gap-6 text-xs lg:text-sm font-medium font-serif order-2 lg:order-3">
-            <button class="bg-white text-[#2874f0] px-3 lg:px-4 py-1 w-[80px] lg:w-[120px] text-center font-serif cursor-pointer text-xs lg:text-sm">Login</button>
-            <span class="cursor-pointer hover:underline hidden lg:inline">Become a Seller</span>
-            <span class="cursor-pointer flex items-center hover:underline hidden lg:flex">
-            More <i class="ri-arrow-down-s-line ml-1"></i>
-            </span>
-            <span class="cursor-pointer flex items-center gap-1 hover:underline">
-            <i class="ri-shopping-cart-2-fill text-base lg:text-lg"></i> Cart
-            </span>
-        </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Search Bar (hidden on mobile, shown on lg) -->
+      <div class="hidden lg:flex items-center flex-grow max-w-[600px] bg-white mx-4">
+        <input
+          type="text"
+          placeholder="Search for products, brands and more"
+          id="search"
+          class="w-full text-[14px] px-4 py-1.5 outline-none rounded-l-sm text-black placeholder-gray-500"
+        />
+        <button class="bg-white px-4 py-1.5 rounded-r-sm cursor-pointer" onclick="ready()">
+          <i class="ri-search-line text-blue-600 text-lg"></i>
+        </button>
+      </div>
+
+      <!-- Right Section (includes Search icon on mobile) -->
+      <div class="flex items-center gap-2 lg:gap-6 text-xs lg:text-sm font-medium font-serif">
+        <!-- Search icon only for small screens -->
+        <button class="lg:hidden" onclick="toggleSearchMobile()">
+          <i class="ri-search-line text-white text-xl"></i>
+        </button>
+
+        <button class="bg-white text-[#2874f0] px-3 py-1 w-[80px] lg:w-[120px] text-center text-xs lg:text-sm">Login</button>
+        <span class="cursor-pointer hover:underline hidden lg:inline">Become a Seller</span>
+        <span class="cursor-pointer flex items-center hover:underline hidden lg:flex">
+          More <i class="ri-arrow-down-s-line ml-1"></i>
+        </span>
+        <span class="cursor-pointer flex items-center gap-1 hover:underline">
+          <i class="ri-shopping-cart-2-fill text-base lg:text-lg"></i> <span class="hidden sm:inline">Cart</span>
+        </span>
+      </div>
     </nav>
+
+    <!-- Mobile search bar (hidden by default) -->
+    <div id="mobileSearchBar" class="lg:hidden w-full px-3 pt-2 hidden bg-white">
+      <div class="flex items-center border border-gray-300 rounded">
+        <input
+          type="text"
+          placeholder="Search for products, brands and more"
+          class="w-full px-3 py-2 text-sm text-black outline-none"
+        />
+      </div>
+    </div>
 
     <!-- Mobile Menu Button -->
     <div class="lg:hidden bg-white shadow-sm">
@@ -70,7 +86,7 @@
                 <a href="laptop.html" id="laptops"><li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Laptops</li></a>
                 <a href="camera.html" id="cameras"><li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Cameras</li></a>
                 <a href="tablet.html" id="tablets"><li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Tablets</li></a>
-                <a href="" id="pbanks"><li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Power Banks</li></a>
+                <a href="powerbank.html" id="pbanks"><li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Power Banks</li></a>
               </ul>
             </div>
           </div>
@@ -474,48 +490,79 @@
    </div>
 
    <script>
-    // Mobile menu toggle
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    
-    mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
 
-    // Mobile filter toggle
-    const filterBtn = document.getElementById('filterBtn');
-    const sidebar = document.getElementById('sidebar');
-    
-    filterBtn.addEventListener('click', () => {
-        sidebar.classList.toggle('hidden');
-        sidebar.classList.toggle('block');
-        if (!sidebar.classList.contains('hidden')) {
-            sidebar.classList.add('fixed', 'top-0', 'left-0', 'h-full', 'z-50', 'overflow-y-auto', 'bg-white');
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Mobile filter toggle
+      filterBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("hidden");
+        sidebar.classList.toggle("block");
+
+        if (!sidebar.classList.contains("hidden")) {
+          sidebar.classList.add(
+            "fixed",
+            "top-0",
+            "left-0",
+            "h-[90vh]",
+            "z-50",
+            "overflow-y-auto",
+            "bg-white",
+            "shadow-lg",
+            "rounded-md"
+          );
+          sidebar.classList.remove("w-full"); // Optional: restrict width
+          sidebar.classList.add("w-[90vw]", "max-w-[320px]");
         } else {
-            sidebar.classList.remove('fixed', 'top-0', 'left-0', 'h-full', 'z-50', 'overflow-y-auto', 'bg-white');
+          sidebar.classList.remove(
+            "fixed",
+            "top-0",
+            "left-0",
+            "h-[90vh]",
+            "z-50",
+            "overflow-y-auto",
+            "bg-white",
+            "shadow-lg",
+            "rounded-md",
+            "w-[90vw]",
+            "max-w-[320px]"
+          );
+          sidebar.classList.add("w-full");
         }
-    });
+      });
 
-    // Close mobile sidebar when clicking outside
-    document.addEventListener('click', (e) => {
-        if (window.innerWidth < 1024 && !sidebar.contains(e.target) && !filterBtn.contains(e.target) && !sidebar.classList.contains('hidden')) {
-            sidebar.classList.add('hidden');
-            sidebar.classList.remove('fixed', 'top-0', 'left-0', 'h-full', 'z-50', 'overflow-y-auto', 'bg-white');
+      document.addEventListener("click", (e) => {
+        if (
+          window.innerWidth < 1024 &&
+          !sidebar.contains(e.target) &&
+          !filterBtn.contains(e.target) &&
+          !sidebar.classList.contains("hidden")
+        ) {
+          sidebar.classList.add("hidden");
+          sidebar.classList.remove(
+            "fixed",
+            "top-0",
+            "left-0",
+            "h-[90vh]",
+            "z-50",
+            "overflow-y-auto",
+            "bg-white",
+            "shadow-lg",
+            "rounded-md",
+            "w-[90vw]",
+            "max-w-[320px]"
+          );
         }
-    });
-
-    // Handle window resize
-    window.addEventListener('resize', () => {
-        if (window.innerWidth >= 1024) {
-            sidebar.classList.remove('hidden', 'fixed', 'top-0', 'left-0', 'h-full', 'z-50', 'overflow-y-auto');
-            sidebar.classList.add('block');
-            mobileMenu.classList.add('hidden');
-        } else {
-            sidebar.classList.add('hidden');
-            sidebar.classList.remove('block');
-        }
-    });
-   </script>
-   <script src = "./js/tablet.js"></script>
+      });
+      function toggleSearchMobile() {
+        const searchBar = document.getElementById("mobileSearchBar");
+        searchBar.classList.toggle("hidden");
+      }
+    </script>
+   <script src = "./js/pbank.js"></script>
 </body>
 </html>

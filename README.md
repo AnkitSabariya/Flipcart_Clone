@@ -19,4 +19,4 @@ git add .
 git commit -m "task done".   
 git push origin main
 
-https://flipkart-rouge.vercel.app/index.html
+https://flipcart-clone-blond.vercel.app/
