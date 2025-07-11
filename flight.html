@@ -36,6 +36,18 @@
         padding: 10px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
       }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 1.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .glass-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      }
     </style>
   </head>
   <body class="bg-gray-100 font-sans">
@@ -43,11 +55,14 @@
     <header
       class="bg-blue-600 text-white py-4 px-6 flex justify-between items-center"
     >
-      <div class="text-2xl font-bold flex items-center space-x-1">
-        <span class="text-white">Flip</span>
-        <span class="text-yellow-400">kart</span>
-        <span class="text-sm font-light ml-2">Travel</span>
-      </div>
+      <a href="./index.html">
+        <div class="text-2xl font-bold flex items-center space-x-1">
+          <span class="text-white">Flip</span>
+          <span class="text-yellow-400">kart</span>
+          <span class="text-sm font-light ml-2">Travel</span>
+        </div>
+      </a>
+
       <nav class="space-x-6 text-sm">
         <span class="cursor-pointer">Login</span>
         <span class="cursor-pointer"
@@ -61,14 +76,17 @@
       <img
         src="https://canadawiz.ca/wp-content/uploads/2022/02/canada-ultra-low-cost-airline.jpeg"
         alt="Banner"
-        class="w-full h-[320px] object-cover"
+        class="w-full h-[420px] object-cover"
       />
       <div
-        class="absolute inset-0 bg-black/40 flex items-center justify-center"
+        class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center px-4"
       >
-        <h1 class="text-white text-3xl md:text-5xl font-bold">
+        <h1 class="text-white text-3xl md:text-5xl font-bold mb-6 text-center">
           Get. Set. Travel.
         </h1>
+
+        <!-- RESULTS CONTAINER -->
+        <div id="container" class="flex flex-col gap-4 w-full max-w-3xl"></div>
       </div>
     </div>
 
@@ -239,7 +257,7 @@
           <!-- Search Button -->
           <div class="flex-1 lg:flex-[1.5]">
             <button
-              id="searchButton"
+              onclick="searchButton()"
               class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-4 rounded-lg font-semibold text-sm transition-all duration-200 hover:shadow-lg flex items-center justify-center gap-2 h-14"
             >
               <i class="fas fa-search"></i>
@@ -249,9 +267,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Slider -->
-  
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -269,34 +284,92 @@
         },
       });
 
-      // Trip type functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const tripTypeInputs = document.querySelectorAll('input[name="trip"]');
-        const returnDateInput = document.getElementById("returnDate");
+      // Input elements
+      const fromInput = document.getElementById("fromInput");
+      const toInput = document.getElementById("toInput");
+      const departDate = document.getElementById("departDate");
+      const returnDate = document.getElementById("returnDate");
+      const travellers = document.getElementById("travellers");
+      const container = document.getElementById("container");
 
-        tripTypeInputs.forEach((input) => {
-          input.addEventListener("change", function () {
-            if (this.value === "oneway") {
-              returnDateInput.disabled = true;
-              returnDateInput.classList.add("opacity-50", "cursor-not-allowed");
-              returnDateInput.previousElementSibling.classList.remove(
-                "text-blue-600"
-              );
-              returnDateInput.previousElementSibling.classList.add(
-                "text-gray-400"
-              );
+      let flightsData = [];
+
+      // Fetch flight data
+      fetch("./json/flight.json")
+        .then((res) => res.json())
+        .then((data) => {
+          flightsData = data;
+        })
+        .catch((error) => {
+          console.error("Error fetching flight data:", error);
+          container.innerHTML = `<p class="text-white text-center font-semibold">Error loading flights. Please try again.</p>`;
+        });
+
+      // Search button functionality
+      function searchButton() {
+        const from = fromInput.value;
+        const to = toInput.value;
+        const depart = departDate.value;
+        const ret = returnDate.value;
+        const [trav, flightClass] = travellers.value.split("-");
+
+        // Clear only the results, not the heading
+        container.innerHTML = "";
+
+        const matches = flightsData.filter((flight) => {
+          return (
+            flight.origin === from &&
+            flight.destination === to &&
+            flight.departureDate === depart &&
+            (returnDate.disabled || flight.returnDate === ret) &&
+            flight.travellers == trav &&
+            flight.class.toLowerCase() === flightClass
+          );
+        });
+
+        if (matches.length > 0) {
+          matches.forEach((flight) => {
+            const card = document.createElement("div");
+            card.className =
+              "glass-card w-full max-w-md mx-auto text-white p-4 rounded-lg shadow-lg flex flex-col items-center";
+            card.innerHTML = `
+              <h3 class="text-lg font-bold">${flight.flightNumber} | ${flight.origin} ➜ ${flight.destination}</h3>
+              <div class="flex justify-between w-full mt-2">
+                <div>
+                  <p>Depart: ${flight.departureDate} ${flight.departureTime}</p>
+                  <p>Class: ${flight.class}</p>
+                </div>
+                <div class="text-right">
+                  <p>Arrive: ${flight.arrivalTime}</p>
+                  <p>Travellers: ${flight.travellers}</p>
+                </div>
+              </div>
+              <p class="text-xl font-semibold text-blue-400 mt-2">₹${flight.price}</p>
+              <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold transition-all duration-200">
+                Book Now
+              </button>
+            `;
+            container.appendChild(card);
+          });
+        } else {
+          const no = document.createElement("p");
+          no.className = "text-white text-center font-semibold text-lg";
+          no.innerText = "No flights found for your selection.";
+          container.appendChild(no);
+        }
+      }
+
+      // Round trip toggle for return date
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll('input[name="trip"]').forEach((radio) => {
+          radio.addEventListener("change", () => {
+            if (radio.value === "oneway") {
+              returnDate.disabled = true;
+              returnDate.value = "";
+              returnDate.classList.add("opacity-50", "cursor-not-allowed");
             } else {
-              returnDateInput.disabled = false;
-              returnDateInput.classList.remove(
-                "opacity-50",
-                "cursor-not-allowed"
-              );
-              returnDateInput.previousElementSibling.classList.remove(
-                "text-gray-400"
-              );
-              returnDateInput.previousElementSibling.classList.add(
-                "text-blue-600"
-              );
+              returnDate.disabled = false;
+              returnDate.classList.remove("opacity-50", "cursor-not-allowed");
             }
           });
         });

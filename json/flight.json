@@ -1,0 +1,62 @@
+[
+  {
+    "flightNumber": "AI203",
+    "origin": "DEL",
+    "destination": "BOM",
+    "departureDate": "2025-07-15",
+    "returnDate": "",
+    "departureTime": "10:00",
+    "arrivalTime": "12:10",
+    "travellers": 1,
+    "class": "Economy",
+    "price": 5500
+  },
+  {
+    "flightNumber": "6E512",
+    "origin": "BOM",
+    "destination": "HYD",
+    "departureDate": "2025-07-15",
+    "returnDate": "2025-07-20",
+    "departureTime": "14:30",
+    "arrivalTime": "16:30",
+    "travellers": 2,
+    "class": "Business",
+    "price": 9800
+  },
+  {
+    "flightNumber": "SG789",
+    "origin": "BLR",
+    "destination": "GOI",
+    "departureDate": "2025-07-16",
+    "returnDate": "",
+    "departureTime": "09:00",
+    "arrivalTime": "10:20",
+    "travellers": 1,
+    "class": "Economy",
+    "price": 4500
+  },
+  {
+    "flightNumber": "UK404",
+    "origin": "DEL",
+    "destination": "BKK",
+    "departureDate": "2025-07-22",
+    "returnDate": "2025-07-29",
+    "departureTime": "23:00",
+    "arrivalTime": "05:30",
+    "travellers": 3,
+    "class": "Economy",
+    "price": 19500
+  },
+  {
+    "flightNumber": "MH101",
+    "origin": "MAA",
+    "destination": "KUL",
+    "departureDate": "2025-07-18",
+    "returnDate": "",
+    "departureTime": "18:45",
+    "arrivalTime": "00:15",
+    "travellers": 1,
+    "class": "Premium Economy",
+    "price": 13200
+  }
+]
