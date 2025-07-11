@@ -147,9 +147,10 @@
           <div
             class="input hidden md:flex w-[53%] h-[45px] bg-[#F0F5FF] rounded-lg ml-10 items-center px-4"
           >
-            <i class="ri-search-line text-2xl text-[#818489]"></i>
+            <i class="ri-search-line text-2xl text-[#818489]"   onclick="searchProduct()"></i>
             <input
               type="text"
+              onkeydown="if(event.key==='Enter'){ searchProduct(); }"
               id="search"
               class="w-[80%] text-lg text-black font-normal outline-0 ml-2.5 bg-transparent"
               placeholder="Search for Products, Brands and More"
@@ -158,7 +159,7 @@
           <div
             class="buttons w-auto gap-3 h-full flex items-center ml-auto space-x-6"
           >
-            <a href="./login.html          ">
+            <a href="./login.html       ">
               <div class="relative group hidden sm:block">
                 <button
                   class="flex items-center space-x-2 bg-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition"
@@ -1878,4 +1879,5 @@
     </div>
   </body>
   <script src="./js/mobile.js"></script>
+  <script src="./js/script.js"></script>
 </html>

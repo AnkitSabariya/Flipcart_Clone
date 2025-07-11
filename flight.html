@@ -160,6 +160,7 @@
             <button
               id="swapButton"
               class="w-12 h-12 bg-white border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 hover:rotate-180"
+              onclick="swapLocations()"
             >
               <svg class="w-4 h-4 text-gray-400" viewBox="0 0 14 14">
                 <path
@@ -374,6 +375,14 @@
           });
         });
       });
+
+      // Swap locations function
+      function swapLocations() {
+        const fromValue = fromInput.value;
+        const toValue = toInput.value;
+        fromInput.value = toValue;
+        toInput.value = fromValue;
+      }
     </script>
   </body>
 </html>
