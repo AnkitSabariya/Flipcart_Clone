@@ -1,7 +1,18 @@
+fetch(`./partials/navbar.html`)
+  .then((res) => res.text())
+  .then((html) => {
+    document.getElementById("mynavbar").innerHTML = html;
+  });
 function searchProduct() {
-  const query = document.getElementById("search").value.trim().toLowerCase();
+  let query = "";
 
-  if (!query) return; // ✅ Agar blank ho toh kuch mat karo
+  if (window.innerWidth < 1024) {
+    query = document.getElementById("searchMobile").value.trim().toLowerCase();
+  } else {
+    query = document.getElementById("search").value.trim().toLowerCase();
+  }
+
+  if (!query) return;
 
   const pages = {
     camera: "camera.html",
@@ -20,6 +31,6 @@ function searchProduct() {
   if (pages[query]) {
     window.location.href = pages[query];
   } else {
-    return;
+    alert("No results found for: " + query);
   }
 }
