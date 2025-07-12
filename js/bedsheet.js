@@ -18,7 +18,7 @@ function database() {
         let currentImg = 0;
 
         const card = document.createElement("div");
-        card.className = "bg-white w-full sm:h-[300px] h-auto flex flex-col sm:flex-row p-4 border border-gray-200 cursor-pointer ";
+        card.className = "bg-white w-full sm:h-[300px] h-auto flex flex-col sm:flex-row p-4 border items-center border-gray-200 cursor-pointer ";
         card.innerHTML = `
             <!-- Left: Image -->
             <div class="flex items-center justify-center relative w-[200px]">
@@ -43,7 +43,7 @@ function database() {
             </div>
 
             <!-- Right: Price -->
-            <div class="text-right min-w-[120px]">
+            <div class=" md:min-w-[120px] min-w-full flex flex-col items-start px-4">
                 <div class="text-xl font-bold text-gray-800">₹${price}</div>
                 <div class="text-sm line-through text-gray-400">₹${originalPrice}</div>
                 <div class="text-green-600 text-sm font-medium">${Math.round(discountPercentage)}% off</div>

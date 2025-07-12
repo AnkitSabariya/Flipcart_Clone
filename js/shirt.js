@@ -49,7 +49,7 @@ function database() {
             </div>
             
             <!-- Right: Price -->
-            <div class="text-right min-w-[120px]">
+            <div class="min-w-full flex flex-col items-start px-4 md:min-w-[120px]">
               <div class="text-xl font-bold text-gray-800">₹${price}</div>
               <div class="text-sm line-through text-gray-400">₹${originalPrice}</div>
               <div class="text-green-600 text-sm font-medium">${Math.round(discountPercentage)}% off</div>

@@ -39,7 +39,7 @@ function database() {
       </div>
 
       <!-- Price Section -->
-      <div class="text-right min-w-[120px] py-2">
+      <div class="flex items-start min-w-full md:min-w-[120px] py-2 px-4">
         <div class="text-xl font-bold text-gray-800">₹${price}</div>
       </div>
     `;

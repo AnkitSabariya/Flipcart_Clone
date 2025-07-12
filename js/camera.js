@@ -24,7 +24,7 @@ const cardBox = document.querySelector(".cardbox");
 
     const card = document.createElement("div");
     card.className =
-      "bg-white w-full sm:h-[300px] h-auto flex flex-col sm:flex-row p-4 border border-gray-200 rounded-lg shadow-sm hover:shadow-lg cursor-pointer transition";
+      "bg-white w-full sm:h-[300px] h-auto flex flex-col sm:flex-row p-4 border items-center border-gray-200 rounded-lg shadow-sm hover:shadow-lg cursor-pointer transition";
 
     card.innerHTML = `
       <!-- Left: Image Slider -->
@@ -50,7 +50,7 @@ const cardBox = document.querySelector(".cardbox");
       </div>
 
       <!-- Right: Pricing -->
-      <div class="text-right min-w-[140px] flex flex-col justify-between">
+      <div class=" md:min-w-[140px] min-w-full flex flex-col justify-between items-start px-4">
         <div>
           <div class="text-xl font-bold text-gray-800">₹${price}</div>
           <div class="text-sm line-through text-gray-400">₹${originalPrice}</div>

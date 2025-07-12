@@ -46,7 +46,7 @@ function database() {
       </div>
 
       <!-- Price Section -->
-      <div class="text-right min-w-[120px] py-2">
+      <div class="min-w-full flex items-start px-4 md:min-w-[120px] py-2">
         <div class="text-xl font-bold text-gray-800">$${price_usd}</div>
       </div>
     `;
