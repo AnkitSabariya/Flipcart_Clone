@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flipkart clone</title>
+    <title>Flipkart Clone</title>
+
+    <!-- Tailwind CSS CDN (agar use ho raha hai) -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon CDN (for icons) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
@@ -12,102 +16,39 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Global Font: Helvetica Neue (system font) -->
+    <style>
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+    </style>
   </head>
-  <script src="./js/script.js"></script>
-  <body class="">
+  <body>
     <div id="container" class="h-full bg-[#f7f7f7]">
       <!-- navbar -->
- <nav
-        class="bg-[#2874f0] text-white w-full flex flex-wrap items-center justify-between md:justify-center px-3 lg:px-6 py-2 lg:h-[56px]"
+      <div id="mynavbar"></div>
+      <!-- navbar -->
+      <!-- Mobile search bar (hidden by default) -->
+      <div
+        id="mobileSearchBar"
+        class="lg:hidden w-full px-3 pt-2 hidden bg-white transform transition-all duration-300 ease-in-out origin-top scale-y-0 opacity-0"
       >
-        <!-- Logo -->
-        <div class="flex items-center gap-2">
-          <a
-            href="index.html"
-            class="flex flex-col leading-[1.1] font-semibold text-[16px] lg:text-[18px] italic"
-          >
-            <span class="text-white font-extrabold">Flipkart</span>
-            <div
-              class="text-[10px] lg:text-[11px] font-normal flex items-center text-white"
-            >
-              Explore <span class="text-yellow-300 font-bold ml-1">Plus</span>
-              <img
-                src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png"
-                class="h-2 lg:h-3 ml-1 mt-[1px]"
-                alt="plus"
-              />
-            </div>
-          </a>
-        </div>
-
-        <!-- Search Bar (hidden on mobile, shown on lg) -->
         <div
-          class="hidden lg:flex items-center flex-grow max-w-[600px] bg-white mx-4"
+          class="flex items-center border border-gray-300 rounded overflow-hidden"
         >
           <input
-            onkeydown="if(event.key==='Enter'){ searchProduct(); }"
+            id="searchMobile"
             type="text"
             placeholder="Search for products, brands and more"
-            id="search"
-            class="w-full text-[14px] px-4 py-1.5 outline-none rounded-l-sm text-black placeholder-gray-500"
+            onkeydown="if(event.key==='Enter'){ searchProduct(); }"
+            class="w-full px-4 py-2 text-sm text-black outline-none"
           />
-          <button
-            class="bg-white px-4 py-1.5 rounded-r-sm cursor-pointer"
-            onclick="searchProduct()"
-          >
-            <i class="ri-search-line text-blue-600 text-lg"></i>
+          <button onclick="searchProduct()" class="bg-[#f1f3f6] px-4 py-2">
+            <i class="ri-search-line text-[#2874f0] text-lg"></i>
           </button>
         </div>
-
-        <!-- Right Section (includes Search icon on mobile) -->
-        <div
-          class="flex items-center gap-2 lg:gap-6 text-xs lg:text-sm font-medium font-serif"
-        >
-          <!-- Search icon only for small screens -->
-          <button class="lg:hidden" onclick="toggleSearchMobile()">
-            <i class="ri-search-line text-white text-xl"></i>
-          </button>
-
-          <button
-            class="bg-white text-[#2874f0] px-3 py-1 w-[80px] lg:w-[120px] text-center text-xs lg:text-sm"
-          >
-            Login
-          </button>
-          <span class="cursor-pointer hover:underline hidden lg:inline"
-            >Become a Seller</span
-          >
-          <span
-            class="cursor-pointer flex items-center hover:underline hidden lg:flex"
-          >
-            More <i class="ri-arrow-down-s-line ml-1"></i>
-          </span>
-          <span class="cursor-pointer flex items-center gap-1 hover:underline">
-            <i class="ri-shopping-cart-2-fill text-base lg:text-lg"></i>
-            <span class="hidden sm:inline">Cart</span>
-          </span>
-        </div>
-      </nav>
-   <!-- Mobile search bar (hidden by default) -->
-<div
-  id="mobileSearchBar"
-  class="lg:hidden w-full px-3 pt-2 hidden bg-white transform transition-all duration-300 ease-in-out origin-top scale-y-0 opacity-0"
->
-  <div class="flex items-center border border-gray-300 rounded overflow-hidden">
-    <input
-      id="searchMobile"
-      type="text"
-      placeholder="Search for products, brands and more"
-      onkeydown="if(event.key==='Enter'){ searchProduct(); }"
-      class="w-full px-4 py-2 text-sm text-black outline-none"
-    />
-    <button onclick="searchProduct()" class="bg-[#f1f3f6] px-4 py-2">
-      <i class="ri-search-line text-[#2874f0] text-lg"></i>
-    </button>
-  </div>
-</div>
-
-
-
+      </div>
 
       <!-- Mobile Menu Button -->
       <div class="lg:hidden bg-white shadow-sm">
@@ -888,6 +829,7 @@
     </div>
 
     <script>
+
       // Mobile menu toggle
       const mobileMenuBtn = document.getElementById("mobileMenuBtn");
       const mobileMenu = document.getElementById("mobileMenu");
@@ -956,28 +898,26 @@
           );
         }
       });
-  function toggleSearchMobile() {
-  const searchBar = document.getElementById("mobileSearchBar");
+      function toggleSearchMobile() {
+        const searchBar = document.getElementById("mobileSearchBar");
 
-  if (searchBar.classList.contains("hidden")) {
-    searchBar.classList.remove("hidden");
-    setTimeout(() => {
-      searchBar.classList.remove("scale-y-0", "opacity-0");
-      searchBar.classList.add("!scale-y-[1]", "opacity-100");
-    }, 10);
-    document.getElementById("searchMobile").focus();
-  } else {
-    searchBar.classList.remove("!scale-y-[1]", "opacity-100");
-    searchBar.classList.add("scale-y-0", "opacity-0");
-    setTimeout(() => {
-      searchBar.classList.add("hidden");
-    }, 300);
-  }
-}
-
-
-
+        if (searchBar.classList.contains("hidden")) {
+          searchBar.classList.remove("hidden");
+          setTimeout(() => {
+            searchBar.classList.remove("scale-y-0", "opacity-0");
+            searchBar.classList.add("!scale-y-[1]", "opacity-100");
+          }, 10);
+          document.getElementById("searchMobile").focus();
+        } else {
+          searchBar.classList.remove("!scale-y-[1]", "opacity-100");
+          searchBar.classList.add("scale-y-0", "opacity-0");
+          setTimeout(() => {
+            searchBar.classList.add("hidden");
+          }, 300);
+        }
+      }
     </script>
     <script src="./js/camera.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

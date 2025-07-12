@@ -1,3 +1,8 @@
+fetch(`./partials/navbar.html`)
+  .then((res) => res.text())
+  .then((html) => {
+    document.getElementById("mynavbar").innerHTML = html;
+  });
 function searchProduct() {
   let query = "";
 
