@@ -1,7 +1,7 @@
 function searchProduct() {
   const query = document.getElementById("search").value.trim().toLowerCase();
 
-  if (!query) return; // ✅ Agar blank ho toh kuch mat karo
+  if (!query) return; 
 
   const pages = {
     camera: "camera.html",
@@ -15,6 +15,7 @@ function searchProduct() {
     flight: "flight.html",
     furniture: "furniture.html",
     powerbank: "powerbank.html",
+    furniture: "furniture.html",
   };
 
   if (pages[query]) {
