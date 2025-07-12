@@ -1,4 +1,4 @@
-let navbar = document.getElementById("navbar")
+let navbar = document.getElementById("mynavbar")
 navbar.setAttribute("class","bg-[#2874f0] text-white w-full flex flex-wrap items-center justify-between md:justify-center px-3 lg:px-6 py-2 lg:h-[56px]")
 
 navbar.innerHTML = `
