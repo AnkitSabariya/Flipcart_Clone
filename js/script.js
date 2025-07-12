@@ -1,7 +1,13 @@
 function searchProduct() {
-  const query = document.getElementById("search").value.trim().toLowerCase();
+  let query = "";
 
-  if (!query) return; 
+  if (window.innerWidth < 1024) {
+    query = document.getElementById("searchMobile").value.trim().toLowerCase();
+  } else {
+    query = document.getElementById("search").value.trim().toLowerCase();
+  }
+
+  if (!query) return;
 
   const pages = {
     camera: "camera.html",
@@ -15,12 +21,11 @@ function searchProduct() {
     flight: "flight.html",
     furniture: "furniture.html",
     powerbank: "powerbank.html",
-    furniture: "furniture.html",
   };
 
   if (pages[query]) {
     window.location.href = pages[query];
   } else {
-    return;
+    alert("No results found for: " + query);
   }
 }
