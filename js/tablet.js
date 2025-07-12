@@ -1,9 +1,10 @@
-
-  let data;
 const cardBox = document.querySelector(".cardbox");
 
-function database() {
-  data.forEach((product, index) => {
+function loadProducts() {
+  fetch("./json/tablet.json")
+  .then((res)=> res.json())
+  .then((data) =>{
+       data.forEach((product, index) => {
     const {
       model,
       brand,
@@ -14,6 +15,7 @@ function database() {
     } = product;
 
     let currentImg = 0;
+
 
     const card = document.createElement("div");
     card.className =
@@ -61,14 +63,9 @@ function database() {
       clearInterval(interval);
     });
   });
+  })
 }
-
-async function loadProducts(category = "tablets") {
-  const res = await fetch(`./json/tablet.json`);
-  data = await res.json();
-  cardBox.innerHTML = '';
-  database();
-}
+loadProducts();
 
 async function ready() {
   let search = document.getElementById("search").value.toLowerCase();
@@ -87,5 +84,4 @@ document.getElementById("search").addEventListener("keydown", (e) => {
   }
 });
 
-loadProducts();
 

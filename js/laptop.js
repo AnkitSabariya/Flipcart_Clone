@@ -1,8 +1,11 @@
-let data;
 const cardBox = document.querySelector(".cardbox");
 
-function database() {
-  data.forEach((product, index) => {
+function loadProducts() {
+  fetch(`./json/laptop.json`)
+  .then((res)=> res.json())
+  .then((data)=> {
+      cardBox.innerHTML = '';
+    data.forEach((product, index) => {
     const {
       model,
       brand,
@@ -21,7 +24,7 @@ function database() {
     card.innerHTML = `
       <!-- Image Section -->
       <div class="relative w-full md:w-1/3 flex items-center justify-center overflow-hidden">
-        <img src="${images[0]}" id="img-${index}" class="object-contain h-full max-h-[200px] transition-all duration-300 ease-in-out">
+        <img src="${images[0]}" id="img-${index}" class="object-contain h-full max-h-[200px] md:max-h-[350px] transition-all duration-300 ease-in-out">
       </div>
 
       <!-- Details Section -->
@@ -65,13 +68,9 @@ function database() {
     });
   });
 }
-
-async function loadProducts() {
-  const res = await fetch(`./json/laptop.json`);
-  data = await res.json();
-  cardBox.innerHTML = '';
-  database();
+  )
 }
+loadProducts();
 
 async function ready() {
   let search = document.getElementById("search").value.toLowerCase();
@@ -90,4 +89,3 @@ document.getElementById("search").addEventListener("keydown", (e) => {
   }
 });
 
-loadProducts();

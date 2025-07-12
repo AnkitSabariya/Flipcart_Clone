@@ -1,8 +1,10 @@
-let data;
 const cardBox = document.querySelector(".cardbox");
 
-function database() {
-  data.forEach((product, index) => {
+function loadProducts(category = "powerbanks") {
+  fetch("./json/powerbank.json")
+  .then((res)=> res.json())
+  .then((data)=> {
+       data.forEach((product, index) => {
     const {
       category,
       brand,
@@ -53,14 +55,9 @@ function database() {
 
     cardBox.appendChild(card);
   });
+  })
 }
-
-async function loadProducts(category = "powerbanks") {
-  const res = await fetch(`./json/powerbank.json`);
-  data = await res.json();
-  cardBox.innerHTML = '';
-  database();
-}
+loadProducts();
 
 async function ready() {
   let search = document.getElementById("search").value.toLowerCase();
@@ -81,4 +78,3 @@ document.getElementById("search").addEventListener("keydown", (e) => {
   }
 });
 
-loadProducts();
