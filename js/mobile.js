@@ -1,4 +1,5 @@
 const cardBox = document.querySelector(".cardbox");
+let key = 0
   function loadProducts() {
     fetch("./json/mobiles.json")
     .then((res)=> res.json())
@@ -15,10 +16,11 @@ const cardBox = document.querySelector(".cardbox");
 
       let currentImg = 0;
 
-      const card = document.createElement("div");
+      const card = document.createElement("a");
       card.className =
       "bg-white w-full sm:h-[320px] h-auto flex flex-col sm:flex-row p-4 border border-gray-200 cursor-pointer shadow-sm hover:shadow-md transition";
-
+      // card.setAttribute("href","#")
+      card.setAttribute("onclick",`local(${key})`)
     card.innerHTML = `
       <!-- Image Slider -->
       <div class="relative w-full sm:w-[250px] flex items-center justify-center">
@@ -47,7 +49,8 @@ const cardBox = document.querySelector(".cardbox");
         <div class="text-xl font-bold text-gray-800">₹${price.toLocaleString()}</div>
       </div>
     `;
-      cardBox.appendChild(card);    
+      cardBox.appendChild(card); 
+      key++   
       const imgEl = card.querySelector(`#img-${index}`);
 
     // Hover to auto slide images
@@ -65,6 +68,28 @@ const cardBox = document.querySelector(".cardbox");
     });
     })   
 }
-  
+  function local(key){
+    fetch("./json/mobiles.json")
+    .then((res)=> res.json())
+    .then((data)=> {
+      localStorage.clear()
+        localStorage.setItem("brand", data[key].brand);
+      localStorage.setItem("model", data[key].model);
+      localStorage.setItem("desp", data[key].description);
+      localStorage.setItem("price", data[key].price);
+      localStorage.setItem("image", data[key].images[0]);
+
+      localStorage.setItem("processor", data[key].specifications.processor);
+      localStorage.setItem("ram", data[key].specifications.ram);
+      localStorage.setItem("storage", data[key].specifications.storage);
+      localStorage.setItem("display", data[key].specifications.display);
+      localStorage.setItem("battery", specifications.battery);
+      localStorage.setItem("rearcamera", data[key].specifications.rear_camera);
+      localStorage.setItem("frontcamera", data[key].specifications.front_camera);
+      localStorage.setItem("os", data[key].specifications.os);
+      localStorage.setItem("connectivity", data[key].specifications.connectivity);
+
+  });
+} 
   loadProducts();
 

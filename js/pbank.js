@@ -1,5 +1,5 @@
 const cardBox = document.querySelector(".cardbox");
-
+let key = 0
 function loadProducts(category = "powerbanks") {
   fetch("./json/powerbank.json")
   .then((res)=> res.json())
@@ -21,10 +21,11 @@ function loadProducts(category = "powerbanks") {
       features
     } = product;
 
-    const card = document.createElement("div");
+    const card = document.createElement("a");
     card.className =
       "bg-white w-full flex flex-col sm:flex-row p-4 border justify-center items-center border-gray-200 cursor-pointer md:h-auto transition-all duration-300 hover:shadow-xl";
-
+     // card.setAttribute("href","#")
+    card.setAttribute("onclick",`local(${key})`)
     card.innerHTML = `
       <!-- Image Section -->
       <div class="relative w-full sm:w-1/3 flex items-center justify-center overflow-hidden">
@@ -54,9 +55,31 @@ function loadProducts(category = "powerbanks") {
     `;
 
     cardBox.appendChild(card);
+    key++
   });
   })
 }
+function local(key){
+    fetch("./json/powerbank.json")
+    .then((res)=> res.json())
+    .then((data)=> {
+      localStorage.clear()
+      localStorage.setItem("brand", data[key].brand);
+  localStorage.setItem("model", data[key].model);
+  localStorage.setItem("desp", data[key].short_description);
+  localStorage.setItem("category", data[key].category);
+  localStorage.setItem("capacity", data[key].capacity_mAh);
+  localStorage.setItem("output_ports", data[key].output_ports.join(", "));
+  localStorage.setItem("input_port", data[key].input_port);
+  localStorage.setItem("fast_charging", data[key].fast_charging ? "Yes" : "No");
+  localStorage.setItem("weight", data[key].weight_g);
+  localStorage.setItem("dimensions", data[key].dimensions_mm.join(" x "));
+  localStorage.setItem("features", data[key].features);
+  localStorage.setItem("image", data[key].image_url);
+
+  });
+} 
+  
 loadProducts();
 
 

@@ -1,5 +1,5 @@
 const cardBox = document.querySelector(".cardbox");
-
+let key = 0
 function renderCards() {
     fetch("./json/ac.json")
     .then((res)=> res.json())
@@ -24,10 +24,11 @@ function renderCards() {
       
           let currentImg = 0;
       
-          const card = document.createElement("div");
+          const card = document.createElement("a");
           card.className =
             "bg-white w-full sm:h-[320px] flex flex-col sm:flex-row p-4 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300";
-      
+          // card.setAttribute("href","#")
+          card.setAttribute("onclick",`local(${key})`)
           card.innerHTML = `
             <!-- Image with slider -->
             <div class="relative w-full sm:w-[250px] flex items-center justify-center">
@@ -53,8 +54,8 @@ function renderCards() {
               <div class="text-xl font-bold text-gray-800">₹${price_inr.toLocaleString()}</div>
             </div>
           `;
-      
           cardBox.appendChild(card);
+          key++
           const imgEl = card.querySelector(`#img-${index}`);
 
         // Hover to auto slide images
@@ -72,5 +73,24 @@ function renderCards() {
         });
     })
 }
+function local(key){
+    fetch("./json/ac.json")
+    .then((res)=> res.json())
+    .then((data)=> {
+        localStorage.clear()
+        localStorage.setItem("image",`${data[key].images[0]}`)
+        localStorage.setItem("model",`${data[key].model}`)
+        localStorage.setItem("brand",`${data[key].brand}`)
+        localStorage.setItem("type",`${data[key].type}`)
+        localStorage.setItem("capacity",`${data[key].capacity_ton}`)
+        localStorage.setItem("rating",`${data[key].energy_rating}`)
+        localStorage.setItem("cool",`${data[key].cooling_technology}`)
+        localStorage.setItem("smart_features",`${data[key].smart_features}`)
+        localStorage.setItem("desp",`${data[key].short_description}`)
+        localStorage.setItem("features",`${data[key].features}`)
+        localStorage.setItem("price",`${data[key].price_inr}`)
+        
+    })
 
+}
 renderCards();

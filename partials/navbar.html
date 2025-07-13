@@ -12,15 +12,6 @@
     </a>
   </div>
 
-  <!-- Search Bar (hidden on mobile, shown on lg) -->
-  <div class="hidden lg:flex items-center flex-grow max-w-[600px] bg-white mx-4 rounded-md overflow-hidden shadow-sm " >
-    <input onkeydown="if(event.key==='Enter'){ searchProduct(); }" type="text"
-      placeholder="Search for products, brands and more" id="search"
-      class="w-full text-[14px] px-4 py-2 hidden md:flex outline-none text-black placeholder-gray-500" id="mobileSearchBar" />
-    <button class="bg-white px-4 py-2 cursor-pointer hover:bg-gray-100 transition" onclick="searchProduct()">
-      <i class="ri-search-line text-blue-600 text-lg"></i>
-    </button>
-  </div>
         <!-- Search Bar (hidden on mobile, shown on lg) -->
         <div id="mobileSearchBar"
           class="hidden lg:flex items-center flex-grow max-w-[600px] bg-white mx-4 rounded-md overflow-hidden shadow-sm"
@@ -30,10 +21,10 @@
             type="text"
             placeholder="Search for products, brands and more"
             id="search"
-            class="w-full text-[14px] px-4 py-2 outline-none text-black placeholder-gray-500"
+            class="w-full text-[14px] px-4 py-2 outline-none text-black placeholder-gray-500 block lg:flex"
           />
           <button
-            class="bg-white px-4 py-2 cursor-pointer hover:bg-gray-100 transition"
+            class="bg-white px-4 py-2 cursor-pointer hover:bg-gray-100 transition hidden lg:flex"
             onclick="searchProduct()"
           >
             <i class="ri-search-line text-blue-600 text-lg"></i>

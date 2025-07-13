@@ -28,7 +28,7 @@ function renderCards() {
             const card = document.createElement("a");
             card.className =
             "bg-white w-full flex flex-col items-start p-4 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300";
-            card.setAttribute("href","#")
+            // card.setAttribute("href","#")
             card.setAttribute("onclick",`local(${key})`)
             card.innerHTML = `
             <!-- Image -->
@@ -66,7 +66,7 @@ function local(key){
     fetch("./json/t-shirts.json")
     .then((res)=> res.json())
     .then((data)=> {
-
+        localStorage.clear()
         localStorage.setItem("image",`${data[key].images[0]}`)
         localStorage.setItem("model",`${data[key].model}`)
         localStorage.setItem("brand",`${data[key].brand}`)
@@ -81,6 +81,5 @@ function local(key){
         localStorage.setItem("price",`${data[key].price_inr}`)
         
     })
-
 }
     renderCards();

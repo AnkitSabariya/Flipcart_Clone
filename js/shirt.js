@@ -1,103 +1,90 @@
-let data;
 const cardBox = document.querySelector(".cardbox");
+let key = 0
+    function renderCards() {
+        fetch("./json/shirt.json")
+        .then((res)=> res.json())
+        .then((data)=>{
 
-function database() {
-    cardBox.innerHTML = ''; // Clear existing cards
-    if (!data || !data.products || data.products.length === 0) {
-        cardBox.innerHTML = '<p class="text-center text-gray-500 p-4">No products available.</p>';
-        return;
+            cardBox.innerHTML = "";
+      
+            data.forEach((product) => {
+              const {
+                brand,
+                model,
+                category,
+                gender,
+                fit,
+                fabric,
+                sizes,
+                color,
+                price_usd,
+                image,
+                pattern,
+                occasion,
+                sleeve,
+                featureTags
+              } = product;
+      
+              const price_inr = Math.round(price_usd * 83); // USD to INR approx
+      
+              const card = document.createElement("a");
+              card.className = "bg-white w-full flex flex-col items-center p-4 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 rounded-xl";
+            //   card.setAttribute("href","#")
+                card.setAttribute("onclick",`local(${key})`)
+              card.innerHTML = `
+                <!-- Image -->
+                <div class="w-full sm:w-[220px] flex items-center justify-center mb-4 sm:mb-0">
+                  <img src="${image}" alt="${model}" class="object-contain max-h-[250px] w-full" />
+                </div>
+      
+                <!-- Details -->
+                <div class="flex-1 px-4 py-2">
+                  <h2 class="text-lg font-semibold text-gray-800">${brand} ${model}</h2>
+                  <p class="text-sm text-gray-600 mt-1">${occasion} wear ${category.toLowerCase()} shirt</p>
+                  <ul class="list-disc list-inside text-sm text-gray-700 mt-3 space-y-0.5">
+                    <li><strong>Category:</strong> ${category}</li>
+                    <li><strong>Gender:</strong> ${gender}</li>
+                    <li><strong>Fit:</strong> ${fit}</li>
+                    <li><strong>Fabric:</strong> ${fabric}</li>
+                    <li><strong>Pattern:</strong> ${pattern}</li>
+                    <li><strong>Sleeve:</strong> ${sleeve} Sleeve</li>
+                    <li><strong>Color:</strong> ${color}</li>
+                    <li><strong>Sizes:</strong> ${sizes.join(", ")}</li>
+                    <li><strong>Features:</strong> ${featureTags.join(", ")}</li>
+                  </ul>
+                </div>
+      
+                <!-- Price -->
+                <div class="w-full sm:w-[160px] flex flex-col items-start px-4 justify-center mt-4 sm:mt-0">
+                  <div class="text-xl font-bold text-gray-800">₹${price_inr.toLocaleString()}</div>
+                    </div>
+              `;
+      
+              cardBox.appendChild(card);
+              key++
+            });
+        })
     }
-
-    data.products.forEach((product, index) => {
-        const {
-            title,
-            brand,
-            description,
-            price,
-            discountPercentage,
-            stock,
-            images,
-            rating
-        } = product;
+    function local(key){
+    fetch("./json/shirt.json")
+    .then((res)=> res.json())
+    .then((data)=> {
+        localStorage.clear()
+        localStorage.setItem("image",`${data[key].image}`)
+        localStorage.setItem("model",`${data[key].model}`)
+        localStorage.setItem("brand",`${data[key].brand}`)
+        localStorage.setItem("category",`${data[key].category}`)
+        localStorage.setItem("ocassion",`${data[key].occasion}`)
+        localStorage.setItem("gender",`${data[key].gender}`)
+        localStorage.setItem("fit",`${data[key].fit}`)
+        localStorage.setItem("fabric",`${data[key].fabric}`)
+        localStorage.setItem("color",`${data[key].color}`)
+        localStorage.setItem("sizes",`${data[key].sizes}`)
+        localStorage.setItem("desp",`${data[key].pattern}`)
+        localStorage.setItem("features",`${data[key].featureTags}`)
+        const price_inr = Math.round(data[key].price_usd * 83);
+        localStorage.setItem("price", price_inr);
         
-        const originalPrice = (price / (1 - discountPercentage / 100)).toFixed(0);
-        let currentImg = 0;
-        
-        const card = document.createElement("div");
-        card.className = "bg-white w-full max-w-[350px] h-auto flex flex-col p-4 border border-gray-200 cursor-pointer m-2";
-        card.innerHTML = `
-            <!-- Left: Image -->
-            <div class="flex items-center justify-center relative w-[150px]">
-              <button class="absolute left-1 top-1/2 -translate-y-1/2 text-gray-600 text-sm z-10" data-prev="${index}">←</button>
-              <img src="${images[0]}" id="img-${index}" class="object-contain w-full h-full max-h-[200px]">
-              <button class="absolute right-1 top-1/2 -translate-y-1/2 text-gray-600 text-sm z-10" data-next="${index}">→</button>
-            </div>
-            
-            <!-- Center: Details -->
-            <div class="flex-1 px-4">
-              <h2 class="text-base font-semibold text-gray-800">${title}</h2>
-              <div class="flex items-center text-sm mt-1">
-                <span class="bg-green-600 text-white text-xs font-bold px-1.5 py-0.5 rounded-sm mr-2">${rating.toFixed(1)} ★</span>
-                <span class="text-gray-500">${Math.floor(rating * 10)} Ratings & ${(rating * 2).toFixed(0)} Reviews</span>
-              </div>
-              <ul class="list-disc list-inside text-sm text-gray-700 mt-2 space-y-0.5">
-                <li>${description.slice(0, 45)}...</li>
-                <li>Brand: ${brand}</li>
-                <li>Stock: ${stock}</li>
-                <li>Discount: ${discountPercentage}%</li>
-              </ul>
-            </div>
-            
-            <!-- Right: Price -->
-            <div class="min-w-full flex flex-col items-start px-4 md:min-w-[120px]">
-              <div class="text-xl font-bold text-gray-800">₹${price}</div>
-              <div class="text-sm line-through text-gray-400">₹${originalPrice}</div>
-              <div class="text-green-600 text-sm font-medium">${Math.round(discountPercentage)}% off</div>
-              <div class="text-blue-600 text-sm mt-1 cursor-pointer hover:underline">Bank Offer</div>
-            </div>
-        `;
-        
-        cardBox.appendChild(card);
-        
-        // Add slider logic per card
-        const imgEl = card.querySelector(`#img-${index}`);
-        card.querySelector(`[data-prev="${index}"]`).addEventListener("click", () => {
-            currentImg = (currentImg - 1 + images.length) % images.length;
-            imgEl.src = images[currentImg];
-        });
-        
-        card.querySelector(`[data-next="${index}"]`).addEventListener("click", () => {
-            currentImg = (currentImg + 1) % images.length;
-            imgEl.src = images[currentImg];
-        });
-    });
+    })
 }
-
-async function loadProducts() {
-    cardBox.innerHTML = ''; // Clear before fetching
-    try {
-        const res = await fetch(`https://dummyjson.com/products/category/mens-shirts`);
-        if (!res.ok) throw new Error('Failed to fetch products');
-        data = await res.json();
-        database();
-    } catch (error) {
-        cardBox.innerHTML = '<p class="text-center text-red-500 p-4">Error loading products. Please try again later.</p>';
-        console.error(error);
-    }
-}
-
-async function ready() {
-    let search = document.getElementById("search").value;
-    cardBox.innerHTML = ''; // Clear before fetching
-    try {
-        const res = await fetch(`https://dummyjson.com/products/category/mens-shirts`);
-        if (!res.ok) throw new Error('Failed to fetch products');
-        data = await res.json();
-        database();
-    } catch (error) {
-        cardBox.innerHTML = '<p class="text-center text-red-500 p-4">Error loading products. Please try again later.</p>';
-        console.error(error);
-    }
-}
-
-loadProducts();
+    renderCards();

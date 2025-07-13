@@ -1,3 +1,4 @@
+
 fetch("./partials/category.html")
   .then((res) => res.text())
   .then((data) => {
@@ -18,6 +19,10 @@ function toggleSearchMobile() {
   const searchBar = document.getElementById("mobileSearchBar");
   searchBar.classList.toggle("hidden");
 }
+function toggleMobileMenu() {
+      const mobileMenu = document.getElementById("mobileMenu");
+      mobileMenu.classList.toggle("hidden");
+    }
 // ✅ Mobile Menu Toggle
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
 mobileMenuBtn?.addEventListener("click", () => {
@@ -27,7 +32,7 @@ mobileMenuBtn?.addEventListener("click", () => {
 
 // ✅ Mobile Filter Toggle
 filterBtn?.addEventListener("click", () => {
-  sidebar.classList.toggle("hidden");
+  sidebar.classList.toggle("hidden"); 
   sidebar.classList.toggle("block");
 
   if (!sidebar.classList.contains("hidden")) {

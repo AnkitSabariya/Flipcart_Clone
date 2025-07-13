@@ -1,5 +1,5 @@
 const cardBox = document.querySelector(".cardbox");
-
+let key= 0
 function loadProducts() {
   fetch(`./json/laptop.json`)
   .then((res)=> res.json())
@@ -17,10 +17,11 @@ function loadProducts() {
 
     let currentImg = 0;
 
-    const card = document.createElement("div");
+    const card = document.createElement("a");
     card.className =
       "bg-white w-full flex flex-col md:flex-row p-4 border justify-center items-center border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-xl";
-
+    // card.setAttribute("href","#")
+    card.setAttribute("onclick",`local(${key})`)
     card.innerHTML = `
       <!-- Image Section -->
       <div class="relative w-full md:w-1/3 flex items-center justify-center overflow-hidden">
@@ -51,6 +52,7 @@ function loadProducts() {
     `;
 
     cardBox.appendChild(card);
+    key++
 
     const imgEl = card.querySelector(`#img-${index}`);
 
@@ -67,8 +69,31 @@ function loadProducts() {
       clearInterval(interval);
     });
   });
+})
 }
-  )
+ 
+function local(key){
+    fetch("./json/laptop.json")
+    .then((res)=> res.json())
+    .then((data)=> {
+      localStorage.clear()
+        localStorage.setItem("brand", data[key].brand);
+      localStorage.setItem("model", data[key].model);
+      localStorage.setItem("desp", data[key].description);
+      localStorage.setItem("price", data[key].price);
+      localStorage.setItem("image", data[key].images[0]);
+
+      localStorage.setItem("processor", data[key].specifications.processor);
+      localStorage.setItem("ram", data[key].specifications.ram);
+      localStorage.setItem("storage", data[key].specifications.storage);
+      localStorage.setItem("display", data[key].specifications.display);
+      localStorage.setItem("battery", specifications.battery);
+      localStorage.setItem("gpu", data[key].specifications.gpu);
+      localStorage.setItem("os", data[key].specifications.os);
+      localStorage.setItem("weight", data[key].specifications.weight);
+      localStorage.setItem("ports", data[key].specifications.ports);
+        
+    })
 }
 loadProducts();
 

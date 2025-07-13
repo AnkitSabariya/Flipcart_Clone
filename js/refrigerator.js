@@ -1,5 +1,5 @@
 const cardBox = document.querySelector(".cardbox");
-
+key = 0
 function renderRefrigeratorCard() {
     fetch("./json/refrigerator.json")
     .then((res)=> res.json())
@@ -24,10 +24,11 @@ function renderRefrigeratorCard() {
       
           let currentImg = 0;
       
-          const card = document.createElement("div");
+          const card = document.createElement("a");
           card.className =
             "bg-white w-full flex flex-col sm:flex-row p-4 border border-gray-200 cursor-pointer shadow-sm hover:shadow-md transition";
-      
+           // card.setAttribute("href","#")
+          card.setAttribute("onclick",`local(${key})`)
           card.innerHTML = `
             <!-- Image Carousel -->
             <div class="relative w-full sm:w-[250px] flex items-center justify-center">
@@ -53,11 +54,11 @@ function renderRefrigeratorCard() {
               <div class="text-xl font-bold text-gray-800">₹${Math.round(
                 price_usd * 83
               )}</div>
-              <div class="text-gray-500 text-xs">~ $${price_usd}</div>
             </div>
           `;
       
           cardBox.appendChild(card);
+          key++
       
           const imgEl = card.querySelector(`#img-${index}`);
 
@@ -76,5 +77,25 @@ function renderRefrigeratorCard() {
         });
     })
 }
+function local(key){
+    fetch("./json/refrigerator.json")
+    .then((res)=> res.json())
+    .then((data)=> {
+      localStorage.clear()
+      localStorage.setItem("image", data[key].images[0]); // Primary image
+      localStorage.setItem("brand", data[key].brand);
+      localStorage.setItem("model", data[key].model);
+      localStorage.setItem("type", data[key].type);
+      localStorage.setItem("desp", data[key].short_description);
+      localStorage.setItem("capacity", data[key].capacity_liters);
+      localStorage.setItem("rating", data[key].energy_rating);
+      localStorage.setItem("smart_features", data[key].smart_features.join(", "));
+      localStorage.setItem("features", data[key].features);
+      localStorage.setItem("dimensions", data[key].dimensions_mm.join(" x "));
+      localStorage.setItem("weight", data[key].weight_kg);
+      localStorage.setItem("price", data[key].Math.round(price_usd * 83));
+
+  });
+} 
 
 renderRefrigeratorCard();

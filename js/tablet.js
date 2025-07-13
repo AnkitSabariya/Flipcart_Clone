@@ -1,5 +1,5 @@
 const cardBox = document.querySelector(".cardbox");
-
+let key = 0
 function loadProducts() {
   fetch("./json/tablet.json")
   .then((res)=> res.json())
@@ -17,11 +17,12 @@ function loadProducts() {
     let currentImg = 0;
 
 
-    const card = document.createElement("div");
+    const card = document.createElement("a");
     card.className =
       "bg-white w-full flex flex-col sm:flex-row p-4 border justify-center items-center border-gray-200 cursor-pointer md:h-[250px] transition-all duration-300 hover:shadow-xl";
-
-    card.innerHTML = `
+      // card.setAttribute("href","#")
+      card.setAttribute("onclick",`local(${key})`)
+      card.innerHTML = `
       <!-- Image Section -->
       <div class="relative w-full sm:w-1/3 flex items-center justify-center overflow-hidden">
         <img src="${images[0]}" id="img-${index}" class="object-contain h-full max-h-[200px] transition-all duration-300 ease-in-out">
@@ -47,6 +48,7 @@ function loadProducts() {
     `;
 
     cardBox.appendChild(card);
+    key++
 
     const imgEl = card.querySelector(`#img-${index}`);
 
@@ -64,6 +66,25 @@ function loadProducts() {
     });
   });
   })
+}
+function local(key){
+    fetch("./json/tablet.json")
+    .then((res)=> res.json())
+    .then((data)=> {
+        localStorage.clear()
+        localStorage.setItem("image", data[key].images[0]);
+        localStorage.setItem("brand", data[key].brand);
+        localStorage.setItem("model", data[key].model);
+        localStorage.setItem("desp", data[key].description);
+        localStorage.setItem("price", data[key].price);
+        
+        localStorage.setItem("processor", data[key].specifications.processor);
+        localStorage.setItem("ram", data[key].specifications.ram);
+        localStorage.setItem("storage", data[key].specifications.storage);
+        localStorage.setItem("display", data[key].specifications.display);
+        localStorage.setItem("battery", data[key].specifications.battery);
+        
+    })
 }
 loadProducts();
 

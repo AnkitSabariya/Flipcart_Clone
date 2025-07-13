@@ -90,49 +90,7 @@
 //         </div>
 //       </div>
 // `
-// let mobileMenu = document.getElementById("mobileMenu")
-// mobileMenu.setAttribute("class","lg:hidden bg-white shadow-lg hidden")
-// mobileMenu.innerHTML = `
-//  <div class="p-4 space-y-3">
-//             <div class="border-b pb-2">
-//                 <span class="font-medium text-gray-800">Electronics</span>
-//                 <div class="ml-4 mt-2 space-y-1 text-sm text-gray-600">
-//                     <div><a href="mobile.html">Mobiles</a></div>
-//                     <div><a href="laptop.html">Laptops</a></div>
-//                     <div><a href="camera.html">Cameras</a></div>
-//                     <div><a href="tablet.html">Tablets</a></div>
-//                 </div>
-//             </div>
-//             <div class="border-b pb-2">
-//                 <span class="font-medium text-gray-800">TVs & Appliances</span>
-//                 <div class="ml-4 mt-2 space-y-1 text-sm text-gray-600">
-//                     <div>Televisions</div>
-//                     <div>Washing Machines</div>
-//                     <div>Refrigerators</div>
-//                 </div>
-//             </div>
-//             <div class="border-b pb-2">
-//                 <span class="font-medium text-gray-800">Men</span>
-//                 <div class="ml-4 mt-2 space-y-1 text-sm text-gray-600">
-//                     <div>T-Shirts</div>
-//                     <div><a href="shirt.html">Shirts</a></div>
-//                     <div>Jeans</div>
-//                 </div>
-//             </div>
-//             <div class="border-b pb-2">
-//                 <span class="font-medium text-gray-800">Women</span>
-//                 <div class="ml-4 mt-2 space-y-1 text-sm text-gray-600">
-//                     <div>Kurtas</div>
-//                     <div>Sarees</div>
-//                     <div>Jeans</div>
-//                 </div>
-//             </div>
-//         </div>
-// `
 
-//         mobileMenuBtn.addEventListener("click", () => {
-//         mobileMenu.classList.toggle("hidden");
-//       });
 
 //       // Mobile filter toggle
 //       filterBtn.addEventListener("click", () => {
