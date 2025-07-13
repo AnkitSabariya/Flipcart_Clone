@@ -11,40 +11,10 @@
     />
   </head>
   <body class="bg-gradient-to-br from-gray-100 to-gray-200 text-gray-900 font-sans">
-    <div class="max-w-7xl mx-auto bg-white min-h-screen shadow-lg">
-      <!-- Header -->
-      <header class="bg-blue-600 text-white p-4 flex flex-wrap justify-between items-center gap-4 sticky top-0 z-50 shadow-md">
-        <div class="flex items-center gap-2 text-xl font-bold">
-          <i class="fas fa-shopping-bag"></i>
-          <span>Flipkart</span>
-        </div>
-        <div class="flex-1 max-w-xl relative">
-          <input
-            type="text"
-            placeholder="Search for products, brands and more"
-            id="searchInput"
-            class="w-full py-2 px-4 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-white"
-          />
-          <button class="absolute right-3 top-1/2 -translate-y-1/2 text-blue-600 hover:text-blue-700">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-        <div class="flex items-center gap-6">
-          <a href="#" class="flex items-center gap-2 hover:opacity-90 hover:-translate-y-0.5 transition">
-            <i class="fas fa-user"></i>
-            <span>Login</span>
-          </a>
-          <div class="relative cursor-pointer text-xl hover:scale-110 transition" onclick="toggleCart()">
-            <i class="fas fa-shopping-cart"></i>
-            <span
-              class="absolute -top-2 -right-2 bg-orange-500 text-white text-xs font-bold rounded-full px-1.5"
-              id="cartCount"
-              >0</span
-            >
-          </div>
-        </div>
-      </header>
-
+    <div class="max-w-full mx-auto bg-white min-h-screen shadow-lg">
+       <nav id="mynavbar">
+    </nav>
+    
       <!-- Product Section -->
       <div class="flex flex-wrap gap-10 p-6 md:p-8">
         <!-- Product Images -->
@@ -109,6 +79,21 @@
     </div>
 
     <script>
+    let brand = localStorage.getItem("brand");
+    let model = localStorage.getItem("model");
+    let desp = localStorage.getItem("desp");
+    let price = localStorage.getItem("price");
+    let image = localStorage.getItem("image");
+
+    let processor = localStorage.getItem("processor");
+    let ram = localStorage.getItem("ram");
+    let storage = localStorage.getItem("storage");
+    let display = localStorage.getItem("display");
+    let battery = localStorage.getItem("battery");
+    let connectivity = localStorage.getItem("connectivity");
+    let rcamera = localStorage.getItem("rearcamera");
+    let fcamera = localStorage.getItem("frontcamera");
+    let ossystem = localStorage.getItem("os");
       const product = {
         title: 'Apple Watch Series 9 GPS (45mm) - Midnight Aluminum Case with Midnight Sport Band',
         rating: '4.5',
@@ -130,25 +115,25 @@
           { tag: 'Special Price', text: 'Get extra 5% off (price inclusive of discount)' }
         ],
         specifications: [
-          { label: 'Model Name', value: 'Apple Watch Series 9' },
+          { label: 'Model Name', value: model },
           { label: 'Style', value: 'GPS' },
-          { label: 'Display Size', value: '45mm Retina LTPO OLED' },
-          { label: 'Battery Life', value: 'Up to 18 hours' },
+          { label: 'Display Size', value: display },
+          { label: 'Battery Life', value: battery },
           { label: 'Water Resistance', value: '50m water resistant' },
-          { label: 'Processor', value: 'S9 SiP with 64-bit dual-core processor' },
-          { label: 'Connectivity', value: 'Bluetooth, Wi-Fi, NFC' },
+          { label: 'Processor', value: processor },
+          { label: 'Connectivity', value: connectivity },
           { label: 'Compatibility', value: 'iPhone models running iOS 17 or later' }
         ]
       };
 
       window.onload = () => {
-        document.getElementById('productTitle').textContent = product.title;
+        document.getElementById('productTitle').textContent = model;
         document.getElementById('ratingValue').textContent = product.rating;
         document.getElementById('ratingText').textContent = product.ratingText;
-        document.getElementById('currentPrice').textContent = product.currentPrice;
-        document.getElementById('originalPrice').textContent = product.originalPrice;
+        document.getElementById('currentPrice').textContent = price;
+        document.getElementById('originalPrice').textContent = price;
         document.getElementById('discount').textContent = product.discount;
-        document.getElementById('mainImage').src = product.mainImage;
+        document.getElementById('mainImage').src = image;
 
         product.thumbnails.forEach((src, i) => {
           const img = document.createElement('img');
@@ -190,5 +175,6 @@
         alert('Buy now logic goes here.');
       }
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
