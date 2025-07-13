@@ -1,4 +1,5 @@
 
+let mobilesearchbar = document.getElementById("mobileSearchBar")
 // mobilesearchbar.setAttribute("class","lg:hidden w-full px-3 pt-2 hidden bg-white")
 
 // mobilesearchbar.innerHTML = `
@@ -10,18 +11,17 @@
 //         />
 //       </div>
 // `
-// mobilesearchbtn.setAttribute("class","lg:hidden bg-white shadow-sm")
+let mobilesearchbtn = document.getElementById("mobileSearchbtn")
+mobilesearchbtn.setAttribute("class","lg:hidden bg-white shadow-sm")
 
-// mobilesearchbtn.innerHTML = `
-// <button id="mobileMenuBtn" class="w-full p-3 text-left flex items-center justify-between">
-//             <span class="font-medium">Categories</span>
-//             <i class="ri-menu-line text-xl"></i>
-//         </button>
-// `
+mobilesearchbtn.innerHTML = `
+<button id="mobileMenuBtn" class="w-full p-3 text-left flex items-center justify-between">
+            <span class="font-medium">Categories</span>
+            <i class="ri-menu-line text-xl"></i>
+        </button>
+`
 
 let categorySection = document.getElementById("categorySection")
-// let mobilesearchbar = document.getElementById("mobileSearchBar")
-// let mobilesearchbtn = document.getElementById("mobileSearchbtn")
 categorySection.setAttribute("class","section relative min-h-[40px] text-black w-full shadow-sm hidden lg:block")
 categorySection.innerHTML = `
 <div class="bg-white shadow-2xl">
@@ -128,9 +128,9 @@ mobileMenu.innerHTML = `
             <div class="border-b pb-2">
                 <span class="font-medium text-gray-800">TVs & Appliances</span>
                 <div class="ml-4 mt-2 space-y-1 text-sm text-gray-600">
-                    <div>Televisions</div>
-                    <div>Washing Machines</div>
-                    <div>Refrigerators</div>
+                    <div><a href="ac.html">Air conditioner</a></div>
+                    <div><a href="refrigerator.html">Refrigerator</a></div>
+                    <div><a href="washingmachine.html">Washing Machines</a></div>
                 </div>
             </div>
             <div class="border-b pb-2">

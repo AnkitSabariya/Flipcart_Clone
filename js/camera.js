@@ -80,20 +80,3 @@ const cardBox = document.querySelector(".cardbox");
 }
   
   loadProducts();
-
-async function ready(){
-  let search = document.getElementById("search").value
-  let search1 = document.getElementById("search")
-  cardBox.innerHTML = '';
-  if(search == "mobiles" || search == "phones" || search == "mobile" || search == "Mobile" || search == "Mobiles"){
-      const res = await fetch(`https://dummyjson.com/products/category/smartphones`);
-      data = await res.json();
-    }else if(search == "laptop" || search == "laptops" || search == "Lap" || search == "lap" || search == "Laptops"){
-      const res = await fetch(`https://dummyjson.com/products/category/laptops`);
-      data = await res.json();
-    }else if(search == "tab" || search == "Tab" || search == "Tablets" || search == "tablet" || search == "Tablets" || search == "Tablet"){
-      const res = await fetch(`https://dummyjson.com/products/category/tablets`);
-      data = await res.json();
-    }
-
-}

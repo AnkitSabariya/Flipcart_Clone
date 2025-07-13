@@ -68,26 +68,3 @@ const cardBox = document.querySelector(".cardbox");
   
   loadProducts();
 
-
-document.getElementById("search").addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    event.preventDefault(); // optional
-    const search = document.getElementById("search").value.trim().toLowerCase();
-
-    // Redirect to another HTML file (like category page)
-    if (search == "mobiles" || search == "phones" || search == "mobile" || search == "Mobile" || search == "Mobiles") {
-      window.location.href = "mobile.html";
-
-    } else if (search == "laptop" || search == "laptops" || search == "Lap" || search == "lap" || search == "Laptops") {
-      window.location.href = "laptop.html";
-    } else if (search == "tab" || search == "Tab" || search == "Tablets" || search == "tablet" || search == "Tablets" || search == "Tablet") {
-      window.location.href = "tablet.html";
-    } else if (search == "bedsheet" || search == "bed"  || search == "Bed" || search == "Bedsheet") {
-      window.location.href = "bedsheet.html";
-    } else if (search == "bedsheet" || search == "bed" || search == "furniture" || search == "Furniture" || search == "FURNITURE") {
-      window.location.href = "furniture.html";
-    } else {
-      alert("No category matched!");
-    }
-  }
-});

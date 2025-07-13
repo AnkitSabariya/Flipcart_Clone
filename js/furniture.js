@@ -74,27 +74,3 @@ async function loadProducts() {
 }
 
 loadProducts();
-
-async function ready() {
-    let search = document.getElementById("search").value;
-    cardBox.innerHTML = '';
-    
-    if (search == "tv" || search == "television" || search == "TV" || search == "Television") {
-        const res = await fetch(`https://dummyjson.com/products/category/home-decoration`);
-        data = await res.json();
-    } else if (search == "washing machine" || search == "washer" || search == "Washing Machine") {
-        const res = await fetch(`https://dummyjson.com/products/category/home-decoration`);
-        data = await res.json();
-    } else if (search == "refrigerator" || search == "fridge" || search == "Refrigerator" || search == "Fridge") {
-        const res = await fetch(`https://dummyjson.com/products/category/home-decoration`);
-        data = await res.json();
-    } else if (search == "ac" || search == "air conditioner" || search == "AC" || search == "Air Conditioner") {
-        const res = await fetch(`https://dummyjson.com/products/category/home-decoration`);
-        data = await res.json();
-    } else {
-        const res = await fetch(`https://dummyjson.com/products/category/home-decoration`);
-        data = await res.json();
-    }
-    
-    database();
-}

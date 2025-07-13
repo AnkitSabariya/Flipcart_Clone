@@ -67,21 +67,6 @@ function loadProducts() {
 }
 loadProducts();
 
-async function ready() {
-  let search = document.getElementById("search").value.toLowerCase();
-  if (["mobiles", "phones", "mobile"].includes(search)) {
-    loadProducts("smartphones");
-  } else if (["laptop", "laptops", "lap"].includes(search)) {
-    loadProducts("laptops");
-  } else if (["tab", "tablet", "tablets"].includes(search)) {
-    loadProducts("tablets");
-  }
-}
 
-document.getElementById("search").addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    ready();
-  }
-});
 
 

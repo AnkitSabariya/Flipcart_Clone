@@ -3,18 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flipkart Clone</title>
-
-    <!-- Tailwind CSS CDN (agar use ho raha hai) -->
+    <title>Flipkart clone</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  </head>
+    
 <body class="">
    <div id="container" class="h-full bg-[#f7f7f7]">
-    <!-- navbar -->
-     <nav id="mynavbar">
-    </nav>
-<!-- Mobile search bar (hidden by default) -->
+      <!-- navbar -->
+      <div id="mynavbar"></div>
+      <!-- navbar -->
+
+    <!-- Mobile search bar (hidden by default) -->
     <div id="mobileSearchBar" >
     </div>
 
@@ -29,11 +36,8 @@
     <!-- Mobile Category Menu -->
     <div id="mobileMenu" >
     </div>
-
-      <!-- body -->
-      <div
-        class="body min-w-full lg:min-w-[978px] max-w-[1680px] p-[4px] lg:p-[8px] w-full relative m-[0_auto]"
-      >
+    <!-- body -->
+    <div class="body min-w-full lg:min-w-[978px] max-w-[1680px] p-[4px] lg:p-[8px] w-full relative m-[0_auto]">
         <div class="flex flex-col lg:flex-row">
           <!-- sidebar -->
           <div
@@ -287,79 +291,39 @@
             </button>
           </div>
 
-          <!-- productbar -->
-          <div class="maincard w-full">
-            <div class="despinfo bg-white flex flex-col p-[2%] lg:p-[1%]">
-              <div class="top">
-                <div
-                  class="home text-[10px] lg:text-[12px] text-[#878787] inline-block"
-                >
-                  <span>Home</span>
-                  <i
-                    class="ri-arrow-right-s-line h-[7px] w-[20px] align-middle"
-                  ></i>
+            <!-- productbar -->
+            <div class="maincard w-full">
+                <div class="despinfo bg-white flex flex-col p-[2%] lg:p-[1%]">
+                    <div class="top">
+                        <div class="home text-[10px] lg:text-[12px] text-[#878787] inline-block">
+                            <span>Home</span> <i class="ri-arrow-right-s-line h-[7px] w-[20px] align-middle"></i>
+                        </div>
+                        <div class="home text-[10px] lg:text-[12px] text-[#878787] inline-block">
+                            <span>Mobiles & Acc..</span> <i class="ri-arrow-right-s-line h-[7px] w-[20px] align-middle"></i>
+                        </div>
+                        <div class="home text-[10px] lg:text-[12px] text-[#878787] inline-block">
+                            <span>Mobiles</span> <i class="ri-arrow-right-s-line h-[7px] w-[20px] align-middle"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="text flex flex-col lg:flex-row lg:items-center mt-[8px] gap-2">
+                        <h1 class="text-[14px] lg:text-[16px] font-semibold">Apple iPhone</h1> 
+                        <span class="inline-block text-[#878787] text-[10px] lg:text-[12px]">(Showing 1 – 40 products of 60,600 products)</span>
+                    </div>
+                    
+                    <div class="sortby flex flex-wrap text-[12px] lg:text-[14px] gap-2 lg:gap-0">
+                        <span class="p-[8px_10px_4px_0px] font-medium">Sort by</span>
+                        <div class="cursor-default text-[#2874f0] p-[8px_0px_4px] mx-[5px] lg:mx-[10px] font-medium border-b-2 border-[#2874f0]">Popularity</div>
+                        <div class="p-[8px_0px_4px] mx-[5px] lg:mx-[10px] cursor-pointer">Price -- Low to High</div>
+                        <div class="p-[8px_0px_4px] mx-[5px] lg:mx-[10px] cursor-pointer hidden lg:block">Price -- High to low</div>
+                        <div class="p-[8px_0px_4px] mx-[5px] lg:mx-[10px] cursor-pointer hidden lg:block">Newest First</div>
+                    </div>
                 </div>
-                <div
-                  class="home text-[10px] lg:text-[12px] text-[#878787] inline-block"
-                >
-                  <span>Mobiles & Acc..</span>
-                  <i
-                    class="ri-arrow-right-s-line h-[7px] w-[20px] align-middle"
-                  ></i>
-                </div>
-                <div
-                  class="home text-[10px] lg:text-[12px] text-[#878787] inline-block"
-                >
-                  <span>Mobiles</span>
-                  <i
-                    class="ri-arrow-right-s-line h-[7px] w-[20px] align-middle"
-                  ></i>
-                </div>
-              </div>
 
-              <div
-                class="text flex flex-col lg:flex-row lg:items-center mt-[8px] gap-2"
-              >
-                <h1 class="text-[14px] lg:text-[16px] font-semibold">
-                  Apple iPhone
-                </h1>
-                <span
-                  class="inline-block text-[#878787] text-[10px] lg:text-[12px]"
-                  >(Showing 1 – 40 products of 60,600 products)</span
-                >
-              </div>
-
-              <div
-                class="sortby flex flex-wrap text-[12px] lg:text-[14px] gap-2 lg:gap-0"
-              >
-                <span class="p-[8px_10px_4px_0px] font-medium">Sort by</span>
-                <div
-                  class="cursor-default text-[#2874f0] p-[8px_0px_4px] mx-[5px] lg:mx-[10px] font-medium border-b-2 border-[#2874f0]"
-                >
-                  Popularity
-                </div>
-                <div
-                  class="p-[8px_0px_4px] mx-[5px] lg:mx-[10px] cursor-pointer"
-                >
-                  Price -- Low to High
-                </div>
-                <div
-                  class="p-[8px_0px_4px] mx-[5px] lg:mx-[10px] cursor-pointer hidden lg:block"
-                >
-                  Price -- High to low
-                </div>
-                <div
-                  class="p-[8px_0px_4px] mx-[5px] lg:mx-[10px] cursor-pointer hidden lg:block"
-                >
-                  Newest First
-                </div>
-              </div>
+                   <div class="cardbox grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+                    
+                   </div>
             </div>
-
-            <div class="cardbox w-full flex flex-wrap">
-              <!-- Product cards will go here -->
-            </div>
-          </div>
         </div>
       </div>
 
@@ -515,8 +479,8 @@
       </footer>
     </div>
 
-    <script src = "./js/ac.js"></script>
-    <script src = "./js/script.js"></script>
-    <script src = "./js/navbar.js"></script>
+   <script src = "./js/navbar.js"></script>
+   <script src = "./js/script.js"></script>
+   <script src = "./js/tshirt.js"></script>
 </body>
 </html>
