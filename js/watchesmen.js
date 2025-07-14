@@ -1,7 +1,7 @@
 const cardBox = document.querySelector(".cardbox");
 let key = 0
     function renderCards() {
-        fetch("./json/shirt.json")
+        fetch("./json/watchesmen.json")
         .then((res)=> res.json())
         .then((data)=>{
 
@@ -12,17 +12,14 @@ let key = 0
                 brand,
                 model,
                 category,
-                gender,
-                fit,
-                fabric,
-                sizes,
+                type,
+                dial_shape,
+                strap_material,
+                water_resistant,
                 color,
                 price_usd,
                 image,
-                pattern,
-                occasion,
-                sleeve,
-                featureTags
+                short_description
               } = product;
       
               const price_inr = Math.round(price_usd * 83); // USD to INR approx
@@ -37,17 +34,12 @@ let key = 0
                   <img src="${image}" 
                       alt="${model}"
                       class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-
-                  <!-- Sizes Slide on Hover -->
-                  <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 px-3 py-2 translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out text-sm text-gray-800 text-center font-medium">
-                  Sizes: S, M, L, XL
-                  </div>
               </div>
 
               <!-- Product Info -->
               <div class="p-3 space-y-1 text-center">
                   <h2 class="text-sm font-semibold text-gray-800">${brand} </h2>
-                  <p class="text-sm text-gray-700">${model} ${fabric} ${pattern}</p>
+                  <p class="text-sm text-gray-700">${model} ${type} ${dial_shape} ${strap_material}</p>
                   <div class="text-base font-bold text-gray-900 mt-1">₹<span id="price">${Math.round(price_usd * 83)}</span></div>
               </div>
               `;
@@ -58,7 +50,7 @@ let key = 0
         })
     }
     function local(key){
-    fetch("./json/shirt.json")
+    fetch("./json/watchesmen.json")
     .then((res)=> res.json())
     .then((data)=> {
         localStorage.clear()
@@ -66,14 +58,12 @@ let key = 0
         localStorage.setItem("model",`${data[key].model}`)
         localStorage.setItem("brand",`${data[key].brand}`)
         localStorage.setItem("category",`${data[key].category}`)
-        localStorage.setItem("ocassion",`${data[key].occasion}`)
-        localStorage.setItem("gender",`${data[key].gender}`)
-        localStorage.setItem("fit",`${data[key].fit}`)
-        localStorage.setItem("fabric",`${data[key].fabric}`)
+        localStorage.setItem("type",`${data[key].type}`)
+        localStorage.setItem("dial",`${data[key].dial_shape}`)
+        localStorage.setItem("material",`${data[key].strap_material}`)
+        localStorage.setItem("resistant",`${data[key].water_resistant}`)
         localStorage.setItem("color",`${data[key].color}`)
-        localStorage.setItem("sizes",`${data[key].sizes}`)
-        localStorage.setItem("desp",`${data[key].pattern}`)
-        localStorage.setItem("features",`${data[key].featureTags}`)
+        localStorage.setItem("desp",`${data[key].short_description}`)
         const price_inr = Math.round(data[key].price_usd * 83);
         localStorage.setItem("price", price_inr);
         

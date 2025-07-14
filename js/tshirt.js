@@ -27,33 +27,27 @@ function renderCards() {
             
             const card = document.createElement("a");
             card.className =
-            "bg-white w-full flex flex-col items-start p-4 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300";
+            "max-w-[350px] bg-white flex flex-col  rounded-lg overflow-hidden shadow hover:shadow-lg transition-all duration-300 group cursor-pointer";
             // card.setAttribute("href","#")
             card.setAttribute("onclick",`local(${key})`)
             card.innerHTML = `
-            <!-- Image -->
-            <div class="w-full sm:w-[200px] flex items-center justify-center">
-            <img src="${images[0]}" alt="${model}" class="object-contain max-h-[200px]" />
+                    <!-- Image Section -->
+            <div class="relative w-full h-[76%] overflow-hidden">
+                <img src="${images[0]}" 
+                    alt="${model}"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+                <!-- Sizes Slide on Hover -->
+                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 px-3 py-2 translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out text-sm text-gray-800 text-center font-medium">
+                Sizes: 32, 34, 36, 38
+                </div>
             </div>
-            
-            <!-- Details -->
-            <div class="flex-1 px-4 py-2">
-            <h2 class="text-lg font-semibold text-gray-800">${brand} ${model}</h2>
-            <p class="text-sm text-gray-600 mt-1">${short_description}</p>
-            <ul class="list-disc list-inside text-sm text-gray-700 mt-3 space-y-0.5">
-            <li><strong>Category:</strong> ${category}</li>
-            <li><strong>Gender:</strong> ${gender}</li>
-            <li><strong>Fit:</strong> ${fit}</li>
-            <li><strong>Fabric:</strong> ${fabric}</li>
-            <li><strong>Color:</strong> ${color}</li>
-            <li><strong>Sizes:</strong> ${sizes.join(", ")}</li>
-            <li><strong>Feature:</strong> ${features}</li>
-            </ul>
-            </div>
-            
-            <!-- Price -->
-            <div class="w-full sm:w-[150px] flex flex-col items-start px-4 justify-center mt-4 sm:mt-0">
-            <div class="text-xl font-bold text-gray-800">₹${price_inr.toLocaleString()}</div>
+
+            <!-- Product Info -->
+            <div class="p-3 space-y-1 text-center">
+                <h2 class="text-sm font-semibold text-gray-800">${brand} </h2>
+                <p class="text-sm text-gray-700">${model} ${fabric} ${fit}</p>
+                <div class="text-base font-bold text-gray-900 mt-1">₹<span id="price">${Math.round(price_usd * 83)}</span></div>
             </div>
           `;
           key++

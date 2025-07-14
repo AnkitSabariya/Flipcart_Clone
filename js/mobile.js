@@ -19,7 +19,7 @@ let key = 0
       const card = document.createElement("a");
       card.className =
       "bg-white w-full sm:h-[320px] h-auto flex flex-col sm:flex-row p-4 border border-gray-200 cursor-pointer shadow-sm hover:shadow-md transition";
-      card.setAttribute("href","bhavdeep.html")
+      // card.setAttribute("href","bhavdeep.html")
       card.setAttribute("onclick",`local(${key})`)
     card.innerHTML = `
       <!-- Image Slider -->
