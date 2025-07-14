@@ -1,40 +1,54 @@
 <nav
-  class="bg-[#2874f0] text-white w-full flex flex-wrap items-center justify-between md:justify-center px-3 lg:px-6 py-3 md:py-2 lg:h-[60px]">
+  class="bg-[#2874f0] text-white w-full flex flex-wrap items-center justify-between md:justify-center px-3 lg:px-6 py-3 md:py-2 lg:h-[60px]"
+>
   <!-- Logo -->
   <div class="flex items-center gap-2">
-    <a href="index.html" class="flex flex-col leading-[1.1] font-semibold text-[16px] lg:text-[18px] italic">
+    <a
+      href="index.html"
+      class="flex flex-col leading-[1.1] font-semibold text-[16px] lg:text-[18px] italic"
+    >
       <span class="text-white font-extrabold">Flipkart</span>
-      <div class="text-[10px] lg:text-[11px] font-normal flex items-center text-white">
+      <div
+        class="text-[10px] lg:text-[11px] font-normal flex items-center text-white"
+      >
         Explore <span class="text-yellow-300 font-bold ml-1">Plus</span>
-        <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png"
-          class="h-2 lg:h-3 ml-1 mt-[1px]" alt="plus" />
+        <img
+          src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png"
+          class="h-2 lg:h-3 ml-1 mt-[1px]"
+          alt="plus"
+        />
       </div>
     </a>
   </div>
 
-        <!-- Search Bar (hidden on mobile, shown on lg) -->
-        <div id="mobileSearchBar"
-          class="hidden lg:flex items-center flex-grow max-w-[600px] bg-white mx-4 rounded-md overflow-hidden shadow-sm"
-        >
-          <input
-            onkeydown="if(event.key==='Enter'){ searchProduct(); }"
-            type="text"
-            placeholder="Search for products, brands and more"
-            id="search"
-            class="w-full text-[14px] px-4 py-2 outline-none text-black placeholder-gray-500 block lg:flex"
-          />
-          <button
-            class="bg-white px-4 py-2 cursor-pointer hover:bg-gray-100 transition hidden lg:flex"
-            onclick="searchProduct()"
-          >
-            <i class="ri-search-line text-blue-600 text-lg"></i>
-          </button>
-        </div>
+  <!-- Search Bar (hidden on mobile, shown on lg) -->
+  <div
+    class="hidden lg:flex items-center flex-grow max-w-[600px] bg-white mx-4 rounded-md overflow-hidden shadow-sm"
+  >
+    <input
+      onkeydown="if(event.key==='Enter'){ searchProduct(); }"
+      type="text"
+      placeholder="Search for products, brands and more"
+      id="search"
+      class="w-full text-[14px] px-4 py-2 outline-none text-black placeholder-gray-500"
+    />
+    <button
+      class="bg-white px-4 py-2 cursor-pointer hover:bg-gray-100 transition"
+      onclick="searchProduct()"
+    >
+      <i class="ri-search-line text-blue-600 text-lg"></i>
+    </button>
+  </div>
 
   <!-- Right Section (includes Search icon on mobile) -->
-  <div class="flex items-center gap-2 lg:gap-6 text-xs lg:text-sm font-medium relative z-50">
+  <div
+    class="flex items-center gap-2 lg:gap-6 text-xs lg:text-sm font-medium relative z-50"
+  >
     <!-- Search icon only for small screens -->
-    <button class="lg:hidden p-2 rounded-full hover:bg-white/20 transition" onclick="toggleSearchMobile()">
+    <button
+      class="lg:hidden p-2 rounded-full hover:bg-white/20 transition"
+      onclick="toggleSearchMobile()"
+    >
       <i class="ri-search-line text-white text-xl"></i>
     </button>
 
@@ -43,64 +57,86 @@
       <!-- Button with Arrow Rotate -->
       <button class="flex items-center gap-1">
         <i class="ri-user-line text-lg"></i> Ankit
-        <i class="ri-arrow-down-s-line ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180"></i>
+        <i
+          class="ri-arrow-down-s-line ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180"
+        ></i>
       </button>
 
       <!-- Dropdown Menu -->
       <div
-        class="absolute right-0 mt-2 w-64 bg-white text-black rounded-md shadow-md overflow-hidden opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 ease-in-out z-50 border">
-        <a href="#"
-          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition">
+        class="absolute right-0 mt-2 w-64 bg-white text-black rounded-md shadow-md overflow-hidden opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 ease-in-out z-50 border"
+      >
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-user-line text-[#2874f0]"></i> My Profile
           </div>
         </a>
-        <a href="#"
-          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition">
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-coins-line text-[#2874f0]"></i> SuperCoin Zone
           </div>
         </a>
-        <a href="#"
-          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition">
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-shield-star-line text-[#2874f0]"></i> Flipkart Plus
             Zone
           </div>
         </a>
-        <a href="#"
-          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition">
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-file-list-line text-[#2874f0]"></i> Orders
           </div>
         </a>
-        <a href="#"
-          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition">
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-heart-line text-[#2874f0]"></i> Wishlist
           </div>
           <span class="text-xs bg-gray-100 px-2 py-0.5 rounded">68</span>
         </a>
-        <a href="#"
-          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition">
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-coupon-3-line text-[#2874f0]"></i> Coupons
           </div>
         </a>
-        <a href="#"
-          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition">
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-gift-line text-[#2874f0]"></i> Gift Cards
           </div>
         </a>
-        <a href="#"
-          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition">
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-notification-3-line text-[#2874f0]"></i>
             Notifications
           </div>
         </a>
-        <a href="#" class="flex items-center justify-between px-5 py-3 hover:bg-[#f0f5ff] transition">
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-logout-box-line text-[#2874f0]"></i> Logout
           </div>
@@ -116,32 +152,44 @@
       <!-- Button with Arrow Rotate -->
       <button class="flex items-center gap-1">
         More
-        <i class="ri-arrow-down-s-line ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180"></i>
+        <i
+          class="ri-arrow-down-s-line ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180"
+        ></i>
       </button>
 
       <!-- Dropdown Menu -->
       <div
-        class="absolute right-0 mt-2 w-64 bg-white text-black rounded-md shadow-md overflow-hidden opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 ease-in-out z-50 border border-gray-300">
-        <a href="#"
-          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition">
+        class="absolute right-0 mt-2 w-64 bg-white text-black rounded-md shadow-md overflow-hidden opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 ease-in-out z-50 border border-gray-300"
+      >
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-notification-3-line text-[#2874f0]"></i>
             Notification Preferences
           </div>
         </a>
-        <a href="#"
-          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition">
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-question-line text-[#2874f0]"></i> 24x7 Customer Care
           </div>
         </a>
-        <a href="#"
-          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition">
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-megaphone-line text-[#2874f0]"></i> Advertise
           </div>
         </a>
-        <a href="#" class="flex items-center justify-between px-5 py-3 hover:bg-[#f0f5ff] transition">
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 hover:bg-[#f0f5ff] transition"
+        >
           <div class="flex items-center gap-3">
             <i class="ri-download-line text-[#2874f0]"></i> Download App
           </div>
@@ -155,44 +203,3 @@
     </span>
   </div>
 </nav>
-<!-- <script>
-  function toggleSearchMobile() {
-    const searchBar = document.getElementById("mobileSearchBar");
-    searchBar.classList.toggle("hidden");
-  }
-  async function ready() {
-    let search = document.getElementById("search").value.toLowerCase();
-    if (["mobiles", "phones", "mobile"].includes(search)) {
-      loadProducts("smartphones");
-    } else if (["laptop", "laptops", "lap"].includes(search)) {
-      loadProducts("laptops");
-    } else if (["tab", "tablet", "tablets"].includes(search)) {
-      loadProducts("tablets");
-    }
-  }
-
-  if (search == "tv" || search == "television" || search == "TV" || search == "Television") {
-    const res = await fetch(`https://dummyjson.com/products/category/home-decoration`);
-    data = await res.json();
-  } else if (search == "washing machine" || search == "washer" || search == "Washing Machine") {
-    const res = await fetch(`https://dummyjson.com/products/category/home-decoration`);
-    data = await res.json();
-  } else if (search == "refrigerator" || search == "fridge" || search == "Refrigerator" || search == "Fridge") {
-    const res = await fetch(`https://dummyjson.com/products/category/home-decoration`);
-    data = await res.json();
-  } else if (search == "ac" || search == "air conditioner" || search == "AC" || search == "Air Conditioner") {
-    const res = await fetch(`https://dummyjson.com/products/category/home-decoration`);
-    data = await res.json();
-  } else {
-    const res = await fetch(`https://dummyjson.com/products/category/home-decoration`);
-    data = await res.json();
-  }
-
-  let search = document.getElementById("search").value;
-  cardBox.innerHTML = '';
-  document.getElementById("search").addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      ready();
-    }
-  });
-</script> -->

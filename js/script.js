@@ -9,31 +9,23 @@ fetch("./partials/category.html")
   .then((data) => {
     document.getElementById("categorySection").innerHTML = data;
   });
-  fetch("../partials/mobilecate.html")
+fetch("./partials/mobilecate.html")
   .then((res) => res.text())
   .then((mobile) => {
     document.getElementById("mobileMenu").innerHTML = mobile;
   });
 
-
-function toggleSearchMobile() {
-  const searchBar = document.getElementById("mobileSearchBar");
-  searchBar.classList.toggle("hidden");
-}
-function toggleMobileMenu() {
-      const mobileMenu = document.getElementById("mobileMenu");
-      mobileMenu.classList.toggle("hidden");
-    }
-// ✅ Mobile Menu Toggle
+// Mobile menu toggle
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-mobileMenuBtn?.addEventListener("click", () => {
-  document.getElementById("mobileMenu").classList.toggle("hidden");
-});
-// ✅ Mobile Search Toggle
+const mobileMenu = document.getElementById("mobileMenu");
 
-// ✅ Mobile Filter Toggle
-filterBtn?.addEventListener("click", () => {
-  sidebar.classList.toggle("hidden"); 
+mobileMenuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
+// Mobile filter toggle
+filterBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("hidden");
   sidebar.classList.toggle("block");
 
   if (!sidebar.classList.contains("hidden")) {
@@ -46,11 +38,10 @@ filterBtn?.addEventListener("click", () => {
       "overflow-y-auto",
       "bg-white",
       "shadow-lg",
-      "rounded-md",
-      "w-[90vw]",
-      "max-w-[320px]"
+      "rounded-md"
     );
-    sidebar.classList.remove("w-full");
+    sidebar.classList.remove("w-full"); // Optional: restrict width
+    sidebar.classList.add("w-[90vw]", "max-w-[320px]");
   } else {
     sidebar.classList.remove(
       "fixed",
@@ -92,7 +83,24 @@ document.addEventListener("click", (e) => {
     );
   }
 });
+function toggleSearchMobile() {
+  const searchBar = document.getElementById("mobileSearchBar");
 
+  if (searchBar.classList.contains("hidden")) {
+    searchBar.classList.remove("hidden");
+    setTimeout(() => {
+      searchBar.classList.remove("scale-y-0", "opacity-0");
+      searchBar.classList.add("!scale-y-[1]", "opacity-100");
+    }, 10);
+    document.getElementById("searchMobile").focus();
+  } else {
+    searchBar.classList.remove("!scale-y-[1]", "opacity-100");
+    searchBar.classList.add("scale-y-0", "opacity-0");
+    setTimeout(() => {
+      searchBar.classList.add("hidden");
+    }, 300);
+  }
+}
 function searchProduct() {
   let query = "";
 
@@ -108,14 +116,28 @@ function searchProduct() {
     camera: "camera.html",
     dslr: "camera.html",
     shirt: "shirt.html",
-    tshirt: "shirt.html",
+    tshirt: "tshirt.html",
     tablet: "tablet.html",
     laptop: "laptop.html",
     bedsheet: "bedsheet.html",
     mobile: "mobile.html",
+    iphone: "mobile.html",
     flight: "flight.html",
     furniture: "furniture.html",
     powerbank: "powerbank.html",
+    battery: "powerbank.html",
+    refrigerator: "refrigerator.html",
+    fridge: "refrigerator.html",
+    washingmachine: "washingmachine.html",
+    television: "television.html",
+    tv: "television.html",
+    smarttv: "television.html",
+    ac: "ac.html",
+    airconditioner: "ac.html",
+    product: "product.html",
+    cart: "cart.html",
+    login: "login.html",
+    index: "index.html",
   };
 
   if (pages[query]) {
