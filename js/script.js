@@ -1,20 +1,21 @@
+fetch(`./partials/navbar.html`)
+  .then((res) => res.text())
+  .then((html) => {
+    document.getElementById("mynavbar").innerHTML = html;
+  });
 
 fetch("./partials/category.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("categorySection").innerHTML = data;
   });
+  fetch("../partials/mobilecate.html")
+  .then((res) => res.text())
+  .then((mobile) => {
+    document.getElementById("mobileMenu").innerHTML = mobile;
+  });
 
-fetch(`./partials/navbar.html`)
-  .then((res) => res.text())
-  .then((html) => {
-    document.getElementById("mynavbar").innerHTML = html;
-  });
-fetch("./partials/mobilenav.html")
-  .then((res) => res.text())
-  .then((dataa) => {
-    document.getElementById("mobileMenu").innerHTML = dataa;
-  });
+
 function toggleSearchMobile() {
   const searchBar = document.getElementById("mobileSearchBar");
   searchBar.classList.toggle("hidden");

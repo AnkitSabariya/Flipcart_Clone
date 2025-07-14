@@ -17,25 +17,47 @@
     
 <body class="">
    <div id="container" class="h-full bg-[#f7f7f7]">
-      <!-- navbar -->
-      <div id="mynavbar"></div>
-      <!-- navbar -->
+        <nav id="mynavbar"></nav>
+      <!-- Mobile search bar (hidden by default) -->
+      <div
+        id="mobileSearchBar"
+        class="lg:hidden w-full px-3 pt-2 hidden bg-white transform transition-all duration-300 ease-in-out origin-top scale-y-0 opacity-0"
+      >
+        <div
+          class="flex items-center border border-gray-300 rounded overflow-hidden"
+        >
+          <input
+            id="searchMobile"
+            type="text"
+            placeholder="Search for products, brands and more"
+            onkeydown="if(event.key==='Enter'){ searchProduct(); }"
+            class="w-full px-4 py-2 text-sm text-black outline-none"
+          />
+          <button onclick="searchProduct()" class="bg-[#f1f3f6] px-4 py-2">
+            <i class="ri-search-line text-[#2874f0] text-lg"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu Button -->
+      <div class="lg:hidden bg-white shadow-sm">
+        <button
+          id="mobileMenuBtn"
+          class="w-full p-3 text-left flex items-center justify-between"
+        >
+          <span class="font-medium">Categories</span>
+          <i class="ri-menu-line text-xl"></i>
+        </button>
+      </div>
+      <!-- Category Section with Dropdowns -->
+      <div
+        id="categorySection"
+        class="section relative min-h-[40px] text-black w-full shadow-sm hidden lg:block"
+      ></div>
 
-    <!-- Mobile search bar (hidden by default) -->
-    <div id="mobileSearchBar" >
-    </div>
+      <!-- Header -->
 
-    <!-- Mobile Menu Button -->
-    <div id="mobileSearchbtn">
-    </div>
-
-    <!-- Category Section with Dropdowns -->
-    <div id="categorySection" >
-    </div>
-
-    <!-- Mobile Category Menu -->
-    <div id="mobileMenu" >
-    </div>
+      <!--Mobile Category Menu -->
+      <div id="mobileMenu" class="lg:hidden bg-white shadow-lg hidden"></div>
     <!-- body -->
     <div class="body min-w-full lg:min-w-[978px] max-w-[1680px] p-[4px] lg:p-[8px] w-full relative m-[0_auto]">
         <div class="flex flex-col lg:flex-row">
