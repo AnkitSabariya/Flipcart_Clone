@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart Product Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gradient-to-br from-gray-100 to-gray-200 text-gray-900 font-sans">
+    <div class="max-w-full mx-auto bg-white min-h-screen shadow-lg">
+       <nav id="mynavbar">
+    </nav>
+    
+      <!-- Product Section -->
+      <div class="flex flex-wrap gap-10 p-6 md:p-8">
+        <!-- Product Images -->
+        <div class="flex-1 min-w-[300px]">
+          <div
+            class="bg-white border border-gray-200 rounded-md shadow-md p-4 h-[400px] flex items-center justify-center hover:shadow-lg transition"
+          >
+            <img
+              src="https://m.media-amazon.com/images/I/71CXhVhpM0L.jpg"
+              alt="Apple Watch Series 9"
+              id="mainImage"
+              class="max-h-full max-w-full object-contain cursor-zoom-in hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="flex flex-wrap gap-4 mt-4" id="thumbnailContainer"></div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="flex-1 min-w-[300px] space-y-6">
+          <h1 class="text-2xl font-semibold" id="productTitle"></h1>
+
+          <div class="flex items-center gap-4 border-b pb-4">
+            <div class="bg-green-600 text-white px-2 py-1 rounded flex items-center gap-1 text-sm font-medium">
+              <span id="ratingValue"></span>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="text-gray-500 text-sm" id="ratingText"></span>
+          </div>
+
+          <div class="border-b pb-4 space-x-2">
+            <span class="text-2xl font-bold" id="currentPrice"></span>
+            <span class="line-through text-gray-500 text-lg" id="originalPrice"></span>
+            <span class="text-green-600 font-medium text-lg" id="discount"></span>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Available offers</h3>
+            <div id="offersList" class="space-y-2"></div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Specifications</h3>
+            <div id="specificationsList" class="space-y-2"></div>
+          </div>
+
+          <div class="flex flex-wrap gap-4 mt-6">
+            <button
+              class="bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-6 rounded-md font-semibold shadow-sm transition"
+              onclick="addToCart()"
+            >
+              <i class="fas fa-shopping-cart"></i> ADD TO CART
+            </button>
+            <button
+              class="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-md font-semibold shadow-sm transition"
+              onclick="buyNow()"
+            >
+              <i class="fas fa-bolt"></i> BUY NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    let brand = localStorage.getItem("brand");
+    let model = localStorage.getItem("model");
+    let desp = localStorage.getItem("desp");
+    let price = localStorage.getItem("price");
+    let image = localStorage.getItem("image");
+
+    let processor = localStorage.getItem("processor");
+    let ram = localStorage.getItem("ram");
+    let storage = localStorage.getItem("storage");
+    let display = localStorage.getItem("display");
+    let battery = localStorage.getItem("battery");
+    let connectivity = localStorage.getItem("connectivity");
+    let rcamera = localStorage.getItem("rearcamera");
+    let fcamera = localStorage.getItem("frontcamera");
+    let ossystem = localStorage.getItem("os");
+      const product = {
+        title: 'Apple Watch Series 9 GPS (45mm) - Midnight Aluminum Case with Midnight Sport Band',
+        rating: '4.5',
+        ratingText: '45,234 Ratings & 3,456 Reviews',
+        currentPrice: '₹41,900',
+        originalPrice: '₹45,900',
+        discount: '9% off',
+        mainImage: 'https://m.media-amazon.com/images/I/71CXhVhpM0L.jpg',
+        thumbnails: [
+          'https://m.media-amazon.com/images/I/71CXhVhpM0L.jpg',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk8ANoxHoOiwBF2wTK4ZTFgB3Ow20FGLlgWg&s',
+          'https://i.ytimg.com/vi/GHZwRPskGc4/maxresdefault.jpg',
+          'https://www.designinfo.in/wp-content/uploads/2024/01/Samsung-Galaxy-S24-Ultra-512GB-Titanium-Black-5.webp'
+        ],
+        offers: [
+          { tag: 'Bank Offer', text: '10% off on HDFC Bank Credit Card, up to ₹1,250 on orders of ₹5,000 and above' },
+          { tag: 'Bank Offer', text: '5% Cashback on Flipkart Axis Bank Card' },
+          { tag: 'Exchange', text: 'Up to ₹15,000 off on Exchange' },
+          { tag: 'Special Price', text: 'Get extra 5% off (price inclusive of discount)' }
+        ],
+        specifications: [
+          { label: 'Model Name', value: model },
+          { label: 'Style', value: 'GPS' },
+          { label: 'Display Size', value: display },
+          { label: 'Battery Life', value: battery },
+          { label: 'Water Resistance', value: '50m water resistant' },
+          { label: 'Processor', value: processor },
+          { label: 'Connectivity', value: connectivity },
+          { label: 'Compatibility', value: 'iPhone models running iOS 17 or later' }
+        ]
+      };
+
+      window.onload = () => {
+        document.getElementById('productTitle').textContent = model;
+        document.getElementById('ratingValue').textContent = product.rating;
+        document.getElementById('ratingText').textContent = product.ratingText;
+        document.getElementById('currentPrice').textContent = price;
+        document.getElementById('originalPrice').textContent = price;
+        document.getElementById('discount').textContent = product.discount;
+        document.getElementById('mainImage').src = image;
+
+        product.thumbnails.forEach((src, i) => {
+          const img = document.createElement('img');
+          img.src = src;
+          img.className = `w-16 h-16 p-1 border rounded cursor-pointer transition hover:scale-110 shadow-sm ${i === 0 ? 'border-blue-600' : 'border-transparent'}`;
+          img.onclick = () => changeImage(img, src);
+          document.getElementById('thumbnailContainer').appendChild(img);
+        });
+
+        product.offers.forEach(o => {
+          const div = document.createElement('div');
+          div.innerHTML = `<span class="text-blue-600 font-medium">${o.tag}:</span> <span>${o.text}</span>`;
+          document.getElementById('offersList').appendChild(div);
+        });
+
+        product.specifications.forEach(s => {
+          const div = document.createElement('div');
+          div.className = 'flex gap-4';
+          div.innerHTML = `<div class="min-w-[120px] text-gray-500 font-medium">${s.label}</div><div class="text-gray-900">${s.value}</div>`;
+          document.getElementById('specificationsList').appendChild(div);
+        });
+      };
+
+      function changeImage(img, src) {
+        document.getElementById('mainImage').src = src;
+        document.querySelectorAll('#thumbnailContainer img').forEach(t => t.classList.remove('border-blue-600'));
+        img.classList.add('border-blue-600');
+      }
+
+      function toggleCart() {
+        alert('Cart toggle function goes here.');
+      }
+
+      function addToCart() {
+        alert('Add to cart logic goes here.');
+      }
+
+      function buyNow() {
+        alert('Buy now logic goes here.');
+      }
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,18 +1,26 @@
+// Navbar
 fetch(`./partials/navbar.html`)
   .then((res) => res.text())
   .then((html) => {
     document.getElementById("mynavbar").innerHTML = html;
   });
-
+// Destop Category
 fetch("./partials/category.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("categorySection").innerHTML = data;
   });
+// Mobile Responcive Category
 fetch("./partials/mobilecate.html")
   .then((res) => res.text())
   .then((mobile) => {
     document.getElementById("mobileMenu").innerHTML = mobile;
+  });
+  // Footer
+fetch("./partials/footer.html")
+  .then((res) => res.text())
+  .then((footer) => {
+    document.getElementById("footer").innerHTML = footer;
   });
 
 // Mobile menu toggle
