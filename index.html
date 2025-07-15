@@ -176,12 +176,12 @@
             alt="Flipkart Logo"
           />
           <div
-            class="input hidden md:flex w-[53%] h-[45px] bg-[#F0F5FF] rounded-lg ml-10 items-center px-4"
+            class="input hidden md:flex w-[53%] h-[45px] bg-[#F0F5FF] rounded-lg ml-10 items-center cursor-pointer px-4"
           >
-            <i class="ri-search-line text-2xl text-[#818489]"   onclick="searchProduct()"></i>
+            <i class="ri-search-line text-2xl text-[#818489]"   onclick="searchProducts()"></i>
             <input
               type="text"
-              onkeydown="if(event.key==='Enter'){ searchProduct(); }"
+              onkeydown="if(event.key==='Enter'){ searchProducts(); }"
               id="search"
               class="w-[80%] text-lg text-black font-normal outline-0 ml-2.5 bg-transparent"
               placeholder="Search for Products, Brands and More"
@@ -1713,6 +1713,51 @@
       </div>
     </div>
   </body>
+<script>
+  function searchProducts() {
+  let query = "";
 
-  <script src="./js/script.js"></script>
+  if (window.innerWidth < 1024) {
+    query = document.getElementById("searchMobile").value.trim().toLowerCase();
+  } else {
+    query = document.getElementById("search").value.trim().toLowerCase();
+  }
+
+  if (!query) return;
+
+  const pages = {
+    camera: "camera.html",
+    dslr: "camera.html",
+    shirt: "shirt.html",
+    tshirt: "tshirt.html",
+    tablet: "tablet.html",
+    laptop: "laptop.html",
+    bedsheet: "bedsheet.html",
+    mobile: "mobile.html",
+    iphone: "mobile.html",
+    flight: "flight.html",
+    furniture: "furniture.html",
+    powerbank: "powerbank.html",
+    battery: "powerbank.html",
+    refrigerator: "refrigerator.html",
+    fridge: "refrigerator.html",
+    washingmachine: "washingmachine.html",
+    television: "television.html",
+    tv: "television.html",
+    smarttv: "television.html",
+    ac: "ac.html",
+    airconditioner: "ac.html",
+    product: "product.html",
+    cart: "cart.html",
+    login: "login.html",
+    index: "index.html",
+  };
+
+  if (pages[query]) {
+    window.location.href = pages[query];
+  } else {
+    alert("No results found for: " + query);
+  }
+}
+</script>
 </html>
