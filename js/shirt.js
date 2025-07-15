@@ -22,15 +22,15 @@ let key = 0
                 pattern,
                 occasion,
                 sleeve,
-                featureTags
+                featureTags,
+                id
               } = product;
       
               const price_inr = Math.round(price_usd * 83); // USD to INR approx
       
               const card = document.createElement("a");
               card.className = "max-w-[350px] bg-white flex flex-col  rounded-lg overflow-hidden shadow hover:shadow-lg transition-all duration-300 group cursor-pointer";
-            //   card.setAttribute("href","#")
-                card.setAttribute("onclick",`local(${key})`)
+             card.setAttribute("href", `product.html?id=${id}&json=shirt`);
               card.innerHTML = `
                             <!-- Image Section -->
               <div class="relative w-full h-[76%] overflow-hidden">
@@ -57,26 +57,5 @@ let key = 0
             });
         })
     }
-    function local(key){
-    fetch("./json/shirt.json")
-    .then((res)=> res.json())
-    .then((data)=> {
-        localStorage.clear()
-        localStorage.setItem("image",`${data[key].image}`)
-        localStorage.setItem("model",`${data[key].model}`)
-        localStorage.setItem("brand",`${data[key].brand}`)
-        localStorage.setItem("category",`${data[key].category}`)
-        localStorage.setItem("ocassion",`${data[key].occasion}`)
-        localStorage.setItem("gender",`${data[key].gender}`)
-        localStorage.setItem("fit",`${data[key].fit}`)
-        localStorage.setItem("fabric",`${data[key].fabric}`)
-        localStorage.setItem("color",`${data[key].color}`)
-        localStorage.setItem("sizes",`${data[key].sizes}`)
-        localStorage.setItem("desp",`${data[key].pattern}`)
-        localStorage.setItem("features",`${data[key].featureTags}`)
-        const price_inr = Math.round(data[key].price_usd * 83);
-        localStorage.setItem("price", price_inr);
-        
-    })
-}
+
     renderCards();

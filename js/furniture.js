@@ -19,15 +19,15 @@ let key = 0
                 assembly_required,
                 warranty_years,
                 price_usd,
-                image
+                image,
+                id
               } = product;
       
               const price_inr = Math.round(price_usd * 83); // USD to INR approx
       
               const card = document.createElement("a");
               card.className = "bg-white w-full flex flex-col sm:flex-row p-4 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 rounded-xl";
-              card.setAttribute("href","#")
-              card.setAttribute("onclick",`local(${key})`)
+                  card.setAttribute("href", `product.html?id=${id}&json=furniture`);
               card.innerHTML = `
                 <!-- Image -->
                 <div class="w-full sm:w-[220px] flex items-center justify-center mb-4 sm:mb-0">
@@ -59,23 +59,5 @@ let key = 0
             });
         })
     }
-function local(key){
-    fetch("./json/furniture.json")
-    .then((res)=> res.json())
-    .then((data)=> {
-      localStorage.clear()
-        localStorage.setItem("image", data[key].image);
-        localStorage.setItem("model", data[key].model);
-        localStorage.setItem("brand", data[key].brand);
-        localStorage.setItem("category", data[key].category);
-        localStorage.setItem("fabric", data[key].material);
-        localStorage.setItem("pattern", data[key].pattern);
-        localStorage.setItem("color", data[key].color);
-        localStorage.setItem("size", data[key].dimensions);
-        localStorage.setItem("features", data[key].features.join(", "));
-        localStorage.setItem("price_usd", data[key].price_usd);
-        localStorage.setItem("price", Math.round(data[key].price_usd * 83));
-        
-    })
-}
+
     renderCards();

@@ -19,7 +19,8 @@ function renderTVCard() {
       dimensions_mm,
       images,
       short_description,
-      features
+      features,
+      id
     } = product;
 
     let currentImg = 0;
@@ -27,8 +28,7 @@ function renderTVCard() {
     const card = document.createElement("a");
     card.className =
       "bg-white w-full sm:h-[320px] h-auto flex flex-col sm:flex-row p-4 border border-gray-200 cursor-pointer shadow-sm hover:shadow-md transition";
-    // card.setAttribute("href","#")
-      card.setAttribute("onclick",`local(${key})`)
+         card.setAttribute("href", `product.html?id=${id}&json=television`);
     card.innerHTML = `
       <!-- Image Carousel -->
       <div class="relative w-full sm:w-[250px] flex items-center justify-center">
@@ -77,25 +77,5 @@ function renderTVCard() {
     })
   
 }
-function local(key){
-    fetch("./json/television.json")
-    .then((res)=> res.json())
-    .then((data)=> {
-        localStorage.clear()
-        localStorage.setItem("image", data[key].images[0]);
-        localStorage.setItem("brand", data[key].brand);
-        localStorage.setItem("model", data[key].model);
-        localStorage.setItem("size", data[key].screen_size_inches);
-        localStorage.setItem("desp", data[key].short_description);
-        localStorage.setItem("resolution", data[key].resolution);
-        localStorage.setItem("display", data[key].display_type);
-        localStorage.setItem("smart_tv", data[key].smart_tv ? "Yes" : "No");
-        localStorage.setItem("ports", data[key].hdmi_ports);
-        localStorage.setItem("weight", data[key].weight_kg);
-        localStorage.setItem("dimensions", data[key].dimensions_mm.join(" x "));
-        localStorage.setItem("features", data[key].features);
-        localStorage.setItem("price", Math.round(data[key].price_usd * 83));
-        
-    })
-}
+
 renderTVCard();

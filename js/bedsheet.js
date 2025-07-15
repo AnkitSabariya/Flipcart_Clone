@@ -9,15 +9,14 @@ let key = 0
       
             data.forEach((product) => {
               const {
-                brand, model, material, color, dimensions, features, thread_count, size, price_usd, image
+                brand, model, material, color, dimensions, features, thread_count, size, price_usd, image,id
               } = product;
       
               const price_inr = Math.round(price_usd * 83);
       
               const card = document.createElement("a");
               card.className = "bg-white w-full sm:h-[300px] h-auto flex flex-col sm:flex-row p-4 border items-center border-gray-200 rounded-lg shadow-sm hover:shadow-lg cursor-pointer transition";
-            //   card.setAttribute("href","#")
-              card.setAttribute("onclick",`local(${key})`)
+           card.setAttribute("href", `product.html?id=${id}&json=badsheet`);
               card.innerHTML = `
                 <!-- Image -->
                 <div class="w-full sm:w-[220px] flex items-center justify-center mb-4 sm:mb-0">
@@ -49,23 +48,5 @@ let key = 0
         })
     }
     
-    function local(key){
-    fetch("./json/bedsheet.json")
-    .then((res)=> res.json())
-    .then((data)=> {
-        localStorage.clear()
-        localStorage.setItem("image", data[key].image);
-        localStorage.setItem("brand", data[key].brand);
-        localStorage.setItem("model", data[key].model);
-        localStorage.setItem("material", data[key].material);
-        localStorage.setItem("color", data[key].color);
-        localStorage.setItem("price", Math.round(data[key].price_usd * 83));
-        localStorage.setItem("price_usd", data[key].price_usd);
-        localStorage.setItem("thread_count", data[key].thread_count);
-        localStorage.setItem("features", data[key].features.join(", "));
-        localStorage.setItem("size", data[key].size);
-        localStorage.setItem("dimensions", data[key].dimensions);
-        
-    })
-}
+  
     renderCards();

@@ -20,7 +20,8 @@ function renderCards() {
                 price_usd,
                 images,
                 short_description,
-                features
+                features,
+                id
             } = product;
             
             const price_inr = Math.round(price_usd * 83); // Approx conversion
@@ -28,8 +29,7 @@ function renderCards() {
             const card = document.createElement("a");
             card.className =
             "max-w-[350px] bg-white flex flex-col  rounded-lg overflow-hidden shadow hover:shadow-lg transition-all duration-300 group cursor-pointer";
-            // card.setAttribute("href","#")
-            card.setAttribute("onclick",`local(${key})`)
+              card.setAttribute("href", `product.html?id=${id}&json=t-shirts`);
             card.innerHTML = `
                     <!-- Image Section -->
             <div class="relative w-full h-[76%] overflow-hidden">
@@ -56,24 +56,5 @@ function renderCards() {
     })
 }
 
-function local(key){
-    fetch("./json/t-shirts.json")
-    .then((res)=> res.json())
-    .then((data)=> {
-        localStorage.clear()
-        localStorage.setItem("image",`${data[key].images[0]}`)
-        localStorage.setItem("model",`${data[key].model}`)
-        localStorage.setItem("brand",`${data[key].brand}`)
-        localStorage.setItem("gender",`${data[key].gender}`)
-        localStorage.setItem("fit",`${data[key].fit}`)
-        localStorage.setItem("fabric",`${data[key].fabric}`)
-        localStorage.setItem("color",`${data[key].color}`)
-        localStorage.setItem("sizes",`${data[key].sizes}`)
-        localStorage.setItem("desp",`${data[key].short_description}`)
-        localStorage.setItem("category",`${data[key].category}`)
-        localStorage.setItem("features",`${data[key].features}`)
-        localStorage.setItem("price",`${data[key].price_inr}`)
-        
-    })
-}
+
     renderCards();
