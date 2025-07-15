@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "brand": "LG",
     "model": "PS-Q19YNZE",
     "type": "Split Inverter AC",
@@ -16,6 +17,7 @@
     "features": "Ocean Black Protection, HD Filter with Anti-virus Protection, Monsoon Comfort"
   },
   {
+    "id": 2,
     "brand": "Samsung",
     "model": "AR18CY5ZAWK",
     "type": "Split Inverter AC",
@@ -32,6 +34,7 @@
     "features": "Auto Clean, Easy Filter+, Fast Cooling Mode"
   },
   {
+    "id": 3,
     "brand": "Daikin",
     "model": "FTKF50U",
     "type": "Split Inverter AC",
@@ -48,6 +51,7 @@
     "features": "PM2.5 Filter, Econo Mode, Self Diagnosis"
   },
   {
+    "id": 4,
     "brand": "Voltas",
     "model": "183V Vectra Elite",
     "type": "Split Inverter AC",
@@ -64,6 +68,7 @@
     "features": "Turbo Cooling, 4 Stage Filtration, Copper Condenser"
   },
   {
+    "id": 5,
     "brand": "Blue Star",
     "model": "IC518EBTU",
     "type": "Split Inverter AC",
@@ -96,6 +101,7 @@
     "features": "PM 0.1 Filter, Shield Blu, Dry Mode"
   },
   {
+    "id": 6,
     "brand": "Godrej",
     "model": "GIC 18TTC5-WTA",
     "type": "Split Inverter AC",
@@ -112,6 +118,7 @@
     "features": "Green Inverter Technology, Silent Operation"
   },
   {
+    "id": 7,
     "brand": "Hitachi",
     "model": "RSOG518HDEA",
     "type": "Split Inverter AC",
@@ -128,6 +135,7 @@
     "features": "Filter Clean Indicator, SuperFine Mesh Filter, Soft Dry"
   },
   {
+    "id": 8,
     "brand": "Haier",
     "model": "HSU18E-TXG3BN-INV",
     "type": "Split Inverter AC",
@@ -144,6 +152,7 @@
     "features": "Self Clean, Turbo Cool, Triple Inverter"
   },
   {
+    "id": 9,
     "brand": "Lloyd",
     "model": "GLS18I5FWCXL",
     "type": "Split Inverter AC",

@@ -1,5 +1,4 @@
-{
-  "products": [
+ [
     {
       "id": 1,
       "model": "Canon EOS R5 Mirrorless Camera",
@@ -161,4 +160,4 @@
       ]
     }
   ]
-}
+

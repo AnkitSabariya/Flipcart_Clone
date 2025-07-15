@@ -19,7 +19,8 @@ function renderCards() {
             price_inr,
             images,
             short_description,
-            features
+            features,
+            id
           } = product;
       
           let currentImg = 0;
@@ -27,8 +28,7 @@ function renderCards() {
           const card = document.createElement("a");
           card.className =
             "bg-white w-full sm:h-[320px] flex flex-col sm:flex-row p-4 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300";
-          // card.setAttribute("href","#")
-          card.setAttribute("onclick",`local(${key})`)
+  card.setAttribute("href", `product.html?id=${id}&json=ac`);
           card.innerHTML = `
             <!-- Image with slider -->
             <div class="relative w-full sm:w-[250px] flex items-center justify-center">

@@ -5,11 +5,12 @@ const json = params.get("json");
 fetch(`./json/${json}.json`)
   .then(res => res.json())
   .then(data => {
-    const product = data.products.find(p => p.id == id);
+    const product = data.find(p => p.id == id);
     if (!product) {
       alert("Product not found!");
       return;
     }
+    console.log(data)
 
     // Populate UI
     document.getElementById("productTitle").textContent = product.model;

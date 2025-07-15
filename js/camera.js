@@ -6,7 +6,7 @@ function loadProducts() {
   fetch("./json/camera.json")
     .then((res) => res.json())
     .then((data) => {
-      data.products.forEach((product, index) => {
+      data.forEach((product, index) => {
         const {
           model,
           brand,
