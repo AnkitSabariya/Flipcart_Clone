@@ -29,7 +29,7 @@ function loadProducts(category = "powerbanks") {
     card.innerHTML = `
       <!-- Image Section -->
       <div class="relative w-full sm:w-1/3 flex items-center justify-center overflow-hidden">
-        <img src="${image_url}" class="object-contain h-full max-h-[200px] transition-all duration-300 ease-in-out">
+        <img src="${image_url[0]}" class="object-contain h-full max-h-[200px] transition-all duration-300 ease-in-out">
       </div>
 
       <!-- Details Section -->

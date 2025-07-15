@@ -1,5 +1,6 @@
 [
   {
+     "id": 1,
     "brand": "Beyoung",
     "model": "Oversized Graphic Tee - Midnight Hustler",
     "category": "Graphic",
@@ -22,6 +23,7 @@
     "features": "Bio‑washed cotton, fade‑proof print."
   },
   {
+     "id": 2,
     "brand": "Beyoung",
     "model": "Relaxed Quote Tee - Good Vibes",
     "category": "Statement",
@@ -42,6 +44,7 @@
     "features": "Soft feel, durable hem."
   },
   {
+     "id": 3,
     "brand": "Beyoung",
     "model": "Minimalist Slim Tee",
     "category": "Essentials",
@@ -63,6 +66,7 @@
     "features": "Reinforced neckline, pre‑shrunk."
   },
   {
+     "id": 4,
     "brand": "Beyoung",
     "model": "Tropical Print Shirt Tee",
     "category": "Graphic",
@@ -83,6 +87,7 @@
     "features": "Breathable cotton, vivid print."
   },
   {
+     "id": 5,
     "brand": "Beyoung",
     "model": "Sporty Tank Tee",
     "category": "Activewear",
@@ -126,6 +131,7 @@
     "features": "Soft, machine‑washable."
   },
   {
+     "id": 6,
     "brand": "Bewakoof",
     "model": "Coffee First Boyfriend Fit Tee",
     "category": "Statement",
@@ -147,6 +153,7 @@
     "features": "Loose fit, trendy graphic."
   },
   {
+     "id": 7,
     "brand": "Bewakoof",
     "model": "Retro Surf Tee",
     "category": "Graphic",
@@ -168,6 +175,7 @@
     "features": "Color‑fast print, comfy fit."
   },
   {
+     "id": 8,
     "brand": "Bewakoof",
     "model": "Abstract Art Oversized Tee",
     "category": "Graphic",
@@ -189,6 +197,7 @@
     "features": "Heavy‑weight cotton."
   },
   {
+     "id": 9,
     "brand": "Bewakoof",
     "model": "Minimal Black Regular Tee",
     "category": "Essentials",
@@ -210,6 +219,7 @@
     "features": "Soft finish, relaxed fit."
   },
   {
+     "id": 10,
     "brand": "Snitch",
     "model": "Relax Fit Solid Crew Neck Tee",
     "category": "Solid",
@@ -230,6 +240,7 @@
     "features": "Sustainable cotton."
   },
   {
+     "id": 11,
     "brand": "Snitch",
     "model": "Urban Stripe Tee",
     "category": "Casual",
@@ -251,6 +262,7 @@
     "features": "Eco‑friendly cotton."
   },
   {
+     "id": 12,
     "brand": "Snitch",
     "model": "Pocket Tee",
     "category": "Essentials",
@@ -272,6 +284,7 @@
     "features": "Soft jersey fabric."
   },
   {
+     "id": 13,
     "brand": "Snitch",
     "model": "Relaxed V‑Neck Tee",
     "category": "Essentials",
@@ -292,6 +305,7 @@
     "features": "Breathable cotton."
   },
   {
+     "id": 14,
     "brand": "Snitch",
     "model": "Athleisure Camouflage Tee",
     "category": "Activewear",
@@ -312,6 +326,7 @@
     "features": "Quick‑dry fabric."
   },
   {
+     "id": 15,
     "brand": "The Souled Store",
     "model": "Marvel Official Logo T‑Shirt",
     "category": "Pop Culture",
@@ -335,6 +350,7 @@
     "features": "Licensed print."
   },
   {
+     "id": 16,
     "brand": "The Souled Store",
     "model": "Friends TV Show Oversized Tee",
     "category": "TV Show",
@@ -357,6 +373,7 @@
     "features": "Heavy‑weight cotton."
   },
   {
+     "id": 17,
     "brand": "The Souled Store",
     "model": "Star Wars Retro Tee",
     "category": "Pop Culture",
@@ -377,6 +394,7 @@
     "features": "Double‑stitched."
   },
   {
+     "id": 18,
     "brand": "The Souled Store",
     "model": "Batman Emblem Tee",
     "category": "Superhero",
@@ -398,6 +416,7 @@
     "features": "Licensed design."
   },
   {
+     "id": 19,
     "brand": "The Souled Store",
     "model": "Harry Potter Magical Tee",
     "category": "Pop Culture",
@@ -419,6 +438,7 @@
     "features": "Officially licensed."
   },
   {
+     "id": 20,
     "brand": "Zara",
     "model": "Basic White Cotton T‑shirt",
     "category": "Essentials",
@@ -440,6 +460,7 @@
     "features": "Premium cotton."
   },
   {
+     "id": 21,
     "brand": "Zara",
     "model": "Striped Oversized Tee",
     "category": "Casual",
@@ -461,6 +482,7 @@
     "features": "Dropped shoulder."
   },
   {
+     "id": 22,
     "brand": "Zara",
     "model": "Vented Cropped Tee",
     "category": "Trendy",
@@ -481,6 +503,7 @@
     "features": "Soft blend fabric."
   },
   {
+     "id": 23,
     "brand": "Zara",
     "model": "Floral Print Tee",
     "category": "Casual",
@@ -502,6 +525,7 @@
     "features": "Vibrant print."
   },
   {
+     "id": 24,
     "brand": "Zara",
     "model": "Graphic Logo Tee",
     "category": "Graphic",
@@ -523,6 +547,7 @@
     "features": "High‑quality print."
   },
   {
+     "id": 25,
     "brand": "Westside",
     "model": "Nuon Abstract Print Tee",
     "category": "Printed",
@@ -544,6 +569,7 @@
     "features": "Stretch fabric."
   },
   {
+     "id": 26,
     "brand": "Westside",
     "model": "Pepper Solid V‑Neck",
     "category": "Essentials",
@@ -565,6 +591,7 @@
     "features": "Soft cotton blend."
   },
   {
+     "id": 27,
     "brand": "Westside",
     "model": "Pepper Oversized Stripe Tee",
     "category": "Casual",
@@ -585,6 +612,7 @@
     "features": "Lightweight jersey."
   },
   {
+     "id": 28,
     "brand": "Westside",
     "model": "Mismatched Sleeve Graphic Tee",
     "category": "Graphic",
@@ -605,6 +633,7 @@
     "features": "Unique design."
   },
   {
+     "id": 29,
     "brand": "Westside",
     "model": "Nuon Tie‑Dye Tee",
     "category": "Graphic",

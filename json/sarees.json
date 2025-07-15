@@ -1,5 +1,6 @@
 [
   {
+     "id": 1,
     "brand": "Banarasi Boutique",
     "model": "Pure Banarasi Silk",
     "category": "Banarasi",
@@ -14,6 +15,7 @@
     "image_url": "https://images.banarasiboutique.com/red-banarasi.jpg"
   },
   {
+     "id": 2,
     "brand": "FabNest",
     "model": "Kanchipuram Silk",
     "category": "Kanjivaram",
@@ -28,6 +30,7 @@
     "image_url": "https://images.fabnest.com/kanchipuram-blue.jpg"
   },
   {
+     "id": 3,
     "brand": "W",
     "model": "Chiffon Printed Saree",
     "category": "Chiffon",
@@ -42,6 +45,7 @@
     "image_url": "https://images.wforwoman.com/chiffon-peach.jpg"
   },
   {
+     "id": 4,
     "brand": "Aurelia",
     "model": "Georgette Embroidered Saree",
     "category": "Georgette",
@@ -56,6 +60,7 @@
     "image_url": "https://images.aurelia.in/georgette-black.jpg"
   },
   {
+     "id": 5,
     "brand": "Global Desi",
     "model": "Bagru Print Cotton Saree",
     "category": "Cotton",
@@ -84,6 +89,7 @@
     "image_url": "https://images.soch.com/art-silk-magenta.jpg"
   },
   {
+     "id": 6,
     "brand": "Chhabra",
     "model": "Mysore Silk Saree",
     "category": "Silk",
@@ -98,6 +104,7 @@
     "image_url": "https://images.chhabra.com/mysore-purple.jpg"
   },
   {
+     "id": 7,
     "brand": "Manyavar",
     "model": "Bomkai Silk Saree",
     "category": "Silk",
@@ -112,6 +119,7 @@
     "image_url": "https://images.manyavar.com/bomkai-orange.jpg"
   },
   {
+     "id": 8,
     "brand": "BIBA",
     "model": "Cotton Linen Blend Saree",
     "category": "Linen Blend",
@@ -126,6 +134,7 @@
     "image_url": "https://images.biba.in/linen-blend.jpg"
   },
   {
+     "id": 9,
     "brand": "Ajio",
     "model": "Munga Silk Saree",
     "category": "Silk",
@@ -140,6 +149,7 @@
     "image_url": "https://images.ajio.com/munga-green.jpg"
   },
   {
+     "id": 10,
     "brand": "Taneira",
     "model": "Paithani Saree",
     "category": "Paithani",
@@ -154,6 +164,7 @@
     "image_url": "https://images.taneira.com/paithani-blue.jpg"
   },
   {
+     "id": 11,
     "brand": "Chumbak",
     "model": "Printed Cotton Saree",
     "category": "Cotton",

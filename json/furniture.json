@@ -1,5 +1,6 @@
 [
   {
+       "id": 1,
     "brand": "IKEA",
     "model": "HEMNES 3-Drawer Chest",
     "category": "Bedroom Furniture",
@@ -13,6 +14,7 @@
     "image": "https://www.ikea.com/us/en/images/products/hemnes-3-drawer-chest-white-stain__1151406_pe886157_s5.jpg"
   },
   {
+       "id": 2,
     "brand": "Urban Ladder",
     "model": "Melbourne L-Shaped Sofa",
     "category": "Living Room Furniture",
@@ -26,6 +28,7 @@
     "image": "https://www.ulcdn.net/images/products/633471/original/FNSF51CHDB3S_-_main_6.jpg?1658913619"
   },
   {
+       "id": 3,
     "brand": "Home Centre",
     "model": "Zen Writing Desk",
     "category": "Office Furniture",
@@ -39,6 +42,7 @@
     "image": "https://media-uk.landmarkshops.in/cdn-cgi/image/h=750,w=750,q=85,fit=cover/homecentre/1000009340578-1000009340577_02-2100.jpg"
   },
   {
+       "id": 4,
     "brand": "Wakefit",
     "model": "Aura Queen Size Bed with Storage",
     "category": "Bedroom Furniture",
@@ -52,6 +56,7 @@
     "image": "https://m.media-amazon.com/images/I/81ouFuSvc3L._UF894,1000_QL80_.jpg"
   },
   {
+       "id": 5,
     "brand": "Godrej Interio",
     "model": "Bliss Dining Table Set (4-Seater)",
     "category": "Dining Furniture",

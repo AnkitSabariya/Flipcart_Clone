@@ -1,5 +1,6 @@
 [
   {
+       "id": 1,
     "brand": "Levi's",
     "model": "511 Slim Fit Jeans",
     "category": "Jeans",
@@ -14,6 +15,7 @@
     "short_description": "Modern slim fit – lean through hip and thigh, straight to ankle."
   },
   {
+       "id": 2,
     "brand": "Wrangler",
     "model": "Regular Fit Stone Wash Jeans",
     "category": "Jeans",
@@ -28,6 +30,7 @@
     "short_description": "Classic regular fit with durable stone wash for everyday wear."
   },
   {
+       "id": 3,
     "brand": "Pepe Jeans",
     "model": "Cash Slim Fit Jeans",
     "category": "Jeans",
@@ -42,6 +45,7 @@
     "short_description": "Sleek slim fit in a deep black wash, ideal for smart casual look."
   },
   {
+       "id": 4,
     "brand": "Spykar",
     "model": "Mid Rise Narrow Fit Jeans",
     "category": "Jeans",
@@ -56,6 +60,7 @@
     "short_description": "Comfortable narrow fit with a trendy distressed look."
   },
   {
+       "id": 5,
     "brand": "Roadster",
     "model": "Tapered Fit Mid-Rise Jeans",
     "category": "Jeans",
@@ -70,6 +75,7 @@
     "short_description": "Affordable tapered jeans with a clean, sharp navy finish."
   },
   {
+       "id": 6,
     "brand": "Jack & Jones",
     "model": "Skinny Fit Blue Jeans",
     "category": "Jeans",
@@ -84,6 +90,7 @@
     "short_description": "Trend-forward skinny fit in cool ice blue wash."
   },
   {
+       "id": 7,
     "brand": "Flying Machine",
     "model": "Slim Fit Stretchable Jeans",
     "category": "Jeans",
@@ -98,6 +105,7 @@
     "short_description": "Slim fit with stretch and edgy acid wash look."
   },
   {
+       "id": 8,
     "brand": "Lee Cooper",
     "model": "Straight Fit Mid-Rise Jeans",
     "category": "Jeans",
@@ -112,6 +120,7 @@
     "short_description": "Timeless straight fit in a versatile blue-grey shade."
   },
   {
+       "id": 9,
     "brand": "Denizen by Levi's",
     "model": "Athletic Fit Jeans",
     "category": "Jeans",
@@ -126,6 +135,7 @@
     "short_description": "Roomy athletic fit with clean indigo finish."
   },
   {
+       "id": 10,
     "brand": "U.S. Polo Assn.",
     "model": "Regular Fit Stonewash Jeans",
     "category": "Jeans",
@@ -140,6 +150,7 @@
     "short_description": "Polos' regular fit with vintage-inspired stonewash."
   },
   {
+       "id": 11,
     "brand": "Celio",
     "model": "Dark Indigo Slim Jeans",
     "category": "Jeans",
@@ -154,6 +165,7 @@
     "short_description": "Slim jeans in rich dark indigo with stretch comfort."
   },
   {
+       "id": 12,
     "brand": "Mufti",
     "model": "Tapered Fit Mid-Rise Jeans",
     "category": "Jeans",
@@ -168,6 +180,7 @@
     "short_description": "Tapered black jeans with subtle distress detailing."
   },
   {
+       "id": 13,
     "brand": "John Players",
     "model": "Classic Straight Fit Jeans",
     "category": "Jeans",
@@ -182,6 +195,7 @@
     "short_description": "Everyday straight fit in classic blue vintage wash."
   },
   {
+       "id": 14,
     "brand": "DNMX",
     "model": "Slim Fit Mid-Rise Jeans",
     "category": "Jeans",
@@ -196,6 +210,7 @@
     "short_description": "Budget-friendly slim grey jeans with stretch."
   },
   {
+       "id": 15,
     "brand": "Highlander",
     "model": "Tapered Fit Ankle Length Jeans",
     "category": "Jeans",

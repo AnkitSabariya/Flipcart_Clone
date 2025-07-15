@@ -1,5 +1,6 @@
 [
   {
+     "id": 1,
     "brand": "Snitch",
     "model": "Slim Fit Oxford Shirt",
     "category": "Formal",
@@ -16,6 +17,7 @@
     "image": "https://assets.ajio.com/medias/sys_master/root/20250317/rqmu/67d822fa59f835398040b9ef/-473Wx593H-466998929-blue-MODEL.jpg"
   },
   {
+     "id": 2,
     "brand": "Snitch",
     "model": "Casual Check Shirt",
     "category": "Casual",
@@ -32,6 +34,7 @@
     "image": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2024/AUGUST/8/FWY9MsYc_fe15958561774a408e17d4ce8502351d.jpg"
   },
   {
+     "id": 3,
     "brand": "Snitch",
     "model": "Relaxed Linen Shirt",
     "category": "Resort",
@@ -48,6 +51,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0420/7073/7058/files/baa5325d8fef2b03a0ecb62b4a2a55e8.webp?v=1721855328&quality=20"
   },
   {
+     "id": 4,
     "brand": "Vastrado",
     "model": "Tropical Print Resort Shirt",
     "category": "Resort",
@@ -64,6 +68,7 @@
     "image": "https://assets.ajio.com/medias/sys_master/root/20240524/D8C5/665043e316fd2c6e6a213932/-473Wx593H-443041738-olive-MODEL.jpg"
   },
   {
+     "id": 5,
     "brand": "Vastrado",
     "model": "Casual Denim Shirt",
     "category": "Casual",
@@ -80,6 +85,7 @@
     "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/19260266/2022/7/26/20de4699-8172-4c51-aeef-6a2eb9a517fa1658850747248DenimShirt1.jpg"
   },
   {
+     "id": 6,
     "brand": "Rare Rabbit",
     "model": "Stripped Linen Shirt",
     "category": "Resort",
@@ -96,6 +102,7 @@
     "image": "https://thehouseofrare.com/cdn/shop/files/8907279761675_-06432.webp?v=1745492783"
   },
   {
+     "id": 7,
     "brand": "Rare Rabbit",
     "model": "Casual Solid Chambray Shirt",
     "category": "Smart Casual",
@@ -112,6 +119,7 @@
     "image": "https://thehouseofrare.com/cdn/shop/files/Rubans-blue-0327.jpg?v=1739426319"
   },
   {
+     "id": 8,
     "brand": "U.S. Polo Assn.",
     "model": "Solid Formal Shirt",
     "category": "Formal",
@@ -128,6 +136,7 @@
     "image": "https://cdn.shopify.com/s/files/1/0617/2137/8986/files/7_d455f294-c785-40fe-ab9a-8f8525af1518_600x.jpg?v=1692214242"
   },
   {
+     "id": 9,
     "brand": "U.S. Polo Assn.",
     "model": "Casual Check Shirt",
     "category": "Casual",
@@ -144,6 +153,7 @@
     "image": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/19166812/2022/9/3/a9aaa1f0-4fd1-4ec5-937b-9f2342094dbd1662200133990-US-Polo-Assn-Men-Navy-Blue-Checked-Pure-Cotton-Casual-Shirt--1.jpg"
   },
   {
+     "id": 10,
     "brand": "Allen Solly",
     "model": "Smart Casual Chambray",
     "category": "Smart Casual",
@@ -160,6 +170,7 @@
     "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/20030602/2022/9/16/1492a3a6-7918-4a70-9874-064d7f1197471663337722676AllenSollyMenBlueSlimFitCasualShirt1.jpg"
   },
   {
+     "id": 11,
     "brand": "Allen Solly",
     "model": "Floral Print Polo Shirt",
     "category": "Casual",
@@ -176,6 +187,7 @@
     "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/22643772/2023/4/4/4c149916-266f-4466-be4b-c490b32714ce1680624092444MenMaroonPrintPoloNeckT-shirt1.jpg"
   },
   {
+     "id": 12,
     "brand": "Louis Philippe",
     "model": "Formal Herringbone Shirt",
     "category": "Formal",
@@ -192,6 +204,7 @@
     "image": "https://imagescdn.louisphilippe.com/img/app/product/3/39689174-14077277.jpg?auto=format&w=390"
   },
   {
+     "id": 13,
     "brand": "Louis Philippe",
     "model": "Casual Striped Shirt",
     "category": "Casual",
@@ -208,6 +221,7 @@
     "image": "https://imagescdn.louisphilippe.com/img/app/product/3/39659818-13975368.jpg?auto=format&w=390"
   },
   {
+     "id": 14,
     "brand": "Jack & Jones",
     "model": "Roll-Tab Sleeve Shirt",
     "category": "Casual",
@@ -224,6 +238,7 @@
     "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/27884756/2024/2/27/4ad0295c-e239-4a43-8825-a1cf06eec3af1709008772610JackJonesMenSlimFitOpaqueCheckedCasualShirt2.jpg"
   },
   {
+     "id": 15,
     "brand": "Jack & Jones",
     "model": "Denim Western Shirt",
     "category": "Casual",
@@ -240,6 +255,7 @@
     "image": "https://media-uk.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/lifestyle/1000012563569-Blue-DarkBlue-1000012563569_01-2100.jpg"
   },
   {
+     "id": 16,
     "brand": "Tommy Hilfiger",
     "model": "Brooklyn Regular Fit Shirt",
     "category": "Smart Casual",
@@ -256,6 +272,7 @@
     "image": "https://cdn18.nnnow.com/web-images/large/styles/8BJWUOSN9WR/1722431913379/1.jpg"
   },
   {
+     "id": 17,
     "brand": "Tommy Hilfiger",
     "model": "Branded Check Shirt",
     "category": "Casual",
@@ -272,6 +289,7 @@
     "image": "https://cdn16.nnnow.com/web-images/large/styles/NOAHNGQ7NZ7/1613378237933/5.JPG"
   },
   {
+     "id": 18,
     "brand": "Arrow",
     "model": "Non-Iron Stretch Shirt",
     "category": "Formal",
@@ -288,6 +306,7 @@
     "image": "https://m.media-amazon.com/images/I/81bw9TlIHkL._UY1100_.jpg"
   },
   {
+     "id": 19,
     "brand": "Arrow",
     "model": "Casual Chambray Shirt",
     "category": "Casual",
@@ -304,6 +323,7 @@
     "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2078803/2017/9/21/11505995693308-Arrow-Blue-Jean-Co-Men-Blue-Slim-Fit-Printed-Casual-Shirt-3651505995693090-1.jpg"
   },
   {
+     "id": 20,
     "brand": "Park Avenue",
     "model": "Premium Formal Stripe Shirt",
     "category": "Formal",
@@ -320,6 +340,7 @@
     "image": "https://img.tatacliq.com/images/i14/437Wx649H/MP000000020209831_437Wx649H_202311231725481.jpeg"
   },
   {
+     "id": 21,
     "brand": "Park Avenue",
     "model": "Casual Linen Blend Shirt",
     "category": "Smart Casual",
@@ -336,6 +357,7 @@
     "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/30814207/2025/3/18/3aeca714-9c4a-4b27-9313-d2aaed4718a41742290368287-Park-Avenue-Men-Shirts-251742290367913-1.jpg"
   },
   {
+     "id": 22,
     "brand": "Raymond",
     "model": "Formal Twill Shirt",
     "category": "Formal",
@@ -352,6 +374,7 @@
     "image": "https://myraymond.com/cdn/shop/files/RMSA13021-B5-1.jpg?v=1725602765"
   },
   {
+     "id": 23,
     "brand": "Raymond",
     "model": "Casual Check Linen Shirt",
     "category": "Casual",
@@ -368,6 +391,7 @@
     "image": "https://myraymond.com/cdn/shop/files/RCSQ01945-P6-1.jpg?v=1744817598"
   },
   {
+     "id": 24,
     "brand": "Peter England",
     "model": "Slim Fit Formal Shirt",
     "category": "Formal",
@@ -384,6 +408,7 @@
     "image": "https://imagescdn.peterengland.com/img/app/product/3/39678271-13768220.jpg?auto=format&w=390"
   },
   {
+     "id": 25,
     "brand": "Peter England",
     "model": "Casual Chambray Indigo Shirt",
     "category": "Casual",

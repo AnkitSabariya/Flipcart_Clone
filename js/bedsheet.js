@@ -16,7 +16,7 @@ let key = 0
       
               const card = document.createElement("a");
               card.className = "bg-white w-full sm:h-[300px] h-auto flex flex-col sm:flex-row p-4 border items-center border-gray-200 rounded-lg shadow-sm hover:shadow-lg cursor-pointer transition";
-           card.setAttribute("href", `product.html?id=${id}&json=badsheet`);
+           card.setAttribute("href", `product.html?id=${id}&json=bedsheet`);
               card.innerHTML = `
                 <!-- Image -->
                 <div class="w-full sm:w-[220px] flex items-center justify-center mb-4 sm:mb-0">

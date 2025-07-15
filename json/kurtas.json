@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "brand": "Biba",
     "model": "Anarkali Kurta",
     "category": "Anarkali",
@@ -9,22 +10,14 @@
     "length": "Calf",
     "fabric": "Rayon",
     "occasion": "Festive",
-    "featureTags": [
-      "gathered",
-      "embroidered-yoke"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["gathered", "embroidered-yoke"],
+    "sizes": ["XS", "S", "M", "L", "XL"],
     "color": "Maroon",
     "price_usd": 45.99,
     "image_url": "https://images.biba.in/anarkali-maroon.jpg"
   },
   {
+    "id": 2,
     "brand": "Biba",
     "model": "Straight Fit Kurta",
     "category": "Straight",
@@ -34,21 +27,14 @@
     "length": "Knee",
     "fabric": "Cotton",
     "occasion": "Casual",
-    "featureTags": [
-      "tie-up-shoulder",
-      "printed"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["tie-up-shoulder", "printed"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Teal",
     "price_usd": 29.99,
     "image_url": "https://images.biba.in/straight-teal.jpg"
   },
   {
+    "id": 3,
     "brand": "Biba",
     "model": "Angrakha Kurta",
     "category": "Angrakha",
@@ -58,21 +44,14 @@
     "length": "Calf",
     "fabric": "Silk Blend",
     "occasion": "Wedding",
-    "featureTags": [
-      "side-pleats",
-      "mirror-work"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["side-pleats", "mirror-work"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Purple",
     "price_usd": 69.99,
     "image_url": "https://images.biba.in/angrakha-purple.jpg"
   },
   {
+    "id": 4,
     "brand": "W",
     "model": "Printed A-line Kurta",
     "category": "A-line",
@@ -82,21 +61,14 @@
     "length": "Knee",
     "fabric": "Cotton",
     "occasion": "Casual",
-    "featureTags": [
-      "block-print",
-      "side-slits"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["block-print", "side-slits"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Off White",
     "price_usd": 24.99,
     "image_url": "https://images.wforwoman.com/print-aline.jpg"
   },
   {
+    "id": 5,
     "brand": "W",
     "model": "Embroidered Yoke Kurta",
     "category": "Straight",
@@ -106,21 +78,14 @@
     "length": "Calf",
     "fabric": "Rayon",
     "occasion": "Festive",
-    "featureTags": [
-      "embroidered-yoke",
-      "gathered-sleeve"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["embroidered-yoke", "gathered-sleeve"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Mustard",
     "price_usd": 39.99,
     "image_url": "https://images.wforwoman.com/embroidered-yoke.jpg"
   },
   {
+    "id": 6,
     "brand": "W",
     "model": "High-Low Hem Kurta",
     "category": "High-Low",
@@ -130,21 +95,14 @@
     "length": "Calf",
     "fabric": "Rayon",
     "occasion": "Smart Casual",
-    "featureTags": [
-      "high-low",
-      "side-seam-pockets"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["high-low", "side-seam-pockets"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Navy",
     "price_usd": 34.99,
     "image_url": "https://images.wforwoman.com/highlow-navy.jpg"
   },
   {
+    "id": 7,
     "brand": "FabIndia",
     "model": "Ikhat Block Print Kurta",
     "category": "Straight",
@@ -154,21 +112,14 @@
     "length": "Calf",
     "fabric": "Cotton",
     "occasion": "Casual",
-    "featureTags": [
-      "hand-block-print",
-      "natural-dye"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["hand-block-print", "natural-dye"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Rust",
     "price_usd": 49.99,
     "image_url": "https://images.fabindia.com/ikat-block.jpg"
   },
   {
+    "id": 8,
     "brand": "FabIndia",
     "model": "Chikankari Kurta",
     "category": "Straight",
@@ -178,21 +129,14 @@
     "length": "Knee",
     "fabric": "Cotton",
     "occasion": "Festive",
-    "featureTags": [
-      "hand-embroidered",
-      "delicate-work"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["hand-embroidered", "delicate-work"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Ivory",
     "price_usd": 59.99,
     "image_url": "https://images.fabindia.com/chikankari-ivory.jpg"
   },
   {
+    "id": 9,
     "brand": "FabIndia",
     "model": "Kurta with Dupatta",
     "category": "Set",
@@ -202,21 +146,14 @@
     "length": "Calf",
     "fabric": "Cotton Silk",
     "occasion": "Wedding",
-    "featureTags": [
-      "dupatta",
-      "gathered-sleeve"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["dupatta", "gathered-sleeve"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Peach",
     "price_usd": 79.99,
     "image_url": "https://images.fabindia.com/kurta-set-peach.jpg"
   },
   {
+    "id": 10,
     "brand": "Aurelia",
     "model": "Floral Anarkali",
     "category": "Anarkali",
@@ -226,21 +163,14 @@
     "length": "Knee",
     "fabric": "Rayon",
     "occasion": "Casual",
-    "featureTags": [
-      "floral-print",
-      "side-seam-pockets"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["floral-print", "side-seam-pockets"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Yellow",
     "price_usd": 39.99,
     "image_url": "https://images.aurelia.in/floral-anarkali-yellow.jpg"
   },
   {
+    "id": 11,
     "brand": "Aurelia",
     "model": "Mandal Print Straight Kurta",
     "category": "Straight",
@@ -250,21 +180,14 @@
     "length": "Calf",
     "fabric": "Rayon",
     "occasion": "Office",
-    "featureTags": [
-      "mandala-print",
-      "straight-cut"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["mandala-print", "straight-cut"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Olive",
     "price_usd": 34.99,
     "image_url": "https://images.aurelia.in/mandala-olive.jpg"
   },
   {
+    "id": 12,
     "brand": "Aurelia",
     "model": "Kurta with Contrast Yoke",
     "category": "A-line",
@@ -274,21 +197,14 @@
     "length": "Knee",
     "fabric": "Cotton",
     "occasion": "Smart Casual",
-    "featureTags": [
-      "contrast-yoke",
-      "pleated"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["contrast-yoke", "pleated"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Coral",
     "price_usd": 29.99,
     "image_url": "https://images.aurelia.in/contrast-coral.jpg"
   },
   {
+    "id": 13,
     "brand": "Global Desi",
     "model": "Patch Work Kurta",
     "category": "A-line",
@@ -298,21 +214,14 @@
     "length": "Calf",
     "fabric": "Cotton Blend",
     "occasion": "Festive",
-    "featureTags": [
-      "patchwork",
-      "color-block"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["patchwork", "color-block"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Mix",
     "price_usd": 44.99,
     "image_url": "https://images.globaldesi.com/patchwork-mix.jpg"
   },
   {
+    "id": 14,
     "brand": "Global Desi",
     "model": "Embroidered Yoke Kurta",
     "category": "Straight",
@@ -322,21 +231,14 @@
     "length": "Knee",
     "fabric": "Georgette",
     "occasion": "Festive",
-    "featureTags": [
-      "embroidered-yoke",
-      "gathered-sleeve"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["embroidered-yoke", "gathered-sleeve"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Teal",
     "price_usd": 54.99,
     "image_url": "https://images.globaldesi.com/embro-yoke-teal.jpg"
   },
   {
+    "id": 15,
     "brand": "Global Desi",
     "model": "Tiered Maxi Kurta",
     "category": "Maxi",
@@ -346,21 +248,14 @@
     "length": "Ankle",
     "fabric": "Rayon",
     "occasion": "Casual",
-    "featureTags": [
-      "tiered",
-      "ruffle-hem"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["tiered", "ruffle-hem"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Mint",
     "price_usd": 49.99,
     "image_url": "https://images.globaldesi.com/mint-tiered.jpg"
   },
   {
+    "id": 16,
     "brand": "AND",
     "model": "Block Print Kurta",
     "category": "Straight",
@@ -370,21 +265,14 @@
     "length": "Calf",
     "fabric": "Cotton",
     "occasion": "Casual",
-    "featureTags": [
-      "block-print",
-      "side-slits"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["block-print", "side-slits"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Indigo",
     "price_usd": 34.99,
     "image_url": "https://images.andindia.com/block-indigo.jpg"
   },
   {
+    "id": 17,
     "brand": "AND",
     "model": "Embellished Kurta",
     "category": "A-line",
@@ -394,21 +282,14 @@
     "length": "Knee",
     "fabric": "Georgette",
     "occasion": "Party",
-    "featureTags": [
-      "sequins",
-      "pleats"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["sequins", "pleats"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Black",
     "price_usd": 59.99,
     "image_url": "https://images.andindia.com/embellished-black.jpg"
   },
   {
+    "id": 18,
     "brand": "AND",
     "model": "Straight Floral Kurta",
     "category": "Straight",
@@ -418,21 +299,14 @@
     "length": "Calf",
     "fabric": "Rayon",
     "occasion": "Office",
-    "featureTags": [
-      "floral-print",
-      "easy-iron"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["floral-print", "easy-iron"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Peach",
     "price_usd": 39.99,
     "image_url": "https://images.andindia.com/straight-peach.jpg"
   },
   {
+    "id": 19,
     "brand": "Anouk",
     "model": "Embroidered Yoke Kurta",
     "category": "A-line",
@@ -442,21 +316,14 @@
     "length": "Knee",
     "fabric": "Poly-Cotton",
     "occasion": "Festive",
-    "featureTags": [
-      "embroidered-yoke",
-      "drawstring-waist"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["embroidered-yoke", "drawstring-waist"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Maroon",
     "price_usd": 42.99,
     "image_url": "https://images.pantaloons.com/anouk-maroon.jpg"
   },
   {
+    "id": 20,
     "brand": "Anouk",
     "model": "Linen Straight Kurta",
     "category": "Straight",
@@ -466,21 +333,14 @@
     "length": "Calf",
     "fabric": "Linen",
     "occasion": "Casual",
-    "featureTags": [
-      "linen",
-      "side-seam-pockets"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["linen", "side-seam-pockets"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Sand",
     "price_usd": 44.99,
     "image_url": "https://images.pantaloons.com/anouk-sand.jpg"
   },
   {
+    "id": 21,
     "brand": "Anouk",
     "model": "Printed A-line Kurta",
     "category": "A-line",
@@ -490,21 +350,14 @@
     "length": "Knee",
     "fabric": "Rayon",
     "occasion": "Casual",
-    "featureTags": [
-      "geometric-print",
-      "ruffle-sleeve"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["geometric-print", "ruffle-sleeve"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Navy",
     "price_usd": 38.99,
     "image_url": "https://images.pantaloons.com/anouk-navyprint.jpg"
   },
   {
+    "id": 22,
     "brand": "Soch",
     "model": "Banarasi Silk Kurta",
     "category": "Straight",
@@ -514,21 +367,14 @@
     "length": "Calf",
     "fabric": "Banarasi Silk",
     "occasion": "Wedding",
-    "featureTags": [
-      "silk",
-      "jacquard"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["silk", "jacquard"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Red",
     "price_usd": 89.99,
     "image_url": "https://images.soch.com/banarasi-red.jpg"
   },
   {
+    "id": 23,
     "brand": "Soch",
     "model": "Printed Angrakha Kurta",
     "category": "Angrakha",
@@ -538,21 +384,14 @@
     "length": "Knee",
     "fabric": "Cotton",
     "occasion": "Casual",
-    "featureTags": [
-      "printed",
-      "side-ties"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["printed", "side-ties"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Yellow Print",
     "price_usd": 49.99,
     "image_url": "https://images.soch.com/print-angrakha.jpg"
   },
   {
+    "id": 24,
     "brand": "Soch",
     "model": "Mirror Work A-line Kurta",
     "category": "A-line",
@@ -562,21 +401,14 @@
     "length": "Knee",
     "fabric": "Rayon",
     "occasion": "Festive",
-    "featureTags": [
-      "mirror-work",
-      "gathered-sleeve"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["mirror-work", "gathered-sleeve"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Teal",
     "price_usd": 59.99,
     "image_url": "https://images.soch.com/mirror-teal.jpg"
   },
   {
+    "id": 25,
     "brand": "Global Desi",
     "model": "Patch Work Maxi Kurta",
     "category": "Maxi",
@@ -586,21 +418,14 @@
     "length": "Ankle",
     "fabric": "Rayon",
     "occasion": "Festive",
-    "featureTags": [
-      "patchwork",
-      "tie-up-yoke"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["patchwork", "tie-up-yoke"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Multi",
     "price_usd": 69.99,
     "image_url": "https://images.globaldesi.com/patch-maxi-multi.jpg"
   },
   {
+    "id": 26,
     "brand": "FabIndia",
     "model": "Kurta with Palazzos Set",
     "category": "Set",
@@ -610,21 +435,14 @@
     "length": "Calf",
     "fabric": "Cotton",
     "occasion": "Smart Casual",
-    "featureTags": [
-      "set",
-      "side-pockets"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["set", "side-pockets"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "White",
     "price_usd": 79.99,
     "image_url": "https://images.fabindia.com/kurta-set-white.jpg"
   },
   {
+       "id": 27,
     "brand": "Aurelia",
     "model": "Kurta with Dupatta Set",
     "category": "Set",
@@ -634,21 +452,14 @@
     "length": "Calf",
     "fabric": "Rayon",
     "occasion": "Festive",
-    "featureTags": [
-      "dupatta",
-      "printed"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["dupatta", "printed"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Red",
     "price_usd": 89.99,
     "image_url": "https://images.aurelia.in/kurta-set-red.jpg"
   },
   {
+       "id": 28,
     "brand": "AND",
     "model": "Embroidered Maxi Kurta",
     "category": "Maxi",
@@ -658,21 +469,14 @@
     "length": "Ankle",
     "fabric": "Georgette",
     "occasion": "Party",
-    "featureTags": [
-      "chiffon",
-      "heavy-embroidery"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["chiffon", "heavy-embroidery"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Emerald",
     "price_usd": 99.99,
     "image_url": "https://images.andindia.com/embroidered-maxi-emerald.jpg"
   },
   {
+       "id": 29,
     "brand": "Peter England",
     "model": "Straight Kurta",
     "category": "Straight",
@@ -682,21 +486,14 @@
     "length": "Knee",
     "fabric": "Cotton Blend",
     "occasion": "Office",
-    "featureTags": [
-      "easy-care",
-      "spread-collar"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["easy-care", "spread-collar"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Grey",
     "price_usd": 39.99,
     "image_url": "https://images.peterengland.com/straight-grey.jpg"
   },
   {
+       "id": 30,
     "brand": "Biba",
     "model": "Kurta Palazzo Floral Set",
     "category": "Set",
@@ -706,16 +503,8 @@
     "length": "Calf",
     "fabric": "Rayon",
     "occasion": "Casual",
-    "featureTags": [
-      "palazzo",
-      "thread-work"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
+    "featureTags": ["palazzo", "thread-work"],
+    "sizes": ["S", "M", "L", "XL"],
     "color": "Blue Floral",
     "price_usd": 69.99,
     "image_url": "https://images.biba.in/floral-set-blue.jpg"

@@ -1,5 +1,6 @@
 [
   {
+       "id": 1,
     "category": "Double Door",
     "brand": "Samsung",
     "model": "RT28A3453S8/HL",
@@ -18,6 +19,7 @@
     "features": "Stabilizer Free Operation, Easy Slide Shelf, Runs on Solar Energy."
   },
   {
+       "id": 2,
     "category": "Side-by-Side",
     "brand": "LG",
     "model": "GC-B247SLUV",
@@ -36,6 +38,7 @@
     "features": "Moist Balance Crisper, LED lighting, Inverter Linear Compressor."
   },
   {
+       "id": 3,
     "category": "French Door",
     "brand": "Whirlpool",
     "model": "WRF535SWHZ",
@@ -54,6 +57,7 @@
     "features": "Humidity-Controlled Crispers, Fingerprint-Resistant Finish, LED Interior Lighting."
   },
   {
+       "id": 4,
     "category": "Mini Fridge",
     "brand": "Haier",
     "model": "HR-62VS",
@@ -72,6 +76,7 @@
     "features": "Low Noise Operation, Mechanical Temperature Control, Anti-Fungal Gasket."
   },
   {
+       "id": 5,
     "category": "Bottom Freezer",
     "brand": "Bosch",
     "model": "KGN36VL30I",
@@ -90,6 +95,7 @@
     "features": "LED Lighting, MultiAirflow, Reversible Doors, SuperFreezing."
   },
   {
+       "id": 6,
     "category": "Smart Fridge",
     "brand": "Samsung",
     "model": "Family Hub RF28R7551SR",
@@ -108,6 +114,7 @@
     "features": "Internal Camera, Calendar & Notes, Spotify/YouTube Integration, AI-Driven Cooling."
   },
   {
+       "id": 7,
     "category": "Single Door",
     "brand": "Godrej",
     "model": "RD 1903 PTDI",
@@ -126,6 +133,7 @@
     "features": "Anti-B Technology, Toughened Glass Shelves, Large Vegetable Tray."
   },
   {
+       "id": 8,
     "category": "Inverter Refrigerator",
     "brand": "Panasonic",
     "model": "NR-BG312VSS3",
@@ -144,6 +152,7 @@
     "features": "Surround Cooling, Toughened Shelves, Quick Chilling Zone."
   },
   {
+       "id": 9,
     "category": "Convertible",
     "brand": "LG",
     "model": "GL-T292RPZN",

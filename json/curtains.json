@@ -1,5 +1,6 @@
 [
   {
+       "id": 1,
     "brand": "Home Centre",
     "model": "Floral Printed Eyelet Curtain",
     "category": "Curtains",
@@ -12,6 +13,7 @@
     "short_description": "Modern floral curtain with smooth eyelet rings for easy hanging."
   },
   {
+       "id": 2,
     "brand": "Spaces",
     "model": "Blackout Window Curtain",
     "category": "Curtains",
@@ -24,6 +26,7 @@
     "short_description": "Energy-efficient blackout curtain for better sleep and privacy."
   },
   {
+       "id": 3,
     "brand": "Portico",
     "model": "Geometric Print Curtain",
     "category": "Curtains",
@@ -36,6 +39,7 @@
     "short_description": "Stylish geometric print curtain ideal for modern interiors."
   },
   {
+       "id": 4,
     "brand": "Raymond Home",
     "model": "Textured Semi-Blackout Curtain",
     "category": "Curtains",
@@ -48,6 +52,7 @@
     "short_description": "Premium textured curtains with a rich jacquard design."
   },
   {
+       "id": 5,
     "brand": "AmazonBasics",
     "model": "Room Darkening Curtain",
     "category": "Curtains",
@@ -60,6 +65,7 @@
     "short_description": "Affordable room-darkening curtains with durable build."
   },
   {
+       "id": 6,
     "brand": "Story@Home",
     "model": "Leafy Printed Curtain",
     "category": "Curtains",
@@ -72,6 +78,7 @@
     "short_description": "Nature-inspired leaf print curtain for cozy living spaces."
   },
   {
+       "id": 7,
     "brand": "Fabindia",
     "model": "Hand Block Cotton Curtain",
     "category": "Curtains",
@@ -84,6 +91,7 @@
     "short_description": "Artisan-made cotton curtains with heritage block print."
   },
   {
+       "id": 8,
     "brand": "Urban Space",
     "model": "Chevron Print Curtain",
     "category": "Curtains",
@@ -96,6 +104,7 @@
     "short_description": "Trendy chevron print for a stylish touch to any room."
   },
   {
+       "id": 9,
     "brand": "Bombay Dyeing",
     "model": "Solid Blackout Curtain",
     "category": "Curtains",
@@ -108,6 +117,7 @@
     "short_description": "Elegant blackout curtains for restful and peaceful spaces."
   },
   {
+       "id": 10,
     "brand": "D'Decor",
     "model": "Premium Jacquard Curtain",
     "category": "Curtains",
@@ -120,6 +130,7 @@
     "short_description": "Luxurious jacquard curtains with a rich, metallic texture."
   },
   {
+       "id": 11,
     "brand": "Live Well",
     "model": "Striped Semi-Sheer Curtain",
     "category": "Curtains",

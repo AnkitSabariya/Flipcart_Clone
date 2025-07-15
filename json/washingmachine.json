@@ -1,5 +1,6 @@
 [
   {
+     "id": 1,
     "category": "Front Load",
     "brand": "LG",
     "model": "FHM1408BDL",
@@ -19,6 +20,7 @@
     "features": "6 Motion DD, Child Lock, Auto Restart, Waterproof Touch Panel, Tub Clean."
   },
   {
+     "id": 2,
     "category": "Top Load",
     "brand": "Samsung",
     "model": "WA65A4002VS",
@@ -38,6 +40,7 @@
     "features": "5 Wash Programs, Magic Filter, Soft Closing Lid."
   },
   {
+     "id": 3,
     "category": "Washer Dryer Combo",
     "brand": "Bosch",
     "model": "WNA14490IN",
@@ -58,6 +61,7 @@
     "features": "AllergyPlus, SpeedPerfect, ActiveWater Plus, Foam Detection."
   },
   {
+     "id": 4,
     "category": "Budget",
     "brand": "Whirlpool",
     "model": "Superb Atom 70S",
@@ -77,6 +81,7 @@
     "features": "Lint Filter, Waterproof Panel, Powerful 340W Motor."
   },
   {
+     "id": 5,
     "category": "High Capacity",
     "brand": "IFB",
     "model": "Senorita ZX",
@@ -96,6 +101,7 @@
     "features": "Ball Valve Technology, Anti-Allergen, Express Wash."
   },
   {
+     "id": 6,
     "category": "Smart Washer",
     "brand": "Haier",
     "model": "HW80-BD12756NZP",
@@ -115,6 +121,7 @@
     "features": "Steam Wash, Anti-Bacterial Tech, Near-Zero Pressure."
   },
   {
+     "id": 7,
     "category": "Portable",
     "brand": "Giantex",
     "model": "EP22761",
@@ -134,6 +141,7 @@
     "features": "Timer Control, Lightweight, Separate Spin & Wash Tubs."
   },
   {
+     "id": 8,
     "category": "Luxury",
     "brand": "Miele",
     "model": "WWH860 WCS",
@@ -153,6 +161,7 @@
     "features": "CapDosing, ProfiEco Motor, EcoFeedback, Honeycomb Drum."
   },
   {
+     "id": 9,
     "category": "Energy Efficient",
     "brand": "Panasonic",
     "model": "NA-F80LF1HRB",
@@ -172,6 +181,7 @@
     "features": "One Touch Wash, Tub Clean, Durable Lid, 8 Wash Programs."
   },
   {
+     "id": 10,
     "category": "Washer Dryer Smart",
     "brand": "Samsung",
     "model": "WD80T604DBX",

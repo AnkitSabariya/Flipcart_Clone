@@ -1,5 +1,6 @@
 [
   {
+     "id": 1,
     "brand": "Fossil",
     "model": "Chronograph FS5380",
     "category": "Watches",
@@ -13,6 +14,7 @@
     "short_description": "Classic leather chronograph watch with vintage charm."
   },
   {
+     "id": 2,
     "brand": "Casio",
     "model": "G-Shock GA-100",
     "category": "Watches",
@@ -26,6 +28,7 @@
     "short_description": "Durable shock-resistant digital watch for rugged use."
   },
   {
+     "id": 3,
     "brand": "Timex",
     "model": "Expedition Scout",
     "category": "Watches",
@@ -39,6 +42,7 @@
     "short_description": "Military-style field watch with indiglo backlight."
   },
   {
+     "id": 4,
     "brand": "Titan",
     "model": "Neo Analog 1733SL02",
     "category": "Watches",
@@ -52,6 +56,7 @@
     "short_description": "Elegant leather-strap watch for everyday style."
   },
   {
+     "id": 5,
     "brand": "Fastrack",
     "model": "Casual Analog 38024PP25",
     "category": "Watches",
@@ -65,6 +70,7 @@
     "short_description": "Sporty dual-tone watch with bold design."
   },
   {
+     "id": 6,
     "brand": "Daniel Klein",
     "model": "DK11831",
     "category": "Watches",
@@ -78,6 +84,7 @@
     "short_description": "Stainless steel timepiece with minimalist aesthetics."
   },
   {
+     "id": 7,
     "brand": "Armani Exchange",
     "model": "AX1326",
     "category": "Watches",
@@ -91,6 +98,7 @@
     "short_description": "Modern chronograph with bold styling."
   },
   {
+     "id": 8,
     "brand": "Seiko",
     "model": "SNK809",
     "category": "Watches",
@@ -104,6 +112,7 @@
     "short_description": "Military-inspired automatic field watch."
   },
   {
+     "id": 9,
     "brand": "Citizen",
     "model": "Eco-Drive BM8180-03E",
     "category": "Watches",
@@ -117,6 +126,7 @@
     "short_description": "Solar-powered eco-drive with date display."
   },
   {
+     "id": 10,
     "brand": "Tommy Hilfiger",
     "model": "1791476",
     "category": "Watches",
@@ -130,6 +140,7 @@
     "short_description": "Casual sophistication with designer touch."
   },
   {
+     "id": 11,
     "brand": "Guess",
     "model": "U0799G6",
     "category": "Watches",
@@ -143,6 +154,7 @@
     "short_description": "Luxury gold-tone watch for statement style."
   },
   {
+     "id": 12,
     "brand": "Tissot",
     "model": "PR 100 Chronograph",
     "category": "Watches",
@@ -156,6 +168,7 @@
     "short_description": "Swiss precision with timeless design."
   },
   {
+     "id": 13,
     "brand": "Skagen",
     "model": "Signatur Slim",
     "category": "Watches",
@@ -169,6 +182,7 @@
     "short_description": "Ultra-slim mesh strap minimalist watch."
   },
   {
+     "id": 14,
     "brand": "Diesel",
     "model": "DZ4329 Mega Chief",
     "category": "Watches",
@@ -182,6 +196,7 @@
     "short_description": "Oversized bold watch with edgy attitude."
   },
   {
+     "id": 15,
     "brand": "Rolex",
     "model": "Submariner Date",
     "category": "Watches",
@@ -195,6 +210,7 @@
     "short_description": "Iconic dive watch with unmatched prestige."
   },
   {
+     "id": 16,
     "brand": "Naviforce",
     "model": "NF9163",
     "category": "Watches",
@@ -208,6 +224,7 @@
     "short_description": "Dual-time watch with backlight and rugged look."
   },
   {
+     "id": 17,
     "brand": "Curren",
     "model": "M-8250",
     "category": "Watches",
@@ -221,6 +238,7 @@
     "short_description": "Affordable chronograph for smart casual wear."
   },
   {
+     "id": 18,
     "brand": "LIGE",
     "model": "LG8924",
     "category": "Watches",
@@ -234,6 +252,7 @@
     "short_description": "Business chronograph watch with steel case."
   },
   {
+     "id": 19,
     "brand": "Invicta",
     "model": "Pro Diver 8926OB",
     "category": "Watches",
@@ -247,6 +266,7 @@
     "short_description": "Diver-style automatic with rotating bezel."
   },
   {
+     "id": 20,
     "brand": "Reebok",
     "model": "  ",
     "category": "Watches",
@@ -260,6 +280,7 @@
     "short_description": "Sporty performance watch with rugged looks."
   },
   {
+     "id": 21,
     "brand": "Maxima",
     "model": "Attivo Collection",
     "category": "Watches",

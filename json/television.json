@@ -1,5 +1,6 @@
 [
   {
+     "id": 1,
     "category": "4K UHD",
     "brand": "Samsung",
     "model": "Crystal UHD AU8000",
@@ -19,6 +20,7 @@
     "features": "Tizen OS, HDR10+, PurColor technology, 4K upscaling, Alexa & Google Assistant compatible."
   },
   {
+     "id": 2,
     "category": "OLED",
     "brand": "LG",
     "model": "C3 OLED evo",
@@ -38,6 +40,7 @@
     "features": "Dolby Vision, Dolby Atmos, webOS 23, NVIDIA G-Sync compatible, 120Hz refresh rate."
   },
   {
+     "id": 3,
     "category": "Budget",
     "brand": "TCL",
     "model": "4-Series Roku TV",
@@ -57,6 +60,7 @@
     "features": "Roku OS, HDR10, voice remote, easy streaming setup."
   },
   {
+     "id": 4,
     "category": "Gaming",
     "brand": "Sony",
     "model": "Bravia XR X90L",
@@ -76,6 +80,7 @@
     "features": "XR Motion Clarity, HDMI 2.1, 120Hz, Game Mode, Dolby Vision & Atmos."
   },
   {
+     "id": 5,
     "category": "8K TV",
     "brand": "Samsung",
     "model": "Neo QLED QN900C",
@@ -95,6 +100,7 @@
     "features": "Quantum Matrix Pro, Neural Quantum Processor 8K, 240Hz Motion Xcelerator Turbo+."
   },
   {
+     "id": 6,
     "category": "Compact",
     "brand": "Insignia",
     "model": "F20 Fire TV",
@@ -114,6 +120,7 @@
     "features": "Fire TV OS, Alexa Voice Remote, dual-band Wi-Fi."
   },
   {
+     "id": 7,
     "category": "QLED",
     "brand": "Hisense",
     "model": "U6 Series ULED",
@@ -133,6 +140,7 @@
     "features": "Dolby Vision IQ, Game Mode Plus, voice control via Google Assistant or Alexa."
   },
   {
+     "id": 8,
     "category": "Curved",
     "brand": "Samsung",
     "model": "TU8300",
@@ -152,6 +160,7 @@
     "features": "UHD Processor, Ambient Mode, sleek curved design."
   },
   {
+     "id": 8,
     "category": "Premium Smart TV",
     "brand": "Sony",
     "model": "A80L OLED",
@@ -171,6 +180,7 @@
     "features": "Acoustic Surface Audio+, Dolby Vision, Netflix Calibrated Mode."
   },
   {
+     "id": 9,
     "category": "Android TV",
     "brand": "OnePlus",
     "model": "U1S 50",
