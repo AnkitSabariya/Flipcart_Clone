@@ -2132,9 +2132,10 @@
     </div>
   </body>
   <script>
-     if (!localStorage.getItem("isLoggedIn")) {
-    window.location.href = "login.html";
-  }
+    if (!sessionStorage.getItem("isLoggedIn")) {
+      window.location.href = "login.html";
+    }
+
     function searchProducts() {
       let query = "";
 

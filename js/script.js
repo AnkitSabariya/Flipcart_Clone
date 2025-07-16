@@ -22,26 +22,7 @@ fetch("./partials/footer.html")
   .then((footer) => {
     document.getElementById("footer").innerHTML = footer;
   });
-// Loder
-fetch('./partials/loader.html')
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById('myLoader').innerHTML = data;
 
-    window.addEventListener("load", () => {
-      setTimeout(() => {
-        const loader = document.getElementById("loader");
-        const content = document.getElementById("content");
-
-        loader.style.opacity = 0;
-
-        setTimeout(() => {
-          loader.style.display = "none";
-          content.classList.remove("hidden"); // ✅✅✅
-        }, 400);
-      }, 2000);
-    });
-  });
 
 
 // Mobile menu toggle

@@ -42,7 +42,13 @@
   </head>
   <body class="">
     <!-- Loader -->
-    <div id="myLoader"></div>
+    <div
+      id="loader"
+      class="fixed inset-0 flex items-center justify-center bg-white z-50"
+    >
+      <div class="loader-spinner"></div>
+    </div>
+
     <div id="content" class="hidden">
       <div id="container" class="h-full bg-[#f7f7f7]">
         <!-- navbar -->
@@ -430,5 +436,23 @@
 
     <script src="./js/camera.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+      // ✅ Loader DOM insert ho gaya, ab check karo
+      const hideLoader = () => {
+        setTimeout(() => {
+          document.getElementById("loader").style.opacity = 0;
+          setTimeout(() => {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("content").classList.remove("hidden");
+          }, 400);
+        }, 1000);
+      };
+
+      if (document.readyState === "complete") {
+        hideLoader();
+      } else {
+        window.addEventListener("load", hideLoader);
+      }
+    </script>
   </body>
 </html>
