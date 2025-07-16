@@ -28,17 +28,21 @@ fetch('./partials/loader.html')
   .then(data => {
     document.getElementById('myLoader').innerHTML = data;
 
-    // Loader hide logic bhi yahi pe
     window.addEventListener("load", () => {
       setTimeout(() => {
-        document.getElementById("loader").style.opacity = 0;
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("content");
+
+        loader.style.opacity = 0;
+
         setTimeout(() => {
-    loader.style.display = "none";
-      content.classList.remove("hidden"); 
+          loader.style.display = "none";
+          content.classList.remove("hidden"); // ✅✅✅
         }, 400);
-      }, 1500);
+      }, 2000);
     });
   });
+
 
 // Mobile menu toggle
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
