@@ -33,10 +33,10 @@ fetch('./partials/loader.html')
       setTimeout(() => {
         document.getElementById("loader").style.opacity = 0;
         setTimeout(() => {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("content").style.display = "block";
+    loader.style.display = "none";
+      content.classList.remove("hidden"); 
         }, 400);
-      }, 2000);
+      }, 1500);
     });
   });
 
