@@ -16,11 +16,28 @@ fetch("./partials/mobilecate.html")
   .then((mobile) => {
     document.getElementById("mobileMenu").innerHTML = mobile;
   });
-  // Footer
+// Footer
 fetch("./partials/footer.html")
   .then((res) => res.text())
   .then((footer) => {
     document.getElementById("footer").innerHTML = footer;
+  });
+// Loder
+fetch('./partials/loader.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('myLoader').innerHTML = data;
+
+    // Loader hide logic bhi yahi pe
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("loader").style.opacity = 0;
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 400);
+      }, 2000);
+    });
   });
 
 // Mobile menu toggle

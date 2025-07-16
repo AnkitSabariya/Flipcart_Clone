@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OTP Verification - Flipkart</title>
   <link rel="stylesheet" href="./css/login and otp.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -49,7 +52,7 @@
       border-radius: 8px;
       opacity: 0;
       z-index: 999;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
       transition: bottom 0.4s ease, opacity 0.4s ease;
       pointer-events: none;
     }
@@ -78,11 +81,12 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="loader-screen" id="loaderScreen">
     <img src="./css/logo.png" class="logo" alt="Flipkart" />
-    <h2 style="color: #2874f0;">Welcome to Flipkart</h2>
+    <h2 style="color: #2874f0;" class="text-md">Welcome to Flipkart</h2>
   </div>
 
   <div class="container">
@@ -137,7 +141,7 @@
 
   <script>
     let otp = generateOtp();
-    let count = 15;
+    let count = 30;
     let interval;
 
     const user = document.getElementById("user");
@@ -194,6 +198,8 @@
       if (entered === String(otp)) {
         toast.textContent = "✅ OTP Verified Successfully";
         toast.classList.add("show");
+            localStorage.setItem("isLoggedIn", "true");
+
 
         loader.style.display = "flex";
 
@@ -230,4 +236,5 @@
     });
   </script>
 </body>
+
 </html>
