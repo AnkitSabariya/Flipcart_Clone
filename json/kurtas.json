@@ -14,7 +14,10 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "color": "Maroon",
     "price_usd": 45.99,
-    "image_url": "https://images.biba.in/anarkali-maroon.jpg"
+    "image": [
+   "https://images.biba.in/on/demandware.static/-/Sites-biba-product-catalog/default/dwbb8f39e6/images/aw23/skdjhilmil8883aw23crmred_1.jpg",
+    "https://images.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dwceae90fd/images/aw24/skdrivyt10118aw24red_1.jpg?sw=502&sh=753"
+] 
   },
   {
     "id": 2,
@@ -31,7 +34,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Teal",
     "price_usd": 29.99,
-    "image_url": "https://images.biba.in/straight-teal.jpg"
+    "image": [
+   "https://images.biba.in/on/demandware.static/-/Sites-biba-product-catalog/default/dwb3d11ddc/images/aw23/mnmasrtd19714aw23teal_1.jpg",
+    "https://images.biba.in/on/demandware.static/-/Sites-biba-product-catalog/default/dwee49b5f6/images/ss25/skd10063ss25tel_1.jpg"
+] 
   },
   {
     "id": 3,
@@ -48,7 +54,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Purple",
     "price_usd": 69.99,
-    "image_url": "https://images.biba.in/angrakha-purple.jpg"
+    "image": [
+      "https://images.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw1e142ad2/images/ss25/fes1526ess25lav_1.jpg?sw=242&sh=363",
+      "https://thechikanlabel.com/cdn/shop/files/preview_images/10e2194ae23446018d50547371559180.thumbnail.0000000000.jpg?v=1701504466&width=720"
+] 
   },
   {
     "id": 4,
@@ -65,7 +74,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Off White",
     "price_usd": 24.99,
-    "image_url": "https://images.wforwoman.com/print-aline.jpg"
+    "image": [
+   "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/productimage/2021/2/10/587889de-e41b-4a85-ba2f-86c067d7fee71612970424385-1.jpg",
+    "https://wforwoman.com/cdn/shop/files/24FEW10574-123184_1.jpg?v=1721295658"
+]
   },
   {
     "id": 5,
@@ -82,7 +94,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Mustard",
     "price_usd": 39.99,
-    "image_url": "https://images.wforwoman.com/embroidered-yoke.jpg"
+    "image": [
+   "https://wforwoman.com/cdn/shop/files/24AUW11970-222620_1.jpg?v=1727067074",
+    "https://varanga.in/cdn/shop/products/24263838_3.jpg?v=1710577768"
+] 
   },
   {
     "id": 6,
@@ -99,7 +114,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Navy",
     "price_usd": 34.99,
-    "image_url": "https://images.wforwoman.com/highlow-navy.jpg"
+    "image": [
+   "https://wforwoman.com/cdn/shop/files/22FEW15961-216682_1.jpg?v=1722249013",
+    "https://wforwoman.com/cdn/shop/files/20FEW13783-211284_1.jpg?v=1721310259"
+] 
   },
   {
     "id": 7,
@@ -116,7 +134,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Rust",
     "price_usd": 49.99,
-    "image_url": "https://images.fabindia.com/ikat-block.jpg"
+    "image": [
+   "https://assets.ajio.com/medias/sys_master/root/20241108/ox8L/672e3b5a260f9c41e8cbbcad/-473Wx593H-700721255-rust-MODEL.jpg",
+    "https://m.media-amazon.com/images/I/71O6vqWN31L._UY350_.jpg"
+]
   },
   {
     "id": 8,
@@ -133,7 +154,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Ivory",
     "price_usd": 59.99,
-    "image_url": "https://images.fabindia.com/chikankari-ivory.jpg"
+    "image": [
+   "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/e/4e5b1ed2118154OFFWHITE_1.jpg?rnd=20200526195200&tr=w-512",
+    "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/e/4e5b1ed2118154OFFWHITE_5.jpg?rnd=20200526195200&tr=w-512"
+] 
   },
   {
     "id": 9,
@@ -150,7 +174,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Peach",
     "price_usd": 79.99,
-    "image_url": "https://images.fabindia.com/kurta-set-peach.jpg"
+    "image": [
+   "https://apisap.fabindia.com/medias/20172955-01.jpg?context=bWFzdGVyfGltYWdlc3w5NjUyNHxpbWFnZS9qcGVnfGFEWXpMMmhtT0M4ek5EUXlNVGs0TXpVeE1EVTFPQzh5TURFM01qazFOVjh3TVM1cWNHY3w3NWExMTFhMzAxNzNhNzczZTExNzZjNDUzZmI5NGIyNzdiZDNiNmM4YTBiZmJlMzkwYWRmNGU1MGE5NDFjZWZi",
+    "https://apisap.fabindia.com/medias/20192842-01.jpg?context=bWFzdGVyfGltYWdlc3wxNTk1NDN8aW1hZ2UvanBlZ3xhREUxTDJnMU55ODNNRE0xT0RRMU5qSTNNRGczT0M4eU1ERTVNamcwTWw4d01TNXFjR2N8ODBkMWJhMzhiZWFlMmE2ZWZlZGQ3MTRjYWI2OWZhODdhZjFiNWQ4NmNkYTZjN2RkOTA2ODAxMGI2Y2NjM2FmYg"
+]
   },
   {
     "id": 10,
@@ -167,7 +194,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Yellow",
     "price_usd": 39.99,
-    "image_url": "https://images.aurelia.in/floral-anarkali-yellow.jpg"
+    "image": [
+   "https://shopforaurelia.com/cdn/shop/files/23AUA14498-507458_1_0431a5e6-ca28-4a87-8b54-a39141d0a452.jpg?v=1722857656",
+    "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/6/6/66e4ac623AUA14415-507397_1.jpg?rnd=20200526195200&tr=w-512"
+] 
   },
   {
     "id": 11,
@@ -184,7 +214,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Olive",
     "price_usd": 34.99,
-    "image_url": "https://images.aurelia.in/mandala-olive.jpg"
+    "image": [
+   "https://shopforaurelia.com/cdn/shop/files/21AUA12719-504388_3.jpg?v=1722637241&width=1500",
+    "https://media-uk.landmarkshops.in/cdn-cgi/image/h=730,w=540,q=85,fit=cover/lifestyle/1000012875866-Green-Green-1000012875866_01-2100.jpg"
+] 
   },
   {
     "id": 12,
@@ -201,7 +234,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Coral",
     "price_usd": 29.99,
-    "image_url": "https://images.aurelia.in/contrast-coral.jpg"
+    "image": [
+   "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/8429205/2019/5/15/877ecb17-0cf1-462f-aebc-86975b0944901557917670146-AURELIA-Women-Coral-Yoke-Design-Straight-Kurta-5431557917668-1.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVJ0pnk4XGLyR-3STy4uzAorH31fJI4VMwgw&s"
+] 
   },
   {
     "id": 13,
@@ -218,7 +254,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Mix",
     "price_usd": 44.99,
-    "image_url": "https://images.globaldesi.com/patchwork-mix.jpg"
+    "image": [
+   "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/19285100/2023/9/15/f2523702-053c-4d4b-b6c1-dc175ca0a9e51694770631404GlobalDesiWomenWhitePrintedThreadWorkKurta1.jpg",
+    "https://media.landmarkshops.in/cdn-cgi/image/h=730,w=540,q=85,fit=cover/lifestyle/1000014150239-White-OffWhite-1000014150239_01-2100.jpg"
+]
   },
   {
     "id": 14,
@@ -235,7 +274,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Teal",
     "price_usd": 54.99,
-    "image_url": "https://images.globaldesi.com/embro-yoke-teal.jpg"
+    "image": [
+   "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9792801/2019/5/31/bba0d046-c135-4523-b037-6ef26cc828ff1559288094745-Global-Desi-Women-Kurtas-9301559288093607-1.jpg",
+    "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9792801/2019/5/31/bba0d046-c135-4523-b037-6ef26cc828ff1559288094745-Global-Desi-Women-Kurtas-9301559288093607-1.jpg"
+] 
   },
   {
     "id": 15,
@@ -252,7 +294,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Mint",
     "price_usd": 49.99,
-    "image_url": "https://images.globaldesi.com/mint-tiered.jpg"
+    "image": [
+   "https://www.globaldesi.in/on/demandware.static/-/Sites-masterCatalog_GD/default/dwe3a74d3e/images/hires/SS22/ss22gm073kury_4_.jpg",
+    "https://www.globaldesi.in/dw/image/v2/BGCX_PRD/on/demandware.static/-/Sites-masterCatalog_GD/default/dw508ffc05/images/hires/SS22/S25P4KU_SAGE%20GREEN_1%20copy.jpg?sw=400&sh=600&sm=fit&strip=false"
+] 
   },
   {
     "id": 16,
@@ -269,7 +314,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Indigo",
     "price_usd": 34.99,
-    "image_url": "https://images.andindia.com/block-indigo.jpg"
+    "image": [
+   "https://sutraclothing.in/cdn/shop/files/IMG_5026.webp?v=1718183369",
+    "https://img-farida-gupta.com/media/catalog/product/full_image/4/2/42_42.jpg"
+] 
   },
   {
     "id": 17,
@@ -286,7 +334,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Black",
     "price_usd": 59.99,
-    "image_url": "https://images.andindia.com/embellished-black.jpg"
+    "image": [
+   "https://wforwoman.com/cdn/shop/files/23AUSTWS10486-217560_1_6f80164c-44c1-45d8-9a71-a37ec0078faa.jpg?v=1725024406",
+    "https://ishinfashions.com/cdn/shop/products/KSKurplpram-829RE_7.jpg?v=1600781614"
+] 
   },
   {
     "id": 18,
@@ -303,7 +354,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Peach",
     "price_usd": 39.99,
-    "image_url": "https://images.andindia.com/straight-peach.jpg"
+    "image": [
+   "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/19674622/2024/3/26/3adc5041-4dcc-4c76-9077-4053ab2b307f1711426468077-Libas-Women-Peach-Coloured-Floral-Kurta-with-Trousers--Dupat-12.jpg",
+    "https://www.fashiondwar.com/cdn/shop/files/DSC00593.webp?v=1726302396&width=1445"
+] 
   },
   {
     "id": 19,
@@ -320,7 +374,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Maroon",
     "price_usd": 42.99,
-    "image_url": "https://images.pantaloons.com/anouk-maroon.jpg"
+    "image": [
+   "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/32009237/2025/3/24/914e8330-779f-45e2-853f-375220a172df1742800086449-Anouk-Women-Kurta-Sets-1341742800085748-1.jpg",
+    "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23448124/2023/6/7/507b356e-8406-4616-b4b9-b4e8959ca3031686120361401-Navibhu-Maroon-Embroidered-Straight-Kurta-Trousers-With-Dupa-1.jpg"
+] 
   },
   {
     "id": 20,
@@ -337,7 +394,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Sand",
     "price_usd": 44.99,
-    "image_url": "https://images.pantaloons.com/anouk-sand.jpg"
+    "image": [
+   "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/14399800/2021/6/11/082b1e07-5f69-4a8b-808c-4e6b21fcae7e1623391236583-Anouk-Women-Kurta-Sets-9621623391235892-7.jpg",
+    "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/14609648/2021/7/16/fa26f99a-a9a6-4a5c-b0a8-a6c4992784431626412324594-Anouk-Women-Off-White-Mirror-Work-Straight-Kurta-with-Palazz-1.jpg"
+] 
   },
   {
     "id": 21,
@@ -354,7 +414,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Navy",
     "price_usd": 38.99,
-    "image_url": "https://images.pantaloons.com/anouk-navyprint.jpg"
+    "image": [
+   "https://res.cloudinary.com/djqnvvxjd/image/upload/v1584076371/yck982bbupc1btirfjom.jpg",
+    "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11199278/2021/1/21/bf5c4c89-6f47-4956-8a55-62fa9adacba31611209772374-Anouk-Women-Blue--Grey-Printed-A-Line-Fusion-Kurta-273161120-1.jpg"
+] 
   },
   {
     "id": 22,
@@ -371,7 +434,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Red",
     "price_usd": 89.99,
-    "image_url": "https://images.soch.com/banarasi-red.jpg"
+    "image": [
+   "https://salwarstudio.com/cdn/shop/files/SCSK003-RED_1_d8fdeace-6df5-41ee-893f-2c3db9596772.jpg?v=1747134964",
+    "https://salwarstudio.com/cdn/shop/files/SCSK003-RED_2_d1666747-3e1f-4ed0-ab72-fcd20271e30a.jpg?v=1747134964&width=1445"
+] 
   },
   {
     "id": 23,
@@ -388,7 +454,10 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Yellow Print",
     "price_usd": 49.99,
-    "image_url": "https://images.soch.com/print-angrakha.jpg"
+    "image": [
+   "https://assets.ajio.com/medias/sys_master/root/20230705/SBUR/64a514fceebac147fc4e2bdb/-473Wx593H-442294480-yellow-MODEL.jpg",
+    "https://assets.ajio.com/medias/sys_master/root/20230705/lrGd/64a5158ca9b42d15c936ed6e/-473Wx593H-442294480-yellow-MODEL5.jpg"
+] 
   },
   {
     "id": 24,
@@ -405,108 +474,9 @@
     "sizes": ["S", "M", "L", "XL"],
     "color": "Teal",
     "price_usd": 59.99,
-    "image_url": "https://images.soch.com/mirror-teal.jpg"
-  },
-  {
-    "id": 25,
-    "brand": "Global Desi",
-    "model": "Patch Work Maxi Kurta",
-    "category": "Maxi",
-    "gender": "Women",
-    "style": "Maxi",
-    "sleeve": "Full",
-    "length": "Ankle",
-    "fabric": "Rayon",
-    "occasion": "Festive",
-    "featureTags": ["patchwork", "tie-up-yoke"],
-    "sizes": ["S", "M", "L", "XL"],
-    "color": "Multi",
-    "price_usd": 69.99,
-    "image_url": "https://images.globaldesi.com/patch-maxi-multi.jpg"
-  },
-  {
-    "id": 26,
-    "brand": "FabIndia",
-    "model": "Kurta with Palazzos Set",
-    "category": "Set",
-    "gender": "Women",
-    "style": "Straight Set",
-    "sleeve": "3/4",
-    "length": "Calf",
-    "fabric": "Cotton",
-    "occasion": "Smart Casual",
-    "featureTags": ["set", "side-pockets"],
-    "sizes": ["S", "M", "L", "XL"],
-    "color": "White",
-    "price_usd": 79.99,
-    "image_url": "https://images.fabindia.com/kurta-set-white.jpg"
-  },
-  {
-       "id": 27,
-    "brand": "Aurelia",
-    "model": "Kurta with Dupatta Set",
-    "category": "Set",
-    "gender": "Women",
-    "style": "A-line Set",
-    "sleeve": "3/4",
-    "length": "Calf",
-    "fabric": "Rayon",
-    "occasion": "Festive",
-    "featureTags": ["dupatta", "printed"],
-    "sizes": ["S", "M", "L", "XL"],
-    "color": "Red",
-    "price_usd": 89.99,
-    "image_url": "https://images.aurelia.in/kurta-set-red.jpg"
-  },
-  {
-       "id": 28,
-    "brand": "AND",
-    "model": "Embroidered Maxi Kurta",
-    "category": "Maxi",
-    "gender": "Women",
-    "style": "Maxi",
-    "sleeve": "Full",
-    "length": "Ankle",
-    "fabric": "Georgette",
-    "occasion": "Party",
-    "featureTags": ["chiffon", "heavy-embroidery"],
-    "sizes": ["S", "M", "L", "XL"],
-    "color": "Emerald",
-    "price_usd": 99.99,
-    "image_url": "https://images.andindia.com/embroidered-maxi-emerald.jpg"
-  },
-  {
-       "id": 29,
-    "brand": "Peter England",
-    "model": "Straight Kurta",
-    "category": "Straight",
-    "gender": "Women",
-    "style": "Straight",
-    "sleeve": "3/4",
-    "length": "Knee",
-    "fabric": "Cotton Blend",
-    "occasion": "Office",
-    "featureTags": ["easy-care", "spread-collar"],
-    "sizes": ["S", "M", "L", "XL"],
-    "color": "Grey",
-    "price_usd": 39.99,
-    "image_url": "https://images.peterengland.com/straight-grey.jpg"
-  },
-  {
-       "id": 30,
-    "brand": "Biba",
-    "model": "Kurta Palazzo Floral Set",
-    "category": "Set",
-    "gender": "Women",
-    "style": "A-line Set",
-    "sleeve": "Full",
-    "length": "Calf",
-    "fabric": "Rayon",
-    "occasion": "Casual",
-    "featureTags": ["palazzo", "thread-work"],
-    "sizes": ["S", "M", "L", "XL"],
-    "color": "Blue Floral",
-    "price_usd": 69.99,
-    "image_url": "https://images.biba.in/floral-set-blue.jpg"
+    "image": [
+   "https://assets.ajio.com/medias/sys_master/root/20240616/cLoy/666e14191d763220fabf7038/-473Wx593H-700094971-teal-MODEL.jpg",
+    "https://www.soch.com/media/catalog/product/t/e/teal_rayon_embroidered_kurta_with_thread_work_womens_soch-cws4ku60467a_02.jpg"
+] 
   }
 ]

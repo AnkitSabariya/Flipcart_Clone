@@ -9,7 +9,7 @@
     "color": "Multicolor",
     "dimensions": "29 x 21 cm",
     "features": ["Single Line", "Soft Cover"],
-    "price_inr": 60,
+    "price": 60,
     "image": [
   "https://www.shaanstationery.com/image/cache/catalog/classmate/classmate-notebook-king-size-200pgsHB-1000x1000.jpg",
   "https://m.media-amazon.com/images/I/61-XEl0HIiL.jpg"
@@ -26,7 +26,7 @@
     "color": "Blue",
     "dimensions": "19 x 10 x 3 cm",
     "features": ["Complete set", "Ruler, compass, protractor included"],
-    "price_inr": 85,
+    "price": 85,
     "image": [
  "https://m.media-amazon.com/images/I/71WcwtLvJfL.jpg",
   "https://www.kokuyocamlin.com/camlin/camel-access/image/catalog/assets/camlin/geometry-box/geometry-boxes/scholar-geometry-box/camlin-scholar-geometry-box/1.JPG"
@@ -43,7 +43,7 @@
     "color": "Assorted",
     "dimensions": "17.5 x 8.5 cm",
     "features": ["Smooth coloring", "Break-resistant leads"],
-    "price_inr": 55,
+    "price": 55,
     "image": [
   "https://m.media-amazon.com/images/I/81QVLWstzVL.jpg",
   "https://topperskit.com/cdn/shop/files/92_9a3f40a9-79dd-4f79-9f7f-30d37581c2ad.jpg?v=1709286831"
@@ -60,7 +60,7 @@
     "color": "Black & Red",
     "dimensions": "18 x 5 cm",
     "features": ["HB graphite", "Eraser-tipped"],
-    "price_inr": 30,
+    "price": 30,
     "image": [
   "https://m.media-amazon.com/images/I/61pE+DC0h2L._UF1000,1000_QL80_.jpg",
   "https://images.meesho.com/images/products/317169005/reqj4_512.webp"
@@ -77,7 +77,7 @@
     "color": "White",
     "dimensions": "11 cm height",
     "features": ["Quick drying", "Washable"],
-    "price_inr": 25,
+    "price": 25,
     "image": [
   "https://m.media-amazon.com/images/I/31JeP6kdRDL._UF1000,1000_QL80_.jpg",
   "https://www.kores.com/wp-content/uploads/fly-images/8583/gluesticks_mockups_2024-700x9999.png"
@@ -94,7 +94,7 @@
     "color": "Yellow",
     "dimensions": "3 x 3 inches",
     "features": ["Re-stickable", "Bright color"],
-    "price_inr": 35,
+    "price": 35,
     "image": [
   "https://m.media-amazon.com/images/I/71N6ghsntWL.jpg",
   "https://www.glubery.com/public/uploads/1645988125Oddy_3x3_normal.jpg"
@@ -111,7 +111,7 @@
     "color": "Assorted",
     "dimensions": "12 cm length each",
     "features": ["Fluorescent ink", "Chisel tip"],
-    "price_inr": 89,
+    "price": 89,
     "image": [
   "https://m.media-amazon.com/images/I/71NwpaqnP2L.jpg",
   "https://m.media-amazon.com/images/I/71ZwirHfgDL._UF1000,1000_QL80_.jpg"
@@ -128,7 +128,7 @@
     "color": "Blue",
     "dimensions": "31 x 25 cm",
     "features": ["2-ring", "Sturdy spine"],
-    "price_inr": 110,
+    "price": 110,
     "image": [
   "https://m.media-amazon.com/images/I/51ZDFGdsvlL._UF1000,1000_QL80_.jpg",
   "https://m.media-amazon.com/images/I/61AHpoZac6L.jpg"
@@ -145,7 +145,7 @@
     "color": "White & Blue",
     "dimensions": "6 x 2 cm",
     "features": ["PVC-free", "Smudge-free"],
-    "price_inr": 15,
+    "price": 15,
     "image": [
   "https://www.sitaramstationers.com/wp-content/uploads/2023/02/Maped-Universal-Gom-Stick-Protective-and-Refillable-Eraser-Pack-cover-page.jpg",
   "https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/494230354/300/494230355-1_3750.webp"
@@ -162,7 +162,7 @@
     "color": "Blue",
     "dimensions": "14 cm length",
     "features": ["Smooth writing", "Comfort grip"],
-    "price_inr": 40,
+    "price": 40,
     "image": [
   "https://m.media-amazon.com/images/I/81SqOKRwffL.jpg",
   "https://m.media-amazon.com/images/I/61Hpcx3a7xL.jpg"
@@ -179,7 +179,7 @@
     "color": "Multicolor Cover",
     "dimensions": "29.7 x 21 cm",
     "features": ["Thick sheets", "20 pages"],
-    "price_inr": 35,
+    "price": 35,
     "image": [
   "https://www.starboxretail.com/Images/products/PRDT202007140404.jpg",
   "https://www.antmascot.com/_next/image?url=https%3A%2F%2Fd3olmw93qe7qxx.cloudfront.net%2Fimages%2Fproducts%2FCHBBLNB_100pg.jpg&w=3840&q=85"
@@ -196,7 +196,7 @@
     "color": "Red & Blue",
     "dimensions": "3 x 2 cm",
     "features": ["Sharp blade", "Easy grip"],
-    "price_inr": 10,
+    "price": 10,
     "image": [
   "https://m.media-amazon.com/images/I/71pQPtFefML._UF1000,1000_QL80_.jpg",
   "https://m.media-amazon.com/images/I/71kWoI9fG9L.jpg"
@@ -213,7 +213,7 @@
     "color": "Multicolor",
     "dimensions": "20 x 10 cm box",
     "features": ["Bright colors", "Smooth flow"],
-    "price_inr": 90,
+    "price": 90,
     "image": [
   "https://m.media-amazon.com/images/I/61KKekYry1L.jpg",
   "https://www.kokuyocamlin.com/camel/gallery/packs/kids/oil-pastels/assorted-packs/assorted-carton-pack-of-25-shades/3.jpg"
@@ -230,7 +230,7 @@
     "color": "Blue & White",
     "dimensions": "A4 size",
     "features": ["4 subject dividers", "Wiro bound"],
-    "price_inr": 120,
+    "price": 120,
     "image": [
   "https://www.bbassets.com/media/uploads/p/l/40201417_1-navneet-youva-single-line-spiral-bound-6-subject-book-21x297-cm.jpg",
   "https://www.jiomart.com/images/product/original/rvemnmhbgm/navneet-youva-3-subject-book-spiral-bound-with-safety-lock-size-20-3-cm-x-26-7-cm-single-line-150-pages-pack-of-3-product-images-orvemnmhbgm-p595072312-7-202211051107.jpg?im=Resize=(420,420)"
@@ -247,7 +247,7 @@
     "color": "Brown",
     "dimensions": "32 x 22 cm",
     "features": ["Sturdy base", "Clip for holding sheets"],
-    "price_inr": 45,
+    "price": 45,
     "image": [
   "https://m.media-amazon.com/images/I/71wOdFfqEcL.jpg",
   "https://www.navneetstore.com/cdn/shop/products/Front1_289cc1dd-5649-4887-8098-fc931af948a8.jpg?v=1682424552"
@@ -264,7 +264,7 @@
     "color": "White",
     "dimensions": "12 cm",
     "features": ["Quick dry", "Precise tip"],
-    "price_inr": 35,
+    "price": 35,
     "image": [
   "https://statmo.in/wp-content/uploads/2024/11/Camlin-Cover-It-Correction-min.jpg",
   "https://statmo.in/wp-content/uploads/2017/03/Uniball-Correction-P.jpg"
@@ -281,7 +281,7 @@
     "color": "Red",
     "dimensions": "500ml",
     "features": ["Leakproof", "Easy carry loop"],
-    "price_inr": 149,
+    "price": 149,
     "image": [
   "https://m.media-amazon.com/images/I/51p5LKesaOL.jpg",
   "https://images.jdmagicbox.com/quickquotes/images_main/tupperware-1000-ml-water-bottle-blue-orange-174500843-cmhk4.jpg"
@@ -298,7 +298,7 @@
     "color": "Blue",
     "dimensions": "14 cm each",
     "features": ["Smooth ink", "Comfort grip"],
-    "price_inr": 75,
+    "price": 75,
     "image": [
   "https://m.media-amazon.com/images/I/71cMuo8+s5L._UF1000,1000_QL80_.jpg",
   "https://images.meesho.com/images/products/446381834/kx9rt_512.webp"

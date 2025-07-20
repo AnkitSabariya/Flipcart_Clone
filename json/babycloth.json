@@ -8,7 +8,7 @@
     "material": "100% Cotton",
     "features": ["Front snap buttons", "Full sleeves", "Soft & breathable"],
     "color": "Multicolor",
-    "price_inr": 1299,
+    "price": 1299,
     "image": [
   "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/15870242/2022/1/7/793840a9-787f-4e41-9ff3-f023626eaf681641534495893-mothercare-Boys-Sleepsuit-9931641534495506-2.jpg",
   "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/15870270/2022/1/7/480f9d7f-8cbc-4040-982e-1660e3dcdbd91641534698324-mothercare-Girls-Sleepsuit-91641534697952-1.jpg"
@@ -24,7 +24,7 @@
     "material": "Cotton Blend",
     "features": ["Frill design", "Soft inner lining", "Sleeveless"],
     "color": "Pink",
-    "price_inr": 799,
+    "price": 799,
     "image": [
   "https://m.media-amazon.com/images/I/91Z7YfImrKL._AC_UY1100_.jpg",
   "https://m.media-amazon.com/images/I/91gG0s-DHhL._AC_UY1100_.jpg"
@@ -40,7 +40,7 @@
     "material": "Cotton",
     "features": ["Snap closure", "Cartoon print", "Round neck"],
     "color": "Blue",
-    "price_inr": 449,
+    "price": 449,
     "image": [
   "https://m.media-amazon.com/images/I/71yTiJWXSFL._UY1100_.jpg",
   "https://jujujam.in/cdn/shop/files/Teddy_Bear_Printed_Baby_Boys_Romper_4.jpg?v=1741735804"
@@ -56,7 +56,7 @@
     "material": "Cotton Blend",
     "features": ["Thermal fabric", "Full sleeve & full pant", "Stretchable"],
     "color": "Red",
-    "price_inr": 699,
+    "price": 699,
     "image": [
   "https://m.media-amazon.com/images/I/61TGFEKy-yL._UY1100_.jpg",
   "https://m.media-amazon.com/images/I/91PnC84v7UL._UY1100_.jpg"
@@ -72,7 +72,7 @@
     "material": "Cotton",
     "features": ["Tie-knot design", "6-piece set", "Soft and breathable"],
     "color": "Multicolor",
-    "price_inr": 529,
+    "price": 529,
     "image": [
   "https://www.momshome.in/cdn/shop/files/jhabla_nappy.jpgp5.jpg?v=1736168397",
   "https://www.momshome.in/cdn/shop/files/Blue_Whale_J_N_c302bcdc-9001-4d2d-86b6-e435ad042bd2.jpg?v=1747736937"
@@ -88,7 +88,7 @@
     "material": "Terry Cotton",
     "features": ["Hooded", "Highly absorbent", "Soft texture"],
     "color": "Yellow",
-    "price_inr": 599,
+    "price": 599,
     "image": [
   "https://m.media-amazon.com/images/I/71qkWxKdz-L.jpg",
   "https://cadeausgift.com/cdn/shop/products/Duck-Hooded-Bath-Towel_34935334-9386-46ce-9bef-e2628eece607.png?v=1669897728&width=1100"
@@ -104,7 +104,7 @@
     "material": "Cotton Denim",
     "features": ["Adjustable straps", "Front pocket", "Printed tee"],
     "color": "Blue",
-    "price_inr": 1099,
+    "price": 1099,
     "image": [
   "https://cdn.fcglcdn.com/brainbees/images/products/438x531/16199531a.webp",
   "https://assets.ajio.com/medias/sys_master/root/20220823/7li9/6304edd3f997dd394c15bb87/-473Wx593H-469259437-darkblue-MODEL.jpg"
@@ -120,7 +120,7 @@
     "material": "Cotton",
     "features": ["Half sleeve tee", "Printed shorts", "Elastic waistband"],
     "color": "Grey & Blue",
-    "price_inr": 699,
+    "price": 699,
     "image": [
   "https://cdn.fcglcdn.com/brainbees/images/products/583x720/15471628a.webp",
   "https://cdn.ae1stcry.com/brainbees/images/products/438x531/13965037a.webp"
@@ -136,7 +136,7 @@
     "material": "Organic Cotton",
     "features": ["Envelope neck", "Snap buttons", "Eco-friendly dye"],
     "color": "Light Blue",
-    "price_inr": 799,
+    "price": 799,
     "image": [
   "https://m.media-amazon.com/images/I/41tiRIiEavS.jpg",
   "https://m.media-amazon.com/images/I/418mdU0QeGL._AC_UY1100_.jpg"
@@ -152,7 +152,7 @@
     "material": "Satin, Net",
     "features": ["Flared net design", "Matching headband", "Zip closure"],
     "color": "Peach",
-    "price_inr": 1299,
+    "price": 1299,
     "image": [
   "https://cdn.fcglcdn.com/brainbees/images/products/583x720/18751954a.webp",
   "https://m.media-amazon.com/images/I/5127z7x8YPL._UY1100_.jpg"
@@ -168,7 +168,7 @@
     "material": "Cotton",
     "features": ["2-pack", "Cartoon prints", "Stretchable neckline"],
     "color": "Red & Navy",
-    "price_inr": 649,
+    "price": 649,
     "image": [
   "https://m.media-amazon.com/images/I/81XuLr0lV8L._UF894,1000_QL80_.jpg",
   "https://m.media-amazon.com/images/I/81DoPaOQwXL._UF350,350_QL80_.jpg"
@@ -184,7 +184,7 @@
     "material": "Cotton",
     "features": ["3-piece set", "Colorful patterns", "Soft texture"],
     "color": "Assorted",
-    "price_inr": 429,
+    "price": 429,
     "image": [
   "https://cdn.fcglcdn.com/brainbees/images/products/438x531/16453759a.webp",
   "https://assets.ajio.com/medias/sys_master/root/20211111/R6g3/618c159caeb2690110c07157/-473Wx593H-469032332-lightblue-MODEL3.jpg"
@@ -200,7 +200,7 @@
     "material": "Organic Cotton",
     "features": ["Full sleeve", "Enclosed feet", "Cute animal print"],
     "color": "White",
-    "price_inr": 999,
+    "price": 999,
     "image": [
   "https://image.hm.com/assets/hm/53/dd/53dd8db3686ee6f59bdf6cd10e123a45062bb067.jpg?imwidth=2160",
   "https://media.centrepointstores.com/i/centrepoint/PS0015A24WHITEC-SHADE-PS0015A24-AW24-020924_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$"
@@ -216,7 +216,7 @@
     "material": "Organic Cotton",
     "features": ["Zip closure", "Full coverage", "Hood with ears"],
     "color": "Grey",
-    "price_inr": 1199,
+    "price": 1199,
     "image": [
   "https://ninobambino.in/cdn/shop/files/NBRPAW23LB1156.jpg?v=1700654660",
   "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/25426428/2023/10/10/e52e90b5-f896-4738-b74a-8f2c605ec6941696933570459NinoBambinoInfantsOrganicCottonRomper1.jpg"
@@ -232,7 +232,7 @@
     "material": "Cotton Silk Blend",
     "features": ["Ethnic style", "Printed design", "Comfort fit"],
     "color": "Maroon",
-    "price_inr": 949,
+    "price": 949,
     "image": [
   "https://images-static.nykaa.com/media/catalog/product/4/2/423f7ea1302322_4.jpg?tr=w-500",
   "https://images-static.nykaa.com/media/catalog/product/7/5/7578e5cHOPSC00022354_1.jpg?tr=w-500"
@@ -248,7 +248,7 @@
     "material": "Net & Cotton Lining",
     "features": ["Layered net", "Floral print", "Zipper back"],
     "color": "White & Pink",
-    "price_inr": 1399,
+    "price": 1399,
     "image": [
   "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/28161366/2024/3/9/62b815b1-40b2-4578-b5f1-f3e3961ce5511709977969549CUTECUMBERFloralPrintAppliqueGeorgetteFitFlareDress1.jpg",
   "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/4319959/2018/3/20/11521543809042-Cutecumber-Pink-Partywear-Dress-2161521543808994-5.jpg"

@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Yoga Mat",
+    "model": "Yoga Mat",
     "brand": "Boldfit",
     "category": "Yoga",
     "features": ["Anti-slip", "6mm thickness", "Sweat resistant"],
     "material": "EVA Foam",
-    "price_inr": 799,
+    "price": 799,
     "image": [
   "https://m.media-amazon.com/images/I/817n+-aD8uL._UF894,1000_QL80_.jpg",
   "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/31634734/2025/1/18/bd591c6c-57ee-440e-9e36-9f1e0dbe421b1737139954025-BOLDFIT-Grey-Rectangular-Anti-Skid-Yoga-Mat-With-Carry-Strap-2.jpg"
@@ -15,12 +15,12 @@
   },
   {
     "id": 2,
-    "name": "Adjustable Dumbbells Set",
+    "model": "Adjustable Dumbbells Set",
     "brand": "Kore",
     "category": "Strength Training",
     "features": ["20kg set", "Vinyl coated", "Spinlock collars"],
     "material": "Vinyl & Iron",
-    "price_inr": 1799,
+    "price": 1799,
     "image": [
   "https://5.imimg.com/data5/LG/HC/MY-10502825/kore-k-dm-10kg-combo-16-dumbbells-kit-500x500.png",
   "https://m.media-amazon.com/images/I/81l0SfvVDzL.jpg"
@@ -29,12 +29,12 @@
   },
   {
     "id": 3,
-    "name": "Skipping Rope",
+    "model": "Skipping Rope",
     "brand": "Strauss",
     "category": "Cardio",
     "features": ["Adjustable length", "Foam handles", "Tangle-free"],
     "material": "PVC & Foam",
-    "price_inr": 199,
+    "price": 199,
     "image": [
   "https://m.media-amazon.com/images/I/6194m+OVR9L._UF894,1000_QL80_.jpg",
   "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2024/AUGUST/20/7XzqyKWC_8deb01d4aabb472cb8f1fe95d7353ca7.jpg"
@@ -43,12 +43,12 @@
   },
   {
     "id": 4,
-    "name": "Push-up Bars",
+    "model": "Push-up Bars",
     "brand": "Lifelong",
     "category": "Strength Training",
     "features": ["Foam grip", "Non-slip base", "Compact size"],
     "material": "Steel & Foam",
-    "price_inr": 389,
+    "price": 389,
     "image": [
   "https://www.lifelongindiaonline.com/cdn/shop/files/Option_2_a2a8f397-efa2-47ce-83d9-7c0ffdfc1c8b.jpg?v=1752144786",
   "https://www.bbassets.com/media/uploads/p/xl/40321660_2-lifelong-adjustable-pull-up-bar-for-home-workouts-multifunctional-65-95-cmmax-user-weight-150-kg.jpg"
@@ -57,12 +57,12 @@
   },
   {
     "id": 5,
-    "name": "Ab Roller Wheel",
+    "model": "Ab Roller Wheel",
     "brand": "AmazonBasics",
     "category": "Core Training",
     "features": ["Dual wheels", "Knee pad included", "Non-slip grips"],
     "material": "Plastic & Rubber",
-    "price_inr": 549,
+    "price": 549,
     "image": [
   "https://m.media-amazon.com/images/I/71Ii9XVq+UL.jpg",
   "https://m.media-amazon.com/images/I/71G5KXu0BWL._UF894,1000_QL80_.jpg"
@@ -71,12 +71,12 @@
   },
   {
     "id": 6,
-    "name": "Resistance Bands Set",
+    "model": "Resistance Bands Set",
     "brand": "Fitlastics",
     "category": "Strength & Rehab",
     "features": ["Set of 5", "Different resistances", "Portable pouch"],
     "material": "Natural Latex",
-    "price_inr": 499,
+    "price": 499,
     "image": [
   "https://m.media-amazon.com/images/I/714cZcYHaRL._UF894,1000_QL80_.jpg",
   "https://m.media-amazon.com/images/I/71aZZe-hQjL.jpg"
@@ -85,12 +85,12 @@
   },
   {
     "id": 7,
-    "name": "Kettlebell",
+    "model": "Kettlebell",
     "brand": "Aurion",
     "category": "Strength Training",
     "features": ["Vinyl coated", "Ergonomic handle"],
     "material": "Cast Iron",
-    "price_inr": 799,
+    "price": 799,
     "image": [
   "https://m.media-amazon.com/images/I/51J5jOQlKlL._UF894,1000_QL80_.jpg",
   "https://m.media-amazon.com/images/I/71WW-a2E3WL.jpg"
@@ -99,12 +99,12 @@
   },
   {
     "id": 8,
-    "name": "Tummy Trimmer",
+    "model": "Tummy Trimmer",
     "brand": "Strauss",
     "category": "Core Training",
     "features": ["Double spring", "Foot strap", "Portable"],
     "material": "Steel & Rubber",
-    "price_inr": 499,
+    "price": 499,
     "image": [
   "https://strausssport.com/cdn/shop/files/71SUJQvma_L_1200x.jpg?v=1738784449",
   "https://strausssport.com/cdn/shop/files/71RSuRd4fJL.jpg?v=1738784449"
@@ -113,12 +113,12 @@
   },
   {
     "id": 9,
-    "name": "Foam Roller",
+    "model": "Foam Roller",
     "brand": "Fitkit",
     "category": "Recovery",
     "features": ["Textured surface", "Firm support", "High-density foam"],
     "material": "EVA Foam",
-    "price_inr": 599,
+    "price": 599,
     "image": [
   "https://www.fitkituk.com/images/products/1654793153-50403900.jpg",
   "https://www.fitkituk.com/images/products/1538555202-29450300.jpg"
@@ -127,12 +127,12 @@
   },
   {
     "id": 10,
-    "name": "Ankle Weights",
+    "model": "Ankle Weights",
     "brand": "Pro365",
     "category": "Strength Training",
     "features": ["Adjustable straps", "1kg each", "Pair"],
     "material": "Nylon & Iron Sand",
-    "price_inr": 649,
+    "price": 649,
     "image": [
   "https://m.media-amazon.com/images/I/51y9xC79+HL._AC_UF894,1000_QL80_.jpg",
   "https://m.media-amazon.com/images/I/61Jd+66Z-uL._UF894,1000_QL80_.jpg"
@@ -141,12 +141,12 @@
   },
   {
     "id": 11,
-    "name": "Pull-up Bar",
+    "model": "Pull-up Bar",
     "brand": "Lifelong",
     "category": "Strength Training",
     "features": ["Doorway mounted", "Foam grip", "Up to 100kg"],
     "material": "Steel",
-    "price_inr": 999,
+    "price": 999,
     "image": [
   "https://www.lifelongindiaonline.com/cdn/shop/files/Option_2_a2a8f397-efa2-47ce-83d9-7c0ffdfc1c8b.jpg?v=1752144786",
   "https://images-eu.ssl-images-amazon.com/images/I/61iyEOCiA4L._AC_UL600_SR600,600_.jpg"
@@ -155,12 +155,12 @@
   },
   {
     "id": 12,
-    "name": "Gym Gloves",
+    "model": "Gym Gloves",
     "brand": "Nivia",
     "category": "Accessories",
     "features": ["Padded palm", "Breathable mesh", "Wrist support"],
     "material": "Polyester & Rubber",
-    "price_inr": 399,
+    "price": 399,
     "image": [
   "https://m.media-amazon.com/images/I/81nMazo81iL.jpg",
   "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/20587342/2023/5/22/6587a69e-d28d-43ee-b056-a41f43a2c2361684757634796-NIVIA-Unisex-Black-Cross-Training-Gloves-2321684757634366-1.jpg"
@@ -169,12 +169,12 @@
   },
   {
     "id": 13,
-    "name": "Pilates Ring",
+    "model": "Pilates Ring",
     "brand": "Boldfit",
     "category": "Pilates",
     "features": ["Dual grip", "Toned resistance", "13-inch"],
     "material": "Fiberglass & Foam",
-    "price_inr": 699,
+    "price": 699,
     "image": [
   "https://m.media-amazon.com/images/I/614b9m6uMnL.jpg",
   "https://m.media-amazon.com/images/I/71RVxTusz2L._UF350,350_QL80_.jpg"
@@ -183,12 +183,12 @@
   },
   {
     "id": 14,
-    "name": "Adjustable Bench",
+    "model": "Adjustable Bench",
     "brand": "Durafit",
     "category": "Strength Training",
     "features": ["Incline/decline settings", "Foldable", "Sturdy steel frame"],
     "material": "Steel & Foam",
-    "price_inr": 4499,
+    "price": 4499,
     "image": [
   "https://rukminim2.flixcart.com/image/704/844/xif0q/fitness-bench/o/j/z/40-5-250-dfdoabh1-durafit-47-original-imaghxpyudkm9kbm.jpeg?q=90&crop=false",
   "https://www.jiomart.com/images/product/original/rv5vv937hn/durafit-adjustable-bench-oabh1-foldable-and-adjustable-multi-workout-multi-level-incline-and-decline-and-flat-position-max-user-weight-200kg-product-images-orv5vv937hn-p594526680-4-202210291803.jpg?im=Resize=(420,420)"
@@ -197,12 +197,12 @@
   },
   {
     "id": 15,
-    "name": "Digital Weighing Scale",
+    "model": "Digital Weighing Scale",
     "brand": "HealthSense",
     "category": "Fitness Monitoring",
     "features": ["LCD display", "Precision sensors", "Max 180kg"],
     "material": "Tempered Glass",
-    "price_inr": 1199,
+    "price": 1199,
     "image": [
   "https://healthsense.in/cdn/shop/files/Mainimage1.png?v=1692426919",
   "https://healthsense.in/cdn/shop/products/dsimage4.jpg?v=1719388423"
@@ -211,12 +211,12 @@
   },
   {
     "id": 16,
-    "name": "Massage Gun",
+    "model": "Massage Gun",
     "brand": "BeatXP",
     "category": "Recovery",
     "features": ["6 heads", "20 speed levels", "Rechargeable"],
     "material": "ABS Plastic",
-    "price_inr": 3499,
+    "price": 3499,
     "image": [
   "https://m.media-amazon.com/images/I/61BzwtmQptL._UF1000,1000_QL80_.jpg",
   "https://img.beatxp.com/prod/product/286/2%20%286%29.webp"
@@ -225,12 +225,12 @@
   },
   {
     "id": 17,
-    "name": "Aerobic Stepper",
+    "model": "Aerobic Stepper",
     "brand": "Kobo",
     "category": "Cardio",
     "features": ["Non-slip surface", "Height adjustable", "Supports 120kg"],
     "material": "High-density Polyethylene",
-    "price_inr": 1899,
+    "price": 1899,
     "image": [
   "https://m.media-amazon.com/images/I/31ldWGjRCJL.jpg",
   "https://images-eu.ssl-images-amazon.com/images/I/71nKew+tDiL._AC_UL495_SR435,495_.jpg"
@@ -239,12 +239,12 @@
   },
   {
     "id": 18,
-    "name": "Balance Ball",
+    "model": "Balance Ball",
     "brand": "Reebok",
     "category": "Balance Training",
     "features": ["75cm size", "Anti-burst", "Pump included"],
     "material": "PVC",
-    "price_inr": 1499,
+    "price": 1499,
     "image": [
   "https://m.media-amazon.com/images/I/81192ZQvZAL._UF894,1000_QL80_.jpg",
   "https://ciciastore.com/cdn/shop/files/65Cm_Medium_Weighted_Stability_Ball_Pump_Included_9.jpg?v=1728828928&width=1946"
@@ -253,12 +253,12 @@
   },
   {
     "id": 19,
-    "name": "Gym Shaker Bottle",
+    "model": "Gym Shaker Bottle",
     "brand": "Boldfit",
     "category": "Accessories",
     "features": ["700ml", "Blender ball", "Leak-proof"],
     "material": "BPA-Free Plastic",
-    "price_inr": 279,
+    "price": 279,
     "image": [
   "https://m.media-amazon.com/images/I/61caaA5IlrL._UF894,1000_QL80_.jpg",
   "https://m.media-amazon.com/images/I/81hUtMxX8eL._UF894,1000_QL80_.jpg"
