@@ -1,81 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
     />
-</head>
-<body>
-      <nav id="mynavbar"></nav>
-        <!-- Mobile search bar (hidden by default) -->
-        <div
-          id="mobileSearchBar"
-          class="lg:hidden w-full px-3 pt-2 hidden bg-white transform transition-all duration-300 ease-in-out origin-top scale-y-0 opacity-0"
-        >
+  </head>
+  <body>
+    <nav id="mynavbar"></nav>
+    <!-- Mobile search bar (hidden by default) -->
+    <div
+      id="mobileSearchBar"
+      class="lg:hidden w-full px-3 pt-2 hidden bg-white transform transition-all duration-300 ease-in-out origin-top scale-y-0 opacity-0"
+    >
+      <div
+        class="flex items-center border border-gray-300 rounded overflow-hidden"
+      >
+        <input
+          id="searchMobile"
+          type="text"
+          placeholder="Search for products, brands and more"
+          onkeydown="if(event.key==='Enter'){ searchProduct(); }"
+          class="w-full px-4 py-2 text-sm text-black outline-none"
+        />
+        <button onclick="searchProduct()" class="bg-[#f1f3f6] px-4 py-2">
+          <i class="ri-search-line text-[#2874f0] text-lg"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Flipkart Cart Clone (No Grocery) -->
+    <div class="bg-[#f1f3f6] min-h-screen py-6 px-4 md:px-10">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Left: Cart Items -->
+        <div class="lg:col-span-2">
+          <!-- Delivery Location -->
           <div
-            class="flex items-center border border-gray-300 rounded overflow-hidden"
+            class="bg-white p-4 text-sm font-medium text-gray-700 flex justify-between items-center"
           >
-            <input
-              id="searchMobile"
-              type="text"
-              placeholder="Search for products, brands and more"
-              onkeydown="if(event.key==='Enter'){ searchProduct(); }"
-              class="w-full px-4 py-2 text-sm text-black outline-none"
-            />
-            <button onclick="searchProduct()" class="bg-[#f1f3f6] px-4 py-2">
-              <i class="ri-search-line text-[#2874f0] text-lg"></i>
+            <span>Deliver to: <strong>Rajkot - 360002</strong></span>
+            <button
+              class="text-blue-600 font-semibold text-xs border border-gray-300 px-3 py-1 rounded"
+            >
+              Change
+            </button>
+          </div>
+
+          <!-- Cart Item Card -->
+          <div id="itemscontainer"></div>
+        </div>
+
+        <!-- Right: Price Details -->
+        <div>
+          <div class="bg-white p-4 rounded shadow-sm">
+            <h2 class="font-semibold text-gray-700 border-b pb-2 text-sm">
+              PRICE DETAILS
+            </h2>
+
+            <div class="text-sm mt-3 text-gray-700 space-y-2">
+              <div class="flex justify-between">
+                <span>Price (3 items)</span>
+                <span>₹4,198</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Discount</span>
+                <span class="text-green-600">−₹2,987</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Coupons for you</span>
+                <span class="text-green-600">−₹45</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Platform Fee</span>
+                <span>₹4</span>
+              </div>
+            </div>
+
+            <hr class="my-3" />
+
+            <div class="flex justify-between font-semibold text-gray-800">
+              <span>Total Amount</span>
+              <span>₹1,170</span>
+            </div>
+
+            <p class="text-green-600 text-sm mt-2">
+              You will save ₹3,028 on this order
+            </p>
+          </div>
+
+          <div class="mt-4">
+            <button
+              class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 font-semibold rounded"
+            >
+              PLACE ORDER
             </button>
           </div>
         </div>
-   <!-- Flipkart Cart Clone (No Grocery) -->
-<div class="bg-[#f1f3f6] min-h-screen py-6 px-4 md:px-10">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-    <!-- Left: Cart Items -->
-    <div class="lg:col-span-2">
-      <!-- Delivery Location -->
-      <div class="bg-white p-4 text-sm font-medium text-gray-700 flex justify-between items-center">
-        <span>Deliver to: <strong>Rajkot - 360002</strong></span>
-        <button class="text-blue-600 font-semibold text-xs border border-gray-300 px-3 py-1 rounded">Change</button>
       </div>
-
-      <!-- Cart Item Card -->
-      <div class="bg-white mt-4 divide-y">
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+  <script>
+    let getcart = JSON.parse(localStorage.getItem("cart"));
+    let itemscontainer = document.getElementById("itemscontainer");
+    getcart.forEach((e, i) => {
+      itemscontainer.innerHTML += `  <div class="bg-white mt-4 divide-y">
         <!-- Single Product Row -->
-        <div class="flex p-4">
+        <div class="flex p-4" id="item${i}">
           <!-- Product Image -->
           <div class="w-24 h-24 flex-shrink-0">
-            <img src="https://via.placeholder.com/100" class="w-full h-full object-contain" alt="" />
+            <img src="${
+              e.images[0]
+            }" class="w-full h-full object-contain" alt="" />
             <!-- Quantity Control -->
             <div class="flex items-center space-x-2 mt-2">
-              <button class="border px-2 rounded text-lg">−</button>
-              <span class="text-sm">1</span>
-              <button class="border px-2 rounded text-lg">+</button>
+              <button class="border px-2 rounded text-lg" onclick="decrement(${i})">−</button>
+              <span class="text-sm" id="quntanity${i}">${e.qty}</span>
+              <button class="border px-2 rounded text-lg" onclick="increment(${i})">+</button>
             </div>
           </div>
 
           <!-- Product Details -->
           <div class="flex-1 ml-4">
-            <h3 class="font-semibold text-gray-800">deconstruct Sunscreen - SPF 55+</h3>
-            <p class="text-xs text-gray-500">50 g</p>
+            <h3 class="font-semibold text-gray-800">${e.title}</h3>
+            <p class="text-xs text-gray-500">${e.category}</p>
             <p class="text-xs text-gray-500 mt-1">Seller: Deconstruct <img class="inline w-4 h-4" src="https://img.icons8.com/color/48/000000/verified-badge.png"/></p>
 
             <div class="mt-2">
-              <span class="text-gray-400 line-through text-sm">₹349</span>
-              <span class="font-bold text-lg text-gray-800 ml-2">₹276</span>
-              <span class="text-green-600 text-sm ml-2">20% Off</span>
-              <span class="text-green-600 text-xs ml-2">1 coupon applied</span>
+     
+              <span class="font-bold text-lg text-gray-800 ml-2" id="price${i}">${
+        e.price * e.qty
+      }</span>
+              <span class="text-green-600 text-sm ml-2" id="unitprice${i}">${
+        e.price
+      }</span>
+      
             </div>
             <p class="text-xs text-gray-500 mt-1">Or Pay ₹260 + 16 coins</p>
 
             <div class="flex space-x-6 text-sm mt-3 text-blue-600 font-medium">
               <button class="hover:underline">SAVE FOR LATER</button>
-              <button class="hover:underline">REMOVE</button>
+              <button class="hover:underline" onclick="remove(${i})">REMOVE</button>
             </div>
           </div>
 
@@ -85,50 +153,43 @@
 
         <!-- Repeat above div for more items -->
       </div>
-    </div>
+   
+   `;
+    });
+    function decrement(index) {
+      let price = document.getElementById(`price${index}`);
+      let unitprice = +document.getElementById(`unitprice${index}`).innerText;
+      let quntanity = document.getElementById(`quntanity${index}`);
+      let value = +quntanity.innerText;
+      if (value > 1) {
+        value--;
+        getcart[index].qty = value;
+        localStorage.setItem("cart", JSON.stringify(getcart));
+      }
+      price.innerText = `₹${(unitprice * value).toFixed(2)}`;
+      quntanity.innerText = value;
+    }
+    function increment(index) {
+      let price = document.getElementById(`price${index}`);
+      let unitprice = +document.getElementById(`unitprice${index}`).innerText;
+      let quntanity = document.getElementById(`quntanity${index}`);
+      let value = +quntanity.innerText;
+      if (value < 10) {
+        value++;
+        getcart[index].qty = value;
+        localStorage.setItem("cart", JSON.stringify(getcart));
+      }
 
-    <!-- Right: Price Details -->
-    <div>
-      <div class="bg-white p-4 rounded shadow-sm">
-        <h2 class="font-semibold text-gray-700 border-b pb-2 text-sm">PRICE DETAILS</h2>
+      price.innerText = `₹${(unitprice * value).toFixed(2)}`;
+      quntanity.innerText = value;
+    }
+    function remove(index) {
+      let item = document.getElementById(`item${index}`);
+      item.remove();
+      let findindex = getcart.findindex(find => find.id === )
+      getcart.splice(index, 1);
 
-        <div class="text-sm mt-3 text-gray-700 space-y-2">
-          <div class="flex justify-between">
-            <span>Price (3 items)</span>
-            <span>₹4,198</span>
-          </div>
-          <div class="flex justify-between">
-            <span>Discount</span>
-            <span class="text-green-600">−₹2,987</span>
-          </div>
-          <div class="flex justify-between">
-            <span>Coupons for you</span>
-            <span class="text-green-600">−₹45</span>
-          </div>
-          <div class="flex justify-between">
-            <span>Platform Fee</span>
-            <span>₹4</span>
-          </div>
-        </div>
-
-        <hr class="my-3" />
-
-        <div class="flex justify-between font-semibold text-gray-800">
-          <span>Total Amount</span>
-          <span>₹1,170</span>
-        </div>
-
-        <p class="text-green-600 text-sm mt-2">You will save ₹3,028 on this order</p>
-      </div>
-
-      <div class="mt-4">
-        <button class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 font-semibold rounded">PLACE ORDER</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-</body>
-<script src="js/script.js"></script>
+      localStorage.setItem("cart", JSON.stringify(getcart));
+    }
+  </script>
 </html>
