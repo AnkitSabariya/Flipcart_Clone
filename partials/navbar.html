@@ -196,12 +196,29 @@
         </a>
       </div>
     </div>
+    <a href="../cart.html">
+      <span class="relative flex items-center group cursor-pointer">
+        <div class="relative flex items-center">
+          <!-- Cart Icon -->
+          <i
+            class="ri-shopping-cart-2-fill text-base md:text-lg lg:text-xl transition-transform duration-200 ease-out group-hover:scale-110"
+          ></i>
 
-    <span class="cursor-pointer flex items-center gap-1 hover:underline">
-      <a href="../cart.html">
-      <i class="ri-shopping-cart-2-fill text-base lg:text-lg"></i>
-      <span class="hidden sm:inline">Cart</span>
-      </a>
-    </span>
+          <!-- Counter Badge -->
+          <span
+            id="cart-counter"
+            class="absolute top-0 right-0 translate-x-[40%] -translate-y-[40%] bg-red-600 text-white text-[10px] font-bold flex items-center justify-center w-4 h-4 rounded-full shadow shadow-black/20 transition-transform duration-200 ease-out group-hover:scale-110 cursor-pointer"
+          >
+            0
+          </span>
+        </div>
+
+        <!-- Cart Text -->
+        <span
+          class="ml-2 hidden sm:inline text-sm md:text-base group-hover:underline"
+          >Cart</span
+        >
+      </span>
+    </a>
   </div>
 </nav>

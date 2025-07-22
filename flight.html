@@ -48,7 +48,7 @@
         transform: translateY(-4px);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
       }
-     
+
       .loader-spinner {
         width: 50px;
         height: 50px;
@@ -65,12 +65,11 @@
           transform: rotate(360deg);
         }
       }
-
     </style>
   </head>
   <body class="bg-gray-100 font-sans">
     <!-- Loader -->
-  <div
+    <div
       id="loader"
       class="fixed inset-0 flex items-center justify-center bg-white z-50"
     >
@@ -298,6 +297,91 @@
             </div>
           </div>
         </div>
+        <div class="w-full overflow-x-auto px-4 py-10">
+          <h2 class="text-xl font-semibold mb-4 text-gray-800">
+            ✈️ Available Flights
+          </h2>
+          <table
+            class="min-w-full border-collapse rounded-lg shadow overflow-hidden"
+          >
+            <thead class="bg-blue-600 text-white">
+              <tr>
+                <th class="px-4 py-3 text-left">Flight</th>
+                <th class="px-4 py-3 text-left">From</th>
+                <th class="px-4 py-3 text-left">To</th>
+                <th class="px-4 py-3 text-left">Depart</th>
+                <th class="px-4 py-3 text-left">Return</th>
+                <th class="px-4 py-3 text-left">Dep Time</th>
+                <th class="px-4 py-3 text-left">Arr Time</th>
+                <th class="px-4 py-3 text-left">Travellers</th>
+                <th class="px-4 py-3 text-left">Class</th>
+                <th class="px-4 py-3 text-left">Price (₹)</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3">AI203</td>
+                <td class="px-4 py-3">DEL</td>
+                <td class="px-4 py-3">BOM</td>
+                <td class="px-4 py-3">15/07/2025</td>
+                <td class="px-4 py-3">-</td>
+                <td class="px-4 py-3">10:00</td>
+                <td class="px-4 py-3">12:10</td>
+                <td class="px-4 py-3">1</td>
+                <td class="px-4 py-3">Economy</td>
+                <td class="px-4 py-3 font-semibold text-green-600">₹5,500</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3">6E512</td>
+                <td class="px-4 py-3">BOM</td>
+                <td class="px-4 py-3">HYD</td>
+                <td class="px-4 py-3">15/07/2025</td>
+                <td class="px-4 py-3">20/07/2025</td>
+                <td class="px-4 py-3">14:30</td>
+                <td class="px-4 py-3">16:30</td>
+                <td class="px-4 py-3">2</td>
+                <td class="px-4 py-3">Business</td>
+                <td class="px-4 py-3 font-semibold text-green-600">₹9,800</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3">SG789</td>
+                <td class="px-4 py-3">BLR</td>
+                <td class="px-4 py-3">GOI</td>
+                <td class="px-4 py-3">16/07/2025</td>
+                <td class="px-4 py-3">-</td>
+                <td class="px-4 py-3">09:00</td>
+                <td class="px-4 py-3">10:20</td>
+                <td class="px-4 py-3">1</td>
+                <td class="px-4 py-3">Economy</td>
+                <td class="px-4 py-3 font-semibold text-green-600">₹4,500</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3">UK404</td>
+                <td class="px-4 py-3">DEL</td>
+                <td class="px-4 py-3">BKK</td>
+                <td class="px-4 py-3">22/07/2025</td>
+                <td class="px-4 py-3">29/07/2025</td>
+                <td class="px-4 py-3">23:00</td>
+                <td class="px-4 py-3">05:30</td>
+                <td class="px-4 py-3">3</td>
+                <td class="px-4 py-3">Economy</td>
+                <td class="px-4 py-3 font-semibold text-green-600">₹19,500</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3">MH101</td>
+                <td class="px-4 py-3">MAA</td>
+                <td class="px-4 py-3">KUL</td>
+                <td class="px-4 py-3">18/07/2025</td>
+                <td class="px-4 py-3">-</td>
+                <td class="px-4 py-3">18:45</td>
+                <td class="px-4 py-3">00:15</td>
+                <td class="px-4 py-3">1</td>
+                <td class="px-4 py-3">Premium Economy</td>
+                <td class="px-4 py-3 font-semibold text-green-600">₹13,200</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
@@ -416,7 +500,7 @@
         toInput.value = fromValue;
       }
     </script>
-     <script>
+    <script>
       // ✅ Loader DOM insert ho gaya, ab check karo
       const hideLoader = () => {
         setTimeout(() => {

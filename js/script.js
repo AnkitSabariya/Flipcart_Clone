@@ -3,6 +3,7 @@ fetch(`./partials/navbar.html`)
   .then((res) => res.text())
   .then((html) => {
     document.getElementById("mynavbar").innerHTML = html;
+     updateCartCounter(); 
   });
 // Destop Category
 fetch("./partials/category.html")
@@ -23,8 +24,17 @@ fetch("./partials/footer.html")
     document.getElementById("footer").innerHTML = footer;
   });
 
+// Counter
+function updateCartCounter() {
+  const badge = document.getElementById("cart-counter");
+  if (badge) {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    badge.textContent = cart.length;
+  }
+}
 
 
+updateCartCounter();
 // Mobile menu toggle
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
 const mobileMenu = document.getElementById("mobileMenu");

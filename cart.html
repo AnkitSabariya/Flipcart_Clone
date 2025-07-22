@@ -54,50 +54,40 @@
         </div>
 
         <!-- Right: Price Details -->
-        <div>
-          <div class="bg-white p-4 rounded shadow-sm">
-            <h2 class="font-semibold text-gray-700 border-b pb-2 text-sm">
-              PRICE DETAILS
-            </h2>
+        <div class="bg-white p-4 rounded shadow-sm">
+          <h2 class="font-semibold text-gray-700 border-b pb-2 text-sm">
+            PRICE DETAILS
+          </h2>
 
-            <div class="text-sm mt-3 text-gray-700 space-y-2">
-              <div class="flex justify-between">
-                <span>Price (3 items)</span>
-                <span>₹4,198</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Discount</span>
-                <span class="text-green-600">−₹2,987</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Coupons for you</span>
-                <span class="text-green-600">−₹45</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Platform Fee</span>
-                <span>₹4</span>
-              </div>
+          <div class="text-sm mt-3 text-gray-700 space-y-2">
+            <div class="flex justify-between">
+              <span>Price (<span id="items-count">0</span> items)</span>
+              <span id="items-price">₹0</span>
             </div>
-
-            <hr class="my-3" />
-
-            <div class="flex justify-between font-semibold text-gray-800">
-              <span>Total Amount</span>
-              <span>₹1,170</span>
+            <div class="flex justify-between">
+              <span>Discount</span>
+              <span id="items-discount" class="text-green-600">−₹0</span>
             </div>
-
-            <p class="text-green-600 text-sm mt-2">
-              You will save ₹3,028 on this order
-            </p>
+            <div class="flex justify-between">
+              <span>Coupons for you</span>
+              <span id="items-coupon" class="text-green-600">−₹0</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Platform Fee</span>
+              <span id="items-platform">₹0</span>
+            </div>
           </div>
 
-          <div class="mt-4">
-            <button
-              class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 font-semibold rounded"
-            >
-              PLACE ORDER
-            </button>
+          <hr class="my-3" />
+
+          <div class="flex justify-between font-semibold text-gray-800">
+            <span>Total Amount</span>
+            <span id="items-total">₹0</span>
           </div>
+
+          <p id="items-saving-text" class="text-green-600 text-sm mt-2">
+            You will save ₹0 on this order
+          </p>
         </div>
       </div>
     </div>
@@ -109,7 +99,7 @@
     getcart.forEach((e, i) => {
       itemscontainer.innerHTML += `  <div class="bg-white mt-4 divide-y">
         <!-- Single Product Row -->
-        <div class="flex p-4" id="item${i}">
+        <div class="flex p-4" id="iten-${e.id}-${e.json}">
           <!-- Product Image -->
           <div class="w-24 h-24 flex-shrink-0">
             <img src="${
@@ -143,7 +133,10 @@
 
             <div class="flex space-x-6 text-sm mt-3 text-blue-600 font-medium">
               <button class="hover:underline">SAVE FOR LATER</button>
-              <button class="hover:underline" onclick="remove(${i})">REMOVE</button>
+              <button class="hover:underline" onclick="remove(${e.id}, '${
+        e.json
+      }')">REMOVE</button>
+
             </div>
           </div>
 
@@ -156,6 +149,48 @@
    
    `;
     });
+    // price Details
+    updateSummary();
+    function updateSummary() {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      let totalItems = 0;
+      let totalPrice = 0;
+      let totalDiscount = 0;
+      let couponDiscount = 45; // Example: fixed
+      let platformFee = 4; // Example: fixed
+
+      cart.forEach((item) => {
+        totalItems += item.qty;
+        totalPrice += item.price * item.qty;
+        totalDiscount += Math.round(
+          ((item.price * item.discountPercentage) / 100) * item.qty
+        );
+      });
+
+      if (totalItems === 0) {
+        couponDiscount = 0;
+        platformFee = 0;
+      }
+
+      const finalAmount =
+        totalPrice - totalDiscount - couponDiscount + platformFee;
+      const totalSaving = totalDiscount + couponDiscount;
+
+      document.getElementById("items-count").innerText = totalItems;
+      document.getElementById("items-price").innerText = `₹${totalPrice}`;
+      document.getElementById(
+        "items-discount"
+      ).innerText = `−₹${totalDiscount}`;
+      document.getElementById("items-coupon").innerText = `−₹${couponDiscount}`;
+      document.getElementById("items-platform").innerText = `₹${platformFee}`;
+      document.getElementById("items-total").innerText = `₹${(finalAmount).toFixed(2)}`;
+      document.getElementById(
+        "items-saving-text"
+      ).innerText = `You will save ₹${totalSaving} on this order`;
+    }
+
+    // Increment decrement
     function decrement(index) {
       let price = document.getElementById(`price${index}`);
       let unitprice = +document.getElementById(`unitprice${index}`).innerText;
@@ -168,6 +203,8 @@
       }
       price.innerText = `₹${(unitprice * value).toFixed(2)}`;
       quntanity.innerText = value;
+      updateSummary();
+      updateCartCounter();
     }
     function increment(index) {
       let price = document.getElementById(`price${index}`);
@@ -178,18 +215,27 @@
         value++;
         getcart[index].qty = value;
         localStorage.setItem("cart", JSON.stringify(getcart));
+        updateSummary();
+
+        updateCartCounter();
       }
 
       price.innerText = `₹${(unitprice * value).toFixed(2)}`;
       quntanity.innerText = value;
     }
-    function remove(index) {
-      let item = document.getElementById(`item${index}`);
-      item.remove();
-      let findindex = getcart.findindex(find => find.id === )
-      getcart.splice(index, 1);
-
-      localStorage.setItem("cart", JSON.stringify(getcart));
+    // Delete Items
+    function remove(id, json) {
+      let findindex = getcart.findIndex(
+        (find) => find.id === id && find.json == json
+      );
+      if (findindex !== -1) {
+        let item = document.getElementById(`iten-${id}-${json}`);
+        item.remove();
+        getcart.splice(findindex, 1);
+        localStorage.setItem("cart", JSON.stringify(getcart));
+      }
+      updateSummary();
+      updateCartCounter();
     }
   </script>
 </html>

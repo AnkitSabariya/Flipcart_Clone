@@ -20,6 +20,8 @@ fetch(`./json/${json}.json`)
         ).trim(),
         images: Array.isArray(raw.images)
           ? raw.images
+          : Array.isArray(raw.image)
+          ? raw.image
           : raw.image
           ? [raw.image]
           : raw.image_url
@@ -111,4 +113,16 @@ function addToCart() {
     cart.push(product);
   }
   localStorage.setItem("cart", JSON.stringify(cart));
+   updateCartCounter();
+  
 }
+document.querySelectorAll('.add-to-cart').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const product = {
+      id: btn.dataset.id,
+      json: btn.dataset.json
+      // aur bhi fields daal sakta hai yahan
+    };
+    addToCart(product);
+  });
+});
