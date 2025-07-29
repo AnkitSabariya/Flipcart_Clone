@@ -1,0 +1,148 @@
+[
+  {
+    "brand": "Kanchipuram",
+    "model": "Silk Designer Saree",
+    "category": "Saree",
+    "fabric": "Silk Blend",
+    "price_usd": 2499,
+    "occasion": "Wedding",
+    "image": ["https://example.com/saree1.jpg"]
+  },
+  {
+    "brand": "Banarasi",
+    "model": "Traditional Wear",
+    "category": "Saree",
+    "fabric": "Cotton Silk",
+    "price_usd": 1799,
+    "occasion": "Festival",
+    "image": ["https://example.com/saree2.jpg"]
+  },
+  
+  {
+    "brand": "Kota Doria",
+    "model": "Lightweight Saree",
+    "category": "Saree",
+    "fabric": "Cotton",
+    "price_usd": 899,
+    "occasion": "Casual",
+    "image": ["https://example.com/saree3.jpg"]
+  },
+  {
+    "brand": "Chanderi",
+    "model": "Embroidered Saree",
+    "category": "Saree",
+    "fabric": "Chanderi Silk",
+    "price_usd": 1599,
+    "occasion": "Party",
+    "image": ["https://example.com/saree4.jpg"]
+  },
+  {
+    "brand": "Linen",
+    "model": "Summer Collection",
+    "category": "Saree",
+    "fabric": "Linen Blend",
+    "price_usd": 1299,
+    "occasion": "Office Wear",
+    "image": ["https://example.com/saree5.jpg"]
+  },
+  {
+    "brand": "Georgette",
+    "model": "Floral Print Saree",
+    "category": "Saree",
+    "fabric": "Georgette",
+    "price_usd": 999,
+    "occasion": "Casual",
+    "image": ["https://example.com/saree6.jpg"]
+  },
+  {
+    "brand": "Net",
+    "model": "Designer Net Saree",
+    "category": "Saree",
+    "fabric": "Net Fabric",
+    "price_usd": 1999,
+    "occasion": "Party",
+    "image": ["https://example.com/saree7.jpg"]
+  },
+  {
+    "brand": "Cotton",
+    "model": "Everyday Wear Saree",
+    "category": "Saree",
+    "fabric": "Pure Cotton",
+    "price_usd": 699,
+    "occasion": "Daily Wear",
+    "image": ["https://example.com/saree8.jpg"]
+  },
+  {
+    "brand": "Art Silk",
+    "model": "Designer Art Silk Saree",
+    "category": "Saree",
+    "fabric": "Art Silk",
+    "price_usd": 1399,
+    "occasion": "Festive",
+    "image": ["https://example.com/saree9.jpg"]
+  },
+  {
+    "brand": "Brocade",
+    "model": "Luxury Brocade Saree",
+    "category": "Saree",
+    "fabric": "Brocade Silk",
+    "price_usd": 2199,
+    "occasion": "Wedding",
+    "image": ["https://example.com/saree10.jpg"]
+  },
+  {
+    "brand": "Tussar",
+    "model": "Handwoven Tussar Saree",
+    "category": "Saree",
+    "fabric": "Tussar Silk",
+    "price_usd": 1899,
+    "occasion": "Traditional",
+    "image": ["https://example.com/saree11.jpg"]
+  },
+  {
+    "brand": "Satin",
+    "model": "Elegant Satin Saree",
+    "category": "Saree",
+    "fabric": "Satin Blend",
+    "price_usd": 1599,
+    "occasion": "Evening Wear",
+    "image": ["https://example.com/saree12.jpg"]
+  },
+  {
+    "brand": "Chiffon",
+    "model": "Light Chiffon Saree",
+    "category": "Saree",
+    "fabric": "Chiffon",
+    "price_usd": 1099,
+    "occasion": "Casual",
+    "image": ["https://example.com/saree13.jpg"]
+  },
+  {
+    "brand": "Kanjivaram",
+    "model": "Heritage Kanjivaram Saree",
+    "category": "Saree",
+    "fabric": "Kanjivaram Silk",
+    "price_usd": 2999,
+    "occasion": "Wedding",
+    "image": ["https://example.com/saree14.jpg"]
+  },
+  {
+    "brand": "Patola",
+    "model": "Traditional Patola Saree",
+    "category": "Saree",
+    "fabric": "Patola Silk",
+    "price_usd": 2499,
+    "occasion": "Festival",
+    "image": ["https://example.com/saree15.jpg"]
+  },
+  {
+    "brand": "Bhagalpuri",
+    "model": "Bhagalpuri Silk Saree",
+    "category": "Saree",
+    "fabric": "Bhagalpuri Silk",
+    "price_usd": 1799,
+    "occasion": "Casual",
+    "image": ["https://example.com/saree16.jpg"]
+  }
+
+]
