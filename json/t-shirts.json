@@ -1,37 +1,657 @@
 [
-  {"brand":"Beyoung","model":"Oversized Graphic Tee - Midnight Hustler","category":"Graphic","gender":"Unisex","fit":"Oversized","fabric":"100% Cotton","sizes":["S","M","L","XL","XXL"],"color":"Black","price_usd":11.99,"image_url":"https://images.beyoung.in/midnight-hustler-oversized-tee.jpg","short_description":"Bold street‑style oversized tee.","features":"Bio‑washed cotton, fade‑proof print."},
-  {"brand":"Beyoung","model":"Relaxed Quote Tee - Good Vibes","category":"Statement","gender":"Unisex","fit":"Relaxed","fabric":"Cotton Blend","sizes":["M","L","XL"],"color":"White","price_usd":10.99,"image_url":"https://images.beyoung.in/good-vibes-tee.jpg","short_description":"Positive quote tee in relaxed fit.","features":"Soft feel, durable hem."},
-  {"brand":"Beyoung","model":"Minimalist Slim Tee","category":"Essentials","gender":"Men","fit":"Slim","fabric":"Pima Cotton","sizes":["S","M","L","XL"],"color":"Grey","price_usd":12.99,"image_url":"https://images.beyoung.in/minimalist-slim-tee.jpg","short_description":"Simple slim‑fit tee for everyday wear.","features":"Reinforced neckline, pre‑shrunk."},
-  {"brand":"Beyoung","model":"Tropical Print Shirt Tee","category":"Graphic","gender":"Women","fit":"Relaxed","fabric":"100% Cotton","sizes":["S","M","L"],"color":"Green","price_usd":13.49,"image_url":"https://images.beyoung.in/tropical-graphic-tee.jpg","short_description":"Relaxed tee with tropical patterns.","features":"Breathable cotton, vivid print."},
-  {"brand":"Beyoung","model":"Sporty Tank Tee","category":"Activewear","gender":"Unisex","fit":"Athletic","fabric":"Cotton Blend","sizes":["S","M","L","XL"],"color":"Blue","price_usd":14.99,"image_url":"https://images.beyoung.in/sporty-tank.jpg","short_description":"Sleeveless athletic tee.","features":"Moisture‑wick fabric, stretchable."},
-
-  {"brand":"Bewakoof","model":"Half Sleeve Printed Tee","category":"Casual","gender":"Men","fit":"Regular","fabric":"Cotton Blend","sizes":["S","M","L","XL","XXL"],"color":"Olive Green","price_usd":9.49,"image_url":"https://images.bewakoof.com/olive-green-printed-tshirt.jpg","short_description":"Everyday printed tee.","features":"Soft, machine‑washable."},
-  {"brand":"Bewakoof","model":"Coffee First Boyfriend Fit Tee","category":"Statement","gender":"Women","fit":"Boyfriend","fabric":"100% Cotton","sizes":["S","M","L","XL"],"color":"Mustard Yellow","price_usd":11.99,"image_url":"https://images.bewakoof.com/coffee-first-tshirt.jpg","short_description":"Casual slogan tee.","features":"Loose fit, trendy graphic."},
-  {"brand":"Bewakoof","model":"Retro Surf Tee","category":"Graphic","gender":"Unisex","fit":"Regular","fabric":"Cotton Blend","sizes":["S","M","L","XL"],"color":"Sky Blue","price_usd":12.99,"image_url":"https://images.bewakoof.com/retro-surf-tee.jpg","short_description":"Vintage surf graphic tee.","features":"Color‑fast print, comfy fit."},
-  {"brand":"Bewakoof","model":"Abstract Art Oversized Tee","category":"Graphic","gender":"Men","fit":"Oversized","fabric":"100% Cotton","sizes":["M","L","XL","XXL"],"color":"Black/White","price_usd":13.99,"image_url":"https://images.bewakoof.com/abstract-oversized-tee.jpg","short_description":"Bold abstract design oversized tee.","features":"Heavy‑weight cotton."},
-  {"brand":"Bewakoof","model":"Minimal Black Regular Tee","category":"Essentials","gender":"Women","fit":"Regular","fabric":"Cotton Blend","sizes":["XS","S","M","L"],"color":"Black","price_usd":8.99,"image_url":"https://images.bewakoof.com/minimal-black-tee.jpg","short_description":"Basic black tee.","features":"Soft finish, relaxed fit."},
-
-  {"brand":"Snitch","model":"Relax Fit Solid Crew Neck Tee","category":"Solid","gender":"Men","fit":"Relaxed","fabric":"Organic Cotton","sizes":["M","L","XL"],"color":"Beige","price_usd":14.99,"image_url":"https://images.snitch.co.in/solid-crew-neck-beige.jpg","short_description":"Minimalist solid tee.","features":"Sustainable cotton."},
-  {"brand":"Snitch","model":"Urban Stripe Tee","category":"Casual","gender":"Unisex","fit":"Regular","fabric":"Organic Cotton","sizes":["S","M","L","XL"],"color":"White/Black","price_usd":15.99,"image_url":"https://images.snitch.co.in/urban-stripe-tee.jpg","short_description":"Classic stripe tee.","features":"Eco‑friendly cotton."},
-  {"brand":"Snitch","model":"Pocket Tee","category":"Essentials","gender":"Men","fit":"Slim","fabric":"Cotton Blend","sizes":["S","M","L","XL"],"color":"Navy","price_usd":13.49,"image_url":"https://images.snitch.co.in/pocket-navy-tee.jpg","short_description":"Slim fit pocket tee.","features":"Soft jersey fabric."},
-  {"brand":"Snitch","model":"Relaxed V‑Neck Tee","category":"Essentials","gender":"Women","fit":"Relaxed","fabric":"Organic Cotton","sizes":["S","M","L"],"color":"Maroon","price_usd":14.49,"image_url":"https://images.snitch.co.in/vneck-maroon-tee.jpg","short_description":"Cozy V‑neck tee.","features":"Breathable cotton."},
-  {"brand":"Snitch","model":"Athleisure Camouflage Tee","category":"Activewear","gender":"Men","fit":"Athletic","fabric":"Cotton Blend","sizes":["M","L","XL"],"color":"Camouflage","price_usd":16.99,"image_url":"https://images.snitch.co.in/camo-tee.jpg","short_description":"Sporty camo tee.","features":"Quick‑dry fabric."},
-
-  {"brand":"The Souled Store","model":"Marvel Official Logo T‑Shirt","category":"Pop Culture","gender":"Unisex","fit":"Regular","fabric":"100% Cotton","sizes":["XS","S","M","L","XL","XXL"],"color":"Red","price_usd":13.99,"image_url":"https://images.thesouledstore.com/marvel-red-logo-tshirt.jpg","short_description":"Official Marvel tee.","features":"Licensed print."},
-  {"brand":"The Souled Store","model":"Friends TV Show Oversized Tee","category":"TV Show","gender":"Unisex","fit":"Oversized","fabric":"Cotton Blend","sizes":["S","M","L","XL","XXL"],"color":"Charcoal Grey","price_usd":14.99,"image_url":"https://images.thesouledstore.com/friends-oversized-tshirt.jpg","short_description":"Official Friends tee.","features":"Heavy‑weight cotton."},
-  {"brand":"The Souled Store","model":"Star Wars Retro Tee","category":"Pop Culture","gender":"Men","fit":"Regular","fabric":"100% Cotton","sizes":["M","L","XL"],"color":"Black","price_usd":13.49,"image_url":"https://images.thesouledstore.com/starwars-retro-tee.jpg","short_description":"Vintage Star Wars logo tee.","features":"Double‑stitched."},
-  {"brand":"The Souled Store","model":"Batman Emblem Tee","category":"Superhero","gender":"Women","fit":"Regular","fabric":"Cotton Blend","sizes":["S","M","L","XL"],"color":"Grey/Yellow","price_usd":13.49,"image_url":"https://images.thesouledstore.com/batman-emblem-tee.jpg","short_description":"Classic Batman tee.","features":"Licensed design."},
-  {"brand":"The Souled Store","model":"Harry Potter Magical Tee","category":"Pop Culture","gender":"Unisex","fit":"Regular","fabric":"100% Cotton","sizes":["S","M","L","XL"],"color":"Navy","price_usd":14.49,"image_url":"https://images.thesouledstore.com/harrypotter-tee.jpg","short_description":"Wizarding world tee.","features":"Officially licensed."},
-
-  {"brand":"Zara","model":"Basic White Cotton T‑shirt","category":"Essentials","gender":"Men","fit":"Slim","fabric":"Pima Cotton","sizes":["S","M","L","XL"],"color":"White","price_usd":19.90,"image_url":"https://images.zara.net/white-basic-tee.jpg","short_description":"Slim‑fit white tee.","features":"Premium cotton."},
-  {"brand":"Zara","model":"Striped Oversized Tee","category":"Casual","gender":"Women","fit":"Oversized","fabric":"Cotton Blend","sizes":["XS","S","M","L"],"color":"Blue/White","price_usd":25.00,"image_url":"https://images.zara.net/striped-oversized-tee.jpg","short_description":"Boxy striped tee.","features":"Dropped shoulder."},
-  {"brand":"Zara","model":"Vented Cropped Tee","category":"Trendy","gender":"Women","fit":"Cropped","fabric":"Cotton Blend","sizes":["XS","S","M"],"color":"Black","price_usd":22.00,"image_url":"https://images.zara.net/vented-cropped-tee.jpg","short_description":"Cropped tee with side vents.","features":"Soft blend fabric."},
-  {"brand":"Zara","model":"Floral Print Tee","category":"Casual","gender":"Men","fit":"Regular","fabric":"Cotton Blend","sizes":["S","M","L","XL"],"color":"White/Floral","price_usd":27.00,"image_url":"https://images.zara.net/floral-print-tee.jpg","short_description":"Summer floral tee.","features":"Vibrant print."},
-  {"brand":"Zara","model":"Graphic Logo Tee","category":"Graphic","gender":"Unisex","fit":"Regular","fabric":"100% Cotton","sizes":["S","M","L","XL"],"color":"Grey","price_usd":21.00,"image_url":"https://images.zara.net/graphic-logo-tee.jpg","short_description":"Logo graphic tee.","features":"High‑quality print."},
-
-  {"brand":"Westside","model":"Nuon Abstract Print Tee","category":"Printed","gender":"Men","fit":"Regular","fabric":"Cotton Jersey","sizes":["M","L","XL","XXL"],"color":"Grey","price_usd":10.49,"image_url":"https://images.westside.com/nuon-abstract-grey.jpg","short_description":"Abstract design tee.","features":"Stretch fabric."},
-  {"brand":"Westside","model":"Pepper Solid V‑Neck","category":"Essentials","gender":"Unisex","fit":"Slim","fabric":"Cotton Blend","sizes":["S","M","L","XL"],"color":"Maroon","price_usd":12.99,"image_url":"https://images.westside.com/pepper-vneck.jpg","short_description":"Basic V‑neck tee.","features":"Soft cotton blend."},
-  {"brand":"Westside","model":"Pepper Oversized Stripe Tee","category":"Casual","gender":"Men","fit":"Oversized","fabric":"Cotton Jersey","sizes":["M","L","XL"],"color":"Blue/White Stripe","price_usd":13.99,"image_url":"https://images.westside.com/stripe-oversized.jpg","short_description":"Relaxed stripe tee.","features":"Lightweight jersey."},
-  {"brand":"Westside","model":"Mismatched Sleeve Graphic Tee","category":"Graphic","gender":"Women","fit":"Regular","fabric":"Cotton Blend","sizes":["S","M","L"],"color":"Black/White","price_usd":14.49,"image_url":"https://images.westside.com/mismatched-graphic.jpg","short_description":"Statement sleeve graphic tee.","features":"Unique design."},
-  {"brand":"Westside","model":"Nuon Tie‑Dye Tee","category":"Graphic","gender":"Unisex","fit":"Relaxed","fabric":"Cotton Blend","sizes":["S","M","L","XL"],"color":"Tie‑Dye Purple","price_usd":12.49,"image_url":"https://images.westside.com/nuon-tiedye.jpg","short_description":"Vibrant tie‑dye tee.","features":"Fade‑resistant dyes."}
+  {
+     "id": 1,
+    "brand": "Beyoung",
+    "model": "Oversized Graphic Tee - Midnight Hustler",
+    "category": "Graphic",
+    "gender": "Unisex",
+    "fit": "Oversized",
+    "fabric": "100% Cotton",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "color": "Black",
+    "price_usd": 11.99,
+    "images" : [
+      "https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/black_beyoung_puff_print_oversized_t-shirt_base_22_10_2024_700x933.jpg"
+    ],
+    "short_description": "Bold street‑style oversized tee.",
+    "features": "Bio‑washed cotton, fade‑proof print."
+  },
+  {
+     "id": 2,
+    "brand": "Beyoung",
+    "model": "Relaxed Quote Tee - Good Vibes",
+    "category": "Statement",
+    "gender": "Unisex",
+    "fit": "Relaxed",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "White",
+    "price_usd": 10.99,
+    "images" : [
+      "https://www.beyoung.in/api/cache/catalog/products/printed_t-shirts_for_men_15_8_2022/good_vibes_white_men_base_15_6_2023_700x933.jpg"
+    ],
+    "short_description": "Positive quote tee in relaxed fit.",
+    "features": "Soft feel, durable hem."
+  },
+  {
+     "id": 3,
+    "brand": "Beyoung",
+    "model": "Minimalist Slim Tee",
+    "category": "Essentials",
+    "gender": "Men",
+    "fit": "Slim",
+    "fabric": "Pima Cotton",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Grey",
+    "price_usd": 12.99,
+ "images" : [
+      "https://www.beyoung.in/api/cache/catalog/products/plain_new_update_images_2_5_2022/space_grey_plain_t-shirt_base_22_10_2024_400x533.jpg"
+    ],
+    "short_description": "Simple slim‑fit tee for everyday wear.",
+    "features": "Reinforced neckline, pre‑shrunk."
+  },
+  {
+     "id": 4,
+    "brand": "Beyoung",
+    "model": "Tropical Print Shirt Tee",
+    "category": "Graphic",
+    "gender": "Women",
+    "fit": "Relaxed",
+    "fabric": "100% Cotton",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "color": "Green",
+    "price_usd": 13.49,
+   "images" : [
+      "https://www.beyoung.in/api/cache/catalog/products/hawaiian_shirt/flower_hawaiian_shirt_base_09_09_2023_700x933.jpg"
+    ],
+    "short_description": "Relaxed tee with tropical patterns.",
+    "features": "Breathable cotton, vivid print."
+  },
+  {
+     "id": 5,
+    "brand": "Beyoung",
+    "model": "Sporty Tank Tee",
+    "category": "Activewear",
+    "gender": "Unisex",
+    "fit": "Athletic",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Blue",
+    "price_usd": 14.99,
+   "images" : [
+      "https://assets.ajio.com/medias/sys_master/root/20240527/V3KL/66545f5605ac7d77bb7e6d25/-473Wx593H-700016734-blue-MODEL.jpg"
+    ],
+    "short_description": "Sleeveless athletic tee.",
+    "features": "Moisture‑wick fabric, stretchable."
+  },
+  {
+    "brand": "Bewakoof",
+    "model": "Half Sleeve Printed Tee",
+    "category": "Casual",
+    "gender": "Men",
+    "fit": "Regular",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "color": "Olive Green",
+    "price_usd": 9.49,
+   "images" : [
+      "https://images.bewakoof.com/t540/seed-thi-half-sleeve-t-shirt-men-s-printed-t-shirts-1509002001.jpg"
+    ],
+    "short_description": "Everyday printed tee.",
+    "features": "Soft, machine‑washable."
+  },
+  {
+     "id": 6,
+    "brand": "Bewakoof",
+    "model": "Coffee First Boyfriend Fit Tee",
+    "category": "Statement",
+    "gender": "Women",
+    "fit": "Boyfriend",
+    "fabric": "100% Cotton",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Mustard Yellow",
+    "price_usd": 11.99,
+  "images" : [
+      "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/23905404/2023/7/6/326583ee-e21b-44ac-8709-7032452353dc1688648876858BewakoofPlusMenBlackPrintedAppliqueT-shirt1.jpg"
+    ],
+    "short_description": "Casual slogan tee.",
+    "features": "Loose fit, trendy graphic."
+  },
+  {
+     "id": 7,
+    "brand": "Bewakoof",
+    "model": "Retro Surf Tee",
+    "category": "Graphic",
+    "gender": "Unisex",
+    "fit": "Regular",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Sky Blue",
+    "price_usd": 12.99,
+    "images" : [
+      "https://img.tatacliq.com/images/i21//437Wx649H/MP000000024355736_437Wx649H_202411120233401.jpeg"
+    ],
+    "short_description": "Vintage surf graphic tee.",
+    "features": "Color‑fast print, comfy fit."
+  },
+  {
+     "id": 8,
+    "brand": "Bewakoof",
+    "model": "Abstract Art Oversized Tee",
+    "category": "Graphic",
+    "gender": "Men",
+    "fit": "Oversized",
+    "fabric": "100% Cotton",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "color": "Black/White",
+    "price_usd": 13.99,
+   "images" : [
+      "https://www.altart.in/cdn/shop/files/Model_0b11fe15-417d-46af-87e2-6bd12ef35c34.png?v=1746432630"
+    ],
+    "short_description": "Bold abstract design oversized tee.",
+    "features": "Heavy‑weight cotton."
+  },
+  {
+     "id": 9,
+    "brand": "Bewakoof",
+    "model": "Minimal Black Regular Tee",
+    "category": "Essentials",
+    "gender": "Women",
+    "fit": "Regular",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "color": "Black",
+    "price_usd": 8.99,
+   "images" : [
+      "https://knowledgecottonapparel.com/cdn/shop/products/Regular_fit_Basic_tee-T-shirts-1010113-1300_Black_Jet_1600x.jpg?v=1676455882"
+    ],
+    "short_description": "Basic black tee.",
+    "features": "Soft finish, relaxed fit."
+  },
+  {
+     "id": 10,
+    "brand": "Snitch",
+    "model": "Relax Fit Solid Crew Neck Tee",
+    "category": "Solid",
+    "gender": "Men",
+    "fit": "Relaxed",
+    "fabric": "Organic Cotton",
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Beige",
+    "price_usd": 14.99,
+   "images" : [
+      "https://assets.ajio.com/medias/sys_master/root/20250520/4NnU/682c81857a6cd4182f4057f1/-473Wx593H-467145242-beige-MODEL.jpg"
+    ],
+    "short_description": "Minimalist solid tee.",
+    "features": "Sustainable cotton."
+  },
+  {
+     "id": 11,
+    "brand": "Snitch",
+    "model": "Urban Stripe Tee",
+    "category": "Casual",
+    "gender": "Unisex",
+    "fit": "Regular",
+    "fabric": "Organic Cotton",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "White/Black",
+    "price_usd": 15.99,
+   "images" : [
+      "https://m.media-amazon.com/images/I/81xbKDmYwhL._UY1100_.jpg"
+    ],
+    "short_description": "Classic stripe tee.",
+    "features": "Eco‑friendly cotton."
+  },
+  {
+     "id": 12,
+    "brand": "Snitch",
+    "model": "Pocket Tee",
+    "category": "Essentials",
+    "gender": "Men",
+    "fit": "Slim",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Navy",
+    "price_usd": 13.49,
+   "images" : [
+      "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/25131836/2023/10/4/183bc77a-fb1a-40e8-bba0-3037ce9aa3531696423429143SnitchMenBlackColourblockedT-shirt1.jpg"
+    ],
+    "short_description": "Slim fit pocket tee.",
+    "features": "Soft jersey fabric."
+  },
+  {
+     "id": 13,
+    "brand": "Snitch",
+    "model": "Relaxed V‑Neck Tee",
+    "category": "Essentials",
+    "gender": "Women",
+    "fit": "Relaxed",
+    "fabric": "Organic Cotton",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "color": "Maroon",
+    "price_usd": 14.49,
+  "images" : [
+      "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/27135144/2024/1/24/7520b942-99a9-42fe-9ac9-f6cba5cea9e21706094004862SnitchMenV-NeckRawEdgeSlimFitT-shirt1.jpg"
+    ],
+    "short_description": "Cozy V‑neck tee.",
+    "features": "Breathable cotton."
+  },
+  {
+     "id": 14,
+    "brand": "Snitch",
+    "model": "Athleisure Camouflage Tee",
+    "category": "Activewear",
+    "gender": "Men",
+    "fit": "Athletic",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Camouflage",
+    "price_usd": 16.99,
+   "images" : [
+      "https://m.media-amazon.com/images/I/71NXJ2MiyXL._AC_UY1100_.jpg"
+    ],
+    "short_description": "Sporty camo tee.",
+    "features": "Quick‑dry fabric."
+  },
+  {
+     "id": 15,
+    "brand": "The Souled Store",
+    "model": "Marvel Official Logo T‑Shirt",
+    "category": "Pop Culture",
+    "gender": "Unisex",
+    "fit": "Regular",
+    "fabric": "100% Cotton",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "color": "Red",
+    "price_usd": 13.99,
+   "images" : [
+      "https://images-static.nykaa.com/media/catalog/product/7/9/7909523STHECB00007115_3.jpg?tr=w-500"
+    ],
+    "short_description": "Official Marvel tee.",
+    "features": "Licensed print."
+  },
+  {
+     "id": 16,
+    "brand": "The Souled Store",
+    "model": "Friends TV Show Oversized Tee",
+    "category": "TV Show",
+    "gender": "Unisex",
+    "fit": "Oversized",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "color": "Charcoal Grey",
+    "price_usd": 14.99,
+    "images" : [
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1711000845_6459239.jpg?v=2"
+    ],
+    "short_description": "Official Friends tee.",
+    "features": "Heavy‑weight cotton."
+  },
+  {
+     "id": 17,
+    "brand": "The Souled Store",
+    "model": "Star Wars Retro Tee",
+    "category": "Pop Culture",
+    "gender": "Men",
+    "fit": "Regular",
+    "fabric": "100% Cotton",
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Black",
+    "price_usd": 13.49,
+   "images" : [
+      "https://heavyweightlegends.com/cdn/shop/files/b_3fc5b6f0-3e82-4548-884d-e61f73795663.png?v=1724733965"
+    ],
+    "short_description": "Vintage Star Wars logo tee.",
+    "features": "Double‑stitched."
+  },
+  {
+     "id": 18,
+    "brand": "The Souled Store",
+    "model": "Batman Emblem Tee",
+    "category": "Superhero",
+    "gender": "Women",
+    "fit": "Regular",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Grey/Yellow",
+    "price_usd": 13.49,
+   "images" : [
+      "https://m.media-amazon.com/images/I/91X-PtMclCL._UY1100_.jpg"
+    ],
+    "short_description": "Classic Batman tee.",
+    "features": "Licensed design."
+  },
+  {
+     "id": 19,
+    "brand": "The Souled Store",
+    "model": "Harry Potter Magical Tee",
+    "category": "Pop Culture",
+    "gender": "Unisex",
+    "fit": "Regular",
+    "fabric": "100% Cotton",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Navy",
+    "price_usd": 14.49,
+    "images" : [
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1731760945_7314706.jpg?v=2"
+    ],
+    "short_description": "Wizarding world tee.",
+    "features": "Officially licensed."
+  },
+  {
+     "id": 20,
+    "brand": "Zara",
+    "model": "Basic White Cotton T‑shirt",
+    "category": "Essentials",
+    "gender": "Men",
+    "fit": "Slim",
+    "fabric": "Pima Cotton",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "White",
+    "price_usd": 19.90,
+   "images" : [
+      "https://static.zara.net/assets/public/2884/d8f4/0cc648e9b8c8/b64aed009b66/00722537250-e2/00722537250-e2.jpg?ts=1727694168710"
+    ],
+    "short_description": "Slim‑fit white tee.",
+    "features": "Premium cotton."
+  },
+  {
+     "id": 21,
+    "brand": "Zara",
+    "model": "Striped Oversized Tee",
+    "category": "Casual",
+    "gender": "Women",
+    "fit": "Oversized",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "color": "Blue/White",
+    "price_usd": 25.00,
+    "images" : [
+      "https://static.zara.net/assets/public/05b5/bed2/c80646259c06/86ddab2af850/05644362104-p/05644362104-p.jpg?ts=1738933299036&w=744&f=auto"
+    ],
+    "short_description": "Boxy striped tee.",
+    "features": "Dropped shoulder."
+  },
+  {
+     "id": 22,
+    "brand": "Zara",
+    "model": "Vented Cropped Tee",
+    "category": "Trendy",
+    "gender": "Women",
+    "fit": "Cropped",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "color": "Black",
+    "price_usd": 22.00,
+    "images" : [
+      "https://static.zara.net/assets/public/2383/6ed5/2ecc42c5ad2f/05265b34840c/08062470800-a1/08062470800-a1.jpg?ts=1739365325818"
+    ],
+    "short_description": "Cropped tee with side vents.",
+    "features": "Soft blend fabric."
+  },
+  {
+     "id": 23,
+    "brand": "Zara",
+    "model": "Floral Print Tee",
+    "category": "Casual",
+    "gender": "Men",
+    "fit": "Regular",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "White/Floral",
+    "price_usd": 27.00,
+    "images" : [
+      "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/5453f958624843.5a032e78e34ce.jpg"
+    ],
+    "short_description": "Summer floral tee.",
+    "features": "Vibrant print."
+  },
+  {
+     "id": 24,
+    "brand": "Zara",
+    "model": "Graphic Logo Tee",
+    "category": "Graphic",
+    "gender": "Unisex",
+    "fit": "Regular",
+    "fabric": "100% Cotton",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Grey",
+    "price_usd": 21.00,
+   "images" : [
+      "https://static.zara.net/assets/public/fe02/9427/14b844bb9ad4/b12a8decba97/05643753800-e1/05643753800-e1.jpg?ts=1746714388988&w=744&f=auto"
+    ],
+    "short_description": "Logo graphic tee.",
+    "features": "High‑quality print."
+  },
+  {
+     "id": 25,
+    "brand": "Westside",
+    "model": "Nuon Abstract Print Tee",
+    "category": "Printed",
+    "gender": "Men",
+    "fit": "Regular",
+    "fabric": "Cotton Jersey",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "color": "Grey",
+    "price_usd": 10.49,
+    "images" : [
+      "https://www.westside.com/cdn/shop/files/301004951GREY_1.jpg?v=1736399077"
+    ],
+    "short_description": "Abstract design tee.",
+    "features": "Stretch fabric."
+  },
+  {
+     "id": 26,
+    "brand": "Westside",
+    "model": "Pepper Solid V‑Neck",
+    "category": "Essentials",
+    "gender": "Unisex",
+    "fit": "Slim",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Maroon",
+    "price_usd": 12.99,
+   "images" : [
+      "https://img.tatacliq.com/images/i17//437Wx649H/MP000000022315002_437Wx649H_202405181620121.jpeg"
+    ],
+    "short_description": "Basic V‑neck tee.",
+    "features": "Soft cotton blend."
+  },
+  {
+     "id": 27,
+    "brand": "Westside",
+    "model": "Pepper Oversized Stripe Tee",
+    "category": "Casual",
+    "gender": "Men",
+    "fit": "Oversized",
+    "fabric": "Cotton Jersey",
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Blue/White Stripe",
+    "price_usd": 13.99,
+  "images" : [
+      "https://shop.westside.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0266%2F6276%2F4597%2Ffiles%2F301005119NAVY_1.jpg%3Fv%3D1736226972&w=2048&q=75"
+    ],
+    "short_description": "Relaxed stripe tee.",
+    "features": "Lightweight jersey."
+  },
+  {
+     "id": 28,
+    "brand": "Westside",
+    "model": "Mismatched Sleeve Graphic Tee",
+    "category": "Graphic",
+    "gender": "Women",
+    "fit": "Regular",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "color": "Black/White",
+    "price_usd": 14.49,
+  "images" : [
+      "https://img.tatacliq.com/images/i12/437Wx649H/MP000000018306304_437Wx649H_202307130113451.jpeg"
+    ],
+    "short_description": "Statement sleeve graphic tee.",
+    "features": "Unique design."
+  },
+  {
+     "id": 29,
+    "brand": "Westside",
+    "model": "Nuon Tie‑Dye Tee",
+    "category": "Graphic",
+    "gender": "Unisex",
+    "fit": "Relaxed",
+    "fabric": "Cotton Blend",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "Tie‑Dye Purple",
+    "price_usd": 12.49,
+   "images" : [
+      "https://www.westside.com/cdn/shop/files/301012308GREEN_1.jpg?v=1743657261"
+    ],
+    "short_description": "Vibrant tie‑dye tee.",
+    "features": "Fade‑resistant dyes."
+  }
 ]

@@ -1,0 +1,162 @@
+[
+  { "id": 1,
+    "brand": "Kanchipuram",
+    "model": "Silk Designer shoes",
+    "category": "shoes",
+    "fabric": "Silk Blend",
+    "price_usd": 2499,
+    "occasion": "Wedding",
+    "image": ["https://assets.ajio.com/medias/sys_master/root/20240307/pxRr/65e9b09616fd2c6e6a429997/-473Wx593H-467065508-black-MODEL.jpg"]
+  },
+  {
+    "id": 2,
+    "brand": "Banarasi",
+    "model": "Traditional Wear",
+    "category": "shoes",
+    "fabric": "Cotton Silk",
+    "price_usd": 1799,
+    "occasion": "Festival",
+    "image": ["https://craftandglory.in/cdn/shop/files/DSC05931.jpg?v=1704965597&width=1946"]
+  },
+  
+  {
+    "id": 3,
+    "brand": "Kota Doria",
+    "model": "Lightweight shoes",
+    "category": "shoes",
+    "fabric": "Cotton",
+    "price_usd": 899,
+    "occasion": "Casual",
+    "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFzK4WI8llpVF4yVJBECzUH5mdKDucAFLoVQ&s"]
+  },
+  {
+    "id": 4,
+    "brand": "Chanderi",
+    "model": "Embroidered shoes",
+    "category": "shoes",
+    "fabric": "Chanderi Silk",
+    "price_usd": 1599,
+    "occasion": "Party",
+    "image": ["https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/107723/02/sv01/fnd/IND/fmt/png/FUTURE-7-PLAY-FG/AG-Men's-Football-Boots"]
+  },
+  {
+    "id": 5,
+    "brand": "Linen",
+    "model": "Summer Collection",
+    "category": "shoes",
+    "fabric": "Linen Blend",
+    "price_usd": 1299,
+    "occasion": "Office Wear",
+    "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2rmD23wt373MeJykYU0B_8eZe3W3QbvxXyg&s"]
+  },
+  {
+    "id": 6,
+    "brand": "Georgette",
+    "model": "Floral Print shoes",
+    "category": "shoes",
+    "fabric": "Georgette",
+    "price_usd": 999,
+    "occasion": "Casual",
+    "image": ["https://calcetto.in/cdn/shop/files/PIX_5299copy.jpg?v=1744199891&width=1500"]
+  },
+  {
+    "id": 7,
+    "brand": "Net",
+    "model": "Designer Net shoes",
+    "category": "shoes",
+    "fabric": "Net Fabric",
+    "price_usd": 1999,
+    "occasion": "Party",
+    "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm6cTaefNJV1AsYLYXvkdYHkIWyJP8engwvA&s"]
+  },
+  {
+    "id": 8,
+    "brand": "Cotton",
+    "model": "Everyday Wear shoes",
+    "category": "shoes",
+    "fabric": "Pure Cotton",
+    "price_usd": 699,
+    "occasion": "Daily Wear",
+    "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3zNmNSpi0p8B8afXLc3hZ-DCe_STgV817_A&s"]
+  },
+  {
+    "brand": "Art Silk",
+    "model": "Designer Art Silk shoes",
+    "category": "shoes",
+    "fabric": "Art Silk",
+    "price_usd": 1399,
+    "occasion": "Festive",
+    "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszHPDzKaUoonWJBpsMPOrSzkxC1HOnNZNHA&s"]
+  },
+  {
+    "id": 9,
+    "brand": "Brocade",
+    "model": "Luxury Brocade shoes",
+    "category": "shoes",
+    "fabric": "Brocade Silk",
+    "price_usd": 2199,
+    "occasion": "Wedding",
+    "image": ["https://hips.hearstapps.com/hmg-prod/images/mh-4-15-nikes-661d7e1ad48c3.jpg?crop=0.502xw:1.00xh;0,0&resize=640:*"]
+  },
+  {
+    "id": 10,
+    "brand": "Tussar",
+    "model": "Handwoven Tussar shoes",
+    "category": "shoes",
+    "fabric": "Tussar Silk",
+    "price_usd": 1899,
+    "occasion": "Traditional",
+    "image": ["https://sothebys-com.brightspotcdn.com/dims4/default/07f69eb/2147483647/strip/true/crop/658x358+0+0/resize/684x372!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fdotcom%2F00%2F76%2F0703bab14d9db8e90b9594ffa9dc%2Fsothebys-md.brightspotcdn.jpg"]
+  },
+  {
+    "id": 11,
+    "brand": "Satin",
+    "model": "Elegant Satin shoes",
+    "category": "shoes",
+    "fabric": "Satin Blend",
+    "price_usd": 1599,
+    "occasion": "Evening Wear",
+    "image": ["https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23086144/a16z_rtfkt_sneakers.jpg?quality=90&strip=all&crop=5.15,0,89.7,100"]
+  },
+  {
+    "id": 12,
+    "brand": "Chiffon",
+    "model": "Light Chiffon shoes",
+    "category": "shoes",
+    "fabric": "Chiffon",
+    "price_usd": 1099,
+    "occasion": "Casual",
+    "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwEycW2MIyVfwIlimhYuiyr_nuLWZLaQwVAw&s"]
+  },
+  {
+    "id": 13,
+    "brand": "Kanjivaram",
+    "model": "Heritage Kanjivaram shoes",
+    "category": "shoes",
+    "fabric": "Kanjivaram Silk",
+    "price_usd": 2999,
+    "occasion": "Wedding",
+    "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQatLNFup4a416xGxB34ZLkhRGXLzKm7EUR0Q&s"]
+  },
+  {
+    "id": 14,
+    "brand": "Patola",
+    "model": "Traditional Patola shoes",
+    "category": "shoes",
+    "fabric": "Patola Silk",
+    "price_usd": 2499,
+    "occasion": "Festival",
+    "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSew8tBbCS08IhROI8h1y_es0gWe4_ad1Jhyg&s"]
+  },
+  {
+    "id": 15,
+    "brand": "Bhagalpuri",
+    "model": "Bhagalpuri Silk shoes",
+    "category": "shoes",
+    "fabric": "Bhagalpuri Silk",
+    "price_usd": 1799,
+    "occasion": "Casual",
+    "image": ["https://media.cnn.com/api/v1/images/stellar/prod/220210051008-04-lv-virgil-abloh.jpg?q=w_2000,c_fill"]
+  }
+
+]

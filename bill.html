@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation - Flipkart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- html2pdf.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'flipkart-blue': '#2874f0',
+                        'flipkart-orange': '#ff9f00',
+                        'flipkart-bg': '#f1f3f6'
+                    },
+                    screens: {
+                        'xs': '475px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes slideInUp {
+            from {opacity: 0;transform: translateY(30px);}
+            to {opacity: 1;transform: translateY(0);}
+        }
+        @keyframes checkmark {
+            0% {transform: scale(0) rotate(0deg);opacity: 0;}
+            50% {transform: scale(1.2) rotate(180deg);opacity: 1;}
+            100% {transform: scale(1) rotate(360deg);opacity: 1;}
+        }
+        @keyframes pulse {
+            0%, 100% {transform: scale(1);}
+            50% {transform: scale(1.05);}
+        }
+        .slide-in-up {animation: slideInUp 0.6s ease-out;}
+        .checkmark-animation {animation: checkmark 1s ease-out;}
+        .pulse-animation {animation: pulse 2s infinite;}
+        @media print {
+            .no-print {display: none !important;}
+            body {background: white !important;}
+            .shadow-lg, .shadow-md, .shadow-sm {box-shadow: none !important;}
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {width: 6px;}
+        ::-webkit-scrollbar-track {background: #f1f1f1;}
+        ::-webkit-scrollbar-thumb {background: #2874f0;border-radius: 3px;}
+        /* Responsive text sizing */
+        @media (max-width: 640px) {
+            .responsive-text-xl {font-size: 1.125rem;}
+            .responsive-text-2xl {font-size: 1.5rem;}
+            .responsive-text-3xl {font-size: 1.875rem;}
+        }
+        /* Loading Animation for buttons */
+        .loading-spinner {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top: 2px solid #fff;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @media print{
+          .no-print{
+            display: none !important;
+          }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-flipkart-blue text-white shadow-lg sticky top-0 z-50 no-print">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14 sm:h-16">
+                <div class="flex items-center space-x-2 sm:space-x-4">
+                    <a href="index.html" class="text-lg sm:text-xl font-bold hover:text-yellow-300 transition-colors">
+                        <i class="fas fa-arrow-left mr-2"></i>Flipkart
+                    </a>
+                    <span class="text-xs sm:text-sm opacity-75 hidden xs:block">Order Confirmation</span>
+                </div>
+                <div class="flex items-center space-x-2 sm:space-x-4">
+                    <button onclick="printBill()" class="bg-white text-flipkart-blue px-2 sm:px-4 py-1 sm:py-2 rounded text-xs sm:text-sm font-medium hover:bg-gray-100 transition-colors">
+                        <i class="ri-printer-line mr-1"></i><span class="hidden xs:inline">Print</span>
+                    </button>
+                    <a href="index.html" class="bg-flipkart-orange px-2 sm:px-4 py-1 sm:py-2 rounded text-xs sm:text-sm font-medium hover:bg-orange-600 transition-colors">
+                        <i class="ri-home-line mr-1"></i><span class="hidden xs:inline">Home</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6">
+        <!-- Order Success Message -->
+        <div class="no-print bg-white rounded-lg sm:rounded-xl shadow-md border border-gray-200 p-4 sm:p-6 mb-4 sm:mb-6 slide-in-up ">
+            <div class="text-center">
+                <div class="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 checkmark-animation ">
+                    <i class="ri-check-line text-2xl sm:text-3xl text-green-600"></i>
+                </div>
+                <h1 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-2 responsive-text-2xl">Order Placed Successfully!</h1>
+                <p class="text-sm sm:text-base text-gray-600 mb-4">Thank you for shopping with Flipkart</p>
+                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4 inline-block w-full sm:w-auto">
+                    <p class="text-green-800 font-medium text-sm sm:text-base">
+                        Order ID: <span id="orderId" class="font-bold">#FK-2024-001234</span>
+                    </p>
+                    <p class="text-green-700 text-xs sm:text-sm mt-1">
+                        Expected delivery: <span id="deliveryDate"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bill Details -->
+        <div class="bg-white rounded-lg sm:rounded-xl shadow-md border border-gray-200 slide-in-up" id="invoice-content">
+            <!-- Bill Header -->
+            <div class="border-b border-gray-200 p-4 sm:p-6">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start space-y-4 sm:space-y-0">
+                    <div class="flex-1">
+                        <h2 class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-2 responsive-text-xl">Invoice</h2>
+                        <div class="text-xs sm:text-sm text-gray-600 space-y-1">
+                            <p>Order Date: <span id="orderDate" class="font-medium"></span></p>
+                            <p>Payment Method: <span id="paymentMethod" class="font-medium">Cash on Delivery</span></p>
+                        </div>
+                    </div>
+                    <div class="text-left sm:text-right">
+                        <div class="text-xl sm:text-2xl font-bold text-flipkart-blue mb-1">Flipkart</div>
+                        <div class="text-xs text-gray-500 max-w-xs">
+                            <p>Flipkart Internet Private Limited</p>
+                            <p>Buildings Alyssa, Begonia & Clove</p>
+                            <p>Embassy Tech Village, Outer Ring Road</p>
+                            <p>Bengaluru, 560103, Karnataka, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delivery Address -->
+            <div class="border-b border-gray-200 p-4 sm:p-6">
+                <h3 class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">Delivery Address</h3>
+                <div class="bg-gray-50 rounded-lg p-3 sm:p-4">
+                    <p class="font-medium text-gray-900 text-sm sm:text-base">John Doe</p>
+                    <p class="text-gray-700 text-xs sm:text-sm mt-1 leading-relaxed">
+                        123, Sample Street, Near City Mall<br>
+                        Rajkot, Gujarat - 360002<br>
+                        Phone: +91 98765 43210
+                    </p>
+                </div>
+            </div>
+
+            <!-- Order Items -->
+            <div class="border-b border-gray-200 p-4 sm:p-6">
+                <h3 class="font-semibold text-gray-900 mb-4 text-sm sm:text-base">Order Items</h3>
+                <div id="billItems" class="space-y-3 sm:space-y-4">
+                    <!-- Items will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Price Breakdown -->
+            <div class="p-4 sm:p-6">
+                <h3 class="font-semibold text-gray-900 mb-4 text-sm sm:text-base">Price Details</h3>
+                <div class="space-y-2 sm:space-y-3 text-xs sm:text-sm">
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700">Price (<span id="bill-items-count">0</span> items)</span>
+                        <span id="bill-items-price" class="font-medium">₹0</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700">Discount</span>
+                        <span id="bill-items-discount" class="text-green-600 font-medium">−₹0</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700">Coupons Applied</span>
+                        <span id="bill-items-coupon" class="text-green-600 font-medium">−₹0</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700">Platform Fee</span>
+                        <span id="bill-items-platform" class="font-medium">₹0</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700">Delivery Charges</span>
+                        <span class="text-green-600 font-medium">FREE</span>
+                    </div>
+                    <!-- Removed GST line -->
+                    <hr class="border-gray-300 my-2 sm:my-3">
+                    <div class="flex justify-between items-center text-base sm:text-lg font-bold text-gray-900">
+                        <span>Total Amount</span>
+                        <span id="bill-total">₹0</span>
+                    </div>
+                    <div class="bg-green-50 p-3 rounded-lg mt-3 sm:mt-4">
+                        <p id="bill-saving-text" class="text-green-700 font-medium text-center text-xs sm:text-sm">
+                            You saved ₹0 on this order
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="bg-gray-50 p-4 sm:p-6 rounded-b-lg sm:rounded-b-xl">
+                <div class="text-center text-xs sm:text-sm text-gray-600">
+                    <p class="mb-2">Thank you for shopping with Flipkart!</p>
+                    <p>For any queries, contact us at <a href="mailto:support@flipkart.com" class="text-flipkart-blue hover:underline">support@flipkart.com</a> or call 1800-208-9898</p>
+                    <div class="mt-3 pt-3 border-t border-gray-200 text-xs text-gray-500">
+                        <p>This is a computer generated invoice and does not require signature.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mt-4 sm:mt-6 no-print">
+            <button onclick="printBill()" class="bg-flipkart-blue text-white py-3 px-4 sm:px-6 rounded-lg font-medium hover:bg-blue-600 transition-colors text-sm sm:text-base" id="printButton">
+                <i class="ri-printer-line mr-2"></i>Print Bill
+            </button>
+            <button onclick="downloadPDF()" class="bg-flipkart-orange text-white py-3 px-4 sm:px-6 rounded-lg font-medium hover:bg-orange-600 transition-colors text-sm sm:text-base pulse-animation" id="downloadPdfButton">
+                <i class="ri-file-download-line mr-2"></i>Download PDF
+            </button>
+            <a href="index.html" class="bg-gray-600 text-white py-3 px-4 sm:px-6 rounded-lg font-medium hover:bg-gray-700 transition-colors text-center text-sm sm:text-base">
+                <i class="ri-home-line mr-2"></i>Continue Shopping
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Function to temporarily disable animations and transitions for PDF rendering
+        function prepareForPDF() {
+            document.querySelectorAll("*").forEach((el) => {
+                el.style.animation = "none";
+                el.style.transition = "none";
+            });
+        }
+
+        // Function to pre-load images
+        async function preloadImages(element) {
+            const images = element.querySelectorAll('img');
+            const promises = [];
+            images.forEach(img => {
+                if (img.complete) return; // Image already loaded
+                promises.push(new Promise((resolve, reject) => {
+                    img.onload = resolve;
+                    img.onerror = reject;
+                }));
+            });
+            return Promise.all(promises);
+        }
+
+        // Generate order details
+        function generateOrderDetails() {
+            const now = new Date();
+            const orderId = '#FK-' + now.getFullYear() + '-' + Math.floor(Math.random() * 900000 + 100000);
+            const deliveryDate = new Date(now.getTime() + (7 * 24 * 60 * 60 * 1000));
+            
+            document.getElementById('orderId').textContent = orderId;
+            document.getElementById('orderDate').textContent = now.toLocaleDateString('en-IN', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            document.getElementById('deliveryDate').textContent = deliveryDate.toLocaleDateString('en-IN', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+
+        // Load order items (from cart or direct buy)
+        function loadOrderItems() {
+            const billItemsContainer = document.getElementById("billItems");
+            let items = [];
+            
+            const directBuyData = localStorage.getItem("directBuy");
+            
+            if (directBuyData) {
+                const product = JSON.parse(directBuyData);
+                items = [product];
+                localStorage.removeItem("directBuy"); // Clear after use
+            } else {
+                items = JSON.parse(localStorage.getItem("cart")) || [];
+            }
+            
+            if (items.length === 0) {
+                billItemsContainer.innerHTML = `
+                    <div class="text-center py-8">
+                        <i class="ri-shopping-cart-line text-4xl text-gray-400 mb-2"></i>
+                        <p class="text-gray-500">No items found</p>
+                        <a href="index.html" class="text-flipkart-blue hover:underline text-sm mt-2 inline-block">Continue Shopping</a>
+                    </div>
+                `;
+                return;
+            }
+
+            billItemsContainer.innerHTML = '';
+            
+            items.forEach((item, index) => {
+                const discountAmount = Math.round((item.price * (item.discountPercentage || 10)) / 100);
+                const originalPrice = item.price + discountAmount;
+                const qty = item.qty || 1;
+                
+                billItemsContainer.innerHTML += `
+                    <div class="flex flex-col xs:flex-row items-start xs:items-center space-y-3 xs:space-y-0 xs:space-x-4 p-3 sm:p-4 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-sm transition-shadow">
+                        <div class="w-full xs:w-16 xs:h-16 sm:w-20 sm:h-20 bg-white rounded-lg overflow-hidden flex-shrink-0 flex items-center justify-center p-2 mx-auto xs:mx-0">
+                            <img src="${item.images ? item.images[0] : item.image || '/placeholder.svg'}" 
+                                 class="w-full h-full object-contain" 
+                                 alt="${item.title}" 
+                                 onerror="this.src='/placeholder.svg'" />
+                        </div>
+                        <div class="flex-1 w-full xs:w-auto text-center xs:text-left min-w-0">
+                            <h4 class="font-medium text-gray-900 text-sm sm:text-base mb-1 line-clamp-2">${item.title}</h4>
+                            <p class="text-xs sm:text-sm text-gray-500 mb-2">
+                                Qty: ${qty} | Category: ${item.category || 'Electronics'}
+                            </p>
+                            <div class="flex flex-col xs:flex-row xs:items-center xs:space-x-2 space-y-1 xs:space-y-0">
+                                <span class="font-bold text-gray-900 text-sm sm:text-base">₹${(item.price * qty).toLocaleString()}</span>
+                                <span class="text-gray-500 line-through text-xs sm:text-sm">₹${(originalPrice * qty).toLocaleString()}</span>
+                                <span class="text-green-600 text-xs sm:text-sm font-medium">${item.discountPercentage || 10}% off</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        // Calculate bill summary (without GST)
+        function calculateBillSummary() {
+            let items = [];
+            const directBuyData = localStorage.getItem("directBuy");
+            if (directBuyData) {
+                const product = JSON.parse(directBuyData);
+                items = [product];
+            } else {
+                items = JSON.parse(localStorage.getItem("cart")) || [];
+            }
+            
+            let totalItems = 0;
+            let totalPrice = 0;
+            let totalDiscount = 0;
+
+            items.forEach((item) => {
+                const qty = item.qty || 1;
+                totalItems += qty;
+                totalPrice += item.price * qty;
+                totalDiscount += Math.round(((item.price * (item.discountPercentage || 10)) / 100) * qty);
+            });
+
+            const couponDiscount = items.length > 0 ? 45 : 0;
+            const platformFee = items.length > 0 ? 4 : 0;
+            
+            // Calculate final amount without GST
+            const finalAmount = totalPrice - totalDiscount - couponDiscount + platformFee;
+            const totalSaving = totalDiscount + couponDiscount;
+
+            // Update DOM elements
+            document.getElementById("bill-items-count").textContent = totalItems;
+            document.getElementById("bill-items-price").textContent = `₹${totalPrice.toLocaleString()}`;
+            document.getElementById("bill-items-discount").textContent = `−₹${totalDiscount.toLocaleString()}`;
+            document.getElementById("bill-items-coupon").textContent = `−₹${couponDiscount}`;
+            document.getElementById("bill-items-platform").textContent = `₹${platformFee}`;
+            // document.getElementById("bill-gst").textContent = `₹${gst.toLocaleString()}`; // Removed GST
+            document.getElementById("bill-total").textContent = `₹${finalAmount.toLocaleString()}`;
+            document.getElementById("bill-saving-text").textContent = `You saved ₹${totalSaving.toLocaleString()} on this order`;
+        }
+
+        // Print Bill function
+        function printBill() {
+            const printBtn = document.getElementById('printButton');
+            const originalHtml = printBtn.innerHTML;
+            printBtn.innerHTML = '<span class="loading-spinner"></span> Printing...';
+            printBtn.disabled = true;
+
+            setTimeout(() => {
+                window.print();
+                printBtn.innerHTML = originalHtml;
+                printBtn.disabled = false;
+            }, 1000); // Give a small delay for UI update
+        }
+
+        // Download PDF function using html2pdf.js
+        async function downloadPDF() {
+            const downloadBtn = document.getElementById('downloadPdfButton');
+            const originalHtml = downloadBtn.innerHTML;
+            downloadBtn.innerHTML = '<span class="loading-spinner"></span> Generating...';
+            downloadBtn.disabled = true;
+
+            // Scroll to the top to ensure all content is in view for html2canvas
+            window.scrollTo(0, 0);
+
+            // Temporarily disable animations and transitions for accurate rendering
+            prepareForPDF();
+
+            const element = document.getElementById('invoice-content'); // Target the invoice content
+
+            // Pre-load all images within the invoice content
+            try {
+                await preloadImages(element);
+            } catch (error) {
+                console.warn("Some images failed to load for PDF generation:", error);
+                // Continue with PDF generation even if some images fail
+            }
+
+            // Give the browser a moment to apply the style changes and scroll
+            await new Promise(resolve => setTimeout(resolve, 100)); 
+
+            const options = {
+                margin: [10, 10, 10, 10], // top, left, bottom, right in mm
+                filename: 'Flipkart_Order_Invoice.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: {
+                    scale: 4, // Increased scale for better resolution
+                    logging: true,
+                    dpi: 192, // Standard DPI for print
+                    letterRendering: true,
+                    useCORS: true, // Important for images from external sources
+                    backgroundColor: "#ffffff", // Ensure a solid background to prevent transparency issues
+                    width: element.offsetWidth, // Explicitly set width to match current element width
+                },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            try {
+                await html2pdf().set(options).from(element).save();
+            } catch (error) {
+                console.error("Error generating PDF:", error);
+                alert("Failed to generate PDF. Please try again.");
+            } finally {
+                // Restore button state
+                downloadBtn.innerHTML = originalHtml;
+                downloadBtn.disabled = false;
+                // Note: Animations/transitions are not re-enabled here as a page refresh or navigation typically follows.
+            }
+        }
+
+        // Clear cart after order is placed (only if from cart)
+        function clearCart() {
+            const directBuyData = localStorage.getItem("directBuy");
+            if (!directBuyData) {
+                localStorage.removeItem("cart");
+            }
+        }
+
+        // Initialize page
+        function initializeBillPage() {
+            generateOrderDetails();
+            loadOrderItems();
+            calculateBillSummary();
+            clearCart();
+        }
+
+        // Run initialization when page loads
+        document.addEventListener('DOMContentLoaded', initializeBillPage);
+
+        // Handle back button
+        window.addEventListener('popstate', function(event) {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

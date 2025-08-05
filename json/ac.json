@@ -1,0 +1,171 @@
+[
+  {
+    "id": 1,
+    "brand": "LG",
+    "model": "PS-Q19YNZE",
+    "type": "Split Inverter AC",
+    "capacity_ton": 1.5,
+    "energy_rating": "5 Star",
+    "cooling_technology": "Dual Inverter Compressor",
+    "smart_features": ["Wi-Fi Control", "Voice Control", "Smart Diagnosis"],
+    "price_inr": 53867,
+    "images": [
+      "https://www.lg.com/content/dam/channel/wcms/in/images/split-ac/ts-q19ynze_anlg_eail_in_c/gallery/TS-Q19YNZE-split-ac-fornt-view-D-01.jpg",
+      "https://www.lg.com/content/dam/channel/wcms/in/images/split-ac/us-q19ynze/gallery/US-Q19YNZE-air-conditioners-ac-right-open-door-view-DZ-04.jpg/_jcr_content/renditions/thum-1600x1062.jpeg"
+    ],
+    "short_description": "Energy-efficient split AC with dual inverter and smart connectivity.",
+    "features": "Ocean Black Protection, HD Filter with Anti-virus Protection, Monsoon Comfort"
+  },
+  {
+    "id": 2,
+    "brand": "Samsung",
+    "model": "AR18CY5ZAWK",
+    "type": "Split Inverter AC",
+    "capacity_ton": 1.5,
+    "energy_rating": "5 Star",
+    "cooling_technology": "Digital Inverter Boost",
+    "smart_features": ["AI Auto Cooling", "Wi-Fi", "SmartThings App"],
+    "price_inr": 58929,
+    "images": [
+      "https://m.media-amazon.com/images/I/6106URXl+9L.jpg",
+      "https://m.media-amazon.com/images/I/41EZOQ2wpsL.jpg"
+    ],
+    "short_description": "Smart and energy-efficient AC with AI cooling and smart controls.",
+    "features": "Auto Clean, Easy Filter+, Fast Cooling Mode"
+  },
+  {
+    "id": 3,
+    "brand": "Daikin",
+    "model": "FTKF50U",
+    "type": "Split Inverter AC",
+    "capacity_ton": 1.5,
+    "energy_rating": "5 Star",
+    "cooling_technology": "Neo Swing Inverter Compressor",
+    "smart_features": ["Stabilizer-Free Operation"],
+    "price_inr": 57187,
+    "images": [
+      "https://5.imimg.com/data5/SELLER/Default/2024/3/397575737/DV/EV/DV/136144820/41vdm78noel-sl1500-500x500.jpg",
+      "https://mahajanelectronics.com/cdn/shop/products/4_22_6ef26f9e-eef2-445c-8488-7641728ee9b4.jpg?v=1660475572&width=600"
+    ],
+    "short_description": "Advanced inverter AC with power chill operation.",
+    "features": "PM2.5 Filter, Econo Mode, Self Diagnosis"
+  },
+  {
+    "id": 4,
+    "brand": "Voltas",
+    "model": "183V Vectra Elite",
+    "type": "Split Inverter AC",
+    "capacity_ton": 1.5,
+    "energy_rating": "3 Star",
+    "cooling_technology": "High EER Rotary",
+    "smart_features": [],
+    "price_inr": 43160,
+    "images": [
+      "https://5.imimg.com/data5/SELLER/Default/2024/5/417196380/BZ/NU/IU/80060426/voltas-183v-vectra-prime-split-air-conditioner.jpg",
+      "https://jamesandco.in/wp-content/uploads/2024/09/Vectra-Elite-adj-ac-22aug_5_1800x1800_7dfa0336-ee98-4c38-9df0-da679f38a975-600x600.jpg"
+    ],
+    "short_description": "Reliable and affordable cooling with stabilizer-free operation.",
+    "features": "Turbo Cooling, 4 Stage Filtration, Copper Condenser"
+  },
+  {
+    "id": 5,
+    "brand": "Blue Star",
+    "model": "IC518EBTU",
+    "type": "Split Inverter AC",
+    "capacity_ton": 1.5,
+    "energy_rating": "5 Star",
+    "cooling_technology": "Precision Cooling Technology",
+    "smart_features": ["Voice Command", "Smart App"],
+    "price_inr": 56025,
+    "images": [
+      "https://m.media-amazon.com/images/I/219s4DDAwSL.jpg",
+      "https://5.imimg.com/data5/SELLER/Default/2022/8/PQ/TR/BI/145832403/blue-star-1-5-ton-5-star-inverter-split-ac-ic518ebtu-500x500.jpg"
+    ],
+    "short_description": "High-performance AC with precision cooling and voice control.",
+    "features": "Anti-Corrosive Blue Fin, Self Diagnosis, Comfort Sleep"
+  },
+  {
+    "brand": "Panasonic",
+    "model": "CS/CU-NU18YKY5W",
+    "type": "Smart Split Inverter AC",
+    "capacity_ton": 1.5,
+    "energy_rating": "5 Star",
+    "cooling_technology": "Twin Cool Inverter",
+    "smart_features": ["Wi-Fi", "Alexa & Google Assistant", "Miraie App"],
+    "price_inr": 53120,
+    "images": [
+      "https://5.imimg.com/data5/SELLER/Default/2023/8/335848243/JQ/MA/BU/11324683/cs-cu-nu18yky5w-panasonic-1-5-ton-5-star-smart-inverter-split-air-conditioner.jpg",
+      "https://5.imimg.com/data5/SELLER/Default/2025/3/492676241/QN/LF/TL/61605097/panasonic-inverter-ac-500x500.jpg"
+    ],
+    "short_description": "Smart inverter AC with Miraie app support and voice control.",
+    "features": "PM 0.1 Filter, Shield Blu, Dry Mode"
+  },
+  {
+    "id": 6,
+    "brand": "Godrej",
+    "model": "GIC 18TTC5-WTA",
+    "type": "Split Inverter AC",
+    "capacity_ton": 1.5,
+    "energy_rating": "5 Star",
+    "cooling_technology": "Tropical Inverter",
+    "smart_features": ["Anti-bacterial Filter", "i-Sense Technology"],
+    "price_inr": 49485,
+    "images": [
+      "https://www.topprice.in/image/cache/catalog/flipkart_store_feed/9fa1b706f5668ba7f6f35fb7608630bdc5795e2d-600x600.jpg",
+      "https://m.media-amazon.com/images/I/51ELbnuOzxL.jpg"
+    ],
+    "short_description": "Eco-friendly AC with advanced filters and inverter tech.",
+    "features": "Green Inverter Technology, Silent Operation"
+  },
+  {
+    "id": 7,
+    "brand": "Hitachi",
+    "model": "RSOG518HDEA",
+    "type": "Split Inverter AC",
+    "capacity_ton": 1.5,
+    "energy_rating": "5 Star",
+    "cooling_technology": "Expandable Inverter",
+    "smart_features": [],
+    "price_inr": 51045,
+    "images": [
+      "https://5.imimg.com/data5/SELLER/Default/2021/7/ZU/EK/FV/90045529/rsog518hdea-hitachi-1-5-ton-5-star-inverter-split-ac-500x500.jpg",
+      "https://shrimeenakshifanhouse.com/cdn/shop/files/Hitachi-RAFS312HEEA-Split-AC-581026741-i-2-1200Wx1200H_7baf970b-9d5c-4da6-aed1-6db9edac3ed3.jpg?v=1711010916"
+    ],
+    "short_description": "Stylish AC with expandable cooling and silent operation.",
+    "features": "Filter Clean Indicator, SuperFine Mesh Filter, Soft Dry"
+  },
+  {
+    "id": 8,
+    "brand": "Haier",
+    "model": "HSU18E-TXG3BN-INV",
+    "type": "Split Inverter AC",
+    "capacity_ton": 1.5,
+    "energy_rating": "3 Star",
+    "cooling_technology": "Hyper PCB Inverter",
+    "smart_features": [],
+    "price_inr": 40669,
+    "images": [
+      "https://5.imimg.com/data5/SELLER/Default/2023/2/WA/TJ/VD/6555043/hsu18k-pyg3be-inv-haier-split-air-conditioners-500x500.JPG",
+      "https://m.media-amazon.com/images/I/61aK3XpxQCL.jpg"
+    ],
+    "short_description": "Tough inverter AC built for extreme Indian weather.",
+    "features": "Self Clean, Turbo Cool, Triple Inverter"
+  },
+  {
+    "id": 9,
+    "brand": "Lloyd",
+    "model": "GLS18I5FWCXL",
+    "type": "Split Inverter AC",
+    "capacity_ton": 1.5,
+    "energy_rating": "5 Star",
+    "cooling_technology": "Air Cooled Electric Control Box",
+    "smart_features": [],
+    "price_inr": 41449,
+    "images": [
+      "https://5.imimg.com/data5/SELLER/Default/2023/1/PX/TT/UC/90595575/lloyd-gls18i5fwcel-split-ac-inverter.jpg",
+      "https://5.imimg.com/data5/SELLER/Default/2024/6/424402126/ZB/UD/OP/223290122/61ka87z2dsl-sl1500.jpg"
+    ],
+    "short_description": "Energy-efficient AC with self-diagnosis and clean air filter.",
+    "features": "PM 2.5 Filter, Golden Fin Condenser, Clean Filter Indication"
+  }
+]

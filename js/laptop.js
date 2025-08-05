@@ -1,27 +1,31 @@
-let data;
 const cardBox = document.querySelector(".cardbox");
-
-function database() {
-  data.forEach((product, index) => {
+let key= 0
+function loadProducts() {
+  fetch(`./json/laptop.json`)
+  .then((res)=> res.json())
+  .then((data)=> {
+      cardBox.innerHTML = '';
+    data.forEach((product, index) => {
     const {
       model,
       brand,
       description,
       price,
       images,
-      specifications
+      specifications,
+      id
     } = product;
 
     let currentImg = 0;
 
-    const card = document.createElement("div");
+    const card = document.createElement("a");
     card.className =
       "bg-white w-full flex flex-col md:flex-row p-4 border justify-center items-center border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-xl";
-
+        card.setAttribute("href", `product.html?id=${id}&json=laptop`);
     card.innerHTML = `
       <!-- Image Section -->
       <div class="relative w-full md:w-1/3 flex items-center justify-center overflow-hidden">
-        <img src="${images[0]}" id="img-${index}" class="object-contain h-full max-h-[200px] transition-all duration-300 ease-in-out">
+        <img src="${images[0]}" id="img-${index}" class="object-contain h-full max-h-[200px] md:max-h-[350px] transition-all duration-300 ease-in-out">
       </div>
 
       <!-- Details Section -->
@@ -42,12 +46,13 @@ function database() {
       </div>
 
       <!-- Price Section -->
-      <div class="text-right min-w-[120px] py-2">
+      <div class="min-w-full flex items-start px-4 md:min-w-[120px] py-2">
         <div class="text-xl font-bold text-gray-800">₹${price}</div>
       </div>
     `;
 
     cardBox.appendChild(card);
+    key++
 
     const imgEl = card.querySelector(`#img-${index}`);
 
@@ -64,30 +69,9 @@ function database() {
       clearInterval(interval);
     });
   });
+})
 }
-
-async function loadProducts() {
-  const res = await fetch(`./json/laptop.json`);
-  data = await res.json();
-  cardBox.innerHTML = '';
-  database();
-}
-
-async function ready() {
-  let search = document.getElementById("search").value.toLowerCase();
-  if (["mobiles", "phones", "mobile"].includes(search)) {
-    loadProducts("smartphones");
-  } else if (["laptop", "laptops", "lap"].includes(search)) {
-    loadProducts("laptops");
-  } else if (["tab", "tablet", "tablets"].includes(search)) {
-    loadProducts("tablets");
-  }
-}
-
-document.getElementById("search").addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    ready();
-  }
-});
+ 
 
 loadProducts();
+

@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "model": "The Silent Patient",
+    "brand": "Alex Michaelides",
+    "category": "Thriller",
+    "price": 399,
+    "language": "English",
+    "pages": 336,
+    "publisher": "Orion Publishing",
+    "image": [
+  "https://m.media-amazon.com/images/I/81JJPDNlxSL.jpg",
+  "https://images.meesho.com/images/products/137168101/wqzub_512.webp"
+],
+    "short_description": "A psychological thriller about a woman’s act of violence against her husband—and of the therapist obsessed with uncovering her motive."
+  },
+  {
+    "id": 2,
+    "model": "Ikigai",
+    "brand": "Francesc Miralles",
+    "category": "Self-Help",
+    "price": 299,
+    "language": "English",
+    "pages": 208,
+    "publisher": "Penguin Books",
+    "image": [
+  "https://m.media-amazon.com/images/I/81l3rZK4lnL.jpg",
+  "https://gyaanstore.com/cdn/shop/files/234_aaa800ec-5535-4c1e-856a-e003ddf332e5.png?v=1701690414&width=1946"
+],
+    "short_description": "Explores the Japanese concept of finding one’s purpose in life and living a longer, happier existence."
+  },
+  {
+    "id": 3,
+    "model": "Wings of Fire",
+    "brand": "A.P.J. Abdul Kalam",
+    "category": "Autobiography",
+    "price": 250,
+    "language": "English",
+    "pages": 180,
+    "publisher": "Universities Press",
+    "image": [
+  "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1588286863i/634583.jpg",
+  "https://m.media-amazon.com/images/I/517UeQYC7AL._UF1000,1000_QL80_.jpg"
+],
+    "short_description": "An autobiography of Dr. Kalam tracing his rise from humble beginnings to the presidency of India."
+  },
+  {
+    "id": 4,
+    "model": "The Alchemist",
+    "brand": "Paulo Coelho",
+    "category": "Fiction",
+    "price": 350,
+    "language": "English",
+    "pages": 197,
+    "publisher": "HarperOne",
+    "image": [
+  "https://m.media-amazon.com/images/I/617lxveUjYL.jpg",
+  "https://images.meesho.com/images/products/245091263/jw2q1_512.webp"
+],
+    "short_description": "A mystical story about following your dreams and listening to your heart."
+  },
+  {
+    "id": 5,
+    "model": "Rich Dad Poor Dad",
+    "brand": "Robert Kiyosaki",
+    "category": "Finance",
+    "price": 420,
+    "language": "English",
+    "pages": 336,
+    "publisher": "Plata Publishing",
+    "image": [
+  "https://m.media-amazon.com/images/I/81BE7eeKzAL._UF1000,1000_QL80_.jpg",
+  "https://www.theindianbookstore.in/cdn/shop/products/rich_dad_poor_dad_by_robert_t__1607410877_44fb96ac-768x1024.jpg?v=1659004008&width=1445"
+] ,
+    "short_description": "A classic personal finance book that challenges the way people think about money and investing."
+  },
+  {
+    "id": 6,
+    "model": "Atomic Habits",
+    "brand": "James Clear",
+    "category": "Self-Improvement",
+    "price": 499,
+    "language": "English",
+    "pages": 320,
+    "publisher": "Penguin",
+    "image": [
+  "https://m.media-amazon.com/images/I/81F90H7hnML.jpg",
+  "https://www.bookishadda.com/cdn/shop/files/230_f298f5c0-c116-4280-bef6-5d00db25b743.png?v=1701690525&width=1445"
+] ,
+    "short_description": "An easy & proven way to build good habits and break bad ones."
+  },
+  {
+    "id": 7,
+    "model": "The Power of Your Subconscious Mind",
+    "brand": "Joseph Murphy",
+    "category": "Spirituality",
+    "price": 180,
+    "language": "English",
+    "pages": 238,
+    "publisher": "FingerPrint!",
+    "image": [
+  "https://m.media-amazon.com/images/I/81gTwYAhU7L.jpg",
+  "https://www.bookishadda.com/cdn/shop/files/257_521c21bd-c368-48d5-844c-43a89fcd1d07.png?v=1743593371&width=1445"
+],
+    "short_description": "Learn to unleash the power of your subconscious mind for personal success."
+  },
+  {
+    "id": 8,
+    "model": "Bhagavad Gita",
+    "brand": "Eknath Easwaran (Translator)",
+    "category": "Religious",
+    "price": 320,
+    "language": "English",
+    "pages": 294,
+    "publisher": "Penguin",
+    "image": [
+  "https://www.eourmart.com/cdn/shop/products/gita.webp?v=1675680091",
+  "https://m.media-amazon.com/images/I/715smRhK8JL._UF1000,1000_QL80_.jpg"
+] ,
+    "short_description": "A spiritual classic and philosophical guide from the ancient Indian epic Mahabharata."
+  },
+  {
+    "id": 9,
+    "model": "India After Gandhi",
+    "brand": "Ramachandra Guha",
+    "category": "History",
+    "price": 599,
+    "language": "English",
+    "pages": 900,
+    "publisher": "HarperCollins",
+    "image": [
+  "https://rukminim2.flixcart.com/image/704/844/xif0q/book/g/c/q/india-after-gandhi-original-imagm7v3d5tqywtg.jpeg?q=90&crop=false",
+  "https://m.media-amazon.com/images/I/91lwJUV5OWL._UF1000,1000_QL80_.jpg"
+],
+    "short_description": "A monumental account of the history of the Indian nation after 1947."
+  },
+  {
+    "id": 10,
+    "model": "1984",
+    "brand": "George Orwell",
+    "category": "Dystopian Fiction",
+    "price": 270,
+    "language": "English",
+    "pages": 328,
+    "publisher": "Penguin",
+    "image": [
+  "https://m.media-amazon.com/images/I/71wANojhEKL._UF1000,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/61HkdyBpKOL._UF1000,1000_QL80_.jpg"
+],
+    "short_description": "A chilling prophecy about the future under totalitarian rule."
+  },
+  {
+    "id": 11,
+    "model": "Do Epic Shit",
+    "brand": "Ankur Warikoo",
+    "category": "Motivation",
+    "price": 299,
+    "language": "English",
+    "pages": 304,
+    "publisher": "Juggernaut",
+    "image": [
+  "https://m.media-amazon.com/images/I/61kRkfsIMUL._UF1000,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/51V+GncR60L._UF1000,1000_QL80_.jpg"
+] ,
+    "short_description": "A collection of honest, practical life lessons from one of India’s top creators."
+  },
+  {
+    "id": 12,
+    "model": "The Subtle Art of Not Giving a F*ck",
+    "brand": "Mark Manson",
+    "category": "Self-Help",
+    "price": 349,
+    "language": "English",
+    "pages": 224,
+    "publisher": "Harper",
+    "image": [
+  "https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg",
+  "https://rochemamabolo.wordpress.com/wp-content/uploads/2018/12/1qXp9MemqNmYwhoNptxeflg.jpeg?w=720"
+],
+    "short_description": "A counterintuitive approach to living a good life by caring less."
+  },
+  {
+    "id": 13,
+    "model": "Sapiens: A Brief History of Humankind",
+    "brand": "Yuval Noah Harari",
+    "category": "Anthropology",
+    "price": 549,
+    "language": "English",
+    "pages": 498,
+    "publisher": "Vintage",
+    "image": [
+  "https://m.media-amazon.com/images/I/713jIoMO3UL._UF1000,1000_QL80_.jpg",
+  "https://5.imimg.com/data5/SELLER/Default/2021/9/UM/SB/PD/133456484/sapiens-a-brief-history-of-humankind-paperback.jpg"
+],
+    "short_description": "A thought-provoking journey through the history of human evolution and society."
+  },
+  {
+    "id": 14,
+    "model": "The Monk Who Sold His Ferrari",
+    "brand": "Robin Sharma",
+    "category": "Spirituality",
+    "price": 299,
+    "language": "English",
+    "pages": 224,
+    "publisher": "Jaico Publishing House",
+    "image": [
+  "https://m.media-amazon.com/images/I/61pZyTuNDYL.jpg",
+  "https://gyaanstore.com/cdn/shop/files/39_5980c6dd-93f3-4365-afef-f84d48f5b5b1.png?v=1701863902&width=1920"
+],
+    "short_description": "A fable about fulfilling your dreams and reaching your destiny."
+  },
+  {
+    "id": 15,
+    "model": "Think and Grow Rich",
+    "brand": "Napoleon Hill",
+    "category": "Personal Finance",
+    "price": 199,
+    "language": "English",
+    "pages": 320,
+    "publisher": "Vermilion",
+    "image": [
+  "https://m.media-amazon.com/images/I/61IxJuRI39L.jpg",
+  "https://images.squarespace-cdn.com/content/v1/5d8fc40ed3f19b71ebb703a6/13a3cc61-4224-4642-aff0-32ab44fd4325/Think+and+Grow+Rich_Napoleon+Hill.jpg"
+],
+    "short_description": "One of the most influential success books that inspired millions."
+  },
+  {
+    "id": 16,
+    "model": "Chanakya Neeti",
+    "brand": "Chanakya",
+    "category": "Philosophy",
+    "price": 160,
+    "language": "English",
+    "pages": 144,
+    "publisher": "Fingerprint! Publishing",
+    "image": [
+  "https://m.media-amazon.com/images/I/81NFENSYUwL._UF1000,1000_QL80_.jpg",
+  "https://cdn.penguin.co.in/wp-content/uploads/2021/12/9789353491154.jpg"
+],
+    "short_description": "Ancient Indian wisdom compiled into powerful life strategies."
+  },
+  {
+    "id": 17,
+    "model": "The Psychology of Money",
+    "brand": "Morgan Housel",
+    "category": "Finance",
+    "price": 480,
+    "language": "English",
+    "pages": 256,
+    "publisher": "Harriman House",
+    "image": [
+  "https://m.media-amazon.com/images/I/71XEsXS5RlL._UF1000,1000_QL80_.jpg",
+  "https://beyondhampers.com/cdn/shop/files/ThePsychologyofMoney.webp?v=1722951585&width=1946"
+],
+    "short_description": "Timeless lessons on wealth, greed, and happiness."
+  },
+  {
+    "id": 18,
+    "model": "The 5 AM Club",
+    "brand": "Robin Sharma",
+    "category": "Productivity",
+    "price": 320,
+    "language": "English",
+    "pages": 336,
+    "publisher": "Jaico",
+    "image": [
+  "https://m.media-amazon.com/images/I/712VrOZ60zL.jpg",
+  "https://prastutibooks.com/cdn/shop/products/117-The-5AM-Club-Robin-sharma-Front-removebg-preview_large.png?v=1670863040"
+] ,
+    "short_description": "Own your morning, elevate your life through better routines."
+  },
+  {
+    "id": 19,
+    "model": "You Can Win",
+    "brand": "Shiv Khera",
+    "category": "Motivation",
+    "price": 260,
+    "language": "English",
+    "pages": 288,
+    "publisher": "Macmillan",
+    "image": [
+  "https://m.media-amazon.com/images/I/71KCBR2XkhL.jpg",
+  "https://images.meesho.com/images/products/323367834/91r1w_512.webp"
+],
+    "short_description": "A step-by-step tool for top performance and achievement."
+  },
+  {
+    "id": 20,
+    "model": "To Kill a Mockingbird",
+    "brand": "Harper Lee",
+    "category": "Classic Fiction",
+    "price": 350,
+    "language": "English",
+    "pages": 336,
+    "publisher": "Arrow Books",
+    "image": [
+  "https://m.media-amazon.com/images/I/81gepf1eMqL._UF1000,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/71t2jj68CXL._UF1000,1000_QL80_.jpg"
+] ,
+    "short_description": "A story of racial injustice and childhood in the Deep South."
+  },
+  {
+    "id": 21,
+    "model": "Rework",
+    "brand": "Jason Fried & David Heinemeier Hansson",
+    "category": "Business",
+    "price": 499,
+    "language": "English",
+    "pages": 288,
+    "publisher": "Crown Publishing",
+    "image": [
+  "https://m.media-amazon.com/images/I/61xM6l2IKJL._UF1000,1000_QL80_.jpg",
+  "https://www.crossword.in/cdn/shop/files/rework-apni-karyashaili-ko-hamesha-ke-liye-badal-dein-hindi-edition-of-rework-change-the-way-you-work-forever-paperback-jason-fried-david-heinemeier-hansson-and-dr-sudhir-dixit-bk0483335-40969063530713.jpg?v=1746627044&width=391"
+] ,
+    "short_description": "Redefines what it means to be successful in business."
+  },
+  {
+    "id": 22,
+    "model": "Start With Why",
+    "brand": "Simon Sinek",
+    "category": "Leadership",
+    "price": 420,
+    "language": "English",
+    "pages": 256,
+    "publisher": "Penguin",
+    "image": [
+  "https://m.media-amazon.com/images/I/71M1P287BjL.jpg",
+  "https://simonsinek.com/wp-content/uploads/2023/04/ClassThumbnails_Start-with-WHY.jpeg"
+] ,
+    "short_description": "Discover how leaders inspire action by starting with 'why'."
+  },
+  {
+    "id": 23,
+    "model": "  ",
+    "brand": "Shwetabh Gangwar",
+    "category": "Philosophy",
+    "price": 230,
+    "language": "English",
+    "pages": 256,
+    "publisher": "Westland",
+    "image": [
+  "https://m.media-amazon.com/images/I/71iUJLYyM8L.jpg",
+  "https://bookmarkandworld.com/cdn/shop/files/WhatsAppImage2024-10-06at4.15.38PM.jpg?v=1728211897&width=1445"
+] ,
+    "short_description": "Unapologetically honest takes on life and self-worth."
+  },
+  {
+    "id": 24,
+    "model": "The Girl on the Train",
+    "brand": "Paula Hawkins",
+    "category": "Mystery",
+    "price": 299,
+    "language": "English",
+    "pages": 408,
+    "publisher": "Penguin",
+    "image": [
+  "https://m.media-amazon.com/images/I/71vWnStCnEL.jpg",
+  "https://www.clankart.com/user-uploads/advert/thriller_mystery_novel_by_paula_hawkin1750000942867.jpg"
+],
+    "short_description": "A gripping psychological thriller with shocking twists."
+  }
+]

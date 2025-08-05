@@ -1,5 +1,6 @@
 [
   {
+     "id": 1,
     "category": "4K UHD",
     "brand": "Samsung",
     "model": "Crystal UHD AU8000",
@@ -11,11 +12,15 @@
     "price_usd": 479.99,
     "weight_kg": 14.2,
     "dimensions_mm": [1230, 708, 60],
-    "image_url": "https://images.samsung.com/au8000-55.jpg",
+    "images":[
+      "https://5.imimg.com/data5/SELLER/Default/2021/9/JB/IW/OP/123224342/au8000-crystal-4k-uhd-smart-tv-500x500.PNG",
+      "https://images.samsung.com/is/image/samsung/p6pim/au/feature/116428920/au-feature-crystal-uhd-au8000-531057844?$FB_TYPE_A_MO_JPG$"
+    ],
     "short_description": "Crystal-clear 4K UHD picture with immersive HDR and voice control.",
     "features": "Tizen OS, HDR10+, PurColor technology, 4K upscaling, Alexa & Google Assistant compatible."
   },
   {
+     "id": 2,
     "category": "OLED",
     "brand": "LG",
     "model": "C3 OLED evo",
@@ -27,11 +32,15 @@
     "price_usd": 1799.99,
     "weight_kg": 18.9,
     "dimensions_mm": [1440, 830, 46],
-    "image_url": "https://images.lg.com/lg-oled-c3.jpg",
+    "images":[
+      "https://www.lg.com/content/dam/channel/wcms/in/images/tvs/oled65c3psa_atr_eail_in_c/gallery/TV-OLED-65-C3-A-Gallery-1600-01.jpg/_jcr_content/renditions/thum-1600x1062.jpeg",
+      "https://www.lg.com/content/dam/channel/wcms/in/images/tvs/oled42c3psa_atr_eail_in_c/gallery/OLED42C3PSA-DZ-05.jpg"
+    ],
     "short_description": "LG's premium OLED with AI-powered 4K and exceptional contrast.",
     "features": "Dolby Vision, Dolby Atmos, webOS 23, NVIDIA G-Sync compatible, 120Hz refresh rate."
   },
   {
+     "id": 3,
     "category": "Budget",
     "brand": "TCL",
     "model": "4-Series Roku TV",
@@ -43,11 +52,15 @@
     "price_usd": 229.99,
     "weight_kg": 7.5,
     "dimensions_mm": [970, 570, 80],
-    "image_url": "https://images.tcl.com/4series-roku-43.jpg",
+    "images": [
+      "https://images-cdn.ubuy.co.in/64f58bcf7bf58462740e8c85-tcl-55-class-4-series-4k-uhd-hdr-smart.jpg",
+      "https://i.ebayimg.com/images/g/JwMAAOSwrdRljABJ/s-l500.png"
+    ],
     "short_description": "Affordable 4K TV with built-in Roku Smart platform.",
     "features": "Roku OS, HDR10, voice remote, easy streaming setup."
   },
   {
+     "id": 4,
     "category": "Gaming",
     "brand": "Sony",
     "model": "Bravia XR X90L",
@@ -59,11 +72,15 @@
     "price_usd": 1399.99,
     "weight_kg": 22.0,
     "dimensions_mm": [1450, 840, 70],
-    "image_url": "https://images.sony.com/bravia-x90l.jpg",
+    "images": [
+      "https://shopatsc.com/cdn/shop/files/01-X90L-logo-final_627a0312-026a-4228-9a09-b9a315b89459.jpg?v=1748001900",
+      "https://shopatsc.com/cdn/shop/files/01-X90L-logo-final_627a0312-026a-4228-9a09-b9a315b89459.jpg?v=1748001900"
+    ],
     "short_description": "Optimized for PS5 with low input lag and fast response time.",
     "features": "XR Motion Clarity, HDMI 2.1, 120Hz, Game Mode, Dolby Vision & Atmos."
   },
   {
+     "id": 5,
     "category": "8K TV",
     "brand": "Samsung",
     "model": "Neo QLED QN900C",
@@ -75,11 +92,15 @@
     "price_usd": 4999.99,
     "weight_kg": 33.1,
     "dimensions_mm": [1670, 960, 30],
-    "image_url": "https://images.samsung.com/qn900c-8k.jpg",
+    "images": [
+      "http://image-us.samsung.com/SamsungUS/home/ca-assets-folder/40463/QN85QN900CFXZA-S.COM_Version_1_V01.jpg?$product-details-jpg$",
+      "https://m.media-amazon.com/images/I/91FvXn1-koL._UF894,1000_QL80_.jpg"
+    ],
     "short_description": "Premium 8K Neo QLED with stunning brightness and depth.",
     "features": "Quantum Matrix Pro, Neural Quantum Processor 8K, 240Hz Motion Xcelerator Turbo+."
   },
   {
+     "id": 6,
     "category": "Compact",
     "brand": "Insignia",
     "model": "F20 Fire TV",
@@ -91,11 +112,15 @@
     "price_usd": 99.99,
     "weight_kg": 4.2,
     "dimensions_mm": [730, 430, 70],
-    "image_url": "https://images.insignia.com/f20-32.jpg",
+    "images":[
+      "http://images-cdn.ubuy.co.in/63f5d98de0aab4573766dee2-insignia-24-inch-class-f20-series-smart.jpg",
+      "http://u-mercari-images.mercdn.net/photos/m89578336623_1.jpg"
+    ],
     "short_description": "Smart Fire TV experience in a compact 32\" display.",
     "features": "Fire TV OS, Alexa Voice Remote, dual-band Wi-Fi."
   },
   {
+     "id": 7,
     "category": "QLED",
     "brand": "Hisense",
     "model": "U6 Series ULED",
@@ -107,11 +132,15 @@
     "price_usd": 448.00,
     "weight_kg": 12.7,
     "dimensions_mm": [1235, 710, 85],
-    "image_url": "https://images.hisense.com/u6-series-55.jpg",
+    "images": [
+        "https://m.media-amazon.com/images/I/81qtc9qRqoL._UF1000,1000_QL80_.jpg",
+        "https://custrevs.com/wp-content/uploads/2024/07/hisense-U6-Series.webp"
+    ],
     "short_description": "Quantum Dot technology at an affordable price point.",
     "features": "Dolby Vision IQ, Game Mode Plus, voice control via Google Assistant or Alexa."
   },
   {
+     "id": 8,
     "category": "Curved",
     "brand": "Samsung",
     "model": "TU8300",
@@ -123,11 +152,15 @@
     "price_usd": 697.99,
     "weight_kg": 20.1,
     "dimensions_mm": [1447, 833, 120],
-    "image_url": "https://images.samsung.com/tu8300-curve.jpg",
+    "images": [
+      "https://images.samsung.com/is/image/samsung/p6pim/levant/ua55tu8300uxtw/gallery/levant-uhd-tu8300-ua55tu8300uxtw-375035136?$624_624_PNG$",
+      "https://nextechaccess.co.ke/wp-content/uploads/2023/05/3_500.jpeg"
+    ],
     "short_description": "Immersive curved 4K LED TV with HDR support.",
     "features": "UHD Processor, Ambient Mode, sleek curved design."
   },
   {
+     "id": 8,
     "category": "Premium Smart TV",
     "brand": "Sony",
     "model": "A80L OLED",
@@ -139,14 +172,18 @@
     "price_usd": 1699.99,
     "weight_kg": 17.4,
     "dimensions_mm": [1227, 712, 53],
-    "image_url": "https://images.sony.com/a80l-55.jpg",
+    "images":[
+      "https://sony.scene7.com/is/image/sonyglobalsolutions/TVFY23_A80L_Primary-Image-1?$categorypdpnav$&fmt=png-alpha",
+      "https://m.media-amazon.com/images/I/81kpl--BBcL._UF350,350_QL80_.jpg"
+    ],
     "short_description": "Sony OLED with Google TV and cinematic performance.",
     "features": "Acoustic Surface Audio+, Dolby Vision, Netflix Calibrated Mode."
   },
   {
+     "id": 9,
     "category": "Android TV",
     "brand": "OnePlus",
-    "model": "U1S 50\" Android TV",
+    "model": "U1S 50",
     "screen_size_inches": 50,
     "resolution": "3840x2160",
     "display_type": "LED",
@@ -155,7 +192,10 @@
     "price_usd": 399.00,
     "weight_kg": 11.8,
     "dimensions_mm": [1110, 640, 86],
-    "image_url": "https://images.oneplus.com/u1s-50.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71WP6JNtJ-S._UF1000,1000_QL80_.jpg",
+      "https://img-prd-pim.poorvika.com/product/OnePlus-U1s-Series-Ultra-HD-4K-LED-Smart-Android-TV-50-inch-06.png"
+    ],
     "short_description": "Stylish Android TV with OnePlus Connect and 4K display.",
     "features": "Android TV 10, Google Assistant, Dynaudio speakers, smart control via smartphone."
   }

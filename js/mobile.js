@@ -1,120 +1,74 @@
+const cardBox = document.querySelector(".cardbox");
+let key = 0
+  function loadProducts() {
+    fetch("./json/mobiles.json")
+    .then((res)=> res.json())
+    .then((data)=> {
+      data.forEach((product, index) => {
+    const {
+      brand,
+      model,
+      description,
+      price,
+      image,
+      specifications,
+      id
+    } = product;
 
-  let data ;
-  const cardBox = document.querySelector(".cardbox");
-  function database(){
-    data.products.forEach((product, index) => {
-      const {
-        title,
-        brand,
-        description,
-        price,
-        discountPercentage,
-        stock,
-        images,
-        rating
-      } = product;
-  
-      const originalPrice = (price / (1 - discountPercentage / 100)).toFixed(0);
       let currentImg = 0;
-  
-      const card = document.createElement("div");
+
+      const card = document.createElement("a");
       card.className =
-        "bg-white w-full sm:h-[300px] h-auto flex flex-col sm:flex-row p-4 border border-gray-200 cursor-pointer ";
-  
-      card.innerHTML = `
-        <!-- Left: Image -->
-        <div class=" flex items-center justify-center relative">
-          <button class="absolute left-1 top-1/2 -translate-y-1/2 text-gray-600 text-sm z-10" data-prev="${index}">&#8592;</button>
-          <img src="${images[0]}" id="img-${index}" class="object-contain h-full max-h-full">
-          <button class="absolute right-1 top-1/2 -translate-y-1/2 text-gray-600 text-sm z-10" data-next="${index}">&#8594;</button>
-        </div>
-  
-        <!-- Center: Details -->
-        <div class="flex-1 px-4">
-          <h2 class="text-base font-semibold text-gray-800">${title}</h2>
-          <div class="flex items-center text-sm mt-1">
-            <span class="bg-green-600 text-white text-xs font-bold px-1.5 py-0.5 rounded-sm mr-2">${rating.toFixed(1)} ★</span>
-            <span class="text-gray-500">${Math.floor(rating * 10)} Ratings & ${(rating * 2).toFixed(0)} Reviews</span>
-          </div>
-          <ul class="list-disc list-inside text-sm text-gray-700 mt-2 space-y-0.5">
-            <li>${description.slice(0, 45)}...</li>
-            <li>Brand: ${brand}</li>
-            <li>Stock: ${stock}</li>
-            <li>Discount: ${discountPercentage}%</li>
-          </ul>
-        </div>
-  
-        <!-- Right: Price -->
-        <div class="text-right min-w-[120px]">
-          <div class="text-xl font-bold text-gray-800">₹${price}</div>
-          <div class="text-sm line-through text-gray-400">₹${originalPrice}</div>
-          <div class="text-green-600 text-sm font-medium">${Math.round(discountPercentage)}% off</div>
-          <div class="text-blue-600 text-sm mt-1 cursor-pointer hover:underline">Bank Offer</div>
-        </div>
-      `;
-  
-      cardBox.appendChild(card);
-  
-      // Add slider logic per card
+      "bg-white w-full sm:h-[320px] h-auto flex flex-col sm:flex-row p-4 border border-gray-200 cursor-pointer shadow-sm hover:shadow-md transition";
+          card.setAttribute("href", `product.html?id=${id}&json=mobiles`);
+    card.innerHTML = `
+      <!-- Image Slider -->
+      <div class="relative w-full sm:w-[250px] flex items-center justify-center">
+        <img src="${image[0]}" id="img-${index}" class="object-contain h-[200px] max-w-full transition-all duration-300">
+      </div>
+      
+      <!-- Product Info -->
+      <div class="flex-1 px-4 py-2">
+      <h2 class="text-lg font-semibold text-gray-800">${brand} ${model}</h2>
+      <a href="product.html?id=1&json=mobiles">rgr</a>
+        <p class="text-sm text-gray-600 mt-1">${description}</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mt-3 space-y-0.5">
+          <li><strong>Processor:</strong> ${specifications.processor}</li>
+          <li><strong>RAM:</strong> ${specifications.ram}</li>
+          <li><strong>Storage:</strong> ${specifications.storage}</li>
+          <li><strong>Display:</strong> ${specifications.display}</li>
+          <li><strong>Battery:</strong> ${specifications.battery}</li>
+          <li><strong>Rear Camera:</strong> ${specifications.rear_camera}</li>
+          <li><strong>Front Camera:</strong> ${specifications.front_camera}</li>
+          <li><strong>OS:</strong> ${specifications.os}</li>
+          <li><strong>Connectivity:</strong> ${specifications.connectivity}</li>
+        </ul>
+      </div>
+
+      <!-- Pricing -->
+      <div class="w-full sm:w-[150px] flex flex-col items-center justify-center mt-4 sm:mt-0">
+        <div class="text-xl font-bold text-gray-800">₹${price.toLocaleString()}</div>
+      </div>
+    `;
+      cardBox.appendChild(card); 
+      key++   
       const imgEl = card.querySelector(`#img-${index}`);
-      card.querySelector(`[data-prev="${index}"]`).addEventListener("click", () => {
-        currentImg = (currentImg - 1 + images.length) % images.length;
-        imgEl.src = images[currentImg];
-      });
-      card.querySelector(`[data-next="${index}"]`).addEventListener("click", () => {
-        currentImg = (currentImg + 1) % images.length;
-        imgEl.src = images[currentImg];
-      });
+
+    // Hover to auto slide images
+    let interval;
+    card.addEventListener("mouseenter", () => {
+      interval = setInterval(() => {
+        currentImg = (currentImg + 1) % image.length;
+        imgEl.src = image[currentImg];
+      }, 1000);
     });
-  }
-  async function loadProducts() {
-    const res = await fetch(`https://dummyjson.com/products/category/smartphones`);
-    data = await res.json();
-    
-    database();
-    
+
+    card.addEventListener("mouseleave", () => {
+      clearInterval(interval);
+    });  
+    });
+    })   
 }
-  
+ 
   loadProducts();
 
-
-async function ready(){
-  let search = document.getElementById("search").value
-  let search1 = document.getElementById("search")
-  cardBox.innerHTML = '';
-  if(search == "mobiles" || search == "phones" || search == "mobile" || search == "Mobile" || search == "Mobiles"){
-      const res = await fetch(`https://dummyjson.com/products/category/smartphones`);
-      data = await res.json();
-    }else if(search == "laptop" || search == "laptops" || search == "Lap" || search == "lap" || search == "Laptops"){
-      const res = await fetch(`https://dummyjson.com/products/category/laptops`);
-      data = await res.json();
-    }else if(search == "tab" || search == "Tab" || search == "Tablets" || search == "tablet" || search == "Tablets" || search == "Tablet"){
-      const res = await fetch(`https://dummyjson.com/products/category/tablets`);
-      data = await res.json();
-    }
-
-    database();
-}
-
-document.getElementById("search").addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    event.preventDefault(); // optional
-    const search = document.getElementById("search").value.trim().toLowerCase();
-
-    // Redirect to another HTML file (like category page)
-    if (search == "mobiles" || search == "phones" || search == "mobile" || search == "Mobile" || search == "Mobiles") {
-      window.location.href = "mobile.html";
-
-    } else if (search == "laptop" || search == "laptops" || search == "Lap" || search == "lap" || search == "Laptops") {
-      window.location.href = "laptop.html";
-    } else if (search == "tab" || search == "Tab" || search == "Tablets" || search == "tablet" || search == "Tablets" || search == "Tablet") {
-      window.location.href = "tablet.html";
-    } else if (search == "bedsheet" || search == "bed"  || search == "Bed" || search == "Bedsheet") {
-      window.location.href = "bedsheet.html";
-    } else if (search == "bedsheet" || search == "bed" || search == "furniture" || search == "Furniture" || search == "FURNITURE") {
-      window.location.href = "furniture.html";
-    } else {
-      alert("No category matched!");
-    }
-  }
-});

@@ -1,103 +1,61 @@
-let data;
 const cardBox = document.querySelector(".cardbox");
+let key = 0
+    function renderCards() {
+        fetch("./json/shirt.json")
+        .then((res)=> res.json())
+        .then((data)=>{
 
-function database() {
-    cardBox.innerHTML = ''; // Clear existing cards
-    if (!data || !data.products || data.products.length === 0) {
-        cardBox.innerHTML = '<p class="text-center text-gray-500 p-4">No products available.</p>';
-        return;
-    }
+            cardBox.innerHTML = "";
+      
+            data.forEach((product) => {
+              const {
+                brand,
+                model,
+                category,
+                gender,
+                fit,
+                fabric,
+                sizes,
+                color,
+                price_usd,
+                image,
+                pattern,
+                occasion,
+                sleeve,
+                featureTags,
+                id
+              } = product;
+      
+              const price_inr = Math.round(price_usd * 83); // USD to INR approx
+      
+              const card = document.createElement("a");
+              card.className = "max-w-[350px] bg-white flex flex-col  rounded-lg overflow-hidden shadow hover:shadow-lg transition-all duration-300 group cursor-pointer";
+             card.setAttribute("href", `product.html?id=${id}&json=shirt`);
+              card.innerHTML = `
+                            <!-- Image Section -->
+              <div class="relative w-full h-[76%] overflow-hidden">
+                  <img src="${image}" 
+                      alt="${model}"
+                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
 
-    data.products.forEach((product, index) => {
-        const {
-            title,
-            brand,
-            description,
-            price,
-            discountPercentage,
-            stock,
-            images,
-            rating
-        } = product;
-        
-        const originalPrice = (price / (1 - discountPercentage / 100)).toFixed(0);
-        let currentImg = 0;
-        
-        const card = document.createElement("div");
-        card.className = "bg-white w-full max-w-[350px] h-auto flex flex-col p-4 border border-gray-200 cursor-pointer m-2";
-        card.innerHTML = `
-            <!-- Left: Image -->
-            <div class="flex items-center justify-center relative w-[150px]">
-              <button class="absolute left-1 top-1/2 -translate-y-1/2 text-gray-600 text-sm z-10" data-prev="${index}">←</button>
-              <img src="${images[0]}" id="img-${index}" class="object-contain w-full h-full max-h-[200px]">
-              <button class="absolute right-1 top-1/2 -translate-y-1/2 text-gray-600 text-sm z-10" data-next="${index}">→</button>
-            </div>
-            
-            <!-- Center: Details -->
-            <div class="flex-1 px-4">
-              <h2 class="text-base font-semibold text-gray-800">${title}</h2>
-              <div class="flex items-center text-sm mt-1">
-                <span class="bg-green-600 text-white text-xs font-bold px-1.5 py-0.5 rounded-sm mr-2">${rating.toFixed(1)} ★</span>
-                <span class="text-gray-500">${Math.floor(rating * 10)} Ratings & ${(rating * 2).toFixed(0)} Reviews</span>
+                  <!-- Sizes Slide on Hover -->
+                  <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 px-3 py-2 translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out text-sm text-gray-800 text-center font-medium">
+                  Sizes: S, M, L, XL
+                  </div>
               </div>
-              <ul class="list-disc list-inside text-sm text-gray-700 mt-2 space-y-0.5">
-                <li>${description.slice(0, 45)}...</li>
-                <li>Brand: ${brand}</li>
-                <li>Stock: ${stock}</li>
-                <li>Discount: ${discountPercentage}%</li>
-              </ul>
-            </div>
-            
-            <!-- Right: Price -->
-            <div class="text-right min-w-[120px]">
-              <div class="text-xl font-bold text-gray-800">₹${price}</div>
-              <div class="text-sm line-through text-gray-400">₹${originalPrice}</div>
-              <div class="text-green-600 text-sm font-medium">${Math.round(discountPercentage)}% off</div>
-              <div class="text-blue-600 text-sm mt-1 cursor-pointer hover:underline">Bank Offer</div>
-            </div>
-        `;
-        
-        cardBox.appendChild(card);
-        
-        // Add slider logic per card
-        const imgEl = card.querySelector(`#img-${index}`);
-        card.querySelector(`[data-prev="${index}"]`).addEventListener("click", () => {
-            currentImg = (currentImg - 1 + images.length) % images.length;
-            imgEl.src = images[currentImg];
-        });
-        
-        card.querySelector(`[data-next="${index}"]`).addEventListener("click", () => {
-            currentImg = (currentImg + 1) % images.length;
-            imgEl.src = images[currentImg];
-        });
-    });
-}
 
-async function loadProducts() {
-    cardBox.innerHTML = ''; // Clear before fetching
-    try {
-        const res = await fetch(`https://dummyjson.com/products/category/mens-shirts`);
-        if (!res.ok) throw new Error('Failed to fetch products');
-        data = await res.json();
-        database();
-    } catch (error) {
-        cardBox.innerHTML = '<p class="text-center text-red-500 p-4">Error loading products. Please try again later.</p>';
-        console.error(error);
+              <!-- Product Info -->
+              <div class="p-3 space-y-1 text-center">
+                  <h2 class="text-sm font-semibold text-gray-800">${brand} </h2>
+                  <p class="text-sm text-gray-700">${model} ${fabric} ${pattern}</p>
+                  <div class="text-base font-bold text-gray-900 mt-1">₹<span id="price">${Math.round(price_usd * 83)}</span></div>
+              </div>
+              `;
+      
+              cardBox.appendChild(card);
+              key++
+            });
+        })
     }
-}
 
-async function ready() {
-    let search = document.getElementById("search").value;
-    cardBox.innerHTML = ''; // Clear before fetching
-    try {
-        const res = await fetch(`https://dummyjson.com/products/category/mens-shirts`);
-        if (!res.ok) throw new Error('Failed to fetch products');
-        data = await res.json();
-        database();
-    } catch (error) {
-        cardBox.innerHTML = '<p class="text-center text-red-500 p-4">Error loading products. Please try again later.</p>';
-        console.error(error);
-    }
-}
-
-loadProducts();
+    renderCards();

@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "category": "High Capacity",
     "brand": "Anker",
     "model": "PowerCore+ 26800 PD",
@@ -18,6 +19,7 @@
     "features": "Charges laptops, tablets, and phones. 45W USB-C PD output ideal for MacBooks. Durable build with travel-friendly design."
   },
   {
+    "id": 2,
     "category": "Wireless Charging",
     "brand": "Samsung",
     "model": "Wireless Battery Pack 10000",
@@ -36,6 +38,7 @@
     "features": "Supports Qi wireless charging for Samsung and other compatible devices. Simultaneous charging via USB ports."
   },
   {
+    "id": 3,
     "category": "Solar Powered",
     "brand": "RAVPower",
     "model": "RP-PB083",
@@ -55,6 +58,7 @@
     "features": "Built-in solar panel for recharging under sunlight. Ideal for camping and travel. Multiple output ports for convenience."
   },
   {
+     "id": 4,
     "category": "Budget",
     "brand": "Xiaomi",
     "model": "Mi Power Bank 3i 10000",
@@ -73,6 +77,7 @@
     "features": "Sleek metal design with 18W fast charging. Excellent for daily backup charging. Compact and easy to carry."
   },
   {
+     "id": 5,
     "category": "Laptop Compatible",
     "brand": "Zendure",
     "model": "SuperTank Pro",
@@ -92,6 +97,7 @@
     "features": "Up to 100W PD charging. OLED display for power status. Ideal for professionals on the move. Durable aluminum casing."
   },
   {
+     "id": 6,
     "category": "Mini/Portable",
     "brand": "Anker",
     "model": "PowerCore 5000",
@@ -110,6 +116,7 @@
     "features": "Tube-style design fits in your pocket. Great for emergencies and short trips. Charges one phone once fully."
   },
   {
+     "id": 7,
     "category": "Multi-Device",
     "brand": "Baseus",
     "model": "30000mAh Power Bank",
@@ -128,6 +135,7 @@
     "features": "Simultaneously charges up to 5 devices. LCD display shows charge level. Built-in safety protections."
   },
   {
+     "id": 8,
     "category": "Rugged/Outdoor",
     "brand": "Aukey",
     "model": "PB-XD26",
@@ -148,6 +156,7 @@
     "features": "Shockproof, dustproof, and water-resistant. 60W PD output for fast laptop charging. Rubberized exterior for grip."
   },
   {
+     "id": 9,
     "category": "Slim Design",
     "brand": "Belkin",
     "model": "Pocket Power 10000",
@@ -166,13 +175,14 @@
     "features": "High efficiency lithium-polymer battery. Dual output for charging two devices. Lightweight and minimal profile."
   },
   {
+     "id": 10,
     "category": "MagSafe Compatible",
     "brand": "Apple",
     "model": "MagSafe Battery Pack",
     "capacity_mAh": 1460,
     "output_ports": ["MagSafe Wireless"],
     "input_port": "Lightning",
-    "price_usd": 99.00,
+    "price_usd": 99.0,
     "fast_charging": true,
     "weight_g": 114,
     "dimensions_mm": [96, 64, 11],

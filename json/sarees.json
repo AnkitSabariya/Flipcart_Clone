@@ -1,5 +1,6 @@
 [
   {
+     "id": 1,
     "brand": "Banarasi Boutique",
     "model": "Pure Banarasi Silk",
     "category": "Banarasi",
@@ -11,9 +12,13 @@
     "border": "Zari",
     "featureTags": ["heavy-zari", "floral-motif"],
     "price_usd": 299.99,
-    "image_url": "https://images.banarasiboutique.com/red-banarasi.jpg"
+    "image": [
+   "https://lakshmiboutique.co.in/cdn/shop/files/photo1706768975_2.jpg?v=1706769318&width=645",
+    "https://www.bunkala.com/cdn/shop/files/BKBS-27234_Bridal_Red_Pure_Katana_Silk_Meenakari_Rose_Design_Buta_Handloom_Banarasi_Saree.jpg?v=1703689498"
+] 
   },
   {
+     "id": 2,
     "brand": "FabNest",
     "model": "Kanchipuram Silk",
     "category": "Kanjivaram",
@@ -25,9 +30,13 @@
     "border": "Temple",
     "featureTags": ["traditional-weave", "rich-pallu"],
     "price_usd": 399.99,
-    "image_url": "https://images.fabnest.com/kanchipuram-blue.jpg"
+    "image": [
+   "https://www.prashantisarees.com/cdn/shop/products/sa-pure-kanjivaram-silk-saree-purple-and-pink-with-allover-zari-checks-and-annam-and-mayil-chakaram-buttas-elephant-and-annam-zari-woven-border-prashanti-sarees-1.jpg?height=871&v=1703580855",
+    "https://anyaonline.in/cdn/shop/collections/2_540x_540x_a0c59dae-31ec-41a2-a36d-fdfdcd738e09.jpg?v=1698576136"
+] 
   },
   {
+     "id": 3,
     "brand": "W",
     "model": "Chiffon Printed Saree",
     "category": "Chiffon",
@@ -39,9 +48,13 @@
     "border": "Printed",
     "featureTags": ["lightweight", "all-over-print"],
     "price_usd": 49.99,
-    "image_url": "https://images.wforwoman.com/chiffon-peach.jpg"
+    "image": [
+   "https://www.vishalprints.in/cdn/shop/files/MUHRAT-47277-01_b562fbf5-9b4b-4126-8318-4bf8c6edb183.jpg?v=1719118676",
+    "https://static.cilory.com/721744-thickbox_default/teal-chiffon-printed-saree-with-lace.jpg.webp"
+] 
   },
   {
+     "id": 4,
     "brand": "Aurelia",
     "model": "Georgette Embroidered Saree",
     "category": "Georgette",
@@ -53,9 +66,13 @@
     "border": "Sequined",
     "featureTags": ["embroidered-pallu", "shimmer-details"],
     "price_usd": 89.99,
-    "image_url": "https://images.aurelia.in/georgette-black.jpg"
+    "image": [
+   "https://www.meenabazaar.shop/cdn/shop/files/2_44e26277-30f3-4917-8139-5505eeeef3ea.jpg?v=1724412073",
+    "https://www.meenabazaar.shop/cdn/shop/files/Artboard6_78c4ab91-c9cb-46bd-be7b-f788deccc0bb_1000x.jpg?v=1724412074"
+] 
   },
   {
+     "id": 5,
     "brand": "Global Desi",
     "model": "Bagru Print Cotton Saree",
     "category": "Cotton",
@@ -67,7 +84,10 @@
     "border": "Plain",
     "featureTags": ["hand-block-print", "breathable"],
     "price_usd": 39.99,
-    "image_url": "https://images.globaldesi.com/bagru-cotton.jpg"
+    "image": [
+   "https://goswadeshi.in/cdn/shop/products/53jHSnh8oS_1800x1800.jpg?v=1684212994",
+    "https://goswadeshi.in/cdn/shop/products/BOMBMprMLL.jpg?v=1684212994"
+] 
   },
   {
     "brand": "Soch",
@@ -81,9 +101,13 @@
     "border": "Zari",
     "featureTags": ["zari-work", "festive-look"],
     "price_usd": 59.99,
-    "image_url": "https://images.soch.com/art-silk-magenta.jpg"
+    "image": [
+   "https://assets.ajio.com/medias/sys_master/root/20240311/sKez/65ef198e05ac7d77bba9878d/-473Wx593H-467151631-magenta-MODEL.jpg",
+    "https://www.soch.com/media/catalog/product/m/a/magenta_tussar_zari_woven_saree_womens_soch-srevjq121805a_03.jpg"
+] 
   },
   {
+     "id": 6,
     "brand": "Chhabra",
     "model": "Mysore Silk Saree",
     "category": "Silk",
@@ -95,9 +119,13 @@
     "border": "Silk",
     "featureTags": ["pure-silk", "temple-motif"],
     "price_usd": 249.99,
-    "image_url": "https://images.chhabra.com/mysore-purple.jpg"
+    "image": [
+   "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/19755872/2022/9/14/9b2a2c29-6a25-42ca-89fc-ada6669195d41663141863655-Chhabra-555-Purple--Golden-Woven-Design-Mysore-Silk-Saree-36-1.jpg",
+    "https://www.chhabra555.com/cdn/shop/products/AHEU360_3_1200x1200.jpg?v=1675331350"
+] 
   },
   {
+     "id": 7,
     "brand": "Manyavar",
     "model": "Bomkai Silk Saree",
     "category": "Silk",
@@ -109,9 +137,13 @@
     "border": "Contrast",
     "featureTags": ["ikat-weave", "ethnic-print"],
     "price_usd": 199.99,
-    "image_url": "https://images.manyavar.com/bomkai-orange.jpg"
+    "image": [
+   "https://manyavar.scene7.com/is/image/manyavar/SB16372_418-ORANGE.24515_11-10-2023-21-21:650x900?&dpr=on,2",
+    "https://manyavar.scene7.com/is/image/manyavar/SB18073-424-YELLOW4_17-06-2025-17-32:283x395?&dpr=on,2"
+] 
   },
   {
+     "id": 8,
     "brand": "BIBA",
     "model": "Cotton Linen Blend Saree",
     "category": "Linen Blend",
@@ -123,9 +155,13 @@
     "border": "Plain",
     "featureTags": ["cool-comfort", "handloom-texture"],
     "price_usd": 79.99,
-    "image_url": "https://images.biba.in/linen-blend.jpg"
+    "image": [
+   "https://www.karagiri.com/cdn/shop/products/linen-saree-beige-colour-linen-saree-silk-saree-online-28608621609153.jpg?v=1648480686",
+    "https://www.karagiri.com/cdn/shop/products/linen-saree-beige-colour-linen-saree-silk-saree-online-28608621019329.jpg?v=1648480694"
+]
   },
   {
+     "id": 9,
     "brand": "Ajio",
     "model": "Munga Silk Saree",
     "category": "Silk",
@@ -137,9 +173,13 @@
     "border": "Contrast",
     "featureTags": ["glossy-finish", "lightweight-silk"],
     "price_usd": 129.99,
-    "image_url": "https://images.ajio.com/munga-green.jpg"
+    "image": [
+   "https://assets.ajio.com/medias/sys_master/root/20230909/PZtR/64fb7b4bafa4cf41f5d4d774/-473Wx593H-466369001-green-MODEL.jpg",
+    "https://assets.ajio.com/medias/sys_master/root/20240528/13Uv/6655cb1016fd2c6e6a319720/-473Wx593H-700019191-green-MODEL.jpg"
+] 
   },
   {
+     "id": 10,
     "brand": "Taneira",
     "model": "Paithani Saree",
     "category": "Paithani",
@@ -151,9 +191,13 @@
     "border": "Gold Zari",
     "featureTags": ["peacock-motif", "temple-border"],
     "price_usd": 349.99,
-    "image_url": "https://images.taneira.com/paithani-blue.jpg"
+    "image": [
+   "https://www.taneira.com/dw/image/v2/BKMH_PRD/on/demandware.static/-/Sites-Taneira-product-catalog/default/dw3445ce08/images/Taneira/Catalog/SHT07J01063_2.jpg?sw=1000&sh=1500",
+    "https://www.taneira.com/dw/image/v2/BKMH_PRD/on/demandware.static/-/Sites-Taneira-product-catalog/default/dw82984e87/images/Taneira/Catalog/SHG08A01382_1.jpg?sw=480&sh=728"
+] 
   },
   {
+     "id": 11,
     "brand": "Chumbak",
     "model": "Printed Cotton Saree",
     "category": "Cotton",
@@ -165,6 +209,9 @@
     "border": "Printed",
     "featureTags": ["quirky-print", "vibrant"],
     "price_usd": 49.99,
-    "image_url": "https://images.chumbak.com/printed-yellow.jpg"
+    "image": [
+   "https://www.unnatisilks.com/cdn/shop/files/unm79802-1_659dbdba-519c-4bf3-aed3-9959710b1031.jpg?v=1740398516&width=1400",
+    "https://www.unnatisilks.com/cdn/shop/files/unm77394-1.jpg?v=1712396819&width=2048"
+] 
   }
 ]

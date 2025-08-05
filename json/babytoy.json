@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "brand": "Fisher-Price",
+    "model": "Laugh & Learn Smart Stages Puppy",
+    "category": "Baby Toys",
+    "age_group": "6-36 months",
+    "material": "Plush, Plastic",
+    "features": ["Interactive sounds", "Teaches letters, numbers", "Soft body"],
+    "color": "Multicolor",
+    "price": 2399,
+    "image": [
+  "https://m.media-amazon.com/images/I/71M9jsP2KTL.jpg",
+  "https://m.media-amazon.com/images/I/81+5TGLDIAL._UF1000,1000_QL80_.jpg"
+] ,
+    "short_description": "Educational plush puppy with interactive lights and songs."
+  },
+  {
+    "id": 2,
+    "brand": "Chicco",
+    "model": "Musical Roller",
+    "category": "Baby Toys",
+    "age_group": "6-24 months",
+    "material": "Plastic",
+    "features": ["Musical", "Colorful lights", "Rolling action"],
+    "color": "Blue & Red",
+    "price": 1299,
+    "image": [
+  "https://m.media-amazon.com/images/I/8167A2dpU2L.jpg",
+  "https://m.media-amazon.com/images/I/81QzlJE7YDL.jpg"
+] ,
+    "short_description": "Music roller toy to encourage crawling and movement."
+  },
+  {
+    "id": 3,
+    "brand": "Mee Mee",
+    "model": "Soft Plush Elephant",
+    "category": "Baby Toys",
+    "age_group": "0+ months",
+    "material": "Plush Fabric",
+    "features": ["Washable", "Hypoallergenic", "Cute design"],
+    "color": "Grey",
+    "price": 799,
+    "image": [
+  "https://duckduckbaby.in/cdn/shop/files/DDB15112_1N_73c41f52-b8ab-4a00-a28e-85f2bee3f4e4.jpg?v=1735197549",
+  "https://cdn.fcglcdn.com/brainbees/images/products/438x531/14647494a.webp"
+] ,
+    "short_description": "Ultra-soft and safe elephant plushie for newborns."
+  },
+  {
+    "id": 4,
+    "brand": "Toyshine",
+    "model": "Colorful Stacking Rings",
+    "category": "Baby Toys",
+    "age_group": "6-18 months",
+    "material": "Plastic",
+    "features": ["Stacking play", "Bright colors", "Safe edges"],
+    "color": "Multicolor",
+    "price": 499,
+    "image": [
+  "https://m.media-amazon.com/images/I/71W92b4vJXL._UF1000,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/61gf7DyvKaL._UF1000,1000_QL80_.jpg"
+] ,
+    "short_description": "Classic stacking rings to improve motor skills."
+  },
+  {
+    "id": 5,
+    "brand": "Skillmatics",
+    "model": "Sound Puzzle Board",
+    "category": "Baby Toys",
+    "age_group": "2+ years",
+    "material": "Wood",
+    "features": ["Animal sounds", "Interactive play", "Wooden pieces"],
+    "color": "Multicolor",
+    "price": 1149,
+    "image": [
+  "https://i5.walmartimages.com/seo/SDJMa-Home-Learning-Preschool-Early-Educational-Development-Colorful-Fruit-Vegetables-Wooden-Peg-Puzzle-Jigsaw-Bundle-Shape-Toys-Games-Age-2-7-Years_8f4a0ad7-c3db-4f92-aec9-1f692fb23242.ffc9675de09e8e58c66976aa00b1aedc.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+  "https://www.skillmatics.in/cdn/shop/files/Piece_and_play_-_Up_in_space_6_400x400.webp?v=1748497728"
+] ,
+    "short_description": "Sound-based wooden puzzle for early learners."
+  },
+  {
+    "id": 6,
+    "brand": "Funskool",
+    "model": "Giggles Rattle Set",
+    "category": "Baby Toys",
+    "age_group": "0-12 months",
+    "material": "Plastic",
+    "features": ["Set of 5", "Easy grip", "Rattle sounds"],
+    "color": "Assorted",
+    "price": 349,
+    "image": [
+        "https://m.media-amazon.com/images/I/81OE9UC2G0L._UF1000,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/71g5-HgmXUL._UF1000,1000_QL80_.jpg"
+] ,
+    "short_description": "Bright and safe rattles for newborns to grasp and shake."
+  },
+  {
+    "id": 7,
+    "brand": "Playgro",
+    "model": "Clip Clop Activity Rattle",
+    "category": "Baby Toys",
+    "age_group": "3+ months",
+    "material": "Plastic, Fabric",
+    "features": ["Textured", "Crinkle", "Teething-safe"],
+    "color": "Multicolor",
+    "price": 699,
+    "image": [
+  "https://m.media-amazon.com/images/I/815rMRqrMSL.jpg",
+  "https://m.media-amazon.com/images/I/81yjftX-yVL._UF1000,1000_QL80_.jpg"
+] ,
+    "short_description": "Multi-sensory toy with textures and teething elements."
+  },
+  {
+    "id": 8,
+    "brand": "Little's",
+    "model": "Junior Ring Set",
+    "category": "Baby Toys",
+    "age_group": "6+ months",
+    "material": "Plastic",
+    "features": ["Size sorting", "Bright rings", "Lightweight"],
+    "color": "Rainbow",
+    "price": 279,
+    "image": [
+  "https://m.media-amazon.com/images/I/61eyMTKjGyL._UF350,350_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/71FhBspCa9L._UF350,350_QL80_.jpg"
+] ,
+    "short_description": "Colorful rings for sorting and stacking fun."
+  },
+  {
+    "id": 9,
+    "brand": "LeapFrog",
+    "model": "My Pal Scout",
+    "category": "Baby Toys",
+    "age_group": "6+ months",
+    "material": "Plush, Electronic",
+    "features": ["Customizable name", "Songs & phrases", "Learning games"],
+    "color": "Green",
+    "price": 2899,
+    "image": [
+  "https://m.media-amazon.com/images/I/91KyC-6QdBL.jpg",
+  "https://whatsgoodtodo.com/wp-content/uploads/2022/11/20221114_085833-ccb4bdeb18759f820b15de5242484533-scaled.jpg"
+] ,
+    "short_description": "Personalized learning buddy that talks and sings."
+  },
+  {
+    "id": 10,
+    "brand": "VTech",
+    "model": "Tummy Time Discovery Pillow",
+    "category": "Baby Toys",
+    "age_group": "0-6 months",
+    "material": "Fabric, Plastic",
+    "features": ["Tummy time support", "Detachable toys", "Musical"],
+    "color": "Multicolor",
+    "price": 1990,
+    "image": [
+  "https://m.media-amazon.com/images/I/81eylo4VWwS._UF894,1000_QL80_.jpg",
+  "https://www.vtechkids.com/assets/data/products/%7B0FD2570E-03FD-400B-9D96-AC02DE4B2969%7D/images/80-506800-Packaging-1_thumb_detail.jpg"
+] ,
+    "short_description": "Supports baby's tummy time with soft textures and music."
+  },
+  {
+    "id": 11,
+    "brand": "Smartivity",
+    "model": "Mechanical Xylofun Music Machine",
+    "category": "Baby Toys",
+    "age_group": "3+ years",
+    "material": "Wood",
+    "features": ["STEM kit", "Music creation", "Hands-on learning"],
+    "color": "Natural Wood",
+    "price": 1099,
+    "image": [
+  "https://www.smartivity.in/cdn/shop/files/1032_-_Cataloguing-_Image01_grande.jpg?v=1740515100",
+  "https://m.media-amazon.com/images/I/71+rkrHB7nL.jpg"
+] ,
+    "short_description": "Build-your-own musical xylophone with wooden gears."
+  },
+  {
+    "id": 12,
+    "brand": "Ratnas",
+    "model": "  ",
+    "category": "Baby Toys",
+    "age_group": "12+ months",
+    "material": "Plastic",
+    "features": ["Light & sound", "Animal sounds", "Colorful keys"],
+    "color": "Yellow",
+    "price": 649,
+    "image": [
+  "https://m.media-amazon.com/images/I/71QFmWUEf-S.jpg",
+  "https://www.kheliyatoys.com/wp-content/uploads/2022/02/lion3.jpg"
+] ,
+    "short_description": "Interactive piano with lights and animal sound effects."
+  }
+]

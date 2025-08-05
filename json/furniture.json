@@ -1,0 +1,72 @@
+[
+  {
+       "id": 1,
+    "brand": "IKEA",
+    "model": "HEMNES 3-Drawer Chest",
+    "category": "Bedroom Furniture",
+    "material": "Solid Pine Wood",
+    "color": "White Stain",
+    "dimensions": "42x30 inches",
+    "features": ["Soft-close drawers", "Classic design", "Eco-friendly wood"],
+    "assembly_required": true,
+    "warranty_years": 2,
+    "price_usd": 149.99,
+    "image": "https://www.ikea.com/us/en/images/products/hemnes-3-drawer-chest-white-stain__1151406_pe886157_s5.jpg"
+  },
+  {
+       "id": 2,
+    "brand": "Urban Ladder",
+    "model": "Melbourne L-Shaped Sofa",
+    "category": "Living Room Furniture",
+    "material": "Polyester Fabric + Engineered Wood",
+    "color": "Charcoal Grey",
+    "dimensions": "85x60 inches",
+    "features": ["Removable cushions", "L-shape", "Contemporary design"],
+    "assembly_required": true,
+    "warranty_years": 3,
+    "price_usd": 499.00,
+    "image": "https://www.ulcdn.net/images/products/633471/original/FNSF51CHDB3S_-_main_6.jpg?1658913619"
+  },
+  {
+       "id": 3,
+    "brand": "Home Centre",
+    "model": "Zen Writing Desk",
+    "category": "Office Furniture",
+    "material": "Engineered Wood",
+    "color": "Walnut Brown",
+    "dimensions": "48x24 inches",
+    "features": ["Storage drawers", "Minimalist style", "Anti-scratch top"],
+    "assembly_required": true,
+    "warranty_years": 1,
+    "price_usd": 119.00,
+    "image": "https://media-uk.landmarkshops.in/cdn-cgi/image/h=750,w=750,q=85,fit=cover/homecentre/1000009340578-1000009340577_02-2100.jpg"
+  },
+  {
+       "id": 4,
+    "brand": "Wakefit",
+    "model": "Aura Queen Size Bed with Storage",
+    "category": "Bedroom Furniture",
+    "material": "Engineered Wood + Laminate",
+    "color": "Dark Wenge",
+    "dimensions": "78x60 inches",
+    "features": ["Hydraulic storage", "Headboard shelf", "Matte finish"],
+    "assembly_required": true,
+    "warranty_years": 3,
+    "price_usd": 329.99,
+    "image": "https://m.media-amazon.com/images/I/81ouFuSvc3L._UF894,1000_QL80_.jpg"
+  },
+  {
+       "id": 5,
+    "brand": "Godrej Interio",
+    "model": "Bliss Dining Table Set (4-Seater)",
+    "category": "Dining Furniture",
+    "material": "Sheesham Wood",
+    "color": "Teak Brown",
+    "dimensions": "54x36 inches",
+    "features": ["Compact design", "4 cushioned chairs", "Scratch-resistant"],
+    "assembly_required": true,
+    "warranty_years": 2,
+    "price_usd": 259.99,
+    "image": "https://www.godrejinterio.com/imagestore/B2C/FRAN4SSBLKAL/FRAN4SSBLKAL_A2_500x500.jpg"
+  }
+]

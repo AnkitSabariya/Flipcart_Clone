@@ -1,25 +1,28 @@
-
-  let data;
 const cardBox = document.querySelector(".cardbox");
-
-function database() {
-  data.forEach((product, index) => {
+let key = 0
+function loadProducts() {
+  fetch("./json/tablet.json")
+  .then((res)=> res.json())
+  .then((data) =>{
+       data.forEach((product, index) => {
     const {
       model,
       brand,
       description,
       price,
       images,
-      specifications
+      specifications,
+      id
     } = product;
 
     let currentImg = 0;
 
-    const card = document.createElement("div");
+
+    const card = document.createElement("a");
     card.className =
       "bg-white w-full flex flex-col sm:flex-row p-4 border justify-center items-center border-gray-200 cursor-pointer md:h-[250px] transition-all duration-300 hover:shadow-xl";
-
-    card.innerHTML = `
+       card.setAttribute("href", `product.html?id=${id}&json=tablet`);
+      card.innerHTML = `
       <!-- Image Section -->
       <div class="relative w-full sm:w-1/3 flex items-center justify-center overflow-hidden">
         <img src="${images[0]}" id="img-${index}" class="object-contain h-full max-h-[200px] transition-all duration-300 ease-in-out">
@@ -39,12 +42,13 @@ function database() {
       </div>
 
       <!-- Price Section -->
-      <div class="text-right min-w-[120px] py-2">
+      <div class="flex items-start min-w-full md:min-w-[120px] py-2 px-4">
         <div class="text-xl font-bold text-gray-800">₹${price}</div>
       </div>
     `;
 
     cardBox.appendChild(card);
+    key++
 
     const imgEl = card.querySelector(`#img-${index}`);
 
@@ -61,31 +65,11 @@ function database() {
       clearInterval(interval);
     });
   });
+  })
 }
-
-async function loadProducts(category = "tablets") {
-  const res = await fetch(`./json/tablet.json`);
-  data = await res.json();
-  cardBox.innerHTML = '';
-  database();
-}
-
-async function ready() {
-  let search = document.getElementById("search").value.toLowerCase();
-  if (["mobiles", "phones", "mobile"].includes(search)) {
-    loadProducts("smartphones");
-  } else if (["laptop", "laptops", "lap"].includes(search)) {
-    loadProducts("laptops");
-  } else if (["tab", "tablet", "tablets"].includes(search)) {
-    loadProducts("tablets");
-  }
-}
-
-document.getElementById("search").addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    ready();
-  }
-});
 
 loadProducts();
+
+
+
 

@@ -1,0 +1,308 @@
+[
+  {
+    "id": 1,
+    "brand": "Classmate",
+    "model": "Notebook - 200 Pages",
+    "category": "School Supplies",
+    "type": "Notebook",
+    "material": "Paper",
+    "color": "Multicolor",
+    "dimensions": "29 x 21 cm",
+    "features": ["Single Line", "Soft Cover"],
+    "price": 60,
+    "image": [
+  "https://www.shaanstationery.com/image/cache/catalog/classmate/classmate-notebook-king-size-200pgsHB-1000x1000.jpg",
+  "https://m.media-amazon.com/images/I/61-XEl0HIiL.jpg"
+],
+    "short_description": "Durable single-line notebook with a vibrant cover."
+  },
+  {
+    "id": 2,
+    "brand": "Camlin",
+    "model": "Geometry Box",
+    "category": "School Supplies",
+    "type": "Geometry Kit",
+    "material": "Metal & Plastic",
+    "color": "Blue",
+    "dimensions": "19 x 10 x 3 cm",
+    "features": ["Complete set", "Ruler, compass, protractor included"],
+    "price": 85,
+    "image": [
+ "https://m.media-amazon.com/images/I/71WcwtLvJfL.jpg",
+  "https://www.kokuyocamlin.com/camlin/camel-access/image/catalog/assets/camlin/geometry-box/geometry-boxes/scholar-geometry-box/camlin-scholar-geometry-box/1.JPG"
+],
+    "short_description": "All-in-one geometry tools for school use."
+  },
+  {
+    "id": 3,
+    "brand": "Faber-Castell",
+    "model": "12 Colour Pencils",
+    "category": "School Supplies",
+    "type": "Color Pencils",
+    "material": "Wood",
+    "color": "Assorted",
+    "dimensions": "17.5 x 8.5 cm",
+    "features": ["Smooth coloring", "Break-resistant leads"],
+    "price": 55,
+    "image": [
+  "https://m.media-amazon.com/images/I/81QVLWstzVL.jpg",
+  "https://topperskit.com/cdn/shop/files/92_9a3f40a9-79dd-4f79-9f7f-30d37581c2ad.jpg?v=1709286831"
+] ,
+    "short_description": "Set of 12 vibrant colored pencils."
+  },
+  {
+    "id": 4,
+    "brand": "Natraj",
+    "model": "Pencil Box - 10 Pencils",
+    "category": "School Supplies",
+    "type": "Pencils",
+    "material": "Wood",
+    "color": "Black & Red",
+    "dimensions": "18 x 5 cm",
+    "features": ["HB graphite", "Eraser-tipped"],
+    "price": 30,
+    "image": [
+  "https://m.media-amazon.com/images/I/61pE+DC0h2L._UF1000,1000_QL80_.jpg",
+  "https://images.meesho.com/images/products/317169005/reqj4_512.webp"
+] ,
+    "short_description": "Pack of 10 high-quality HB pencils."
+  },
+  {
+    "id": 5,
+    "brand": "Kores",
+    "model": "Glue Stick 15g",
+    "category": "School Supplies",
+    "type": "Glue Stick",
+    "material": "Non-toxic adhesive",
+    "color": "White",
+    "dimensions": "11 cm height",
+    "features": ["Quick drying", "Washable"],
+    "price": 25,
+    "image": [
+  "https://m.media-amazon.com/images/I/31JeP6kdRDL._UF1000,1000_QL80_.jpg",
+  "https://www.kores.com/wp-content/uploads/fly-images/8583/gluesticks_mockups_2024-700x9999.png"
+],
+    "short_description": "Safe glue stick for school and craft use."
+  },
+  {
+    "id": 6,
+    "brand": "Oddy",
+    "model": "Sticky Notes 3x3",
+    "category": "School Supplies",
+    "type": "Sticky Notes",
+    "material": "Paper",
+    "color": "Yellow",
+    "dimensions": "3 x 3 inches",
+    "features": ["Re-stickable", "Bright color"],
+    "price": 35,
+    "image": [
+  "https://m.media-amazon.com/images/I/71N6ghsntWL.jpg",
+  "https://www.glubery.com/public/uploads/1645988125Oddy_3x3_normal.jpg"
+] ,
+    "short_description": "Pack of 100 sticky notes for reminders."
+  },
+  {
+    "id": 7,
+    "brand": "Luxor",
+    "model": "Highlighter Pen Set - 5 Colors",
+    "category": "School Supplies",
+    "type": "Highlighters",
+    "material": "Plastic",
+    "color": "Assorted",
+    "dimensions": "12 cm length each",
+    "features": ["Fluorescent ink", "Chisel tip"],
+    "price": 89,
+    "image": [
+  "https://m.media-amazon.com/images/I/71NwpaqnP2L.jpg",
+  "https://m.media-amazon.com/images/I/71ZwirHfgDL._UF1000,1000_QL80_.jpg"
+],
+    "short_description": "Set of 5 bright highlighters for studying."
+  },
+  {
+    "id": 8,
+    "brand": "Solo",
+    "model": "A4 Ring Binder",
+    "category": "School Supplies",
+    "type": "File Folder",
+    "material": "Plastic",
+    "color": "Blue",
+    "dimensions": "31 x 25 cm",
+    "features": ["2-ring", "Sturdy spine"],
+    "price": 110,
+    "image": [
+  "https://m.media-amazon.com/images/I/51ZDFGdsvlL._UF1000,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/61AHpoZac6L.jpg"
+],
+    "short_description": "A4 size binder for storing loose papers."
+  },
+  {
+    "id": 9,
+    "brand": "Maped",
+    "model": "Ergologic Eraser",
+    "category": "School Supplies",
+    "type": "Eraser",
+    "material": "Rubber",
+    "color": "White & Blue",
+    "dimensions": "6 x 2 cm",
+    "features": ["PVC-free", "Smudge-free"],
+    "price": 15,
+    "image": [
+  "https://www.sitaramstationers.com/wp-content/uploads/2023/02/Maped-Universal-Gom-Stick-Protective-and-Refillable-Eraser-Pack-cover-page.jpg",
+  "https://cdn.pixelbin.io/v2/black-bread-289bfa/HrdP6X/original/hamleys-product/494230354/300/494230355-1_3750.webp"
+],
+    "short_description": "Ergonomic eraser with clean finish."
+  },
+  {
+    "id": 10,
+    "brand": "Cello",
+    "model": "Butterflow Ball Pen Pack",
+    "category": "School Supplies",
+    "type": "Pen",
+    "material": "Plastic",
+    "color": "Blue",
+    "dimensions": "14 cm length",
+    "features": ["Smooth writing", "Comfort grip"],
+    "price": 40,
+    "image": [
+  "https://m.media-amazon.com/images/I/81SqOKRwffL.jpg",
+  "https://m.media-amazon.com/images/I/61Hpcx3a7xL.jpg"
+] ,
+    "short_description": "Pack of 5 smooth writing ball pens."
+  },
+  {
+    "id": 11,
+    "brand": "Classmate",
+    "model": "Drawing Book - A4",
+    "category": "School Supplies",
+    "type": "Sketchbook",
+    "material": "Thick paper",
+    "color": "Multicolor Cover",
+    "dimensions": "29.7 x 21 cm",
+    "features": ["Thick sheets", "20 pages"],
+    "price": 35,
+    "image": [
+  "https://www.starboxretail.com/Images/products/PRDT202007140404.jpg",
+  "https://www.antmascot.com/_next/image?url=https%3A%2F%2Fd3olmw93qe7qxx.cloudfront.net%2Fimages%2Fproducts%2FCHBBLNB_100pg.jpg&w=3840&q=85"
+],
+    "short_description": "Ideal for coloring and sketching."
+  },
+  {
+    "id": 12,
+    "brand": "Apsara",
+    "model": "  ",
+    "category": "School Supplies",
+    "type": "Sharpener",
+    "material": "Plastic",
+    "color": "Red & Blue",
+    "dimensions": "3 x 2 cm",
+    "features": ["Sharp blade", "Easy grip"],
+    "price": 10,
+    "image": [
+  "https://m.media-amazon.com/images/I/71pQPtFefML._UF1000,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/71kWoI9fG9L.jpg"
+] ,
+    "short_description": "Sharpens clean and quick for fine tips."
+  },
+  {
+    "id": 13,
+    "brand": "Camlin",
+    "model": "Oil Pastels 25 Shades",
+    "category": "School Supplies",
+    "type": "Crayons",
+    "material": "Wax",
+    "color": "Multicolor",
+    "dimensions": "20 x 10 cm box",
+    "features": ["Bright colors", "Smooth flow"],
+    "price": 90,
+    "image": [
+  "https://m.media-amazon.com/images/I/61KKekYry1L.jpg",
+  "https://www.kokuyocamlin.com/camel/gallery/packs/kids/oil-pastels/assorted-packs/assorted-carton-pack-of-25-shades/3.jpg"
+] ,
+    "short_description": "25 oil pastels for creative expression."
+  },
+  {
+    "id": 14,
+    "brand": "Youva",
+    "model": "Subject Divider Notebook",
+    "category": "School Supplies",
+    "type": "Notebook",
+    "material": "Paper",
+    "color": "Blue & White",
+    "dimensions": "A4 size",
+    "features": ["4 subject dividers", "Wiro bound"],
+    "price": 120,
+    "image": [
+  "https://www.bbassets.com/media/uploads/p/l/40201417_1-navneet-youva-single-line-spiral-bound-6-subject-book-21x297-cm.jpg",
+  "https://www.jiomart.com/images/product/original/rvemnmhbgm/navneet-youva-3-subject-book-spiral-bound-with-safety-lock-size-20-3-cm-x-26-7-cm-single-line-150-pages-pack-of-3-product-images-orvemnmhbgm-p595072312-7-202211051107.jpg?im=Resize=(420,420)"
+],
+    "short_description": "Multi-subject notebook for better organization."
+  },
+  {
+    "id": 15,
+    "brand": "Navneet",
+    "model": "Exam Pad - A4",
+    "category": "School Supplies",
+    "type": "Writing Pad",
+    "material": "Hardboard & Paper",
+    "color": "Brown",
+    "dimensions": "32 x 22 cm",
+    "features": ["Sturdy base", "Clip for holding sheets"],
+    "price": 45,
+    "image": [
+  "https://m.media-amazon.com/images/I/71wOdFfqEcL.jpg",
+  "https://www.navneetstore.com/cdn/shop/products/Front1_289cc1dd-5649-4887-8098-fc931af948a8.jpg?v=1682424552"
+],
+    "short_description": "Perfect for writing during exams or tests."
+  },
+  {
+    "id": 16,
+    "brand": "StatMo",
+    "model": "Correction Pen",
+    "category": "School Supplies",
+    "type": "Correction Tool",
+    "material": "Ink",
+    "color": "White",
+    "dimensions": "12 cm",
+    "features": ["Quick dry", "Precise tip"],
+    "price": 35,
+    "image": [
+  "https://statmo.in/wp-content/uploads/2024/11/Camlin-Cover-It-Correction-min.jpg",
+  "https://statmo.in/wp-content/uploads/2017/03/Uniball-Correction-P.jpg"
+] ,
+    "short_description": "Neat corrections with fine-point tip."
+  },
+  {
+    "id": 17,
+    "brand": "Tupperware",
+    "model": "Student Water Bottle",
+    "category": "School Supplies",
+    "type": "Bottle",
+    "material": "Plastic (BPA Free)",
+    "color": "Red",
+    "dimensions": "500ml",
+    "features": ["Leakproof", "Easy carry loop"],
+    "price": 149,
+    "image": [
+  "https://m.media-amazon.com/images/I/51p5LKesaOL.jpg",
+  "https://images.jdmagicbox.com/quickquotes/images_main/tupperware-1000-ml-water-bottle-blue-orange-174500843-cmhk4.jpg"
+] ,
+    "short_description": "Portable water bottle for students."
+  },
+  {
+    "id": 18,
+    "brand": "Reynolds",
+    "model": "Gel Pens Pack of 10",
+    "category": "School Supplies",
+    "type": "Gel Pens",
+    "material": "Plastic",
+    "color": "Blue",
+    "dimensions": "14 cm each",
+    "features": ["Smooth ink", "Comfort grip"],
+    "price": 75,
+    "image": [
+  "https://m.media-amazon.com/images/I/71cMuo8+s5L._UF1000,1000_QL80_.jpg",
+  "https://images.meesho.com/images/products/446381834/kx9rt_512.webp"
+] ,
+    "short_description": "High-quality gel pens for exam use."
+  }
+]

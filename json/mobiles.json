@@ -5,7 +5,10 @@
     "model": "iPhone 14 Pro",
     "price": 129900,
     "description": "Apple iPhone 14 Pro with A16 Bionic, ProMotion display, triple camera system and Dynamic Island.",
-    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-max-silver-select?wid=470&hei=556&fmt=png-alpha&.v=1660753619946",
+    "image": [
+      "https://theinextstore.com/uploads/products/iPhone_14_Pro_Deep_Purple_Pure_Back_iPhone_14_Pro_Deep_Purple_Pure_Front_2-up_Screen__en-IN.psd.jpg",
+      "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111846_sp875-sp876-iphone14-pro-promax.png"
+    ], 
     "specifications": {
       "processor": "A16 Bionic",
       "ram": "6GB",
@@ -24,7 +27,10 @@
     "model": "Galaxy S23 Ultra",
     "price": 134999,
     "description": "Samsung Galaxy S23 Ultra with Snapdragon 8 Gen 2, 200MP camera, S Pen support and 120Hz AMOLED display.",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s918bzkhinu/gallery/in-galaxy-s23-ultra-s918-412787-sm-s918bzkhinu-537422548?$684_547_PNG$",
+    "image": [
+      "https://m.media-amazon.com/images/I/71lD7eGdW-L._UF1000,1000_QL80_.jpg",
+      "https://images.samsung.com/in/smartphones/galaxy-s23-ultra/buy/product_color_green.png"
+    ],
     "specifications": {
       "processor": "Snapdragon 8 Gen 2",
       "ram": "12GB",
@@ -43,7 +49,10 @@
     "model": "Pixel 8",
     "price": 64999,
     "description": "Google Pixel 8 with Google Tensor G3, dual camera setup and flagship clean Android experience.",
-    "image": "https://lh3.googleusercontent.com/RhR3xZG073u8JZ0Fo9d0zZa-Y0JF2b8O6cM9vTdp5ADN8M6hTRejr6nnHjf0doJ=s0",
+    "image": [
+      "https://images-cdn.ubuy.co.in/651efaa19bf33762de6dc7a3-google-pixel-8-unlocked-android.jpg",
+      "https://www.toppc.ee/images/pic/2400/2400/039/1726.jpg"
+    ],
     "specifications": {
       "processor": "Google Tensor G3",
       "ram": "8GB",
@@ -62,7 +71,10 @@
     "model": "11",
     "price": 54999,
     "description": "OnePlus 11 with Snapdragon 8 Gen 2, Hasselblad camera tuning, and 100W fast charging.",
-    "image": "https://image01.oneplus.net/ebp/202302/06/1-m00-0f-af-rb8bw2bgjsyabif4aafczg-kq-uo172_840_840.png",
+    "image": [
+      "https://m.media-amazon.com/images/I/61amb0CfMGL.jpg",
+      "https://m.media-amazon.com/images/I/51QVJveu+-L._UF1000,1000_QL80_.jpg"
+    ],
     "specifications": {
       "processor": "Snapdragon 8 Gen 2",
       "ram": "12GB",
@@ -81,7 +93,10 @@
     "model": "12T Pro",
     "price": 44999,
     "description": "Xiaomi 12T Pro featuring Snapdragon 8+ Gen 1, 200MP main camera and 120W fast charging.",
-    "image": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-12t-pro/gallery/black.png",
+    "image": [
+      "https://images-cdn.ubuy.co.in/648d4122ed60bd10533280a6-xiaomi-12t-pro-sim-free-smartphone-8-gb.jpg",
+      "https://www.etoren.com/upload/images/0.80891400_1665109346_xiaomi-12t-pro-5g-dual-sim-256gb-blue-12gb-ram-global-version.jpg"
+    ], 
     "specifications": {
       "processor": "Snapdragon 8+ Gen 1",
       "ram": "8GB",
@@ -100,7 +115,10 @@
     "model": "Galaxy A34",
     "price": 28999,
     "description": "Galaxy A34 with Exynos 1280, 48MP quad camera, 120Hz display and long-lasting battery.",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a346bzbginu/gallery/in-galaxy-a34-5g-a346-sm-a346bzbginu-555099016?$684_547_PNG$",
+    "image": [
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/j/w/j/galaxy-a34-5g-sm-a346elgcins-samsung-original-imah3p2yb3fcgefq.jpeg?q=90&crop=false",
+      "https://initiative.co.in/wp-content/uploads/2024/02/Untitled-design-96.png"
+    ],
     "specifications": {
       "processor": "Exynos 1280",
       "ram": "6GB",
@@ -119,7 +137,10 @@
     "model": "GT Neo 5T",
     "price": 32999,
     "description": "Realme GT Neo 5T with Snapdragon 8+ Gen 1, 150W fast charge and 144Hz display.",
-    "image": "https://m.media-amazon.com/images/I/61CQkWOz4PL._SL1500_.jpg",
+    "image": [
+      "https://i.gadgets360cdn.com/products/large/realme-gt-neo-5-650x800-1675949444.jpg",
+      "https://images-cdn.ubuy.co.in/663f55e0b3c5e0256e72784c-realme-gt-neo-5-5g-6-74-034.jpg"
+    ], 
     "specifications": {
       "processor": "Snapdragon 8+ Gen 1",
       "ram": "8GB",
@@ -138,7 +159,10 @@
     "model": "Nord 3",
     "price": 27999,
     "description": "OnePlus Nord 3 brings Dimensity 9000, 80W charging, and flagship-level camera at midrange price.",
-    "image": "https://image01.oneplus.net/ebp/202301/20/1-m00-19-3f-rb8bw2b4dziealmcaahnq0y3txu123_840_840.png",
+    "image": [
+      "https://m.media-amazon.com/images/I/6116+vSW+1L._UF1000,1000_QL80_.jpg",
+      "https://media.croma.com/image/upload/v1689050760/Croma%20Assets/Communication/Mobiles/Images/274673_vmfyd3.png"
+    ], 
     "specifications": {
       "processor": "MediaTek Dimensity 9000",
       "ram": "8GB",
@@ -157,7 +181,10 @@
     "model": "Edge 40",
     "price": 37999,
     "description": "Motorola Edge 40 with Snapdragon 7 Gen 1, 144Hz pOLED display and IP68 rating.",
-    "image": "https://www.motorola.in/wp-content/uploads/2023/06/Edge-40-Pearl-White-Front.png",
+    "image": [
+      "https://rukminim2.flixcart.com/image/704/844/xif0q/mobile/2/m/o/edge-40-pay40030in-motorola-original-imagpqzchzhg6fex.jpeg?q=90&crop=false",
+      "https://static.digit.in/default/motorola-edge-40-ad1c42110b.jpeg"
+    ],
     "specifications": {
       "processor": "Snapdragon 7 Gen 1",
       "ram": "8GB",
@@ -176,7 +203,10 @@
     "model": "Galaxy M34",
     "price": 18999,
     "description": "Budget workhorse Galaxy M34 with Exynos 1280, massive 6000 mAh battery and 50MP triple camera.",
-    "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-m346bzgfinu/gallery/in-galaxy-m34-5g-m346-472859-sm-m346bzgfinu-724197822?$684_547_PNG$",
+    "image": [
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/j/t/5/galaxy-m34-without-charger-sm-m346b-samsung-original-imagrue3vhfgvwjz.jpeg?q=20&crop=false",
+      "https://m.media-amazon.com/images/I/816n3woJ-7L.jpg"
+    ], 
     "specifications": {
       "processor": "Exynos 1280",
       "ram": "6GB",
@@ -195,7 +225,10 @@
     "model": "Neo 7 Pro",
     "price": 31999,
     "description": "iQOO Neo 7 Pro with Dimensity 8200, 120W fast charge and 144Hz AMOLED display.",
-    "image": "https://i01.appmifile.com/webfile/globalimg/products/pc/iqoo-neo7-pro/ice-wave.png",
+    "image": [
+      "https://m.media-amazon.com/images/I/712pLRfzDYL.jpg",
+      "https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1688368091552/0b466ccd0ac3f7ca581c10ebda0f5ce0.png"
+    ],
     "specifications": {
       "processor": "MediaTek Dimensity 8200",
       "ram": "8GB",
@@ -214,7 +247,10 @@
     "model": "V27 Pro",
     "price": 34999,
     "description": "Vivo V27 Pro with Helio G99, 50MP portrait night camera and 120Hz AMOLED display.",
-    "image": "https://www.vivo.com/in/consumer/v27-pro/img/overview/key-img-01.png",
+    "image": [
+      "https://media.croma.com/image/upload/v1708673762/Croma%20Assets/Communication/Mobiles/Images/269892_0_ep6ss2.png",
+      "https://oxygendigitalshop.com/media/cache/2500x0/catalog/product/4/_/4_328_1_1679471198.webp"
+    ],
     "specifications": {
       "processor": "MediaTek Helio G99",
       "ram": "8GB",
@@ -233,7 +269,10 @@
     "model": "F5",
     "price": 24999,
     "description": "Poco F5 powered by Snapdragon 7+ Gen 2, excellent performance and 120W fast charging.",
-    "image": "https://i01.appmifile.com/webfile/globalimg/poco/f5/blue.png",
+    "image": [
+      "https://m.media-amazon.com/images/I/51VVwHsJHaL.jpg",
+      "https://m.media-amazon.com/images/I/311m21aq8gL._UF894,1000_QL80_.jpg"
+    ], 
     "specifications": {
       "processor": "Snapdragon 7+ Gen 2",
       "ram": "8GB",
@@ -252,7 +291,10 @@
     "model": "Reno 10 Pro",
     "price": 42999,
     "description": "Oppo Reno 10 Pro with Dimensity 9200, 120Hz AMOLED display and premium camera setup.",
-    "image": "https://image.oppo.com/content/dam/oppo/product-asset-library/v23-pro-5g/blue.png",
+    "image": [
+      "https://m.media-amazon.com/images/I/71SgqjoTNzL.jpg",
+      "https://m.media-amazon.com/images/I/51YpKb9rmTL.jpg"
+    ], 
     "specifications": {
       "processor": "MediaTek Dimensity 9200",
       "ram": "8GB",
@@ -271,7 +313,10 @@
     "model": "Xperia 10 V",
     "price": 34999,
     "description": "Sony Xperia 10 V with lightweight design, IP65/68 and balanced multimedia performance.",
-    "image": "https://www.sonymobile.com/file/745D1F24F73727E0A1F0BE9B5A7F8327.jpg",
+    "image": [
+      "https://sony.scene7.com/is/image/sonyglobalsolutions/752_ProductPrimary_image_Black?$categorypdpnav$&fmt=png-alpha",
+      "https://28mobile.com/cdn/shop/files/584437_3lh3hj_0.png?v=1687590747&width=500"
+    ], 
     "specifications": {
       "processor": "Snapdragon 695",
       "ram": "6GB",
@@ -290,7 +335,10 @@
     "model": "Camon 19 Pro",
     "price": 19999,
     "description": "Tecno Camon 19 Pro with Helio G96, 64MP portrait camera and 60Hz AMOLED display.",
-    "image": "https://www.tecno-mobile.com/medi.../camon-19-pro/phantom-black.png",
+    "image": [
+      "https://m.media-amazon.com/images/I/71I3qs8kiPL._UF1000,1000_QL80_.jpg",
+      "https://www.themobileindian.com/wp-content/uploads/2022/08/Camon-19-P-600x600.png"
+    ],
     "specifications": {
       "processor": "MediaTek Helio G96",
       "ram": "8GB",
@@ -309,7 +357,10 @@
     "model": "C32",
     "price": 8999,
     "description": "Nokia C32 budget smartphone with durable build and clean Android experience.",
-    "image": "https://www.nokia.com/phones/sites/default/files/styles/scale_width_620/public/202212/Nokia_C32.png",
+    "image": [
+      "https://m.media-amazon.com/images/I/61Krd0YkmNL.jpg",
+      "https://m.media-amazon.com/images/I/6108u133XwL._UF1000,1000_QL80_.jpg"
+    ],
     "specifications": {
       "processor": "UNISOC SC9863A1",
       "ram": "3GB",
@@ -328,7 +379,10 @@
     "model": "Moto G54",
     "price": 12999,
     "description": "Moto G54 with detachable back panels, 90Hz display, Snapdragon 695 and clean near-stock UI.",
-    "image": "https://www.motorola.in/wp-content/uploads/2023/01/G54.jpg",
+    "image": [
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/z/1/c/-original-imagt5uhcnfy66wa.jpeg?q=90&crop=false",
+      "https://motorolain.vtexassets.com/arquivos/ids/158556-800-auto?width=800&height=auto&aspect=true"
+    ], 
     "specifications": {
       "processor": "Snapdragon 695",
       "ram": "4GB",
@@ -348,8 +402,8 @@
     "price": 14999,
     "description": "Redmi Note 12 with Snapdragon 685, 5000 mAh battery, and AMOLED display at budget price.",
     "images": [
-    "https://www.apple.com/newsroom/images/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro/article/Apple-iPad-Pro-Ultra-Retina-XDR-display-2-up-240507_inline.jpg.large.jpg",
-    "https://imageio.forbes.com/specials-images/imageserve/661949c1fde3e863086781f3/Apple-iPad-Pro-silver-2up-221018/960x0.jpg?height=711&width=711&fit=bounds"
+    "https://rukminim3.flixcart.com/image/850/1000/xif0q/mobile/9/3/n/-original-imags3bczffagkpc.jpeg?q=20&crop=false",
+    "https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-12/m/9401150mbanner.png"
     ],
     "specifications": {
       "processor": "Snapdragon 685",
@@ -369,7 +423,10 @@
     "model": "A80 Pro",
     "price": 7999,
     "description": "itel A80 Pro harnesses Unisoc T606, triple camera, and 6.6-inch Infinity display at ultra-budget.",
-    "image": "https://www.itel-mobile.com/cmsres/2021/05/Two-tone-Green-Itel-A80-Pro.png",
+    "image": [
+      "https://cdn1.smartprix.com/rx-ifJYhpQFH-w420-h420/itel-a80.webp",
+      "https://www.itel-life.com/fileadmin/assets/v/a90/spec/a90-blue.png"
+    ],
     "specifications": {
       "processor": "Unisoc T606",
       "ram": "4GB",
@@ -389,8 +446,8 @@
     "price": 98999,
     "description": "Samsung flagship foldable with Snapdragon 8 Gen 2, Flex Hinge, and cover screen UX improvements.",
     "images": [
-    "https://www.apple.com/newsroom/images/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro/article/Apple-iPad-Pro-Ultra-Retina-XDR-display-2-up-240507_inline.jpg.large.jpg",
-    "https://imageio.forbes.com/specials-images/imageserve/661949c1fde3e863086781f3/Apple-iPad-Pro-silver-2up-221018/960x0.jpg?height=711&width=711&fit=bounds"
+    "https://rukminim2.flixcart.com/image/704/844/xif0q/mobile/2/j/d/-original-imagztmgzp8ewjhn.jpeg?q=90&crop=false",
+    "https://images.samsung.com/uk/smartphones/galaxy-z-flip5/images/galaxy-z-flip5-highlights-camera-flexcam-mo.jpg?imbypass=true"
     ],
     "specifications": {
       "processor": "Snapdragon 8 Gen 2",

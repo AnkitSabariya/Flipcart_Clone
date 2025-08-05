@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <style>
+      .loader-spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #e0e0e0;
+        border-top: 5px solid #2874f0;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="">
+    <!-- Loader -->
+  <div
+      id="loader"
+      class="fixed inset-0 flex items-center justify-center bg-white z-50"
+    >
+      <div class="loader-spinner"></div>
+    </div>
+    <div id="content" class="hidden">
+      <div id="container" class="h-full bg-[#f7f7f7]">
+        <nav id="mynavbar"></nav>
+        <!-- Mobile search bar (hidden by default) -->
+        <div
+          id="mobileSearchBar"
+          class="lg:hidden w-full px-3 pt-2 hidden bg-white transform transition-all duration-300 ease-in-out origin-top scale-y-0 opacity-0"
+        >
+          <div
+            class="flex items-center border border-gray-300 rounded overflow-hidden"
+          >
+            <input
+              id="searchMobile"
+              type="text"
+              placeholder="Search for products, brands and more"
+              onkeydown="if(event.key==='Enter'){ searchProduct(); }"
+              class="w-full px-4 py-2 text-sm text-black outline-none"
+            />
+            <button onclick="searchProduct()" class="bg-[#f1f3f6] px-4 py-2">
+              <i class="ri-search-line text-[#2874f0] text-lg"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden bg-white shadow-sm">
+          <button
+            id="mobileMenuBtn"
+            class="w-full p-3 text-left flex items-center justify-between"
+          >
+            <span class="font-medium">Categories</span>
+            <i class="ri-menu-line text-xl"></i>
+          </button>
+        </div>
+        <!-- Category Section with Dropdowns -->
+        <div
+          id="categorySection"
+          class="section relative min-h-[40px] text-black w-full shadow-sm hidden lg:block"
+        ></div>
+
+        <!-- Header -->
+
+        <!--Mobile Category Menu -->
+        <div id="mobileMenu" class="lg:hidden bg-white shadow-lg hidden"></div>
+        <!-- body -->
+        <div
+          class="body min-w-full lg:min-w-[978px] max-w-[1680px] p-[4px] lg:p-[8px] w-full relative m-[0_auto]"
+        >
+          <div class="flex flex-col lg:flex-row">
+            <!-- sidebar -->
+            <div
+              id="sidebar"
+              class="side flex-none w-full lg:w-[280px] lg:max-w-[280px] p-[0px] lg:p-[0px_10px_0px_0px] hidden lg:block"
+            >
+              <div class="filters flex w-full flex-col">
+                <div class="relative bg-white shadow-sm">
+                  <section class="pb-[12px] p-[16px] border-b border-gray-200">
+                    <div class="flex justify-between items-center">
+                      <span
+                        class="text-[16px] lg:text-[18px] capitalize w-[67%] font-medium tracking-[0.3px] inline-block"
+                        >Filters</span
+                      >
+                      <span
+                        class="cursor-pointer uppercase text-[#2874f0] text-[11px] lg:text-[12px] font-medium"
+                        >clear all</span
+                      >
+                    </div>
+                    <div
+                      class="dash relative max-h-[104px] overflow-hidden flex mt-[6px] flex-wrap gap-2"
+                    >
+                      <div
+                        class="filterclear bg-gray-100 px-2 py-1 rounded text-xs"
+                      >
+                        <div class="inline-block text-[10px] lg:text-[12px]">
+                          ✕
+                        </div>
+                        <div
+                          class="inline-block whitespace-nowrap overflow-ellipsis overflow-hidden align-bottom ml-[4px] lg:ml-[8px] max-w-[90%]"
+                        >
+                          Mobiles
+                        </div>
+                      </div>
+                      <div
+                        class="filterclear bg-gray-100 px-2 py-1 rounded text-xs"
+                      >
+                        <div class="inline-block text-[10px] lg:text-[12px]">
+                          ✕
+                        </div>
+                        <div
+                          class="inline-block whitespace-nowrap overflow-ellipsis overflow-hidden align-bottom ml-[4px] lg:ml-[8px] max-w-[90%]"
+                        >
+                          Android
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="category text-[12px] lg:text-[14px]">
+                  <div
+                    class="p-[12px] lg:p-[16px] bg-white border-b border-gray-200"
+                  >
+                    <span
+                      class="text-[11px] lg:text-[12px] font-medium uppercase text-[#212121] mb-[5px] block"
+                      >Categories</span
+                    >
+                    <div class="my-2">
+                      <span class="p-[5px_0] text-[#212121] whitespace-nowrap"
+                        ><i
+                          class="ri-arrow-left-s-line inline-block mr-[5px] cursor-pointer"
+                        ></i
+                      ></span>
+                      <a
+                        href="#"
+                        class="text-[#878787] w-[120px] lg:w-[150px] overflow-hidden whitespace-nowrap inline-block align-top overflow-ellipsis font-normal"
+                        >Mobiles & Accessories</a
+                      >
+                    </div>
+                    <div class="my-2">
+                      <a
+                        href="#"
+                        class="w-[120px] lg:w-[150px] pl-[20px] lg:pl-[24px] overflow-hidden whitespace-nowrap inline-block align-top overflow-ellipsis font-normal"
+                        >Mobiles</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Filter sections with responsive padding -->
+                <div
+                  class="gender relative bg-white text-xl lg:text-3xl border-b border-gray-100 py-[10px] lg:py-[12px]"
+                >
+                  <div
+                    class="flex justify-between items-center cursor-pointer px-[10px] lg:px-[12px]"
+                  >
+                    <span
+                      class="uppercase font-semibold tracking-[0.3px] text-[11px] lg:text-[13px]"
+                      >gender</span
+                    >
+                    <i
+                      class="ri-arrow-down-s-line inline-block mr-[5px] text-[#878787] cursor-pointer"
+                    ></i>
+                  </div>
+                </div>
+
+                <div
+                  class="discount relative bg-white border-b border-gray-100 py-[10px] lg:py-[12px]"
+                >
+                  <div
+                    class="flex justify-between items-center cursor-pointer px-[10px] lg:px-[12px]"
+                  >
+                    <span
+                      class="uppercase font-semibold tracking-[0.3px] text-[11px] lg:text-[13px]"
+                      >discount</span
+                    >
+                    <i
+                      class="ri-arrow-down-s-line inline-block mr-[5px] text-[#878787] cursor-pointer"
+                    ></i>
+                  </div>
+                </div>
+
+                <div
+                  class="occassion relative bg-white border-b border-gray-100 py-[10px] lg:py-[12px]"
+                >
+                  <div
+                    class="flex justify-between items-center cursor-pointer px-[10px] lg:px-[12px]"
+                  >
+                    <span
+                      class="uppercase font-semibold tracking-[0.3px] text-[11px] lg:text-[13px]"
+                      >Occasion</span
+                    >
+                    <i
+                      class="ri-arrow-down-s-line inline-block mr-[5px] text-[#878787] cursor-pointer"
+                    ></i>
+                  </div>
+                  <div
+                    class="options m-[7px_0] px-[10px] lg:px-[12px] flex flex-col gap-2 text-[#212121]"
+                  >
+                    <label class="flex items-center">
+                      <input type="checkbox" class="mr-[8px] lg:mr-[10px]" />
+                      <span class="capitalize text-[12px] lg:text-[14px]"
+                        >Casual</span
+                      >
+                    </label>
+                    <label class="flex items-center">
+                      <input type="checkbox" class="mr-[8px] lg:mr-[10px]" />
+                      <span class="capitalize text-[12px] lg:text-[14px]"
+                        >Ethnic</span
+                      >
+                    </label>
+                    <label class="flex items-center">
+                      <input type="checkbox" class="mr-[8px] lg:mr-[10px]" />
+                      <span class="capitalize text-[12px] lg:text-[14px]"
+                        >Formal</span
+                      >
+                    </label>
+                    <label class="flex items-center">
+                      <input type="checkbox" class="mr-[8px] lg:mr-[10px]" />
+                      <span class="capitalize text-[12px] lg:text-[14px]"
+                        >Party</span
+                      >
+                    </label>
+                    <label class="flex items-center">
+                      <input type="checkbox" class="mr-[8px] lg:mr-[10px]" />
+                      <span class="capitalize text-[12px] lg:text-[14px]"
+                        >Wedding</span
+                      >
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  class="Customer relative bg-white border-b border-gray-100 py-[10px] lg:py-[12px]"
+                >
+                  <div
+                    class="flex justify-between items-center cursor-pointer px-[10px] lg:px-[12px]"
+                  >
+                    <span
+                      class="uppercase font-semibold tracking-[0.3px] text-[11px] lg:text-[13px]"
+                      >Customer ratings</span
+                    >
+                    <i
+                      class="ri-arrow-down-s-line inline-block mr-[5px] text-[#878787] cursor-pointer"
+                    ></i>
+                  </div>
+                  <div
+                    class="options m-[7px_0] px-[10px] lg:px-[12px] flex flex-col gap-2 text-[#212121]"
+                  >
+                    <label class="flex items-center">
+                      <input type="checkbox" class="mr-[8px] lg:mr-[10px]" />
+                      <span class="text-[12px] lg:text-[14px]">4★ & above</span>
+                    </label>
+                    <label class="flex items-center">
+                      <input type="checkbox" class="mr-[8px] lg:mr-[10px]" />
+                      <span class="text-[12px] lg:text-[14px]">3★ & above</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  class="Color relative bg-white border-b border-gray-100 py-[10px] lg:py-[12px]"
+                >
+                  <div
+                    class="flex justify-between items-center cursor-pointer px-[10px] lg:px-[12px]"
+                  >
+                    <span
+                      class="uppercase font-semibold tracking-[0.3px] text-[11px] lg:text-[13px]"
+                      >Colors</span
+                    >
+                    <i
+                      class="ri-arrow-down-s-line inline-block mr-[5px] text-[#878787] cursor-pointer"
+                    ></i>
+                  </div>
+                  <div
+                    class="options m-[7px_0] px-[10px] lg:px-[12px] flex flex-col gap-2 text-[#212121]"
+                  >
+                    <label class="flex items-center">
+                      <input type="checkbox" class="mr-[8px] lg:mr-[10px]" />
+                      <span class="capitalize text-[12px] lg:text-[14px]"
+                        >Beige</span
+                      >
+                    </label>
+                    <label class="flex items-center">
+                      <input type="checkbox" class="mr-[8px] lg:mr-[10px]" />
+                      <span class="capitalize text-[12px] lg:text-[14px]"
+                        >Black</span
+                      >
+                    </label>
+                    <label class="flex items-center">
+                      <input type="checkbox" class="mr-[8px] lg:mr-[10px]" />
+                      <span class="capitalize text-[12px] lg:text-[14px]"
+                        >Blue</span
+                      >
+                    </label>
+                    <label class="flex items-center">
+                      <input type="checkbox" class="mr-[8px] lg:mr-[10px]" />
+                      <span class="capitalize text-[12px] lg:text-[14px]"
+                        >Brown</span
+                      >
+                    </label>
+                    <label class="flex items-center">
+                      <input type="checkbox" class="mr-[8px] lg:mr-[10px]" />
+                      <span class="capitalize text-[12px] lg:text-[14px]"
+                        >Burgundy</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Filter Button -->
+            <div class="lg:hidden mb-4">
+              <button
+                id="filterBtn"
+                class="w-full bg-white p-3 flex items-center justify-between shadow-sm"
+              >
+                <span class="font-medium">Filters</span>
+                <i class="ri-filter-line"></i>
+              </button>
+            </div>
+
+            <!-- productbar -->
+            <div class="maincard w-full">
+              <div class="despinfo bg-white flex flex-col p-[2%] lg:p-[1%]">
+                <div class="top">
+                  <div
+                    class="home text-[10px] lg:text-[12px] text-[#878787] inline-block"
+                  >
+                    <span>Home</span>
+                    <i
+                      class="ri-arrow-right-s-line h-[7px] w-[20px] align-middle"
+                    ></i>
+                  </div>
+                  <div
+                    class="home text-[10px] lg:text-[12px] text-[#878787] inline-block"
+                  >
+                    <span>Mobiles & Acc..</span>
+                    <i
+                      class="ri-arrow-right-s-line h-[7px] w-[20px] align-middle"
+                    ></i>
+                  </div>
+                  <div
+                    class="home text-[10px] lg:text-[12px] text-[#878787] inline-block"
+                  >
+                    <span>Mobiles</span>
+                    <i
+                      class="ri-arrow-right-s-line h-[7px] w-[20px] align-middle"
+                    ></i>
+                  </div>
+                </div>
+
+                <div
+                  class="text flex flex-col lg:flex-row lg:items-center mt-[8px] gap-2"
+                >
+                  <h1 class="text-[14px] lg:text-[16px] font-semibold">
+                    Apple iPhone
+                  </h1>
+                  <span
+                    class="inline-block text-[#878787] text-[10px] lg:text-[12px]"
+                    >(Showing 1 – 40 products of 60,600 products)</span
+                  >
+                </div>
+
+                <div
+                  class="sortby flex flex-wrap text-[12px] lg:text-[14px] gap-2 lg:gap-0"
+                >
+                  <span class="p-[8px_10px_4px_0px] font-medium">Sort by</span>
+                  <div
+                    class="cursor-default text-[#2874f0] p-[8px_0px_4px] mx-[5px] lg:mx-[10px] font-medium border-b-2 border-[#2874f0]"
+                  >
+                    Popularity
+                  </div>
+                  <div
+                    class="p-[8px_0px_4px] mx-[5px] lg:mx-[10px] cursor-pointer"
+                  >
+                    Price -- Low to High
+                  </div>
+                  <div
+                    class="p-[8px_0px_4px] mx-[5px] lg:mx-[10px] cursor-pointer hidden lg:block"
+                  >
+                    Price -- High to low
+                  </div>
+                  <div
+                    class="p-[8px_0px_4px] mx-[5px] lg:mx-[10px] cursor-pointer hidden lg:block"
+                  >
+                    Newest First
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardbox w-full flex flex-wrap">
+                <!-- Product cards will go here -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer"></footer>
+      </div>
+    </div>
+
+   
+    <script src="./js/script.js"></script>
+    <script src="./js/wcs.js"></script>
+     <script>
+      // ✅ Loader DOM insert ho gaya, ab check karo
+      const hideLoader = () => {
+        setTimeout(() => {
+          document.getElementById("loader").style.opacity = 0;
+          setTimeout(() => {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("content").classList.remove("hidden");
+          }, 400);
+        }, 1000);
+      };
+
+      if (document.readyState === "complete") {
+        hideLoader();
+      } else {
+        window.addEventListener("load", hideLoader);
+      }
+    </script>
+  </body>
+</html>

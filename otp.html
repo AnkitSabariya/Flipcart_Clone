@@ -1,232 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OTP Verification - Flipkart</title>
-  <link rel="stylesheet" href="./css/login and otp.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Verification - Flipkart</title>
+    <link rel="stylesheet" href="./css/login and otp.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
 
-    .loader-screen {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: white;
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      flex-direction: column;
-    }
+      .loader-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fce610;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        flex-direction: column;
+      }
 
-    .loader-text {
-      font-size: 24px;
-      font-weight: bold;
-      color: #2874f0;
-    }
+      .loader-text {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2874f0;
+      }
 
-    .logo {
-      width: 120px;
-      margin-bottom: 20px;
-    }
+      .logo {
+        width: 120px;
+        margin-bottom: 20px;
+      }
 
-    .otp-toast {
-      position: fixed;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(33, 33, 33, 0.95);
-      backdrop-filter: blur(8px);
-      color: #fff;
-      padding: 12px 24px;
-      font-size: 15px;
-      border-radius: 8px;
-      opacity: 0;
-      z-index: 999;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      transition: bottom 0.4s ease, opacity 0.4s ease;
-      pointer-events: none;
-    }
+      .otp-toast {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(33, 33, 33, 0.95);
+        backdrop-filter: blur(8px);
+        color: #fff;
+        padding: 12px 24px;
+        font-size: 15px;
+        border-radius: 8px;
+        opacity: 0;
+        z-index: 999;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        transition: bottom 0.4s ease, opacity 0.4s ease;
+        pointer-events: none;
+      }
 
-    .otp-toast.show {
-      bottom: 50px;
-      opacity: 1;
-    }
+      .otp-toast.show {
+        bottom: 50px;
+        opacity: 1;
+      }
 
-    .otp-box {
-      user-select: none;
-      caret-color: #2874f0;
-      width: 40px;
-      height: 40px;
-      font-size: 18px;
-      text-align: center;
-      margin-right: 6px;
-    }
+      .otp-box {
+        user-select: none;
+        caret-color: #2874f0;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 8px;
+        border: 2px solid #877272d8;
+        border-radius: 6px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
 
-    #otp-display {
-      margin-bottom: 10px;
-      font-weight: 600;
-      color: #2874f0;
-      font-size: 16px;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
+      .otp-box:focus {
+        outline: none;
+        border-color: #2874f0;
+        box-shadow: 0 0 4px rgba(40, 116, 240, 0.4);
+      }
+      .timer {
+        display: inline-block;
+        background: #f1f3f6; /* light grey bg */
+        color: #2874f0; /* Flipkart blue text */
+        font-weight: 600;
+        padding: 3px 10px;
+        border-radius: 4px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        margin-left: 8px;
+        transition: all 0.3s ease;
+      }
+      .timer {
+        animation: pulse 1s infinite alternate;
+      }
 
-  <div class="loader-screen" id="loaderScreen">
-    <img src="https://1000logos.net/wp-content/uploads/2021/02/Flipkart-logo.png" class="logo" alt="Flipkart" />
-    <h2 style="color: #2874f0;">Welcome to Flipkart</h2>
-  </div>
-
-  <div class="container">
-    <div class="left-panel">
-      <div class="content">
-        <img src="https://1000logos.net/wp-content/uploads/2021/02/Flipkart-logo.png" class="logo" alt="Flipkart Logo">
-        <h1>Login</h1>
-        <p>Get access to your Orders, Wishlist and Recommendations</p>
-      </div>
-    </div>
-
-    <div class="right-panel">
-      <div class="form-container">
-        <div class="otp-header">
-          <p class="otp-message">Please enter the OTP sent to</p>
-          <div class="phone-info">
-            <span class="phone-number" id="user">7016676923</span>
-            <a href="login.html" class="change-number">Change</a>
-          </div>
-        </div>
-
-        <!-- ✅ OTP display box -->
-        <div id="otp-display">
-          Your OTP is: <span id="otpCodeDisplay"></span>
-        </div>
-
-        <form class="otp-form" onsubmit="return verifyOtp(event)">
-          <div class="otp-input-container" style="display:flex;">
-            <input type="text" maxlength="1" class="otp-box" required />
-            <input type="text" maxlength="1" class="otp-box" required />
-            <input type="text" maxlength="1" class="otp-box" required />
-            <input type="text" maxlength="1" class="otp-box" required />
-            <input type="text" maxlength="1" class="otp-box" required />
-            <input type="text" maxlength="1" class="otp-box" required />
-          </div>
-
-          <button type="submit" class="verify-btn">Verify</button>
-        </form>
-
-        <div class="resend-info">
-          <p class="resend-text">
-            Not received your code?
-            <span class="timer" id="time">00:15</span>
-            <span id="resend" class="resend-btn" onclick="resendOtp()" style="display:none;">Resend OTP</span>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="otp-toast" id="toast"></div>
-
-  <script>
-    let otp = generateOtp();
-    let count = 15;
-    let interval;
-
-    const user = document.getElementById("user");
-    const toast = document.getElementById("toast");
-    const time = document.getElementById("time");
-    const resendBtn = document.getElementById("resend");
-    const inputs = document.querySelectorAll(".otp-box");
-    const loader = document.getElementById("loaderScreen");
-    const otpDisplay = document.getElementById("otpCodeDisplay");
-
-    const phone = localStorage.getItem("userNumber") || "7016676923";
-    user.textContent = phone;
-
-    showOtp(otp);
-    startTimer();
-
-    function generateOtp() {
-      return Math.floor(100000 + Math.random() * 900000);
-    }
-
-    function showOtp(code) {
-      otpDisplay.textContent = code;
-      setTimeout(() => {
-        otpDisplay.textContent = '';
-      }, 8000);
-    }
-
-    function startTimer() {
-      resendBtn.style.display = "none";
-      time.textContent = "00:15";
-      count = 15;
-      clearInterval(interval);
-
-      interval = setInterval(() => {
-        count--;
-        time.textContent = `00:${count < 10 ? "0" + count : count}`;
-        if (count <= 0) {
-          clearInterval(interval);
-          resendBtn.style.display = "inline";
+      @keyframes pulse {
+        0% {
+          opacity: 1;
         }
-      }, 1000);
-    }
+        100% {
+          opacity: 0.7;
+        }
+      }
 
-    function resendOtp() {
-      otp = generateOtp();
+      #otp-display {
+        margin-bottom: 10px;
+        font-weight: 600;
+        color: #2874f0;
+        font-size: 16px;
+        text-align: center;
+      }
+      .resend-btn {
+        color: red; /* Flipkart blue */
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: underline;
+        transition: all 0.2s ease;
+      }
+
+      .resend-btn:hover {
+        color: #0b5ed7; /* Slightly darker blue on hover */
+        text-decoration: none; /* Optional: remove underline on hover */
+      }
+
+      .resend-btn:active {
+        transform: scale(0.96); /* Slight click effect */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="loader-screen" id="loaderScreen">
+      <img src="./css/logo.png" class="logo" alt="Flipkart" />
+      <h2 style="color: #2874f0" class="text-md">Welcome to Flipkart</h2>
+    </div>
+
+    <div class="container">
+      <div class="left-panel">
+        <div class="content">
+          <img
+            src="https://1000logos.net/wp-content/uploads/2021/02/Flipkart-logo.png"
+            class="logo"
+            alt="Flipkart Logo"
+          />
+          <h1>Login</h1>
+          <p>Get access to your Orders, Wishlist and Recommendations</p>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div class="form-container">
+          <div class="otp-header">
+            <p class="otp-message">Please enter the OTP sent to</p>
+            <div class="phone-info">
+              <span class="phone-number" id="user">7016676923</span>
+              <a href="login.html" class="change-number">Change</a>
+            </div>
+          </div>
+
+          <!-- ✅ OTP display box -->
+          <div id="otp-display">
+            Your OTP is: <span id="otpCodeDisplay"></span>
+          </div>
+
+          <form class="otp-form" onsubmit="return verifyOtp(event)">
+            <div class="otp-input-container" style="display: flex">
+              <input type="text" maxlength="1" class="otp-box" required />
+              <input type="text" maxlength="1" class="otp-box" required />
+              <input type="text" maxlength="1" class="otp-box" required />
+              <input type="text" maxlength="1" class="otp-box" required />
+              <input type="text" maxlength="1" class="otp-box" required />
+              <input type="text" maxlength="1" class="otp-box" required />
+            </div>
+
+            <button type="submit" class="verify-btn">Verify</button>
+          </form>
+
+          <div class="resend-info">
+            <p class="resend-text">
+              Not received your code?
+              <span class="timer" id="time">00:15</span>
+              <span
+                id="resend"
+                class="resend-btn"
+                onclick="resendOtp()"
+                style="display: none"
+                >Resend OTP</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="otp-toast" id="toast"></div>
+
+    <script>
+      let otp = generateOtp();
+      let count = 30;
+      let interval;
+
+      const user = document.getElementById("user");
+      const toast = document.getElementById("toast");
+      const time = document.getElementById("time");
+      const resendBtn = document.getElementById("resend");
+      const inputs = document.querySelectorAll(".otp-box");
+      const loader = document.getElementById("loaderScreen");
+      const otpDisplay = document.getElementById("otpCodeDisplay");
+
+      const phone = sessionStorage.getItem("userNumber") || "7016676923";
+
+      user.textContent = phone;
+
       showOtp(otp);
       startTimer();
-    }
 
-    function verifyOtp(event) {
-      event.preventDefault();
-      const entered = Array.from(inputs).map(i => i.value).join("");
-
-      if (entered === String(otp)) {
-        toast.textContent = "✅ OTP Verified Successfully";
-        toast.classList.add("show");
-
-        loader.style.display = "flex";
-
-        setTimeout(() => {
-          window.location.href = "index.html";
-        }, 3000);
-      } else {
-        toast.textContent = "❌ Invalid OTP";
-        toast.classList.add("show");
-        setTimeout(() => toast.classList.remove("show"), 2000);
+      function generateOtp() {
+        return Math.floor(100000 + Math.random() * 900000);
       }
-    }
 
-    inputs.forEach((input, index) => {
-      input.addEventListener("paste", (e) => e.preventDefault());
-      input.addEventListener("drop", (e) => e.preventDefault());
-      input.addEventListener("dragover", (e) => e.preventDefault());
-      input.addEventListener("contextmenu", (e) => e.preventDefault());
+      function showOtp(code) {
+        otpDisplay.textContent = code;
+        setTimeout(() => {
+          otpDisplay.textContent = "";
+        }, 15000);
+      }
 
-      input.addEventListener("input", (e) => {
-        if (e.inputType !== "deleteContentBackward" && input.value) {
-          if (inputs[index + 1]) inputs[index + 1].focus();
-        }
-      });
+      function startTimer() {
+        resendBtn.style.display = "none";
+        time.textContent = "00:15";
+        count = 15;
+        clearInterval(interval);
 
-      input.addEventListener("keydown", (e) => {
-        if (e.key === "Backspace") {
-          if (input.value === "" && inputs[index - 1]) {
-            inputs[index - 1].focus();
-            inputs[index - 1].value = "";
+        interval = setInterval(() => {
+          count--;
+          time.textContent = `00:${count < 10 ? "0" + count : count}`;
+          if (count <= 0) {
+            clearInterval(interval);
+            resendBtn.style.display = "inline";
           }
+        }, 1000);
+      }
+
+      function resendOtp() {
+        otp = generateOtp();
+        showOtp(otp);
+        startTimer();
+      }
+
+      function verifyOtp(event) {
+        event.preventDefault();
+        const entered = Array.from(inputs)
+          .map((i) => i.value)
+          .join("");
+
+        if (entered === String(otp)) {
+          toast.textContent = "✅ OTP Verified Successfully";
+          toast.classList.add("show");
+          sessionStorage.setItem("isLoggedIn", "true");
+
+          loader.style.display = "flex";
+
+          setTimeout(() => {
+            window.location.href = "index.html";
+          }, 3000);
+        } else {
+          toast.textContent = "❌ Invalid OTP";
+          toast.classList.add("show");
+          setTimeout(() => toast.classList.remove("show"), 2000);
         }
+      }
+
+      inputs.forEach((input, index) => {
+        input.addEventListener("paste", (e) => e.preventDefault());
+        input.addEventListener("drop", (e) => e.preventDefault());
+        input.addEventListener("dragover", (e) => e.preventDefault());
+        input.addEventListener("contextmenu", (e) => e.preventDefault());
+
+        input.addEventListener("input", (e) => {
+          if (e.inputType !== "deleteContentBackward" && input.value) {
+            if (inputs[index + 1]) inputs[index + 1].focus();
+          }
+        });
+
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Backspace") {
+            if (input.value === "" && inputs[index - 1]) {
+              inputs[index - 1].focus();
+              inputs[index - 1].value = "";
+            }
+          }
+        });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart Travel Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <style>
+        .floating-label { transition: all 0.2s ease; }
+        .floating-label.active { transform: translateY(-24px); font-size: 12px; color: #2563eb; }
+        .swap-button { transition: transform 0.3s ease; }
+        .swap-button:hover { transform: rotate(180deg); }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 1.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .glass-card:hover { transform: translateY(-4px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); }
+        .loader-spinner {
+            width: 50px; height: 50px;
+            border: 5px solid #e0e0e0;
+            border-top: 5px solid #2874f0;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { 0% { transform: rotate(0); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Loader -->
+    <div id="loader" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <div id="content" class="hidden">
+        <!-- Header -->
+        <header class="bg-blue-600 text-white py-4 px-6 flex justify-between items-center">
+            <a href="./index.html">
+                <div class="text-2xl font-bold flex items-center space-x-1">
+                    <span class="text-white">Flip</span>
+                    <span class="text-yellow-400">kart</span>
+                    <span class="text-sm font-light ml-2">Travel</span>
+                </div>
+            </a>
+            <nav class="flex items-center space-x-6 text-sm">
+                <a href="./cart.html" class="flex items-center space-x-1 hover:text-yellow-400 transition-colors">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                </a>
+                <span class="cursor-pointer">Login</span>
+                <span class="cursor-pointer">More <i class="fa-solid fa-chevron-down text-xs"></i></span>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <div class="relative">
+            <img src="https://canadawiz.ca/wp-content/uploads/2022/02/canada-ultra-low-cost-airline.jpeg" alt="Banner" class="w-full h-[420px] object-cover"/>
+            <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center px-4">
+                <h1 class="text-white text-3xl md:text-5xl font-bold mb-6 text-center">Get. Set. Travel.</h1>
+                <div id="container" class="flex flex-col gap-4 w-full max-w-3xl"></div>
+            </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="bg-white shadow-xl rounded-xl p-6 lg:p-8">
+                <!-- Trip Type Selection -->
+                <div class="flex items-center gap-6 mb-6">
+                    <label class="flex items-center gap-2 text-sm font-medium cursor-pointer">
+                        <input type="radio" name="trip" value="oneway" class="w-4 h-4 text-blue-600 accent-blue-600" checked/>
+                        <span class="text-gray-700">One Way</span>
+                    </label>
+                    <label class="flex items-center gap-2 text-sm font-medium cursor-pointer">
+                        <input type="radio" name="trip" value="roundtrip" class="w-4 h-4 text-blue-600 accent-blue-600"/>
+                        <span class="text-gray-700">Round Trip</span>
+                    </label>
+                </div>
+
+                <!-- Main Form Grid -->
+                <div class="flex flex-col lg:flex-row gap-4 lg:gap-4 items-stretch lg:items-end">
+                    <!-- From Input -->
+                    <div class="flex-1 lg:flex-[2] relative">
+                        <div class="relative">
+                            <select id="fromInput" class="w-full px-4 pt-6 pb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 cursor-pointer bg-white text-sm appearance-none h-14">
+                                <option value="">From</option>
+                                <option value="BOM">Mumbai, IN (BOM)</option>
+                                <option value="HYD">Hyderabad, IN (HYD)</option>
+                                <option value="BKK">Bangkok, TH (BKK)</option>
+                                <option value="KUL">Kuala Lumpur, MY (KUL)</option>
+                                <option value="CCU">Kolkata, IN (CCU)</option>
+                                <option value="BLR">Bengaluru, IN (BLR)</option>
+                                <option value="DEL">New Delhi, IN (DEL)</option>
+                                <option value="MAA">Chennai, IN (MAA)</option>
+                                <option value="GOI">Goa, IN (GOI)</option>
+                                <option value="PNQ">Pune, IN (PNQ)</option>
+                            </select>
+                            <label for="fromInput" class="absolute left-4 top-2 text-xs text-blue-600 font-medium pointer-events-none bg-white px-1">From</label>
+                            <i class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                        </div>
+                    </div>
+
+                    <!-- Swap Button -->
+                    <div class="flex justify-center lg:flex-none lg:w-[60px]">
+                        <button id="swapButton" class="w-12 h-12 bg-white border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 hover:rotate-180" onclick="swapLocations()">
+                            <svg class="w-4 h-4 text-gray-400" viewBox="0 0 14 14">
+                                <path d="M0 8l5.078 6v-3.6H14V8H0zm14-2L8.922 0v3.6H0V6h14z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- To Input -->
+                    <div class="flex-1 lg:flex-[2] relative">
+                        <div class="relative">
+                            <select id="toInput" class="w-full px-4 pt-6 pb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 cursor-pointer bg-white text-sm appearance-none h-14">
+                                <option value="">To</option>
+                                <option value="BOM">Mumbai, IN (BOM)</option>
+                                <option value="HYD">Hyderabad, IN (HYD)</option>
+                                <option value="BKK">Bangkok, TH (BKK)</option>
+                                <option value="KUL">Kuala Lumpur, MY (KUL)</option>
+                                <option value="CCU">Kolkata, IN (CCU)</option>
+                                <option value="BLR">Bengaluru, IN (BLR)</option>
+                                <option value="DEL">New Delhi, IN (DEL)</option>
+                                <option value="MAA">Chennai, IN (MAA)</option>
+                                <option value="GOI">Goa, IN (GOI)</option>
+                                <option value="PNQ">Pune, IN (PNQ)</option>
+                            </select>
+                            <label for="toInput" class="absolute left-4 top-2 text-xs text-blue-600 font-medium pointer-events-none bg-white px-1">To</label>
+                            <i class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                        </div>
+                    </div>
+
+                    <!-- Depart Date -->
+                    <div class="flex-1 lg:flex-[1.5] relative">
+                        <input type="date" id="departDate" class="w-full px-4 pt-6 pb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm h-14"/>
+                        <label class="absolute left-4 top-2 text-xs text-blue-600 font-medium pointer-events-none bg-white px-1">Depart On</label>
+                    </div>
+
+                    <!-- Return Date -->
+                    <div class="flex-1 lg:flex-[1.5] relative">
+                        <input type="date" id="returnDate" class="w-full px-4 pt-6 pb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm h-14 opacity-50 cursor-not-allowed" disabled/>
+                        <label class="absolute left-4 top-2 text-xs text-gray-400 font-medium pointer-events-none bg-white px-1">Return On</label>
+                    </div>
+
+                    <!-- Travellers -->
+                    <div class="flex-1 lg:flex-[2] relative">
+                        <select id="travellers" class="w-full px-4 pt-6 pb-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm bg-white appearance-none h-14">
+                            <option value="1-economy">1 Traveller | Economy</option>
+                            <option value="2-economy">2 Travellers | Economy</option>
+                            <option value="3-economy">3 Travellers | Economy</option>
+                            <option value="4-economy">4 Travellers | Economy</option>
+                            <option value="1-business">1 Traveller | Business</option>
+                            <option value="2-business">2 Travellers | Business</option>
+                            <option value="1-first">1 Traveller | First</option>
+                        </select>
+                        <label class="absolute left-4 top-2 text-xs text-blue-600 font-medium pointer-events-none bg-white px-1">Travellers | Class</label>
+                        <i class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                    </div>
+
+                    <!-- Search Button -->
+                    <div class="flex-1 lg:flex-[1.5]">
+                        <button onclick="searchButton()" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-4 rounded-lg font-semibold text-sm transition-all duration-200 hover:shadow-lg flex items-center justify-center gap-2 h-14">
+                            <i class="fas fa-search"></i>
+                            <span>SEARCH</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flight Results Table -->
+            <div class="w-full overflow-x-auto px-4 py-10">
+                <h2 class="text-xl font-semibold mb-4 text-gray-800">✈️ Available Flights</h2>
+                <table class="min-w-full border-collapse rounded-lg shadow overflow-hidden">
+                    <thead class="bg-blue-600 text-white">
+                        <tr>
+                            <th class="px-4 py-3 text-left">Flight</th>
+                            <th class="px-4 py-3 text-left">From</th>
+                            <th class="px-4 py-3 text-left">To</th>
+                            <th class="px-4 py-3 text-left">Depart</th>
+                            <th class="px-4 py-3 text-left">Return</th>
+                            <th class="px-4 py-3 text-left">Dep Time</th>
+                            <th class="px-4 py-3 text-left">Arr Time</th>
+                            <th class="px-4 py-3 text-left">Travellers</th>
+                            <th class="px-4 py-3 text-left">Class</th>
+                            <th class="px-4 py-3 text-left">Price (₹)</th>
+                            <th class="px-4 py-3 text-left">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3">AI203</td>
+                            <td class="px-4 py-3">DEL</td>
+                            <td class="px-4 py-3">BOM</td>
+                            <td class="px-4 py-3">15/07/2025</td>
+                            <td class="px-4 py-3">-</td>
+                            <td class="px-4 py-3">10:00</td>
+                            <td class="px-4 py-3">12:10</td>
+                            <td class="px-4 py-3">1</td>
+                            <td class="px-4 py-3">Economy</td>
+                            <td class="px-4 py-3 font-semibold text-green-600">₹5,500</td>
+                            <td class="px-4 py-3">
+                                <button onclick="bookFlight('AI203')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                    Book Now
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3">6E512</td>
+                            <td class="px-4 py-3">BOM</td>
+                            <td class="px-4 py-3">HYD</td>
+                            <td class="px-4 py-3">15/07/2025</td>
+                            <td class="px-4 py-3">20/07/2025</td>
+                            <td class="px-4 py-3">14:30</td>
+                            <td class="px-4 py-3">16:30</td>
+                            <td class="px-4 py-3">2</td>
+                            <td class="px-4 py-3">Business</td>
+                            <td class="px-4 py-3 font-semibold text-green-600">₹9,800</td>
+                            <td class="px-4 py-3">
+                                <button onclick="bookFlight('6E512')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                    Book Now
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3">SG789</td>
+                            <td class="px-4 py-3">BLR</td>
+                            <td class="px-4 py-3">GOI</td>
+                            <td class="px-4 py-3">16/07/2025</td>
+                            <td class="px-4 py-3">-</td>
+                            <td class="px-4 py-3">09:00</td>
+                            <td class="px-4 py-3">10:20</td>
+                            <td class="px-4 py-3">1</td>
+                            <td class="px-4 py-3">Economy</td>
+                            <td class="px-4 py-3 font-semibold text-green-600">₹4,500</td>
+                            <td class="px-4 py-3">
+                                <button onclick="bookFlight('SG789')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                    Book Now
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3">UK404</td>
+                            <td class="px-4 py-3">DEL</td>
+                            <td class="px-4 py-3">BKK</td>
+                            <td class="px-4 py-3">22/07/2025</td>
+                            <td class="px-4 py-3">29/07/2025</td>
+                            <td class="px-4 py-3">23:00</td>
+                            <td class="px-4 py-3">05:30</td>
+                            <td class="px-4 py-3">3</td>
+                            <td class="px-4 py-3">Economy</td>
+                            <td class="px-4 py-3 font-semibold text-green-600">₹19,500</td>
+                            <td class="px-4 py-3">
+                                <button onclick="bookFlight('UK404')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                    Book Now
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3">MH101</td>
+                            <td class="px-4 py-3">MAA</td>
+                            <td class="px-4 py-3">KUL</td>
+                            <td class="px-4 py-3">18/07/2025</td>
+                            <td class="px-4 py-3">-</td>
+                            <td class="px-4 py-3">18:45</td>
+                            <td class="px-4 py-3">00:15</td>
+                            <td class="px-4 py-3">1</td>
+                            <td class="px-4 py-3">Premium Economy</td>
+                            <td class="px-4 py-3 font-semibold text-green-600">₹13,200</td>
+                            <td class="px-4 py-3">
+                                <button onclick="bookFlight('MH101')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                    Book Now
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        // Input elements
+        const fromInput = document.getElementById("fromInput");
+        const toInput = document.getElementById("toInput");
+        const departDate = document.getElementById("departDate");
+        const returnDate = document.getElementById("returnDate");
+        const travellers = document.getElementById("travellers");
+        const container = document.getElementById("container");
+
+        // Book flight function - simple
+        function bookFlight(flightNumber) {
+            window.location.href = './flightbook.html?flight=' + flightNumber;
+        }
+
+        // Search button functionality
+        function searchButton() {
+            const from = fromInput.value;
+            const to = toInput.value;
+            const depart = departDate.value;
+            
+            container.innerHTML = "";
+
+            if (from && to && from !== to) {
+                const card = document.createElement("div");
+                card.className = "glass-card w-full max-w-md mx-auto text-white p-4 rounded-lg shadow-lg flex flex-col items-center";
+                card.innerHTML = `
+                    <h3 class="text-lg font-bold">Flight Found!</h3>
+                    <p class="mb-2">${from} → ${to}</p>
+                    <p class="mb-2">Date: ${depart || 'Today'}</p>
+                    <p class="text-xl font-semibold text-blue-400 mb-3">₹5,500</p>
+                    <button onclick="bookFlight('AI203')" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold transition-colors">
+                        Book Now
+                    </button>
+                `;
+                container.appendChild(card);
+            } else {
+                const no = document.createElement("p");
+                no.className = "text-white text-center font-semibold text-lg";
+                no.innerText = "Please select different cities";
+                container.appendChild(no);
+            }
+        }
+
+        // Round trip toggle for return date
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('input[name="trip"]').forEach((radio) => {
+                radio.addEventListener("change", () => {
+                    if (radio.value === "oneway") {
+                        returnDate.disabled = true;
+                        returnDate.value = "";
+                        returnDate.classList.add("opacity-50", "cursor-not-allowed");
+                    } else {
+                        returnDate.disabled = false;
+                        returnDate.classList.remove("opacity-50", "cursor-not-allowed");
+                    }
+                });
+            });
+        });
+
+        // Swap locations function
+        function swapLocations() {
+            const fromValue = fromInput.value;
+            const toValue = toInput.value;
+            fromInput.value = toValue;
+            toInput.value = fromValue;
+        }
+
+        // Loader
+        const hideLoader = () => {
+            setTimeout(() => {
+                document.getElementById("loader").style.opacity = 0;
+                setTimeout(() => {
+                    document.getElementById("loader").style.display = "none";
+                    document.getElementById("content").classList.remove("hidden");
+                }, 400);
+            }, 1000);
+        };
+
+        if (document.readyState === "complete") {
+            hideLoader();
+        } else {
+            window.addEventListener("load", hideLoader);
+        }
+    </script>
+</body>
+</html>

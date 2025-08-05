@@ -1,5 +1,6 @@
 [
   {
+       "id": 1,
     "category": "Double Door",
     "brand": "Samsung",
     "model": "RT28A3453S8/HL",
@@ -10,11 +11,15 @@
     "price_usd": 389.99,
     "dimensions_mm": [555, 1635, 637],
     "weight_kg": 46,
-    "image_url": "https://images.samsung.com/rt28a3453s8.jpg",
+    "images" :  [
+      "https://www.jiomart.com/images/product/original/492911270/samsung-253-litres-3-star-frost-free-double-door-refrigerator-elegant-inox-rt28a3453s8-hl-digital-o492911270-p593281476-2-202207311355.jpeg?im=Resize=(420,420)",
+      "https://m.media-amazon.com/images/I/71PozRYBlZL.jpg"
+    ],
     "short_description": "Efficient double door refrigerator with all-around cooling and toughened glass shelves.",
     "features": "Stabilizer Free Operation, Easy Slide Shelf, Runs on Solar Energy."
   },
   {
+       "id": 2,
     "category": "Side-by-Side",
     "brand": "LG",
     "model": "GC-B247SLUV",
@@ -25,11 +30,15 @@
     "price_usd": 1199.99,
     "dimensions_mm": [912, 1790, 738],
     "weight_kg": 83,
-    "image_url": "https://images.lg.com/gc-b247sluv.jpg",
+    "images" :  [
+      "https://www.lg.com/africa/images/refrigerators/md05865317/gallery/GC-B247SLUV-D-01.jpg",
+      "https://d1kivxjtmxnd4.cloudfront.net/filters:format(webp)/images/LG%20_B247SLUV_5.jpg"
+    ],
     "short_description": "Large-capacity side-by-side refrigerator with multi-airflow cooling and efficient storage.",
     "features": "Moist Balance Crisper, LED lighting, Inverter Linear Compressor."
   },
   {
+       "id": 3,
     "category": "French Door",
     "brand": "Whirlpool",
     "model": "WRF535SWHZ",
@@ -40,11 +49,15 @@
     "price_usd": 1799.00,
     "dimensions_mm": [889, 1778, 880],
     "weight_kg": 120,
-    "image_url": "https://images.whirlpool.com/wrf535swhz.jpg",
+    "images" : [
+      "https://images-cdn.ubuy.co.in/67d846a387bcf56ccc127604-whirlpool-wrf535smhz-25-cu-ft.jpg",
+      "https://www.whirlpool.ca/is/image/content/dam/global/shot-lists/2017/p170810/open-propped-p170810-4z.tif?$PRODUCT-FEATURE$"
+    ],
     "short_description": "Spacious French door refrigerator with flexible compartments and fresh food preservation.",
     "features": "Humidity-Controlled Crispers, Fingerprint-Resistant Finish, LED Interior Lighting."
   },
   {
+       "id": 4,
     "category": "Mini Fridge",
     "brand": "Haier",
     "model": "HR-62VS",
@@ -55,11 +68,15 @@
     "price_usd": 99.99,
     "dimensions_mm": [475, 495, 450],
     "weight_kg": 16,
-    "image_url": "https://images.haier.com/hr-62vs.jpg",
+    "images" : [
+      "https://homedecorlo.com/cdn/shop/products/31R7kitFPqL.jpg?v=1624678882",
+      "https://images.jdmagicbox.com/quickquotes/images_main/haier_hr_62vs_direct_cool_single_door_refrigerator_52_litres_3_star_silver_silver_grey__82755946_3.jpg"
+    ],
     "short_description": "Compact refrigerator for bedrooms, offices, or dorms with direct cool technology.",
     "features": "Low Noise Operation, Mechanical Temperature Control, Anti-Fungal Gasket."
   },
   {
+       "id": 5,
     "category": "Bottom Freezer",
     "brand": "Bosch",
     "model": "KGN36VL30I",
@@ -70,11 +87,15 @@
     "price_usd": 799.00,
     "dimensions_mm": [600, 1860, 660],
     "weight_kg": 70,
-    "image_url": "https://images.bosch.com/kgn36vl30i.jpg",
+    "images" : [
+      "https://m.media-amazon.com/images/I/61B0tHSE6-L.jpg",
+      "https://content.jdmagicbox.com/quickquotes/images_main/240-litres-white-top-freezer-refrigerator-803157197-d5rqevdi.png?impolicy=queryparam&im=Resize=(360,360),aspect=fit"
+    ],
     "short_description": "Modern bottom-freezer refrigerator with large storage and VitaFresh technology.",
     "features": "LED Lighting, MultiAirflow, Reversible Doors, SuperFreezing."
   },
   {
+       "id": 6,
     "category": "Smart Fridge",
     "brand": "Samsung",
     "model": "Family Hub RF28R7551SR",
@@ -85,11 +106,15 @@
     "price_usd": 2999.99,
     "dimensions_mm": [908, 1777, 788],
     "weight_kg": 150,
-    "image_url": "https://images.samsung.com/familyhub-rf28.jpg",
+    "images" : [
+      "https://m.media-amazon.com/images/I/517LocpL7uL._UF1000,1000_QL80_.jpg",
+      "https://m.media-amazon.com/images/I/51paju32o7L._UF1000,1000_QL80_.jpg"
+    ],
     "short_description": "Smart French door refrigerator with touchscreen, entertainment, and food management features.",
     "features": "Internal Camera, Calendar & Notes, Spotify/YouTube Integration, AI-Driven Cooling."
   },
   {
+       "id": 7,
     "category": "Single Door",
     "brand": "Godrej",
     "model": "RD 1903 PTDI",
@@ -100,11 +125,15 @@
     "price_usd": 169.00,
     "dimensions_mm": [578, 1208, 667],
     "weight_kg": 34,
-    "image_url": "https://images.godrej.com/rd1903ptdi.jpg",
+    "images" : [
+      "https://sesons.com/wp-content/uploads/2022/08/190L.3STAR.1.jpg",
+      "https://sesons.com/wp-content/uploads/2022/08/190L.3STAR.4.jpg"
+    ],
     "short_description": "Affordable and energy-efficient single door refrigerator with jumbo storage.",
     "features": "Anti-B Technology, Toughened Glass Shelves, Large Vegetable Tray."
   },
   {
+       "id": 8,
     "category": "Inverter Refrigerator",
     "brand": "Panasonic",
     "model": "NR-BG312VSS3",
@@ -115,11 +144,15 @@
     "price_usd": 499.00,
     "dimensions_mm": [601, 1645, 680],
     "weight_kg": 55,
-    "image_url": "https://images.panasonic.com/nr-bg312vss3.jpg",
+    "images" : [
+      "https://m.media-amazon.com/images/I/71Oa1c5sSxL.jpg",
+      "https://images.jdmagicbox.com/quickquotes/images_main/panasonic-refrigerator-01-11-2022-01-272313742-7kh94995.jpg"
+    ],
     "short_description": "Stylish refrigerator with inverter cooling and antibacterial AG Clean system.",
     "features": "Surround Cooling, Toughened Shelves, Quick Chilling Zone."
   },
   {
+       "id": 9,
     "category": "Convertible",
     "brand": "LG",
     "model": "GL-T292RPZN",
@@ -130,7 +163,10 @@
     "price_usd": 399.00,
     "dimensions_mm": [555, 1575, 637],
     "weight_kg": 50,
-    "image_url": "https://images.lg.com/gl-t292rpzn.jpg",
+    "images" : [
+      "https://cdn.shopclues.com/images/thumbnails/77410/640/1/133010673-77410634-1515630795.jpg",
+      "https://m.media-amazon.com/images/I/71QiWN6naeL._UF350,350_QL80_.jpg"
+    ],
     "short_description": "Convertible refrigerator with inverter compressor and multi-airflow cooling.",
     "features": "Moist Balance Crisper, Smart Diagnosis, Door Alarm."
   }

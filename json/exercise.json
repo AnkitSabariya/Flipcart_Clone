@@ -1,0 +1,268 @@
+[
+  {
+    "id": 1,
+    "model": "Yoga Mat",
+    "brand": "Boldfit",
+    "category": "Yoga",
+    "features": ["Anti-slip", "6mm thickness", "Sweat resistant"],
+    "material": "EVA Foam",
+    "price": 799,
+    "image": [
+  "https://m.media-amazon.com/images/I/817n+-aD8uL._UF894,1000_QL80_.jpg",
+  "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/31634734/2025/1/18/bd591c6c-57ee-440e-9e36-9f1e0dbe421b1737139954025-BOLDFIT-Grey-Rectangular-Anti-Skid-Yoga-Mat-With-Carry-Strap-2.jpg"
+] ,
+    "short_description": "Durable yoga mat with excellent grip and comfort."
+  },
+  {
+    "id": 2,
+    "model": "Adjustable Dumbbells Set",
+    "brand": "Kore",
+    "category": "Strength Training",
+    "features": ["20kg set", "Vinyl coated", "Spinlock collars"],
+    "material": "Vinyl & Iron",
+    "price": 1799,
+    "image": [
+  "https://5.imimg.com/data5/LG/HC/MY-10502825/kore-k-dm-10kg-combo-16-dumbbells-kit-500x500.png",
+  "https://m.media-amazon.com/images/I/81l0SfvVDzL.jpg"
+] ,
+    "short_description": "Ideal for home workouts and strength building."
+  },
+  {
+    "id": 3,
+    "model": "Skipping Rope",
+    "brand": "Strauss",
+    "category": "Cardio",
+    "features": ["Adjustable length", "Foam handles", "Tangle-free"],
+    "material": "PVC & Foam",
+    "price": 199,
+    "image": [
+  "https://m.media-amazon.com/images/I/6194m+OVR9L._UF894,1000_QL80_.jpg",
+  "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2024/AUGUST/20/7XzqyKWC_8deb01d4aabb472cb8f1fe95d7353ca7.jpg"
+] ,
+    "short_description": "Lightweight and fast skipping rope for cardio fitness."
+  },
+  {
+    "id": 4,
+    "model": "Push-up Bars",
+    "brand": "Lifelong",
+    "category": "Strength Training",
+    "features": ["Foam grip", "Non-slip base", "Compact size"],
+    "material": "Steel & Foam",
+    "price": 389,
+    "image": [
+  "https://www.lifelongindiaonline.com/cdn/shop/files/Option_2_a2a8f397-efa2-47ce-83d9-7c0ffdfc1c8b.jpg?v=1752144786",
+  "https://www.bbassets.com/media/uploads/p/xl/40321660_2-lifelong-adjustable-pull-up-bar-for-home-workouts-multifunctional-65-95-cmmax-user-weight-150-kg.jpg"
+] ,
+    "short_description": "Supports perfect push-ups with comfort and balance."
+  },
+  {
+    "id": 5,
+    "model": "Ab Roller Wheel",
+    "brand": "AmazonBasics",
+    "category": "Core Training",
+    "features": ["Dual wheels", "Knee pad included", "Non-slip grips"],
+    "material": "Plastic & Rubber",
+    "price": 549,
+    "image": [
+  "https://m.media-amazon.com/images/I/71Ii9XVq+UL.jpg",
+  "https://m.media-amazon.com/images/I/71G5KXu0BWL._UF894,1000_QL80_.jpg"
+] ,
+    "short_description": "Strengthen your core with this stable roller."
+  },
+  {
+    "id": 6,
+    "model": "Resistance Bands Set",
+    "brand": "Fitlastics",
+    "category": "Strength & Rehab",
+    "features": ["Set of 5", "Different resistances", "Portable pouch"],
+    "material": "Natural Latex",
+    "price": 499,
+    "image": [
+  "https://m.media-amazon.com/images/I/714cZcYHaRL._UF894,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/71aZZe-hQjL.jpg"
+] ,
+    "short_description": "Full-body resistance training for all fitness levels."
+  },
+  {
+    "id": 7,
+    "model": "Kettlebell",
+    "brand": "Aurion",
+    "category": "Strength Training",
+    "features": ["Vinyl coated", "Ergonomic handle"],
+    "material": "Cast Iron",
+    "price": 799,
+    "image": [
+  "https://m.media-amazon.com/images/I/51J5jOQlKlL._UF894,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/71WW-a2E3WL.jpg"
+] ,
+    "short_description": "5kg kettlebell for dynamic strength workouts."
+  },
+  {
+    "id": 8,
+    "model": "Tummy Trimmer",
+    "brand": "Strauss",
+    "category": "Core Training",
+    "features": ["Double spring", "Foot strap", "Portable"],
+    "material": "Steel & Rubber",
+    "price": 499,
+    "image": [
+  "https://strausssport.com/cdn/shop/files/71SUJQvma_L_1200x.jpg?v=1738784449",
+  "https://strausssport.com/cdn/shop/files/71RSuRd4fJL.jpg?v=1738784449"
+] ,
+    "short_description": "Compact equipment for toning abs and legs."
+  },
+  {
+    "id": 9,
+    "model": "Foam Roller",
+    "brand": "Fitkit",
+    "category": "Recovery",
+    "features": ["Textured surface", "Firm support", "High-density foam"],
+    "material": "EVA Foam",
+    "price": 599,
+    "image": [
+  "https://www.fitkituk.com/images/products/1654793153-50403900.jpg",
+  "https://www.fitkituk.com/images/products/1538555202-29450300.jpg"
+] ,
+    "short_description": "Ideal for muscle massage and post-workout recovery."
+  },
+  {
+    "id": 10,
+    "model": "Ankle Weights",
+    "brand": "Pro365",
+    "category": "Strength Training",
+    "features": ["Adjustable straps", "1kg each", "Pair"],
+    "material": "Nylon & Iron Sand",
+    "price": 649,
+    "image": [
+  "https://m.media-amazon.com/images/I/51y9xC79+HL._AC_UF894,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/61Jd+66Z-uL._UF894,1000_QL80_.jpg"
+] ,
+    "short_description": "Boost your workout intensity with ankle weights."
+  },
+  {
+    "id": 11,
+    "model": "Pull-up Bar",
+    "brand": "Lifelong",
+    "category": "Strength Training",
+    "features": ["Doorway mounted", "Foam grip", "Up to 100kg"],
+    "material": "Steel",
+    "price": 999,
+    "image": [
+  "https://www.lifelongindiaonline.com/cdn/shop/files/Option_2_a2a8f397-efa2-47ce-83d9-7c0ffdfc1c8b.jpg?v=1752144786",
+  "https://images-eu.ssl-images-amazon.com/images/I/61iyEOCiA4L._AC_UL600_SR600,600_.jpg"
+] ,
+    "short_description": "Easy install bar for home upper body workouts."
+  },
+  {
+    "id": 12,
+    "model": "Gym Gloves",
+    "brand": "Nivia",
+    "category": "Accessories",
+    "features": ["Padded palm", "Breathable mesh", "Wrist support"],
+    "material": "Polyester & Rubber",
+    "price": 399,
+    "image": [
+  "https://m.media-amazon.com/images/I/81nMazo81iL.jpg",
+  "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/20587342/2023/5/22/6587a69e-d28d-43ee-b056-a41f43a2c2361684757634796-NIVIA-Unisex-Black-Cross-Training-Gloves-2321684757634366-1.jpg"
+] ,
+    "short_description": "Comfortable gym gloves for safer lifting."
+  },
+  {
+    "id": 13,
+    "model": "Pilates Ring",
+    "brand": "Boldfit",
+    "category": "Pilates",
+    "features": ["Dual grip", "Toned resistance", "13-inch"],
+    "material": "Fiberglass & Foam",
+    "price": 699,
+    "image": [
+  "https://m.media-amazon.com/images/I/614b9m6uMnL.jpg",
+  "https://m.media-amazon.com/images/I/71RVxTusz2L._UF350,350_QL80_.jpg"
+] ,
+    "short_description": "Tone muscles and improve balance with Pilates ring."
+  },
+  {
+    "id": 14,
+    "model": "Adjustable Bench",
+    "brand": "Durafit",
+    "category": "Strength Training",
+    "features": ["Incline/decline settings", "Foldable", "Sturdy steel frame"],
+    "material": "Steel & Foam",
+    "price": 4499,
+    "image": [
+  "https://rukminim2.flixcart.com/image/704/844/xif0q/fitness-bench/o/j/z/40-5-250-dfdoabh1-durafit-47-original-imaghxpyudkm9kbm.jpeg?q=90&crop=false",
+  "https://www.jiomart.com/images/product/original/rv5vv937hn/durafit-adjustable-bench-oabh1-foldable-and-adjustable-multi-workout-multi-level-incline-and-decline-and-flat-position-max-user-weight-200kg-product-images-orv5vv937hn-p594526680-4-202210291803.jpg?im=Resize=(420,420)"
+] ,
+    "short_description": "Versatile bench for full-body strength workouts."
+  },
+  {
+    "id": 15,
+    "model": "Digital Weighing Scale",
+    "brand": "HealthSense",
+    "category": "Fitness Monitoring",
+    "features": ["LCD display", "Precision sensors", "Max 180kg"],
+    "material": "Tempered Glass",
+    "price": 1199,
+    "image": [
+  "https://healthsense.in/cdn/shop/files/Mainimage1.png?v=1692426919",
+  "https://healthsense.in/cdn/shop/products/dsimage4.jpg?v=1719388423"
+] ,
+    "short_description": "Track your fitness progress accurately."
+  },
+  {
+    "id": 16,
+    "model": "Massage Gun",
+    "brand": "BeatXP",
+    "category": "Recovery",
+    "features": ["6 heads", "20 speed levels", "Rechargeable"],
+    "material": "ABS Plastic",
+    "price": 3499,
+    "image": [
+  "https://m.media-amazon.com/images/I/61BzwtmQptL._UF1000,1000_QL80_.jpg",
+  "https://img.beatxp.com/prod/product/286/2%20%286%29.webp"
+] ,
+    "short_description": "Relieve sore muscles with deep tissue massage."
+  },
+  {
+    "id": 17,
+    "model": "Aerobic Stepper",
+    "brand": "Kobo",
+    "category": "Cardio",
+    "features": ["Non-slip surface", "Height adjustable", "Supports 120kg"],
+    "material": "High-density Polyethylene",
+    "price": 1899,
+    "image": [
+  "https://m.media-amazon.com/images/I/31ldWGjRCJL.jpg",
+  "https://images-eu.ssl-images-amazon.com/images/I/71nKew+tDiL._AC_UL495_SR435,495_.jpg"
+] ,
+    "short_description": "Ideal for step workouts and cardio sessions."
+  },
+  {
+    "id": 18,
+    "model": "Balance Ball",
+    "brand": "Reebok",
+    "category": "Balance Training",
+    "features": ["75cm size", "Anti-burst", "Pump included"],
+    "material": "PVC",
+    "price": 1499,
+    "image": [
+  "https://m.media-amazon.com/images/I/81192ZQvZAL._UF894,1000_QL80_.jpg",
+  "https://ciciastore.com/cdn/shop/files/65Cm_Medium_Weighted_Stability_Ball_Pump_Included_9.jpg?v=1728828928&width=1946"
+] ,
+    "short_description": "Enhance core stability with this gym ball."
+  },
+  {
+    "id": 19,
+    "model": "Gym Shaker Bottle",
+    "brand": "Boldfit",
+    "category": "Accessories",
+    "features": ["700ml", "Blender ball", "Leak-proof"],
+    "material": "BPA-Free Plastic",
+    "price": 279,
+    "image": [
+  "https://m.media-amazon.com/images/I/61caaA5IlrL._UF894,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/81hUtMxX8eL._UF894,1000_QL80_.jpg"
+] ,
+    "short_description": "Mix protein shakes on-the-go with ease."
+  }
+]

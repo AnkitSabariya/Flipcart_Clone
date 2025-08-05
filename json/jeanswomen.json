@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "brand": "Levi's",
+    "model": "721 High Rise Skinny",
+    "category": "Jeans",
+    "fit": "Skinny",
+    "fabric": "Cotton Blend",
+    "wash": "Dark Wash",
+    "color": "Dark Blue",
+    "sizes": ["26", "28", "30", "32"],
+    "price": 2999,
+    "image": [
+  "https://levi.in/cdn/shop/files/748960048_Side_1.jpg?v=1715682363",
+  "https://di2ponv0v5otw.cloudfront.net/posts/2025/02/26/67bf812224237a1c78542dad/m_67bf81addbb0e7c320e8f565.jpg"
+],
+    "short_description": "High-rise skinny jeans with a classic dark wash finish."
+  },
+  {
+    "id": 2,
+    "brand": "ONLY",
+    "model": "Mid-Rise Ankle Fit",
+    "category": "Jeans",
+    "fit": "Ankle Fit",
+    "fabric": "Denim Cotton",
+    "wash": "Light Wash",
+    "color": "Light Blue",
+    "sizes": ["28", "30", "32", "34"],
+    "price": 2199,
+    "image": [
+  "https://images.bestsellerclothing.in/data/only/15-sep-2022/226898101_g1.jpg?width=1080&height=1355&mode=fill&fill=blur&format=auto",
+  "https://assets.ajio.com/medias/sys_master/root/20230223/aAe5/63f78da3aeb26924e3884050/-473Wx593H-469358499-lightblue-MODEL.jpg"
+],
+    "short_description": "Trendy ankle-length jeans with soft stretchable denim."
+  },
+  {
+    "id": 3,
+    "brand": "Zara",
+    "model": "Wide Leg High Waist",
+    "category": "Jeans",
+    "fit": "Wide Leg",
+    "fabric": "Cotton Denim",
+    "wash": "Raw Wash",
+    "color": "Indigo",
+    "sizes": ["26", "28", "30", "32", "34"],
+    "price": 3490,
+    "image": [
+  "https://static.zara.net/assets/public/b19d/1ec4/69db4950b358/d08c67897524/08246041405-e1/08246041405-e1.jpg?ts=1740672489840",
+  "https://static.zara.net/assets/public/5e60/80d1/2ff34442901d/b484819a50c2/08246041405-p/08246041405-p.jpg?ts=1737645073697"
+] ,
+    "short_description": "Bold wide-leg silhouette perfect for a casual street style."
+  },
+  {
+    "id": 4,
+    "brand": "Vero Moda",
+    "model": "Super Skinny Fit",
+    "category": "Jeans",
+    "fit": "Super Skinny",
+    "fabric": "Stretch Denim",
+    "wash": "Grey Washed",
+    "color": "Grey",
+    "sizes": ["28", "30", "32"],
+    "price": 2399,
+    "image": [
+  "https://assets.ajio.com/medias/sys_master/root/20221207/vLZt/63906d16f997ddfdbdc34c11/-473Wx593H-460985110-grey-MODEL.jpg",
+  "https://m.media-amazon.com/images/I/81KUI9BR+tL._AC_UY1100_.jpg"
+] ,
+    "short_description": "Comfortable stretch fabric with a modern super skinny cut."
+  },
+  {
+    "id": 5,
+    "brand": "H&M",
+    "model": "Mom Fit Jeans",
+    "category": "Jeans",
+    "fit": "Relaxed",
+    "fabric": "Cotton",
+    "wash": "Mid Wash",
+    "color": "Blue",
+    "sizes": ["26", "28", "30", "32"],
+    "price": 1999,
+    "image": [
+  "https://image.hm.com/assets/hm/36/22/362282bf229261d94577565b19451577f195ebe4.jpg?imwidth=768",
+  "https://image.hm.com/assets/hm/3b/8f/3b8f38a5b931c8dcfab4741e13c43bd5e33bbe16.jpg?imwidth=2160"
+] ,
+    "short_description": "Trendy mom fit jeans with relaxed fit and classic vibes."
+  },
+  {
+    "id": 6,
+    "brand": "Roadster",
+    "model": "Bootcut Stretch Jeans",
+    "category": "Jeans",
+    "fit": "Bootcut",
+    "fabric": "Cotton Spandex",
+    "wash": "Medium Blue",
+    "color": "Blue",
+    "sizes": ["28", "30", "32", "34"],
+    "price": 1799,
+    "image": [
+  "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/25750066/2024/1/5/33256aae-e036-466b-a105-d76a4eca154f1704456319522-Roadster-Women-Jeans-8711704456319056-1.jpg",
+  "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/13710252/2022/11/7/ea50e5ac-586a-4918-b246-d4c59d7514e71667800103826-Roadster-Women-Blue-Bootcut-High-Rise-Light-Fade-Stretchable-1.jpg"
+],
+    "short_description": "Bootcut style with light stretch and flared hems."
+  },
+  {
+    "id": 7,
+    "brand": "Pepe Jeans",
+    "model": "High Rise Slim Fit",
+    "category": "Jeans",
+    "fit": "Slim",
+    "fabric": "Stretch Cotton",
+    "wash": "Faded",
+    "color": "Washed Blue",
+    "sizes": ["26", "28", "30"],
+    "price": 2799,
+    "image": [
+  "https://d1pdzcnm6xgxlz.cloudfront.net/bottoms/8905875015246-9.jpg",
+  "https://m.media-amazon.com/images/I/81a6biFJg6L._UY1100_.jpg"
+] ,
+    "short_description": "Sleek slim-fit design with elegant high waist."
+  },
+  {
+    "id": 8,
+    "brand": "Flying Machine",
+    "model": "Straight Fit Jeans",
+    "category": "Jeans",
+    "fit": "Straight",
+    "fabric": "Cotton Blend",
+    "wash": "Classic Blue",
+    "color": "Blue",
+    "sizes": ["30", "32", "34", "36"],
+    "price": 1699,
+    "image": [
+  "https://cdn02.nnnow.com/web-images/large/styles/76BX3E99LG1/1677571430934/1.jpg",
+  "https://cdn09.nnnow.com/web-images/large/styles/HYCSOAX7U7X/1650531410902/1.jpg"
+],
+    "short_description": "Everyday wear straight-cut jeans with solid comfort."
+  },
+  {
+    "id": 9,
+    "brand": "Wrangler",
+    "model": "Low Rise Skinny Jeans",
+    "category": "Jeans",
+    "fit": "Skinny",
+    "fabric": "Cotton Elastane",
+    "wash": "Stone Wash",
+    "color": "Denim Blue",
+    "sizes": ["28", "30", "32"],
+    "price": 2099,
+    "image": [
+  "https://assets.ajio.com/medias/sys_master/root/h48/he5/9335726800926/-473Wx593H-460030433-blue-MODEL.jpg",
+  "https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WWJN001095/WWJN001095_4.jpg"
+],
+    "short_description": "Trendy low-rise skinny jeans with added stretch."
+  },
+  {
+    "id": 10,
+    "brand": "Kazo",
+    "model": "Distressed Mom Jeans",
+    "category": "Jeans",
+    "fit": "Mom Fit",
+    "fabric": "Rigid Cotton",
+    "wash": "Acid Wash",
+    "color": "Faded Blue",
+    "sizes": ["26", "28", "30"],
+    "price": 2490,
+    "image": [
+  "https://img.tatacliq.com/images/i10/437Wx649H/MP000000016965369_437Wx649H_202303231512204.jpeg",
+  "https://img.tatacliq.com/images/i10/437Wx649H/MP000000016965369_437Wx649H_202303231512221.jpeg"
+],
+    "short_description": "Casual ripped mom jeans for edgy everyday styling."
+  },
+  {
+    "id": 11,
+    "brand": "Forever 21",
+    "model": "Cropped Flare Jeans",
+    "category": "Jeans",
+    "fit": "Flare",
+    "fabric": "Cotton Denim",
+    "wash": "Vintage Wash",
+    "color": "Blue",
+    "sizes": ["28", "30", "32"],
+    "price": 2599,
+    "image": [
+  "https://www.forevernew.co.in//pub/media/catalog/product/o/l/oldimlall_onbody_28956501_f.jpg",
+  "https://img.shopstyle-cdn.com/sim/f4/f8/f4f89a08033e09d5e4d42e0b6d90ea70_xlarge/lace-up-flare-jeans.jpg"
+] ,
+    "short_description": "Cropped flared hem jeans with retro vibes."
+  },
+  {
+    "id": 12,
+    "brand": "ONLY",
+    "model": "Jegging Fit High Waist",
+    "category": "Jeans",
+    "fit": "Jegging",
+    "fabric": "Cotton Lycra",
+    "wash": "Jet Black",
+    "color": "Black",
+    "sizes": ["26", "28", "30"],
+    "price": 1990,
+    "image": [
+  "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/25463766/2023/10/13/9e75600e-312d-488c-a706-9cef7b913e411697172601791Leggingswithgoldenbutton1.jpg",
+  "https://assets.ajio.com/medias/sys_master/root/20210120/4VJs/60085b50aeb269698151ab72/-1117Wx1400H-440980845-black-MODEL5.jpg"
+],
+    "short_description": "Super comfy jeggings-style jeans with high waistline."
+  },
+  {
+    "id": 13,
+    "brand": "ONLY",
+    "model": "Low Waist Skinny",
+    "category": "Jeans",
+    "fit": "Skinny",
+    "fabric": "Cotton Elastane",
+    "wash": "Washed Grey",
+    "color": "Grey",
+    "sizes": ["28", "30", "32", "34"],
+    "price": 2299,
+    "image": [
+  "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/1017609/2017/2/17/11487330008717-ONLY-Blue-Washed-Skinny-Low-Rise-Jeans-6441487330008380-2.jpg",
+  "https://m.media-amazon.com/images/I/61XKZc7CKhL._UY1100_.jpg"
+],
+    "short_description": "Chic low-rise jeans with stretch and style."
+  },
+  {
+    "id": 14,
+    "brand": "AND",
+    "model": "Tapered Fit Jeans",
+    "category": "Jeans",
+    "fit": "Tapered",
+    "fabric": "Cotton Blend",
+    "wash": "Rinse Wash",
+    "color": "Black",
+    "sizes": ["26", "28", "30", "32"],
+    "price": 1899,
+    "image": [
+  "https://levi.in/cdn/shop/files/A08850013_01_Front.jpg?v=1730351488",
+  "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7289168/2023/8/14/8f596e07-02db-4053-b075-460b30ce39361691985828815-High-Star-Women-Black-Slim-Fit-High-Rise-Clean-Look-Stretcha-1.jpg"
+],
+    "short_description": "Smart tapered fit for both comfort and style."
+  },
+  {
+    "id": 15,
+    "brand": "Zivame",
+    "model": "High-Rise Sculpt Jeans",
+    "category": "Jeans",
+    "fit": "Sculpt",
+    "fabric": "Stretch Denim",
+    "wash": "Mid Wash",
+    "color": "Blue",
+    "sizes": ["28", "30", "32", "34"],
+    "price": 2199,
+    "image": [
+  "https://cdn.zivame.com/ik-seo/media/zcmsimages/configimages/ZI3203-Blue/1_medium/zivame-all-day-medium-control-shaping-leggings-blue.JPG?t=1715090512",
+  "https://cdn.zivame.com/ik-seo/media/zcmsimages/configimages/ZI3203-Blue/6_medium/zivame-all-day-medium-control-shaping-leggings-blue.JPG?t=1715090509"
+] ,
+    "short_description": "Form-fitting sculpt jeans that flatter the shape."
+  },
+  {
+    "id": 16,
+    "brand": "Biba",
+    "model": "Slim Fit Ethno Jeans",
+    "category": "Jeans",
+    "fit": "Slim",
+    "fabric": "Cotton Denim",
+    "wash": "Clean Wash",
+    "color": "Dark Indigo",
+    "sizes": ["26", "28", "30", "32"],
+    "price": 2699,
+    "image": [
+  "https://assets.ajio.com/medias/sys_master/root/20240416/9NjM/661e965116fd2c6e6ab74b60/-473Wx593H-441165280-indigo-MODEL.jpg",
+  "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/23213532/2023/5/16/d0565bda-64c8-460d-9c33-b6d4dd5e7b0e1684225614353Jeggings1.jpg"
+] ,
+    "short_description": "Stylish slim jeans with ethnic pattern lining."
+  }
+]

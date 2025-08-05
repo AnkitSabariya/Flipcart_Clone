@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "model": "Gel Pen Set",
+    "brand": "Reynolds",
+    "category": "Pens",
+    "features": ["Smooth ink flow", "Comfort grip", "0.5mm tip"],
+    "color": "Blue",
+    "price": 120,
+    "image": [
+  "https://m.media-amazon.com/images/I/81zX1-zbYOL.jpg",
+  "https://5.imimg.com/data5/SELLER/Default/2024/11/467983435/MW/BR/ZE/235555103/reynolds-jiffy-blue-gel-pen-500x500.jpg"
+] ,
+    "short_description": "Pack of 10 blue gel pens for everyday writing."
+  },
+  {
+    "id": 2,
+    "model": "A4 Spiral Notebook",
+    "brand": "Classmate",
+    "category": "Notebooks",
+    "features": ["200 pages", "Ruled", "Spiral bound"],
+    "color": "Multi",
+    "price": 95,
+    "image": [
+  "https://m.media-amazon.com/images/I/61NUA0O7WTL.jpg",
+  "https://m.media-amazon.com/images/I/71hvNQi9GML.jpg"
+],
+    "short_description": "Durable A4 spiral notebook for school or office."
+  },
+  {
+    "id": 3,
+    "model": "Highlighter Pack",
+    "brand": "Faber-Castell",
+    "category": "Highlighters",
+    "features": ["Chisel tip", "Bright neon colors", "Set of 5"],
+    "color": "Assorted",
+    "price": 199,
+    "image": [
+  "https://www.stationeryplug.com/cdn/shop/products/17oyE0mtRbW5lfd2eLCcqyMqoPFnq9mo9.jpg?v=1673297250",
+  "https://m.media-amazon.com/images/I/71ra0QU5OwL.jpg"
+],
+    "short_description": "Set of 5 fluorescent highlighters for effective marking."
+  },
+  {
+    "id": 4,
+    "model": "Ballpoint Pen",
+    "brand": "Parker",
+    "category": "Pens",
+    "features": ["Refillable", "Metal body", "Blue ink"],
+    "color": "Black & Silver",
+    "price": 350,
+    "image": [
+  "12https://m.media-amazon.com/images/I/61o6NJ8-k8L._UF1000,1000_QL80_.jpg3",
+  "https://www.sitaramstationers.com/wp-content/uploads/2023/11/Parker-Odyssey-Lacque-Black-Gold-Trim-Ballpoint-Pen.png"
+] ,
+    "short_description": "Elegant ball pen perfect for professionals."
+  },
+  {
+    "id": 5,
+    "model": "Drawing Pencils Set",
+    "brand": "Camlin",
+    "category": "Pencils",
+    "features": ["6B to 2H range", "Eraser & sharpener included"],
+    "color": "Black",
+    "price": 145,
+    "image": [
+  "https://canvazo.com/cdn/shop/files/Camel-Camlin-High-Quality-Drawing-Pencils-Set-of-6-Camel-1690611720857.jpg?v=1738824860",
+  "https://www.kokuyocamlin.com/camel/gallery/packs/drawing-materials/drawing-pencils/na/assorted-pack-of-6-grades/7.jpg"
+],
+    "short_description": "Set of 12 sketching pencils for artists."
+  },
+  {
+    "id": 6,
+    "model": "Sticky Notes",
+    "brand": "Post-it",
+    "category": "Notes",
+    "features": ["Self-adhesive", "Assorted colors", "400 sheets"],
+    "color": "Assorted",
+    "price": 210,
+    "image": [
+  "https://m.media-amazon.com/images/I/71UXnZ+811L.jpg",
+  "https://m.media-amazon.com/images/I/81RFwqD8s2L._UF1000,1000_QL80_.jpg"
+] ,
+    "short_description": "Colorful sticky notes for reminders and ideas."
+  },
+  {
+    "id": 7,
+    "model": "Whiteboard Markers",
+    "brand": "Luxor",
+    "category": "Markers",
+    "features": ["Bullet tip", "Erasable", "4 colors"],
+    "color": "Multi",
+    "price": 160,
+    "image": [
+  "https://m.media-amazon.com/images/I/7153A9UjSCL.jpg",
+  "https://m.media-amazon.com/images/I/51J0r4Lr3ZL._UF1000,1000_QL80_.jpg"
+],
+    "short_description": "Set of 4 vivid dry erase markers."
+  },
+  {
+    "id": 8,
+    "model": "Acrylic Ruler 30cm",
+    "brand": "Cello",
+    "category": "Rulers",
+    "features": ["Transparent", "Metric scale"],
+    "color": "Clear",
+    "price": 25,
+    "image": [
+  "https://images.jdmagicbox.com/quickquotes/images_main/cello-matics-30-cms-slim-scale-04-08-2021-134-239862527-vj60a.png",
+  "https://tiimg.tistatic.com/fp/2/008/382/30-cm-rectangular-printed-plastic-rulers-for-measuring-249.jpg"
+],
+    "short_description": "Clear acrylic ruler with precise measurements."
+  },
+  {
+    "id": 9,
+    "model": "Stapler with Pins",
+    "brand": "Kangaro",
+    "category": "Staplers",
+    "features": ["With pin remover", "500 staples included"],
+    "color": "Black",
+    "price": 185,
+    "image": [
+  "https://m.media-amazon.com/images/I/71kUcxIbLkL.jpg",
+  "https://cdn.shakedeal.com/images/detailed/763/SDKAN0003200.png"
+],
+    "short_description": "Handy stapler for home and office use."
+  },
+  {
+    "id": 10,
+    "model": "Geometry Box",
+    "brand": "Camlin",
+    "category": "Geometry Sets",
+    "features": ["Compass, scale, protractor", "Durable metal"],
+    "color": "Orange",
+    "price": 110,
+    "image": [
+  "https://m.media-amazon.com/images/I/71WcwtLvJfL.jpg",
+  "https://www.kokuyocamlin.com/camlin/camel-access/image/catalog/assets/camlin/geometry-box/geometry-boxes/scholar-geometry-box/camlin-scholar-geometry-box/1.JPG"
+] ,
+    "short_description": "Complete geometry set for students."
+  },
+  {
+    "id": 11,
+    "model": "Plastic Erasers Pack",
+    "brand": "Apsara",
+    "category": "Erasers",
+    "features": ["Non-dust", "Smooth erasing", "Pack of 5"],
+    "color": "White",
+    "price": 35,
+    "image": [
+  "https://m.media-amazon.com/images/I/81cEHIOY5DL.jpg",
+  "https://m.media-amazon.com/images/I/318cg7iaLLL.jpg"
+],
+    "short_description": "Soft erasers that don’t damage paper."
+  },
+  {
+    "id": 12,
+    "model": "Correction Pen",
+    "brand": "Faber-Castell",
+    "category": "Correction Tools",
+    "features": ["Quick dry", "Needle tip"],
+    "color": "White",
+    "price": 55,
+    "image": [
+  "https://m.media-amazon.com/images/I/81w4ahK72VL.jpg",
+  "https://topperskit.com/cdn/shop/files/13_3fa9e071-a8f9-4aa0-8d4a-2fd761e60feb.jpg?v=1708057418"
+] ,
+    "short_description": "Precision correction pen for neat writing."
+  },
+  {
+    "id": 13,
+    "model": "Color Pencils Set",
+    "brand": "Staedtler",
+    "category": "Coloring",
+    "features": ["Pack of 12", "Break-resistant leads"],
+    "color": "Multi",
+    "price": 249,
+    "image": [
+  "https://m.media-amazon.com/images/I/81Q8mx50iuL.jpg",
+  "https://statmo.in/wp-content/uploads/2017/07/Staedtler-Luna-Classic-Water-Soluble-Color-Pencils-Set-of-12.jpg"
+] ,
+    "short_description": "Bright color pencils for school and art."
+  },
+  {
+    "id": 14,
+    "model": "Desk Organizer",
+    "brand": "AmazonBasics",
+    "category": "Organizers",
+    "features": ["Multi-compartment", "Mesh design"],
+    "color": "Black",
+    "price": 399,
+    "image": [
+  "https://m.media-amazon.com/images/I/91TgroqMorL._UF1000,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/81fYFKQLZVL.jpg"
+] ,
+    "short_description": "Metal mesh desk organizer for tidy workspace."
+  },
+  {
+    "id": 15,
+    "model": "Sticky Page Flags",
+    "brand": "Post-it",
+    "category": "Bookmarks",
+    "features": ["Writable surface", "Multiple colors"],
+    "color": "Assorted",
+    "price": 145,
+    "image": [
+  "https://m.media-amazon.com/images/I/61Y5c9vIYuL._UF1000,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/61hleAQw8-L.jpg"
+] ,
+    "short_description": "Colorful page markers for books and files."
+  },
+  {
+    "id": 16,
+    "model": "Scissors with Soft Grip",
+    "brand": "Maped",
+    "category": "Scissors",
+    "features": ["Stainless steel", "Comfort handle"],
+    "color": "Blue",
+    "price": 89,
+    "image": [
+  "https://m.media-amazon.com/images/I/61R7wVSEy1L._UF1000,1000_QL80_.jpg",
+  "https://5.imimg.com/data5/SELLER/Default/2021/1/OO/CH/MM/119925043/71jqerbrd2l-sl1500-.jpg"
+],
+    "short_description": "Durable scissors for cutting paper or fabric."
+  }
+]

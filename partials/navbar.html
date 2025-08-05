@@ -1,212 +1,224 @@
-  <nav
-        class="bg-[#2874f0] text-white w-full flex flex-wrap items-center justify-between md:justify-center px-3 lg:px-6 py-3 md:py-2 lg:h-[60px]"
+<nav
+  class="bg-[#2874f0] text-white w-full flex flex-wrap items-center justify-between md:justify-center px-3 lg:px-6 py-3 md:py-2 lg:h-[60px]"
+>
+  <!-- Logo -->
+  <div class="flex items-center gap-2">
+    <a
+      href="index.html"
+      class="flex flex-col leading-[1.1] font-semibold text-[16px] lg:text-[18px] italic"
+    >
+      <span class="text-white font-extrabold">Flipkart</span>
+      <div
+        class="text-[10px] lg:text-[11px] font-normal flex items-center text-white"
       >
-        <!-- Logo -->
-        <div class="flex items-center gap-2">
-          <a
-            href="index.html"
-            class="flex flex-col leading-[1.1] font-semibold text-[16px] lg:text-[18px] italic"
-          >
-            <span class="text-white font-extrabold">Flipkart</span>
-            <div
-              class="text-[10px] lg:text-[11px] font-normal flex items-center text-white"
-            >
-              Explore <span class="text-yellow-300 font-bold ml-1">Plus</span>
-              <img
-                src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png"
-                class="h-2 lg:h-3 ml-1 mt-[1px]"
-                alt="plus"
-              />
-            </div>
-          </a>
-        </div>
+        Explore <span class="text-yellow-300 font-bold ml-1">Plus</span>
+        <img
+          src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png"
+          class="h-2 lg:h-3 ml-1 mt-[1px]"
+          alt="plus"
+        />
+      </div>
+    </a>
+  </div>
 
-        <!-- Search Bar (hidden on mobile, shown on lg) -->
-        <div
-          class="hidden lg:flex items-center flex-grow max-w-[600px] bg-white mx-4 rounded-md overflow-hidden shadow-sm"
+  <!-- Search Bar (hidden on mobile, shown on lg) -->
+  <div
+    class="hidden lg:flex items-center flex-grow max-w-[600px] bg-white mx-4 rounded-md overflow-hidden shadow-sm"
+  >
+    <input
+      onkeydown="if(event.key==='Enter'){ searchProduct(); }"
+      type="text"
+      placeholder="Search for products, brands and more"
+      id="search"
+      class="w-full text-[14px] px-4 py-2 outline-none text-black placeholder-gray-500"
+    />
+    <button
+      class="bg-white px-4 py-2 cursor-pointer hover:bg-gray-100 transition"
+      onclick="searchProduct()"
+    >
+      <i class="ri-search-line text-blue-600 text-lg"></i>
+    </button>
+  </div>
+
+  <!-- Right Section (includes Search icon on mobile) -->
+  <div
+    class="flex items-center gap-2 lg:gap-6 text-xs lg:text-sm font-medium relative z-50"
+  >
+    <!-- Search icon only for small screens -->
+    <button
+      class="lg:hidden p-2 rounded-full hover:bg-white/20 transition"
+      onclick="toggleSearchMobile()"
+    >
+      <i class="ri-search-line text-white text-xl"></i>
+    </button>
+
+    <!-- User Dropdown -->
+    <div class="relative group hidden lg:inline-block z-50">
+      <!-- Button with Arrow Rotate -->
+      <button class="flex items-center gap-1">
+        <i class="ri-user-line text-lg"></i> Ankit
+        <i
+          class="ri-arrow-down-s-line ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180"
+        ></i>
+      </button>
+
+      <!-- Dropdown Menu -->
+      <div
+        class="absolute right-0 mt-2 w-64 bg-white text-black rounded-md shadow-md overflow-hidden opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 ease-in-out z-50 border"
+      >
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
         >
-          <input
-            onkeydown="if(event.key==='Enter'){ searchProduct(); }"
-            type="text"
-            placeholder="Search for products, brands and more"
-            id="search"
-            class="w-full text-[14px] px-4 py-2 outline-none text-black placeholder-gray-500"
-          />
-          <button
-            class="bg-white px-4 py-2 cursor-pointer hover:bg-gray-100 transition"
-            onclick="searchProduct()"
-          >
-            <i class="ri-search-line text-blue-600 text-lg"></i>
-          </button>
-        </div>
-
-        <!-- Right Section (includes Search icon on mobile) -->
-        <div
-          class="flex items-center gap-2 lg:gap-6 text-xs lg:text-sm font-medium relative z-50"
-        >
-          <!-- Search icon only for small screens -->
-          <button
-            class="lg:hidden p-2 rounded-full hover:bg-white/20 transition"
-            onclick="toggleSearchMobile()"
-          >
-            <i class="ri-search-line text-white text-xl"></i>
-          </button>
-
-          <!-- User Dropdown -->
-          <div class="relative group hidden lg:inline-block z-50">
-            <!-- Button with Arrow Rotate -->
-            <button
-              class="flex items-center gap-1 "
-            >
-              <i class="ri-user-line text-lg"></i> Ankit
-              <i
-                class="ri-arrow-down-s-line ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180"
-              ></i>
-            </button>
-
-            <!-- Dropdown Menu -->
-            <div
-              class="absolute right-0 mt-2 w-64 bg-white text-black rounded-md shadow-md overflow-hidden opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 ease-in-out z-50 border"
-            >
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-user-line text-[#2874f0]"></i> My Profile
-                </div>
-              </a>
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-coins-line text-[#2874f0]"></i> SuperCoin Zone
-                </div>
-              </a>
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-shield-star-line text-[#2874f0]"></i> Flipkart
-                  Plus Zone
-                </div>
-              </a>
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-file-list-line text-[#2874f0]"></i> Orders
-                </div>
-              </a>
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-heart-line text-[#2874f0]"></i> Wishlist
-                </div>
-                <span class="text-xs bg-gray-100 px-2 py-0.5 rounded">68</span>
-              </a>
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-coupon-3-line text-[#2874f0]"></i> Coupons
-                </div>
-              </a>
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-gift-line text-[#2874f0]"></i> Gift Cards
-                </div>
-              </a>
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-notification-3-line text-[#2874f0]"></i>
-                  Notifications
-                </div>
-              </a>
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-logout-box-line text-[#2874f0]"></i> Logout
-                </div>
-              </a>
-            </div>
+          <div class="flex items-center gap-3">
+            <i class="ri-user-line text-[#2874f0]"></i> My Profile
           </div>
+        </a>
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
+          <div class="flex items-center gap-3">
+            <i class="ri-coins-line text-[#2874f0]"></i> SuperCoin Zone
+          </div>
+        </a>
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
+          <div class="flex items-center gap-3">
+            <i class="ri-shield-star-line text-[#2874f0]"></i> Flipkart Plus
+            Zone
+          </div>
+        </a>
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
+          <div class="flex items-center gap-3">
+            <i class="ri-file-list-line text-[#2874f0]"></i> Orders
+          </div>
+        </a>
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
+          <div class="flex items-center gap-3">
+            <i class="ri-heart-line text-[#2874f0]"></i> Wishlist
+          </div>
+          <span class="text-xs bg-gray-100 px-2 py-0.5 rounded">68</span>
+        </a>
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
+          <div class="flex items-center gap-3">
+            <i class="ri-coupon-3-line text-[#2874f0]"></i> Coupons
+          </div>
+        </a>
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
+          <div class="flex items-center gap-3">
+            <i class="ri-gift-line text-[#2874f0]"></i> Gift Cards
+          </div>
+        </a>
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
+          <div class="flex items-center gap-3">
+            <i class="ri-notification-3-line text-[#2874f0]"></i>
+            Notifications
+          </div>
+        </a>
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 hover:bg-[#f0f5ff] transition"
+        >
+          <div class="flex items-center gap-3">
+            <i class="ri-logout-box-line text-[#2874f0]"></i> Logout
+          </div>
+        </a>
+      </div>
+    </div>
 
+    <span class="cursor-pointer hidden lg:inline transition">
+      Become a Seller
+    </span>
+
+    <div class="relative group hidden lg:inline-block z-50">
+      <!-- Button with Arrow Rotate -->
+      <button class="flex items-center gap-1">
+        More
+        <i
+          class="ri-arrow-down-s-line ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180"
+        ></i>
+      </button>
+
+      <!-- Dropdown Menu -->
+      <div
+        class="absolute right-0 mt-2 w-64 bg-white text-black rounded-md shadow-md overflow-hidden opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 ease-in-out z-50 border border-gray-300"
+      >
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
+          <div class="flex items-center gap-3">
+            <i class="ri-notification-3-line text-[#2874f0]"></i>
+            Notification Preferences
+          </div>
+        </a>
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
+          <div class="flex items-center gap-3">
+            <i class="ri-question-line text-[#2874f0]"></i> 24x7 Customer Care
+          </div>
+        </a>
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
+        >
+          <div class="flex items-center gap-3">
+            <i class="ri-megaphone-line text-[#2874f0]"></i> Advertise
+          </div>
+        </a>
+        <a
+          href="#"
+          class="flex items-center justify-between px-5 py-3 hover:bg-[#f0f5ff] transition"
+        >
+          <div class="flex items-center gap-3">
+            <i class="ri-download-line text-[#2874f0]"></i> Download App
+          </div>
+        </a>
+      </div>
+    </div>
+    <a href="../cart.html">
+      <span class="relative flex items-center group cursor-pointer">
+        <div class="relative flex items-center">
+          <!-- Cart Icon -->
+          <i
+            class="ri-shopping-cart-2-fill text-base md:text-lg lg:text-xl transition-transform duration-200 ease-out group-hover:scale-110"
+          ></i>
+
+          <!-- Counter Badge -->
           <span
-            class="cursor-pointer hidden lg:inline  transition"
+            id="cart-counter"
+            class="absolute top-0 right-0 translate-x-[40%] -translate-y-[40%] bg-red-600 text-white text-[10px] font-bold flex items-center justify-center w-4 h-4 rounded-full shadow shadow-black/20 transition-transform duration-200 ease-out group-hover:scale-110 cursor-pointer"
           >
-            Become a Seller
-          </span>
-
-          <div class="relative group hidden lg:inline-block z-50">
-            <!-- Button with Arrow Rotate -->
-            <button
-              class="flex items-center gap-1 "
-            >
-              More
-              <i
-                class="ri-arrow-down-s-line ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180"
-              ></i>
-            </button>
-
-            <!-- Dropdown Menu -->
-            <div
-              class="absolute right-0 mt-2 w-64 bg-white text-black rounded-md shadow-md overflow-hidden opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 ease-in-out z-50 border border-gray-300"
-            >
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-notification-3-line text-[#2874f0]"></i>
-                  Notification Preferences
-                </div>
-              </a>
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-question-line text-[#2874f0]"></i> 24x7 Customer
-                  Care
-                </div>
-              </a>
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 border-b border-[#F1F3F6] hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-megaphone-line text-[#2874f0]"></i> Advertise
-                </div>
-              </a>
-              <a
-                href="#"
-                class="flex items-center justify-between px-5 py-3 hover:bg-[#f0f5ff] transition"
-              >
-                <div class="flex items-center gap-3">
-                  <i class="ri-download-line text-[#2874f0]"></i> Download App
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <span class="cursor-pointer flex items-center gap-1 hover:underline">
-            <i class="ri-shopping-cart-2-fill text-base lg:text-lg"></i>
-            <span class="hidden sm:inline">Cart</span>
+            0
           </span>
         </div>
-      </nav>
+
+        <!-- Cart Text -->
+        <span
+          class="ml-2 hidden sm:inline text-sm md:text-base group-hover:underline"
+          >Cart</span
+        >
+      </span>
+    </a>
+  </div>
+</nav>

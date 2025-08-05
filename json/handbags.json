@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "brand": "Lavie",
+    "model": "Betula Satchel",
+    "category": "Handbag",
+    "material": "Faux Leather",
+    "color": "Tan",
+    "dimensions_cm": "32 x 12 x 25",
+    "strap_type": "Double Handle + Detachable Sling",
+    "price": 2799,
+    "image": [
+            "https://m.media-amazon.com/images/I/51awcvSRZyL._UY1000_.jpg",
+            "https://m.media-amazon.com/images/I/71Oe2j7FB0S._UY1000_.jpg"
+        ] ,
+    "short_description": "Stylish tan satchel with spacious compartments and gold-tone details."
+  },
+  {
+    "id": 2,
+    "brand": "Caprese",
+    "model": "Misha Medium Tote",
+    "category": "Tote Bag",
+    "material": "PU Leather",
+    "color": "Black",
+    "dimensions_cm": "35 x 14 x 28",
+    "strap_type": "Shoulder Strap",
+    "price": 3499,
+    "image": [
+            "https://www.capresebags.com/cdn/shop/files/TEGAZMDENVY_1_2048x2048.webp?v=1747765127",
+            "https://www.capresebags.com/cdn/shop/files/TEGAZMDENVY_7_1080x.webp?v=1747765086"
+            ] ,
+    "short_description": "Elegant black tote with a modern structured silhouette."
+  },
+  {
+    "id": 3,
+    "brand": "Zouk",
+    "model": "Ikira Office Bag",
+    "category": "Handbag",
+    "material": "Vegan Leather & Fabric",
+    "color": "Beige & Maroon",
+    "dimensions_cm": "38 x 10 x 30",
+    "strap_type": "Double Handle",
+    "price": 2499,
+    "image": [
+  "https://zouk.co.in/cdn/shop/files/preview_images/5169a663576e45adb1d36d1002d45706.thumbnail.0000000000.jpg?v=1713265812&width=1080",
+  "https://zouk.co.in/cdn/shop/files/TopViewInside_8b4d7b8e-ec24-4e13-8da9-dca8e2741665.jpg?v=1744198059&width=1000"
+],
+    "short_description": "Eco-friendly office bag featuring Indian prints and utility design."
+  },
+  {
+    "id": 4,
+    "brand": "Baggit",
+    "model": "Giza Handheld",
+    "category": "Handbag",
+    "material": "Vegan Leather",
+    "color": "Navy Blue",
+    "dimensions_cm": "30 x 10 x 24",
+    "strap_type": "Top Handle + Sling",
+    "price": 2890,
+    "image": [
+  "https://media-uk.landmarkshops.in/cdn-cgi/image/h=1125,w=1125,q=85,fit=cover/lifestyle/1000010116519-1000010116518_03-2100.jpg",
+  "https://media-uk.landmarkshops.in/cdn-cgi/image/h=1125,w=1125,q=85,fit=cover/lifestyle/1000010116519-1000010116518_02-2100.jpg"
+],
+    "short_description": "Chic navy handbag for formal and casual use."
+  },
+  {
+    "id": 5,
+    "brand": "Hidesign",
+    "model": "Helena Crossbody",
+    "category": "Crossbody Bag",
+    "material": "Genuine Leather",
+    "color": "Burgundy",
+    "dimensions_cm": "22 x 8 x 17",
+    "strap_type": "Adjustable Shoulder Strap",
+    "price": 5999,
+    "image": [
+  "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/23140248/2023/5/25/45891470-0a26-4f33-a5e9-86cbdfda6f641685008978807-Hidesign-Women-Handbags-31685008978282-1.jpg",
+  "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/23140348/2023/6/6/76165f7b-40f4-4c3b-9440-318068cede2d1686035477532-Hidesign-Women-Handbags-3531686035477000-1.jpg"
+],
+    "short_description": "Premium handcrafted leather crossbody for daily elegance."
+  },
+  {
+    "id": 6,
+    "brand": "AccessHer",
+    "model": "Potli Clutch",
+    "category": "Potli Bag",
+    "material": "Silk with Embroidery",
+    "color": "Gold",
+    "dimensions_cm": "18 x 8 x 20",
+    "strap_type": "Drawstring Handle",
+    "price": 999,
+    "image": [
+  "https://kaashcollection.com/cdn/shop/files/gold-color-handmade-potli-bag-or-gold-beaded-or-party-clutch-sling-or-wedding-purse-in-gold-or-bridal-bag-handmade-embellished-lotus-potli-kaash-1_800x.jpg?v=1739407656",
+  "https://m.media-amazon.com/images/I/81fIiLbIu8L._UY300_.jpg"
+] ,
+    "short_description": "Festive embroidered potli with intricate ethnic detail."
+  },
+  {
+    "id": 7,
+    "brand": "Fur Jaden",
+    "model": "Structured Mini Satchel",
+    "category": "Handbag",
+    "material": "PU",
+    "color": "Olive Green",
+    "dimensions_cm": "24 x 10 x 20",
+    "strap_type": "Handle + Long Strap",
+    "price": 1790,
+    "image": [
+  "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/14776276/2024/4/3/ebf238da-9d64-4337-bc40-cb1d888e668a1712127923296-Lavie-Amy-Women-Olive-green-Medium-Satchel-Handbag-844171212-2.jpg",
+  "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/14776276/2024/4/3/ebf238da-9d64-4337-bc40-cb1d888e668a1712127923296-Lavie-Amy-Women-Olive-green-Medium-Satchel-Handbag-844171212-2.jpg"
+] ,
+    "short_description": "Compact handbag with minimal design and utility."
+  },
+  {
+    "id": 8,
+    "brand": "ALDO",
+    "model": "Cefalina Chain Tote",
+    "category": "Handbag",
+    "material": "Synthetic",
+    "color": "Beige",
+    "dimensions_cm": "36 x 12 x 27",
+    "strap_type": "Chain Handle + Sling",
+    "price": 7499,
+    "image": [
+  "https://img.tatacliq.com/images/i18//437Wx649H/MP000000022727555_437Wx649H_202406271845131.jpeg",
+  "https://www.aldoshoes.in/on/demandware.static/-/Sites-aldo_master_catalog/default/dw463f389b/large/4v5gx4s4z7ojdkt_AAA6sOsFXEUXv6L-Xm2-q0iZa_pencader-966-002-039_2.jpg"
+],
+    "short_description": "Luxury tote with gold hardware and ample storage."
+  },
+  {
+    "id": 9,
+    "brand": "Lino Perros",
+    "model": "Textured Satchel",
+    "category": "Handbag",
+    "material": "PU Leather",
+    "color": "Wine",
+    "dimensions_cm": "28 x 11 x 23",
+    "strap_type": "Handle + Adjustable Strap",
+    "price": 2295,
+    "image": [
+  "https://img.tatacliq.com/images/i11/437Wx649H/MP000000017602765_437Wx649H_202305181831351.jpeg",
+  "https://img.tatacliq.com/images/i11/437Wx649H/MP000000017602765_437Wx649H_202305181831333.jpeg"
+],
+    "short_description": "Classy wine red satchel with embossed texture."
+  },
+  {
+    "id": 10,
+    "brand": "ZARA",
+    "model": "Mini Quilted Crossbody",
+    "category": "Sling Bag",
+    "material": "Synthetic Leather",
+    "color": "Black",
+    "dimensions_cm": "20 x 7 x 16",
+    "strap_type": "Chain Sling",
+    "price": 2990,
+    "image": [
+  "https://static.zara.net/assets/public/8148/250b/62774b2ab8f6/26ff12b256c9/11130530800-e2/11130530800-e2.jpg?ts=1738253244490",
+  "https://static.zara.net/assets/public/2115/e6f0/f42b44c5a71e/c8c4d20c91e4/11130530800-e1/11130530800-e1.jpg?ts=1738253247119&w=744&f=auto"
+] ,
+    "short_description": "Mini quilted crossbody with elegant chain strap."
+  },
+  {
+    "id": 11,
+    "brand": "Miniso",
+    "model": "Casual Tote",
+    "category": "Tote Bag",
+    "material": "Canvas",
+    "color": "White & Pink",
+    "dimensions_cm": "34 x 10 x 28",
+    "strap_type": "Shoulder Strap",
+    "price": 699,
+    "image": [
+  "https://m.media-amazon.com/images/I/41wo91eqwSL._UF894,1000_QL80_.jpg",
+  "https://m.media-amazon.com/images/I/519ChChZ9bL.jpg"
+] ,
+    "short_description": "Lightweight canvas tote ideal for casual outings or college."
+  }
+]
