@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Flight - Flipkart Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'flipkart-blue': '#2874f0',
+                        'flipkart-orange': '#ff9f00',
+                        'flipkart-bg': '#f1f3f6',
+                        'flipkart-text-dark': '#212121',
+                        'flipkart-text-light': '#878787',
+                        'flipkart-border': '#e0e0e0',
+                        'flipkart-green': '#388e3c',
+                    },
+                    screens: {
+                        'xs': '475px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for a Flipkart-like feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2874f0;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1a60d0;
+        }
+
+        /* Loader and spinner styles */
+        .loader-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #e0e0e0;
+            border-top: 5px solid #2874f0;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loading-spinner {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top: 2px solid #fff;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body class="bg-flipkart-bg font-sans min-h-screen flex flex-col text-flipkart-text-dark">
+    <!-- Header -->
+    <header class="bg-flipkart-blue text-white py-3 px-4 sm:px-6 shadow-md flex justify-between items-center sticky top-0 z-50">
+        <a href="./index.html" class="flex items-center space-x-1">
+            <div class="text-xl sm:text-2xl font-bold">
+                <span class="text-white">Flip</span><span class="text-yellow-400">kart</span>
+            </div>
+            <span class="text-xs sm:text-sm font-light ml-2 opacity-80">Travel</span>
+        </a>
+        <nav class="space-x-4 sm:space-x-6 text-sm hidden sm:block">
+            <span class="cursor-pointer hover:text-yellow-300 transition-colors">Login</span>
+            <span class="cursor-pointer hover:text-yellow-300 transition-colors">More <i class="fa-solid fa-chevron-down text-xs ml-1"></i></span>
+        </nav>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <h1 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 sm:mb-8 text-center lg:text-left">Complete Your Flight Booking</h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Flight Summary Card -->
+            <div class="lg:col-span-2 bg-white shadow-lg rounded-lg p-5 sm:p-8 border border-flipkart-border">
+                <h2 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-5 flex items-center pb-4 border-b border-gray-200">
+                    <i class="ri-flight-takeoff-line text-flipkart-blue mr-3 text-2xl sm:text-3xl"></i> Flight Details
+                </h2>
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 mb-6">
+                    <div class="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4353/4353032.png" alt="Flight Icon" class="w-full h-full object-contain p-2" />
+                    </div>
+                    <div class="flex-grow text-center md:text-left">
+                        <p class="text-lg sm:text-xl font-bold text-flipkart-blue mb-1" id="summaryFlightNumber"></p>
+                        <div class="flex items-center justify-center md:justify-start text-gray-700 text-base sm:text-lg font-semibold">
+                            <span id="summaryOrigin"></span>
+                            <i class="ri-arrow-right-line mx-2 text-flipkart-text-light"></i>
+                            <span id="summaryDestination"></span>
+                        </div>
+                        <p class="text-sm sm:text-base text-flipkart-text-light mt-1" id="summaryClassTravellers"></p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 sm:gap-y-5 sm:gap-x-8 text-sm sm:text-base text-gray-700">
+                    <div>
+                        <p class="font-medium text-gray-900 mb-1 flex items-center"><i class="ri-calendar-line text-flipkart-text-light mr-2"></i>Departure Date:</p>
+                        <p class="font-semibold" id="summaryDepartDate"></p>
+                    </div>
+                    <div>
+                        <p class="font-medium text-gray-900 mb-1 flex items-center"><i class="ri-time-line text-flipkart-text-light mr-2"></i>Departure Time:</p>
+                        <p class="font-semibold" id="summaryDepartTime"></p>
+                    </div>
+                    <div>
+                        <p class="font-medium text-gray-900 mb-1 flex items-center"><i class="ri-calendar-line text-flipkart-text-light mr-2"></i>Return Date:</p>
+                        <p class="font-semibold" id="summaryReturnDate"></p>
+                    </div>
+                    <div>
+                        <p class="font-medium text-gray-900 mb-1 flex items-center"><i class="ri-time-line text-flipkart-text-light mr-2"></i>Arrival Time:</p>
+                        <p class="font-semibold" id="summaryArrivalTime"></p>
+                    </div>
+                    <div>
+                        <p class="font-medium text-gray-900 mb-1 flex items-center"><i class="ri-hourglass-line text-flipkart-text-light mr-2"></i>Duration:</p>
+                        <p class="font-semibold" id="summaryDuration"></p>
+                    </div>
+                </div>
+
+                <div class="pt-6 border-t border-gray-200 mt-6">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <i class="ri-money-rupee-circle-line text-flipkart-blue mr-3 text-2xl sm:text-3xl"></i> Fare Summary
+                    </h3>
+                    <div class="space-y-3 text-base sm:text-lg">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Base Fare</span>
+                            <span class="font-medium text-gray-900">₹<span id="baseFare"></span></span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Taxes & Fees</span>
+                            <span class="font-medium text-gray-900">₹<span id="taxesFees"></span></span>
+                        </div>
+                        <div class="flex justify-between items-center text-xl sm:text-2xl font-bold text-gray-900 pt-3 border-t border-gray-200 mt-3">
+                            <span>Total Amount</span>
+                            <span class="text-flipkart-orange">₹<span id="summaryPrice"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Passenger Details & Payment -->
+            <div class="lg:col-span-1 bg-white shadow-lg rounded-lg p-5 sm:p-8 border border-flipkart-border">
+                <h2 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-5 flex items-center pb-4 border-b border-gray-200">
+                    <i class="ri-user-line text-flipkart-blue mr-3 text-2xl sm:text-3xl"></i> Passenger Details
+                </h2>
+                <form id="bookingForm" class="space-y-5">
+                    <div>
+                        <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required
+                            class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-flipkart-blue focus:border-flipkart-blue transition-all duration-200 text-base"
+                            placeholder="e.g., John Doe" />
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-flipkart-blue focus:border-flipkart-blue transition-all duration-200 text-base"
+                            placeholder="e.g., john.doe@example.com" />
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required
+                            class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-flipkart-blue focus:border-flipkart-blue transition-all duration-200 text-base"
+                            placeholder="e.g., +91 9876543210" />
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-gray-800 mt-8 mb-5 flex items-center pt-4 border-t border-gray-200">
+                        <i class="ri-wallet-line text-flipkart-blue mr-3 text-2xl sm:text-3xl"></i> Payment Details
+                    </h2>
+                    <div class="flex justify-between items-center text-xl sm:text-2xl font-bold text-gray-900 bg-blue-50 p-4 rounded-lg border border-blue-200 gap-2">
+                        <span>Amount Payable:</span>
+                        <span id="amountPayable" class="text-flipkart-orange">₹0</span>
+                    </div>
+
+                    <button type="submit" id="payButton"
+                        class="w-full bg-flipkart-orange hover:bg-orange-600 text-white py-3.5 rounded-lg font-semibold text-lg sm:text-xl transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center mt-6">
+                        <i class="ri-secure-payment-line mr-2"></i>
+                        <span>Proceed to Pay</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 sm:px-6 text-center text-sm mt-8">
+        <div class="max-w-7xl mx-auto">
+            <p>&copy; 2025 Flipkart Travel. All rights reserved.</p>
+            <p class="mt-2 text-gray-400">Designed with ❤️ for a better travel experience.</p>
+        </div>
+    </footer>
+
+    <script>
+        let selectedFlight = null;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const flightDataString = localStorage.getItem('selectedFlight');
+            if (flightDataString) {
+                selectedFlight = JSON.parse(flightDataString);
+                displayFlightDetails(selectedFlight);
+                document.getElementById('amountPayable').textContent = `${selectedFlight.price.toLocaleString()}`;
+            } else {
+                // Redirect if no flight data is found
+                alert('No flight selected. Redirecting to flight search.');
+                window.location.href = 'index.html'; // Or flight.html if that's your main search page
+            }
+
+            document.getElementById('bookingForm').addEventListener('submit', handleBooking);
+        });
+
+        function displayFlightDetails(flight) {
+            // Calculate a dummy duration (e.g., 2-4 hours for domestic, 6-10 for international)
+            const isInternational = flight.origin.length === 3 && flight.destination.length === 3 && (flight.origin.startsWith('B') || flight.destination.startsWith('B')); // Simple heuristic
+            const durationHours = isInternational ? Math.floor(Math.random() * 5) + 6 : Math.floor(Math.random() * 3) + 2;
+            const durationMinutes = Math.floor(Math.random() * 60);
+            const durationText = `${durationHours}h ${durationMinutes}m`;
+
+            // Calculate dummy taxes and fees (e.g., 15-25% of price)
+            const taxesFees = Math.round(flight.price * (Math.random() * 0.1 + 0.15)); // 15-25%
+            const baseFare = flight.price - taxesFees;
+
+            document.getElementById('summaryFlightNumber').textContent = flight.flightNumber;
+            document.getElementById('summaryOrigin').textContent = flight.origin;
+            document.getElementById('summaryDestination').textContent = flight.destination;
+            document.getElementById('summaryClassTravellers').textContent = `${flight.travellers} Traveller${flight.travellers > 1 ? 's' : ''} | ${flight.class}`;
+            document.getElementById('summaryDepartDate').textContent = flight.departureDate;
+            document.getElementById('summaryDepartTime').textContent = flight.departureTime;
+            document.getElementById('summaryReturnDate').textContent = flight.returnDate && flight.returnDate !== '-' ? flight.returnDate : 'N/A';
+            document.getElementById('summaryArrivalTime').textContent = flight.arrivalTime;
+            document.getElementById('summaryDuration').textContent = durationText;
+            document.getElementById('baseFare').textContent = baseFare.toLocaleString();
+            document.getElementById('taxesFees').textContent = taxesFees.toLocaleString();
+            document.getElementById('summaryPrice').textContent = flight.price.toLocaleString();
+        }
+
+        function handleBooking(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+
+            if (!fullName || !email || !phone) {
+                alert('Please fill in all passenger details.');
+                return;
+            }
+
+            const payButton = document.getElementById('payButton');
+            const originalButtonHtml = payButton.innerHTML;
+            payButton.innerHTML = '<span class="loading-spinner"></span> Processing...';
+            payButton.disabled = true;
+
+            // Simulate payment processing
+            setTimeout(() => {
+                // Prepare data for order-confirmation.html
+                const orderItem = {
+                    title: `${selectedFlight.flightNumber} - ${selectedFlight.origin} to ${selectedFlight.destination}`,
+                    price: selectedFlight.price,
+                    qty: selectedFlight.travellers,
+                    category: 'Flight Ticket',
+                    image: '/placeholder.svg?height=100&width=100&text=Flight Ticket' // Placeholder image for flight
+                };
+
+                // Store as directBuy for the order confirmation page
+                localStorage.setItem('directBuy', JSON.stringify(orderItem));
+                localStorage.removeItem('selectedFlight'); // Clear selected flight after booking
+
+                alert('Booking successful! Redirecting to order confirmation.');
+                window.location.href = 'index.html';
+
+                // Restore button state (though page will redirect)
+                payButton.innerHTML = originalButtonHtml;
+                payButton.disabled = false;
+            }, 2000); // Simulate a 2-second payment process
+        }
+    </script>
+</body>
+</html>
